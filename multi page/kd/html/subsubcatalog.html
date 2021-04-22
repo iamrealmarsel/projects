@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+@@include('blocks/head.html')
+</head>
+<body>
+
+@@include('blocks/header.html')
+
+<div class="grid">
+
+@@include('blocks/sidebar.html')
+
+<div class="page bgInterier bgInterier--list">
+  <div class="wrapper">
+    <div class="page__breadcrumbs">
+      <span><a href="">Главная</a></span>
+      <span class="fa fa-angle-right"></span>
+      <span>Каталог</span>
+      <span class="fa fa-angle-right"></span>
+      <span>Спорт и отдых</span>
+    </div>
+    <h1> Рюкзаки туристические </h1>
+  
+    <div class="page__subsubcatalog">
+      <div class="page__filter">
+        <div class="selectBrand">
+          <select class="selectMenu">
+            <option selected>Бренд</option>
+            <option>Бренд 1 Бренд Бренд</option>
+            <option>Бренд 2</option>
+            <option>Бренд 3</option>
+            <option>Бренд 4</option>
+          </select>
+        </div>
+        <div class="sliderRange">
+          <label class="sliderRange__minLabel" for="sliderRange__min">
+            От: <input class="sliderRange__min" id="sliderRange__min" type="text"> р.
+          </label>
+          <div class="sliderUIWrap">
+            <div class="sliderUI"></div>
+          </div>
+          <label for="sliderRange__max">
+            До: <input class="sliderRange__max" id="sliderRange__max" type="text"> р.
+          </label>
+        </div>
+        <div class="selectSort">
+          <select class="selectMenu">
+            <option selected>Сортировать по</option>
+            <option>цене</option>
+            <option>популярности популярности</option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="page__products">
+
+      @@include('blocks/productItem1.html')  
+      @@include('blocks/productItem2.html')
+      @@include('blocks/productItem1.html')  
+      @@include('blocks/productItem2.html')
+      @@include('blocks/productItem1.html')  
+      @@include('blocks/productItem2.html')
+      @@include('blocks/productItem1.html')  
+      @@include('blocks/productItem2.html')
+        
+      </div>
+      
+      <div class="page__btnWrap">
+        <button class="btn">Показать больше товаров</button>
+      </div>
+    
+      <div class="page__paginator clearfix">
+        <a href="" class="my-angle-left">Предыдущая страница</a>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">6</a>
+        <span>...</span>
+        <a href="">38</a>
+        <a href="" class="my-angle-right">Следующая страница</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="subs">
+  <div class="wrapper">
+    <div class="subs__textWrap">
+      <i class="fa fa-envelope-o"></i>
+      <div class="subs__text">
+        <p>Экслюзивные скидки</p>
+        <p>Подпишись на наши новости и горящие предложения</p>
+      </div>
+    </div>
+    <input class="inputBg inputBg--focus" type="text" placeholder="E-mail">
+    <button class="btn btn--blue" type="submit">Подписаться</button>
+  </div>
+</div>
+
+</div>
+
+@@include('blocks/footer.html')
+
+@@include('blocks/popups.html')
+
+</body>
+</html>
+
+
+
+
+
+
+

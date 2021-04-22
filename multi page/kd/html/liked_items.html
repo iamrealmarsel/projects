@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+@@include('blocks/head.html')
+</head>
+<body>
+
+@@include('blocks/header.html')
+
+<div class="grid">
+
+@@include('blocks/sidebar.html')
+
+<div class="page wrapper">
+  <div class="page__breadcrumbs">
+    <span><a href="">Главная</a></span>
+    <span class="fa fa-angle-right"></span>
+    <span>Отложенные товары</span>
+  </div>
+  <h1> Отложенные товары </h1>
+  
+  <div class="page__likedItems">
+    <div class="page__productList">
+      @@include('blocks/productItem1--active.html')
+      @@include('blocks/productItem2--active.html')
+      @@include('blocks/productItem1--active.html')
+      @@include('blocks/productItem2--active.html')
+      @@include('blocks/productItem1--active.html')
+      @@include('blocks/productItem2--active.html')
+      @@include('blocks/productItem1--active.html')
+      @@include('blocks/productItem2--active.html')
+      @@include('blocks/productItem1--active.html')
+      @@include('blocks/productItem2--active.html')
+      <div class="page__btnWrap">
+        <button class="btn btn--blue">Продолжить покупки</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+@@include('blocks/footer.html')
+
+@@include('blocks/popups.html')
+
+</body>
+</html>
+
+
+
+
+
+
+

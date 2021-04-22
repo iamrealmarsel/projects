@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+@@include('blocks/head.html')
+</head>
+<body>
+
+@@include('blocks/header.html')
+
+<div class="grid">
+
+@@include('blocks/sidebar.html')
+
+<div class="page wrapper">
+  <div class="page__breadcrumbs">
+    <span><a href="">Главная</a></span>
+    <span class="fa fa-angle-right"></span>
+    <span>Оформление заказа</span>
+  </div>
+  <h1> Оформление заказа </h1>
+  <div class="page__ordering">
+    <div class="ordering">
+
+      <div class="ordering__floatWrap">
+        <div class="ordering__floatLeft">
+
+          <form class="ordering__step1" action="">
+            <fildset>
+              <legend class="ordering__stepTitle">
+                <span>Шаг 1.</span>
+                <span>Пожалуйста, представьтесь:</span>
+              </legend>
+              <input type="text" class="inputBg" placeholder="E-mail">
+              <input type="text" class="inputBg" placeholder="Пароль">
+              <div class="ordering__rememberPass">
+                <label class="floatL">
+                  <input type="checkbox"><i class="checkbox"></i><span>Запомнить</span>
+                </label>
+                <div class="floatR">
+                  <a href="">Забыли пароль?</a>
+                </div>
+              </div>
+              <div class="ordering__step1BtnWrap">
+                <button class="btn btn--blue floatL">Войти</button>
+                <button class="btn btn--blue floatR">Регистрация</button>
+              </div>
+            </fildset>
+          </form>
+
+<hr>
+
+          <form class="ordering__step2" action="">
+            <fieldset>
+              <legend class="ordering__stepTitle">
+                <span>Шаг 2.</span>
+                <span>Пожалуйста заполните поля:</span>
+              </legend>
+              <div class="ordering__fio">
+                <label class="floatL"><input class="inputBg" type="text" placeholder="Имя *"></label>
+                <label class="floatR"><input class="inputBg" type="text" placeholder="Фамилия *"></label>
+              </div>
+              <div class="ordering__telCity">
+                <label class="floatL"><input class="inputBg" type="text" placeholder="+7 ( ___ ) ___ - __ - __"></label>
+                <label class="floatR"><input class="inputBg" type="text" placeholder="Город"></label>
+              </div>
+              <label><input class="inputBg" type="text" placeholder="Адрес"></label>
+              <div class="ordering__select">
+                <div class="ordering__country">
+                  <select name="country" class="selectMenu">
+                    <option value="default" selected>Страна *</option>
+                    <option value="Russia">Россия</option>
+                    <option value="USA">Америка Америка Америка Америка</option>
+                  </select>
+                </div>
+                <div class="ordering__region">
+                  <select name="region" class="selectMenu">
+                    <option value="default" selected>Обасть / Район *</option>
+                    <option value="Moscow">Московская Московская Московская область</option>
+                    <option value="Lipetsk">Липетская область</option>
+                  </select>
+                </div>
+              </div>
+              <label class="ordering__zip"><input class="inputBg" type="text" placeholder="Почтовый индекс *"></label>
+              <button class="btn btn--blue">Продолжить</button>
+            </fieldset>
+          </form>
+
+<hr>
+
+          <form class="ordering__step3" action="">
+            <fieldset>
+              <legend class="ordering__stepTitle">
+                <span>Шаг 3.</span>
+                <span>Выбор способа доставки</span>
+              </legend>
+              <label class="ordering__checkbox">
+                <input type="checkbox">
+                <i class="checkbox"></i>
+                <span>Наш менеджер перезвонит Вам для выбора 
+                  способа доставки - Бесплатно</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <i class="checkbox"></i>
+                <span>Наш менеджер перезвонит Вам для выбора 
+                  способа доставки - Бесплатно</span>
+              </label>
+              <div><span class="ordering__totalText">Итого:</span> <span class="ordering__totalPrice">0 р.</span></div>
+              <p class="ordering__paragraph">
+                Сразу же, как заказ будет Вами подтвержден он отправится на сборку и будет доставлен в Киров (от 2 до 7 дней). По прибытию заказа наши работники Вас обязательно известят звонком или SMS сообщением. Пожалуйста, лично проверьте посылку в момент её получения. Если вы нашли какие-либо повреждения или дефекты сразу же предъявите претензию. Помните! Если при визуальном осмотре Вас что-то не устроило, Вы всегда можете отказаться от заказа!
+                На все оставшиеся вопросы с удовольствием ответят вежливые консультанты нашего центра +7(8332)266-899
+              </p>
+              <button class="btn btn--blue">Продолжить</button>
+            </fieldset>
+          </form>
+
+<hr>
+
+          <form class="ordering__step4" action="">
+            <fieldset>
+              <legend class="ordering__stepTitle">
+                <span>Шаг 4.</span>
+                <span>Выбор способа оплаты</span>
+              </legend>
+              <label class="ordering__step4checkbox">
+                <input type="checkbox">
+                <i class="checkbox"></i>
+                <span>Обсудить с менеджером!</span>
+              </label>
+              <p class="ordering__paragraph">Наш менеджер Вам перезвонит</p>
+
+              <textarea class="inputBg" placeholder="Ваши комментарии к заказу"></textarea>
+
+              <p>Подпишитесь на нашу рассылку!</p>
+
+              <label class="ordering__news">
+                <input type="checkbox">
+                <i class="checkbox"></i>
+                <span>Новости компании и уникальные скидки для подписчиков</span>
+              </label>
+
+              <button class="btn btn--blue">Разместить заказ</button>
+            </fieldset>
+          </form>
+
+<hr>
+      
+          <p class="ordering__end">
+            Заказ Спасибо за заказ! <br>
+            В самое ближайшее время с Вами свяжется наш оператор =)
+            <a href="">Детали заказа</a>
+          </p>
+
+        </div>
+        <div class="ordering__floatRight">
+
+          <div class="ordering__amount">
+            <h2 class="ordering__title">Сумма заказа</h2>
+            <div class="ordering__shopList">
+              <div class="ordering__shopItem">
+                <div class="img">
+                  <img src="img/products/product1.png" alt="">
+                </div>
+                <span class="ordering__shopTitle">
+                  Quechua Forclaz 50L
+                </span>
+                <span class="ordering__shopPrice">
+                  <span>1</span> х <span>3500 р.</span>
+                </span>
+              </div>
+              <div class="ordering__shopItem">
+                <div class="img">
+                  <img src="img/products/product1.png" alt="">
+                </div>
+                <span class="ordering__shopTitle">
+                  Quechua Forclaz 50L
+                </span>
+                <span class="ordering__shopPrice">
+                  <span>1</span> х <span>3500 р.</span>
+                </span>
+              </div>
+              <div class="ordering__shopItem">
+                <div class="img">
+                  <img src="img/products/product1.png" alt="">
+                </div>
+                <span class="ordering__shopTitle">
+                  Quechua Forclaz 50L
+                </span>
+                <span class="ordering__shopPrice">
+                  <span>1</span> х <span>3500 р.</span>
+                </span>
+              </div>
+            </div>
+            <div class="ordering__delivery">
+              <span>Доставка: </span>
+              <span class="ordering__deliveryPrice"> 0 р.</span>
+            </div>
+            <input type="text" class="inputBg" placeholder="Промокод или подарочный сертификат">
+            <div class="clearfix">
+              <span class="ordering__totalText">итоговая стоимость:</span>
+              <span class="ordering__totalPrice">3 200 р.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+<hr>
+
+    <div class="ordering__floatWrap ordering__details">
+      <div class="ordering__floatLeft">
+
+        <div class="ordering__options">
+          <div class="ordering__stepTitle">Заказ № <a>814</a> (02/24/2017, 20:06)</div>
+          <table>
+            <caption>Информация о покупателе:</caption>
+            <col>
+            <tr>
+              <td>Имя</td>
+              <td>Василий</td>
+            </tr>
+            <tr>
+              <td>Фамилия</td>
+              <td>Василий</td>
+            </tr>
+            <tr>
+              <td>E-mail</td>
+              <td>Василий</td>
+            </tr>
+            <tr>
+              <td>Телефон</td>
+              <td>Василий</td>
+            </tr>
+            <tr>
+              <td>Адрес</td>
+              <td>Василий</td>
+            </tr>
+            <tr>
+              <td>Город</td>
+              <td>Василий</td>
+            </tr>
+            <tr>
+              <td>Россия</td>
+              <td>Василий</td>
+            </tr>
+            <tr>
+              <td>Регион / область</td>
+              <td>Василий</td>
+            </tr>
+            <tr>
+              <td>Индекс</td>
+              <td>Василий</td>
+            </tr>
+          </table>
+          <div class="ordering__note">
+            <p>Примечания покупателя</p>
+            <span>Позвонить за час!</span>
+          </div>
+          <table>
+            <col>
+            <tr>
+              <td><span>Способ оплаты:</span></td>
+              <td>Обсудить с менеджером! (наш менеджер Вам перезвонит)</td>
+            </tr>
+            <tr>
+              <td><span>Способ доставки:</span></td>
+              <td>Наш менеджер перезвонит Вам для выбора способа доставки</td>
+            </tr>
+            <tr>
+              <td><span>Сумма:</span></td>
+              <td>5 863.00 р</td>
+            </tr>
+            <tr>
+              <td><span>Итого:</span></td>
+              <td>5 863.00 р.</td>
+            </tr>
+          </table>
+          <div class="ordering__barcode">
+            <img src="img/pic/barcode.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <div class="ordering__floatLeft ordering__orderMobile">
+
+        <div class="ordering__amount">
+          <h2 class="ordering__title">Сумма заказа</h2>
+          <div class="ordering__shopList">
+            <div class="ordering__shopItem">
+              <div class="img">
+                <img src="img/products/product1.png" alt="">
+              </div>
+              <span class="ordering__shopTitle">
+                Quechua Forclaz 50L
+              </span>
+              <span class="ordering__shopPrice">
+                <span>1</span> х <span>3500 р.</span>
+              </span>
+            </div>
+            <div class="ordering__shopItem">
+              <div class="img">
+                <img src="img/products/product1.png" alt="">
+              </div>
+              <span class="ordering__shopTitle">
+                Quechua Forclaz 50L
+              </span>
+              <span class="ordering__shopPrice">
+                <span>1</span> х <span>3500 р.</span>
+              </span>
+            </div>
+            <div class="ordering__shopItem">
+              <div class="img">
+                <img src="img/products/product1.png" alt="">
+              </div>
+              <span class="ordering__shopTitle">
+                Quechua Forclaz 50L
+              </span>
+              <span class="ordering__shopPrice">
+                <span>1</span> х <span>3500 р.</span>
+              </span>
+            </div>
+          </div>
+          <div class="ordering__delivery">
+            <span>Доставка: </span>
+            <span class="ordering__deliveryPrice"> 0 р.</span>
+          </div>
+          <div class="clearfix">
+            <span class="ordering__totalText">итоговая стоимость:</span>
+            <span class="ordering__totalPrice">3 200 р.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ordering__detailsBtn">
+        <button class="btn btn--blueLine ordering__printBtn">Распечатать инфрмацию о заказе</button>
+        <button class="btn btn--blueLine ordering__printBtn">Распечатать инфрмацию о заказе в PDF</button>
+        <button class="btn btn--blueLine">Начать общение</button>
+        <button class="btn btn--blue">Оформить заказ повторно</button>
+      </div>
+
+    </div>
+
+
+    
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+@@include('blocks/footer.html')
+
+@@include('blocks/popups.html')
+    
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 362px;
+  padding: 13px 0;
+  background-color: #2F80ED;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 24px;
+  font-family: $ffMinor;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: transparent;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: darken(#2F80ED, 10%);
+  text-decoration: none;
+}
+
+.btn_big {
+  max-width: 414px;
+}
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+  .btn, .btn_big {
+    font-size: 18px;
+    max-width: 320;
+  }
+}
+
+@media ($mobileS) {
+
+}

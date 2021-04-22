@@ -1,0 +1,13 @@
+/* ---== контакты ==--- */
+
+
+
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+
+.contacts__text {
+  margin-bottom: 30px;
+}

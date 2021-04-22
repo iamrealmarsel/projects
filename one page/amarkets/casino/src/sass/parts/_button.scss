@@ -1,0 +1,59 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  max-width: 406px;
+  background-color: $cBlue;
+  border-radius: 5px;
+  padding: 12px 0;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  font-family: $ffMajor;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: transparent;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: lighten($cBlue, 10%);
+  text-decoration: none;
+}
+
+
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+  .btn {
+    max-width: 320px;
+    font-size: 18px;
+  }
+
+}
+
+@media ($mobileS) {
+
+}
+
+
+
+
+
+
+
+
+

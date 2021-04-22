@@ -1,0 +1,23 @@
+{
+  "data": {
+    "features": [{
+      "val": "features1.png",
+      "txt": "Вы сами контролируете прибыль, а не случай или удача"
+    }, {
+      "val": "features2.png",
+      "txt": "Зарабатывайте до 1000 раз больше, чем казино"
+    }, {
+      "val": "features3.png",
+      "txt": "Мы заинтересованы <span class='nowrap'>в том</span>, чтобы вы выигрывали, <span class='nowrap'>а не проигрывали</span>"
+    }, {
+      "val": "features4.png",
+      "txt": "Даже если вы допустили ошибку, её можно исправить и выйти <span class='nowrap'>в плюс</span>"
+    }, {
+      "val": "features5.png",
+      "txt": "Постоянная поддержка команда AMarkets"
+    }, {
+      "val": "features6.png",
+      "txt": "Мы удвоим внесенный вами депозит!"
+    }]
+  }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HIMTEX</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container-fluid">
+            <div class="header__logo">
+                <a class="header__logoImg" href="index.html">
+                    <img src="img/logo.jpg" alt="логотип">
+                </a>
+            </div>
+            <nav class="header__nav">
+                <div class="burger">
+                    <i class="burger__lines"></i>
+                </div>
+                <ul class="header__menu">
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li ><a href="catalog.html">Наши товары</a></li>
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__call">
+                <button data-modal data-target="modalCall" class="btn" type="button">
+                    Заказать звонок
+                </button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="breadcrumbs">
+                <a class="breadcrumbs__item" href="#">Главная</a>
+                <span class="breadcrumbs__item active">Наши товары</span>
+            </div>
+        </div>
+    </section>
+    <section class="delivery">
+        <div class="container-fluid">
+<div class="delivery__dv">
+            <h1 class="title">Доставка</h1>
+
+
+<p class="text">Наша компания предлагает клиентам воспользоваться бесплатным сервисом по доставке товаров:</p>
+    
+<ul>
+    <li>Доставка Москва и область при заказе от 1т;</li>
+    <li>Доставка до транспортной компании от 0,5 т;</li>
+    <li>Доставка в регион от 10 т.</li>
+</ul>
+
+</div>
+
+
+<div class="delivery__pay">
+    <h1 class="title">Оплата</h1>
+    
+    <p>Общество с ограниченной ответственностью «ХИМТЭКС»</p>
+    <p>ОГРН №1175050003743</p>
+    <p>ИНН / КПП : 5038127005 / 503801001</p>
+    <p>Юридический адрес (почтовый адрес): <br>
+    141260, Московская область, Пушкинский район,
+    рабочий поселок Правдинский, ул. Герцена д.30, корп.1, помещение 13</p>
+    <p>Расчетный счет: <br>
+    Р/С 40702810140000024396  <br>
+    ПАО СБЕРБАНК К/С 30101810400000000225 <br>
+    БИК 044525225
+    </p>
+
+</div>
+
+        </div>
+    </section>
+    <section class="footer">
+                        <div class="footer__top">
+                            <div class="container-fluid">
+                                <div class="footer__logo">
+                                    <a href="index.html" class="footer__logoImg">
+                                    <img src="img/logo.png" alt="логотип">
+                                </a>
+                                    <div class="footer__logoInfo">
+                                        <p>HIMTEX – Мы производим лучшее химическое сырье.</p>
+                                    </div>
+                                </div>
+                                    <div class="footer__company">
+                                <h3 class="footer__title">Компания</h3>
+                                <ul class="footer__menu">
+                                    <li><a href="about.html">О нас</a></li>
+                                    <!-- <li><a href="#">Вакансии</a></li> -->
+                                    <!-- <li><a href="#">Документы</a></li> -->
+                                    <li><a href="#" data-modal data-target="modalPartner">Партнерство</a></li>
+                                    <li><a href="#" data-modal data-target="modalReq">Реквизиты</a></li>
+                                </ul>
+                            </div>
+                                <div class="footer__info">
+                                    <h3 class="footer__title">Информация</h3>
+                                    <ul class="footer__menu">
+                                        <li><a href="delivery.html">Доставка</a></li>
+                                        <li><a href="delivery.html">Оплата</a></li>
+                                        <li><a href="catalog.html">Товары</a></li>
+                                        <li><a href="contacts.html">Контакты</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__contacts">
+                                    <h3 class="footer__title">Контакты</h3>
+                                    <ul class="footer__menu">
+                                        <li ><a class="fa-phone" href="tel:+74951234567">+7 495 123 45 67</a></li>
+                                        <li ><a class="fa-envelope" href="mailto:himtex@himtex.com">himtex@himtex.com</a></li>
+                                        <li><a class="fa-map-marker" href="contacts.html">Москва, Ленинский переулок, 23</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div class="container-fluid">
+                                <p class="footer__copyright">2017 © ООО Химтекс. Все права защищены</p>
+                            </div>
+                        </div>
+                    </section>
+
+    <!-- МОДАЛЬНЫЕ ОКНА -->
+
+    <!-- запрос цены -->
+    <div class="modal" id="modalPrice">
+        <form action="" class="modal__form js-submit">
+            <h4 class="modal__title">Запроc цены</h4>
+            <p class="modal__required"><span class="red">*</span>- обязательные поля</p>
+            <div class="modal__fio">
+                <div class="modal__fioLeft">
+                    <label for="modal__name">Имя<span class="red">*</span></label>
+                    <input id="modal__name" class="inp" type="text" required="true">
+                </div>
+                <div class="modal__fioRight">
+                    <label for="modal__lastname">Фамилия</label>
+                    <input id="modal__lastname" class="inp" type="text">
+                </div>
+            </div>
+            <div class="modal__phoneWrap">
+                <label for="modal__phone">Ваш номер телефона<span class="red">*</span></label>
+                <input id="modal__phone" class="phoneMask inp" type="text" required="true">
+            </div>
+            <div class="modal__range">
+                <label>Объем, л<span class="red">*</span></label>
+                <div class="productCard__rangeWrap">
+                    <input class="productCard__range" type="range" min="1" step="1" max="2000" value="200">
+                    <span class="productCard__track">
+                        <span class="productCard__trackPass"></span>
+                        <div class="productCard__thumbWrap">
+                            <span class="productCard__thumb"></span>
+                            <div class="productCard__outputWrap">
+                                <input class="productCard__output" type="text" maxlength="4">
+                                <span class="productCard__triangle"></span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="modal__btnList">
+                <button class="btn" type="submit">Сделать запрос</button>
+                <i class="js-close modal__close fa-close"></i>
+            </div>
+        </form>
+    </div>
+
+    <!-- запрос цены в карточке товара -->
+        <div class="modal modal--product" id="modalPriceProduct">
+            <form action="" class="modal__form js-submit">
+                <h4 class="modal__title">Запроc цены</h4>
+                <p class="modal__required"><span class="red">*</span>- обязательные поля</p>
+                <div class="modal__fio">
+                    <div class="modal__fioLeft">
+                        <label for="modal__name">Имя<span class="red">*</span></label>
+                        <input id="modal__name" class="inp" type="text" required="true">
+                    </div>
+                    <div class="modal__fioRight">
+                        <label for="modal__lastname">Фамилия</label>
+                        <input id="modal__lastname" class="inp" type="text">
+                    </div>
+                </div>
+                <div class="modal__phoneWrap">
+                    <label for="modal__phone">Ваш номер телефона<span class="red">*</span></label>
+                    <input id="modal__phone" class="phoneMask inp" type="text" required="true">
+                </div>
+                <div class="modal__btnList">
+                    <button class="btn" type="submit">Сделать запрос</button>
+                    <i class="js-close modal__close fa-close"></i>
+                </div>
+            </form>
+        </div>
+
+    <!-- заказать звонок -->
+    <div class="modal modal--call" id="modalCall">
+        <form action="" class="modal__form js-submit">
+            <h4 class="modal__title">Заказ звонка</h4>
+            <p class="modal__required"><span class="red">*</span>- обязательные поля</p>
+            <div class="modal__fio">
+                <div class="modal__fioLeft">
+                    <label for="modal__name">Имя<span class="red">*</span></label>
+                    <input id="modal__name" class="inp" type="text" required="true">
+                </div>
+                <div class="modal__fioRight">
+                    <label for="modal__lastname">Фамилия</label>
+                    <input id="modal__lastname" class="inp" type="text">
+                </div>
+            </div>
+            <div class="modal__phoneWrap">
+                <label for="modal__phone">Ваш номер телефона<span class="red">*</span></label>
+                <input id="modal__phone" class="phoneMask inp" type="text" required="true">
+            </div>
+            <div class="modal__btnList">
+                <button class="btn" type="submit">Заказать звонок</button>
+                <i class="js-close modal__close fa-close"></i>
+            </div>
+        </form>
+    </div>
+
+    <!-- стать партнером -->
+    <div class="modal modal--partner" id="modalPartner">
+        <form action="" class="modal__form js-submit">
+            <h4 class="modal__title">Партнерство</h4>
+            <p class="modal__required"><span class="red">*</span>- обязательные поля</p>
+            <div class="modal__fio">
+                <div class="modal__fioLeft">
+                    <label for="modal__name">Имя<span class="red">*</span></label>
+                    <input id="modal__name" class="inp" type="text" required="true">
+                </div>
+                <div class="modal__fioRight">
+                    <label for="modal__lastname">Фамилия</label>
+                    <input id="modal__lastname" class="inp" type="text">
+                </div>
+            </div>
+            <div class="modal__phoneWrap">
+                <label for="modal__phone">Ваш номер телефона<span class="red">*</span></label>
+                <input id="modal__phone" class="phoneMask inp" type="text" required="true">
+            </div>
+            <div class="modal__btnList">
+                <button class="btn" type="submit">Стать партнером</button>
+                <i class="js-close modal__close fa-close"></i>
+            </div>
+        </form>
+    </div>
+
+    <!-- реквизиты -->
+        <div class="modal modal--req" id="modalReq">
+            <h4 class="modal__title">Наши реквизиты</h4>
+            <i class="js-close modal__close fa-close"></i>
+            <div>
+            <p>Общество с ограниченной ответственностью «ХИМТЭКС»</p>
+            <p>ОГРН №1175050003743</p>
+            <p>ИНН / КПП : 5038127005 / 503801001</p>
+            <p>Юридический адрес (почтовый адрес):
+            141260, Московская область, Пушкинский район,
+            рабочий поселок Правдинский, ул. Герцена д.30, корп.1, помещение 13</p>
+            <p>Расчетный счет: <br>
+            Р/С 40702810140000024396  <br>
+            ПАО СБЕРБАНК К/С 30101810400000000225 <br>
+            БИК 044525225
+            </p>
+            </div>
+        </div>
+
+    <div class="overlay js-close"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

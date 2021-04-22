@@ -1,0 +1,146 @@
+.slider {
+  // height: 455px;
+  // overflow: hidden;
+}
+
+.slide {
+  padding-top: 65px;
+}
+
+.slide__logo {
+  margin-bottom: 50px;
+  width: 228px;
+  height: 71px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../img/AMFI1.jpg);
+  mix-blend-mode: multiply;
+}
+
+.no-blend .slide__logo {
+  background-image: url(../img/AMFI.png);
+}
+
+.slide {
+  height: 455px;
+  background-position: center right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+
+  .title {
+    margin-bottom: 30px;
+  }
+}
+
+.slide_1 {
+  background-image: url(../img/slide_bg1.jpg);
+  background-color: #EEEDE8;
+  background-position: calc(100% + 150px) 50%;
+
+}
+.slide_2 {
+  background-image: url(../img/slide_bg2.jpg);
+  background-color: #F3F3F3;
+}
+.slide_3 {
+  background-image: url(../img/slide_bg3.jpg);
+  background-color: #fff;
+}
+.slide_4 {
+  background-image: url(../img/slide_bg4.jpg);
+  background-color: #EEEDE8;
+  background-position: bottom right;
+}
+
+.slick-slide {
+  outline: transparent;
+}
+
+
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translatex(-50%);
+  font-size: 0;
+  display: flex;
+
+  li {
+    margin-right: 22px;
+
+    &::last-child {
+      margin-right: 0;
+    }
+  }
+
+  button {
+    border-radius: 50%;
+    border: none;
+    background-color: #BDBDBD;
+    width: 15px;
+    height: 15px;
+    outline: transparent;
+    cursor: pointer;
+  }
+
+  .slick-active button {
+    background-color: #828282;
+  }
+}
+
+
+@media (min-width: 1900px) {
+  .slide {
+    background-size: auto 150%;
+  }
+  .slide_1 {
+    background-size: auto 120%;
+    background-position: 100% 0;
+  }
+}
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+  .slide {
+    text-align: center;
+    background-position: calc(50% + 300px) 50%;
+  }
+  .slide__logo {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .slide_4 {
+    background-position: calc(50% + 100px) 50%;
+  }
+
+  .slick-dots {
+    left: 50%;
+    bottom: 30px;
+
+    li {
+      margin-right: 15px;
+
+      &::last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
+
+@media ($mobile) {
+  .slide {
+    height: 500px;
+  }
+
+}
+
+@media ($mobileS) {
+
+}

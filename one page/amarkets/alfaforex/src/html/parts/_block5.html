@@ -1,0 +1,28 @@
+{% macro main(data) %}
+<div class="block5">
+  <div class="container">
+    <h2 class="title">Один из самых высоких процентов
+успешности клиентов <span class="bold nowrap">в мире!</span></h2>
+  <div class="block5__list">
+    {% for item in data %}
+    <div class="block5__item">
+      <div class="block5__wrapper">
+        <div class="block5__img"><img src="img/{{ item.img | safe }}" alt=""></div>
+        <div class="block5__val"><span>{{ item.val | safe }}</span></div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="block5__bg">
+    <div class="block5__wrap">
+      <div class="block5__blend"></div>
+      <h2 class="title">10 лет успешной торговли, <br> <span class="bold">и мы не собираемся останавливаться!</span>
+      </h2>
+    </div>
+    <a href="#" class="btn btn_red">Начать зарабатывать с AMarkets</a>
+  </div>
+    
+  </div>
+</div>
+{% endmacro %}

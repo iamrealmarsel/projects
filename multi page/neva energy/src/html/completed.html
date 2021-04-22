@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Нева Энергия | Личный кабинет</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="layout layout_req">
+
+  {% import "parts/sidebar.html" as sidebar %}
+  {{ sidebar.body() }}
+
+<div class="content">
+
+<h2 class="content__title">Завершенная заявка №34234834</h2>
+
+<form class="reqForm">
+  <div class="">
+
+  <label class="reqForm__item">
+    <span class="reqForm__lbl">ФИО:</span>
+    <span class="reqForm__val">Иванов Иван Иванович</span>
+  </label>
+    
+  <label class="reqForm__item">
+    <span class="reqForm__lbl">Объект:</span>
+    <span class="reqForm__val">Жилой дом 1</span>
+  </label>
+    
+  <label class="reqForm__item">
+    <span class="reqForm__lbl">Присоединяемая тепловая нагрузка на отопление (max), <span class="nowrap">Гкал/ч:</span></span>
+    <span class="reqForm__val">150</span>      
+  </label>
+
+
+    <label class="reqForm__item">
+      <span class="reqForm__lbl">Присоединяемая тепловая нагрузка на ГВС (max), <span class="nowrap">Гкал/ч:</span></span>
+      <span class="reqForm__val">100</span>      
+    </label>
+    
+    <label class="reqForm__item">
+      <span class="reqForm__lbl">Присоединяемая тепловая нагрузка на вентиляцию (max), <span class="nowrap">Гкал/ч:</span></span>
+      <span class="reqForm__val">120</span>      
+    </label>
+    
+    <label class="reqForm__item">
+      <span class="reqForm__lbl">Местоположение объекта:</span>
+      <span class="nowrap reqForm__val">
+        г. Сланцы
+      </span>
+    </label>
+    
+    <label class="reqForm__item">
+      <span class="reqForm__lbl">Контактный номер для связи:</span>
+      <span class="reqForm__val">+7 (999)-999-99-99</span>      
+    </label>
+
+  </div>
+
+  
+</form>
+
+
+</div>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+.page {
+
+
+  .about {
+    margin-bottom: 70px;
+  }
+  .programs {
+    margin-bottom: 120px;
+  }
+}
+
+.page__header {
+  background-image: url(../img/window.jpg);
+  background-position: 50% 100%;
+  background-size: cover;
+
+  .header {
+    margin-bottom: 90px;
+    background-color: transparent;
+  }
+}
+
+
+
+@media ($desktop) {
+  
+}
+
+@media ($tablet) {
+  
+}
+
+@media ($mobile) {
+
+  .page {
+
+    .programs {
+      margin-bottom: 0;
+    }
+  }
+
+  
+}
+
+@media ($smobile) {
+  
+}

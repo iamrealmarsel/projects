@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render VideoPlayer 1`] = `
+<img
+  alt="Bohemian Rhapsody"
+  height="175"
+  src="img/aviator.jpg"
+  width="280"
+/>
+`;

@@ -1,0 +1,27 @@
+
+{% macro main(data) %}
+
+
+<div class="features">
+
+  <div class="features__container">
+
+    <h1 class="features__title">Какие преимущества открывает <br> <b>торговля в AMarkets:</b></h1>
+
+    <div class="features__list">
+    
+    {% for item in data %}
+      <div class="features__item">
+        <div class="features__ico"><img src="img/{{ item.val | safe }}" alt=""></div>
+        <p class="features__txt">{{ item.txt | safe }}</p>
+      </div>
+    {% endfor %}
+    
+    </div>
+
+  </div>
+
+</div>
+
+
+{% endmacro %}

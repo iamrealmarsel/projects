@@ -1,0 +1,106 @@
+.btn {
+  display: inline-block;
+  padding: 16px 25px;
+  background-color: $cBase;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  border-radius: 100px;
+  font-family: $ffBase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 0.68px;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: saturate($cBase, 20%);
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.btn_white {
+  padding: 16px 50px;
+  color: #ED1B2F;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.btn_white:hover {
+  background-color: $cBase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn_acc {
+  padding: 16px 50px;
+  background-color: #FC6E5E;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.btn_acc:hover {
+  background-color: darken(#FC6E5E, 5%);
+  text-decoration: none;
+}
+
+.btn .fa-user {
+  margin-right: 10px;
+}
+
+.btn_city {
+  border: 1px solid #E8E8E8;
+  color: #ED1B2F;
+  letter-spacing: 0.68px;
+  background-color: transparent;
+  box-shadow: none;
+
+  .fa-angle-down {
+    margin-left: 10px;
+  }
+}
+
+.btn_city:hover,
+.btn_city.active {
+  background-color: $cBase;
+  color: #fff;
+}
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+
+}
+
+@media ($smobile) {
+
+  .wbtn {
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+

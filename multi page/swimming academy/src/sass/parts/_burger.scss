@@ -1,0 +1,28 @@
+.burger {
+  display: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+@media ($desktop) {
+
+  .burger {
+    display: block;
+  }
+  
+}
+
+@media ($tablet) {
+
+  
+}
+
+@media ($mobile) {
+  
+}
+
+@media ($smobile) {
+  
+}

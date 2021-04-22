@@ -1,0 +1,58 @@
+// шрифты
+$ffMajor: 'Roboto', Helvetica, Arial, sans-serif;
+$ffMinor: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+$ffFa: 'Fontawesome';
+
+// цвета
+$cFont: #fff;
+$cBrown: #CDA129;
+$cBlue: #2F80ED;
+
+// анимация время
+$all: 0.5s;
+$step: 0.13s;
+$time1: 0s;
+$time2: $time1 + $step;
+$time3: $time2 + $step;
+$time4: $time3 + $step;
+$time5: $time4 + $step;
+$time6: $time5 + $step;
+$time7: $time6 + $step;
+$time8: $time7 + $step;
+$time9: $time8 + $step;
+$time10: $time9 + $step;
+$time11: $time10 + $step;
+$time12: $time11 + $step;
+$time13: $time12 + $step;
+$time14: $time13 + $step;
+$time15: $time14 + $step;
+$time16: $time15 + $step;
+$time17: $time16 + $step;
+$time18: $time17 + $step;
+$time19: $time18 + $step;
+$time20: $time19 + $step;
+$time21: $time20 + $step;
+$time22: $time21 + $step;
+$time23: $time22 + $step;
+$time24: $time23 + $step;
+
+
+// медиа
+$desktop: 'max-width: 1199px';
+$tablet: 'max-width: 991px';
+$mobile: 'max-width: 767px';
+$mobileS: 'max-width: 575px';
+
+// колонки
+$col1: 8.33%;
+$col2: 16.66%;
+$col3: 25%;
+$col4: 33.33%;
+$col5: 41.66%;
+$col6: 50%;
+$col7: 58.33%;
+$col8: 66.66%;
+$col9: 75%;
+$col10: 83.33%;
+$col11: 91.66%;
+$col12: 100%;

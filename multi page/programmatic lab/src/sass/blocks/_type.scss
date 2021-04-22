@@ -1,0 +1,135 @@
+// типография
+.t_link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0062CC;
+  text-decoration: underline;
+}
+
+.t_title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #222642;
+  line-height: 1.2;
+}
+
+.t_subtitle {
+  font-size: 36px;
+  font-weight: 900;
+  color: #222642;
+  line-height: 40px;
+}
+
+.t_likeh3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #222642;
+  // line-height: 40px;
+}
+
+// думаю отсюда перенести в бади стили по шрифту
+.t_paragraph {
+  font-size: 18px;
+  color: #5F5F61;
+  line-height: 1.5;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+// временно скрыл, это для главной страницы
+.t_title_main {
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 3.5px;
+  line-height: 70px;
+  color: #fff;
+}
+
+.t_title_mob {
+  display: none;
+}
+
+.t_label {
+  display: block;
+  font-size: 12px;
+  color: #9A9A9A;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.t_contacts {
+  display: inline-block;
+  color: $cSecond;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.t_caption {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+
+// временно скрыл, это для главной страницы
+  .t_title_main {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .t_title {
+    font-size: 30px;
+  }
+
+  .t_subtitle {
+    font-size: 24px;
+  }
+
+  .t_paragraph {
+    font-size: 16px;
+  }
+
+  .aboutus .t_title {
+    margin-bottom: 30px;
+  }
+
+// временно скрыл, это для главной страницы
+  .t_title_main {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .t_caption {
+    font-size: 22px;
+    // margin: 0 auto;
+  }
+
+  .t_title_desc {
+    display: none;
+  }
+
+  .t_title_mob {
+    display: block;
+  }
+
+  .t_label {
+    color: #efeeee;
+  }
+
+
+}
+
+
+@media (max-width: 575px) {
+  .t_title br {
+    display: none;
+  }
+}

@@ -1,0 +1,160 @@
+
+.block3 {
+  padding: 75px 0 90px;
+  text-align: center;
+  background-image: linear-gradient(222.56deg, #3BFFE0 18.92%, #FFDA69 105.74%);
+
+  .title {
+    max-width: 650px;
+    margin: 0 auto 40px;
+  }
+}
+
+
+.block3__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 888px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.block3__col {
+  padding: 0 35px;
+  margin-bottom: 30px;
+  width: 33%;
+}
+
+.block3__item {
+  
+}
+
+.block3__img {
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin-bottom: 20px;
+}
+.block3__img_1 {
+  background-image: url(../img/blcok3_ico1.png);
+}
+.block3__img_2 {
+  background-image: url(../img/blcok3_ico2.png);
+}
+.block3__img_3 {
+  background-image: url(../img/blcok3_ico3.png);
+}
+.block3__img_4 {
+  background-image: url(../img/blcok3_ico4.png);
+}
+.block3__img_5 {
+  background-image: url(../img/blcok3_ico5.png);
+}
+.block3__img_6 {
+  background-image: url(../img/blcok3_ico6.png);
+}
+
+
+.block3__btn {
+  position: relative;
+  text-align: center;
+  // max-width: 380px;
+  // margin: 0 auto;
+
+  .btn {
+    position: relative;
+    z-index: 10;
+
+    // background: transparent;
+    // outline: green solid 1px;
+  }
+
+  .btn:hover ~ .block3__bitcoin .block3__bitcoin1 {
+    transform: translate(63px,-62px) rotate(23deg);
+  }
+  .btn:hover ~ .block3__bitcoin .block3__bitcoin2 {
+    transform: translate(-13px,-52px) rotate(-12deg);
+  }
+}
+
+.block3__bitcoin {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  height: 110px;
+  width: 100%;
+  overflow: hidden;
+
+  // outline: red solid 1px;
+
+  img {
+    position: absolute;
+    left: calc(50% + 64px);
+    bottom: -50px;
+    transition: all 0.5s;
+  }
+}
+
+.block3__bitcoin1 {
+
+}
+.block3__bitcoin2 {
+
+}
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+
+}
+
+@media ($mobile) {
+
+  .block3__col {
+    padding: 0 35px;
+    // margin-bottom: 30px;
+    width: 50%;
+  }
+  .block3 {
+    padding: 70px 0 80px;
+  }
+
+
+}
+
+@media ($mobileS) {
+
+  .block3__bitcoin {
+
+    img {
+      left: 42%;
+    }
+  }
+
+  .block3__list {
+    margin-bottom: 70px;
+  }
+
+  .block3__col {
+    padding: 0 35px;
+    // margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .block3 {
+
+  .title {
+    margin: 0 auto 30px;
+  }
+}
+
+
+}
+
+
+

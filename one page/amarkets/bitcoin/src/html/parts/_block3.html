@@ -1,0 +1,34 @@
+{% macro main(data) %}
+
+
+<div class="block3">
+  <div class="container">
+    <h2 class="title">Получи максимум выгоды <span class="nowrap">от торговли</span> <span class="nowrap">в AMarkets</span></h2>
+
+    <div class="block3__list">
+      {% for item in data %}
+
+      <div class="block3__col">
+        <div class="block3__item">
+          <div class="block3__img block3__img_{{ item[1]}}"></div>
+          <div class="block3__txt">{{ item[0] | safe }}</div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+
+    <div class="block3__btn">
+      <a href="#" class="btn btn_gr">
+        <span>Зарегистрироваться</span>
+      </a>
+      <div class="block3__bitcoin">
+        <img class="block3__bitcoin1" src="img/bitcoin.png" alt="">
+        <img class="block3__bitcoin2" src="img/bitcoin.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endmacro %}

@@ -1,0 +1,740 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #828282
+
+::selection
+	background-color: $accent
+	color: #fff
+
+[type="checkbox"]
+	&:not(:checked), &:checked
+		position: absolute
+		left: -9999px
+	&:not(:checked) + label, &:checked + label
+		position: relative
+		padding-left: 40px
+		margin-top: 20px
+		margin-bottom: 0
+		width: 295px
+		cursor: pointer
+	&:not(:checked) + label:before, &:checked + label:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 26px
+		height: 26px
+		border: 2px solid #ccc
+		background: #fff
+		border-radius: 4px
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
+	&:not(:checked) + label:after, &:checked + label:after
+		content: '✔'
+		position: absolute
+		top: 7px
+		left: 5px
+		width: 17px
+		height: 12px
+		background-image: url('../img/Group.png')
+		background-repeat: no-repeat
+		font-size: 0px
+		line-height: 0.8
+		color: $text-orange
+		transition: all .2s
+	&:not(:checked) + label:after
+		opacity: 0
+		transform: scale(0)
+	&:checked + label:after
+		opacity: 1
+		transform: scale(1)
+	&:disabled
+		&:not(:checked) + label:before
+			box-shadow: none
+			border-color: #bbb
+			background-color: #ddd
+		&:checked + label
+			&:before
+				box-shadow: none
+				border-color: #bbb
+				background-color: #ddd
+			&:after
+				color: #999
+		+ label
+			color: #aaa
+	&:checked:focus + label:before, &:not(:checked):focus + label:before
+		border: 2px dotted $text-orange
+
+label:hover:before
+	border: 2px solid $text-orange !important
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-weight: 400
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+		&:required:valid
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.header_bg
+	background-image: url('../img/top-img.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center 0
+
+.header_info
+	width: 100%
+	margin: 120px 0 125px 0
+	h1
+		font-family: RobotoBlack, sans-serif
+		font-style: normal
+		font-weight: 900
+		line-height: normal
+		font-size: 32px
+	h2
+		display: block
+		margin-top: 25px
+		font-family: RobotoRegular, sans-serif
+		font-style: normal
+		font-weight: normal
+		line-height: normal
+		font-size: 27px
+		color: #4D4D4D
+	>span
+		display: block
+		margin-top: 65px
+		font-family: RobotoMedium, sans-serif
+		font-style: normal
+		font-weight: 500
+		line-height: normal
+		font-size: 26px
+		text-transform: uppercase
+		color: $text
+		span
+			display: inline-block
+			color: $text-orange
+
+a.button
+	display: block
+	margin-top: 35px
+	text-align: center
+	line-height: 52px
+	max-width: 295px
+	height: 52px
+	font-size: 18px
+	color: $text-while
+	text-transform: uppercase
+	background-color: $text-orange
+	border-radius: 5px
+	transition: 0.4s
+	&:hover
+		text-decoration: none
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+a.button.button_black
+	background: $text
+	border-radius: 5px
+	&:hover
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+.section2
+	padding-top: 75px
+	padding-bottom: 90px
+
+.section2_register
+	display: block
+	margin: -140px auto 80px
+	padding: 35px 100px
+	max-width: 1147px
+	background: $text-orange
+	box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.09)
+	a
+		margin-top: 0
+
+.section2_register_text
+	font-family: RobotoLight, sans-serif
+	font-style: normal
+	font-weight: 300
+	line-height: normal
+	font-size: 22px
+	color: $text
+
+.title_section
+	display: block
+	text-align: center
+	margin: 0px 0 55px
+	font-family: RobotoBold, sans-serif
+	font-style: normal
+	font-weight: bold
+	line-height: normal
+	font-size: 30px
+	text-transform: uppercase
+	color: $text
+
+.block_subject
+	display: block
+	width: 100%
+	padding: 0
+	margin: 0
+	li
+		display: block
+		width: 100%
+		list-style-type: none
+		margin-bottom: 30px
+	li:last-child
+		margin-bottom: 0
+
+.block_subject_text
+	font-family: RobotoLight, sans-serif
+	font-style: normal
+	font-weight: 300
+	line-height: normal
+	font-size: 19px
+
+.section3_bg
+	background-color: $bg-color-gray
+
+.section3
+	padding-top: 45px
+	padding-bottom: 60px
+
+.section3_title
+	display: block
+	margin-bottom: 47px
+	max-width: 658px
+	font-family: RobotoMedium, sans-serif
+	font-style: normal
+	font-weight: 500
+	line-height: normal
+	font-size: 26px
+
+.section3_text
+	display: block
+	width: 100%
+	h3
+		display: block
+		margin-bottom: 30px
+		font-family: RobotoMedium, sans-serif
+		font-style: normal
+		font-weight: 500
+		line-height: normal
+		font-size: 22px
+		color: $text
+	p
+		display: block
+		margin-bottom: 30px
+		font-family: RobotoLight, sans-serif
+		font-style: normal
+		font-weight: 300
+		line-height: normal
+		font-size: 19px
+		color: #5A5A5A
+
+.section3_img1
+	display: block
+	width: 199px
+	margin: 0 auto
+
+.section3_img2
+	display: block
+	width: 150px
+	margin: 0 auto	
+
+.section4
+	padding-top: 60px
+	padding-bottom: 60px
+	img
+		width: 100%
+		margin-top: 20px
+		margin-bottom: 20px
+
+.section5_bg
+	background-color: #eceff4
+
+.section5
+	padding-top: 65px
+	padding-bottom: 80px
+
+.section5_video
+	position: relative
+	z-index: 10
+	display: block
+	margin-top: 10px
+	width: 100%
+	height: 286px
+
+.section5_title
+	color: #000
+	font-family: RobotoBold, sans-serif
+	font-style: normal
+	font-weight: bold
+	line-height: normal
+	font-size: 29px
+	text-transform: uppercase
+	span
+		color: $text-orange
+
+.section5_block_info
+	margin-top: -241px
+	padding: 50px 100px 45px 355px
+	display: block
+	background-color: #252E37
+	width: 91.5%
+	h3
+		color: #ffffff
+		font-family: RobotoMedium, sans-serif
+		font-style: normal
+		font-weight: 500
+		line-height: normal
+		font-size: 22px
+	span
+		color: #DADADA
+		font-family: RobotoLight, sans-serif
+		font-style: normal
+		font-weight: 300
+		line-height: normal
+		font-size: 19px
+
+.section5_2_bg
+	background-image: url('../img/bg.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+
+.section5_2
+	padding-top: 50px
+	padding-bottom: 80px
+	a
+		max-width: 364px
+		margin: 0 auto
+
+.section5_2_title
+	display: block
+	margin: 0 auto
+	color: #fff
+	max-width: 600px
+	font-family: RobotoBold, sans-serif
+	font-style: normal
+	font-weight: bold
+	line-height: normal
+	font-size: 30px
+	text-align: center
+	text-transform: uppercase
+	span
+		color: $text-orange
+
+.section5_2_subtitle
+	display: block
+	margin: 35px auto 50px
+	max-width: 1050px
+	text-align: center
+	font-family: RobotoLight, sans-serif
+	font-style: normal
+	font-weight: 300
+	line-height: normal
+	font-size: 30px
+	color: #DADADA
+
+.section5_2_text
+	display: block
+	margin: 0 auto 30px
+	max-width: 550px
+	font-family: RobotoMedium, sans-serif
+	font-style: normal
+	font-weight: 500
+	line-height: normal
+	font-size: 20px
+	text-align: center
+	color: $text-orange
+	span
+		color: #DADADA
+
+.section6
+	padding-top: 60px
+	padding-bottom: 60px
+
+.section6_img_money
+	margin-top: 40px
+	margin-left: 80px
+
+.section6_text
+	display: block
+	margin: 0 30px 0 80px
+	font-family: RobotoLight, sans-serif
+	font-style: normal
+	font-weight: 300
+	line-height: normal
+	font-size: 24px
+
+.section6_img_top
+	display: block
+	margin-bottom: 15px
+
+.section6_img_bot
+	display: block
+	margin-top: 25px
+	margin-right: 30px
+	float: right
+
+.section7_bg
+	background-color: #252E37
+	box-shadow: inset 0px 4px 42px rgba(0, 0, 0, 0.1)
+
+.section7
+	padding-top: 60px
+	padding-bottom: 70px
+
+.section7_title
+	display: block
+	margin-bottom: 50px
+	text-align: center
+	color: #fff
+	font-family: RobotoBold, sans-serif
+	font-style: normal
+	font-weight: bold
+	line-height: normal
+	font-size: 30px
+	text-transform: uppercase
+
+.first_time
+	display: block
+	margin-bottom: 25px
+	color: #fff
+	text-align: center
+	line-height: 36px
+	font-family: RobotoMedium, sans-serif
+	font-style: normal
+	font-weight: 500
+	font-size: 19px
+	width: 100%
+	height: 36px
+	background-color: #F28600
+
+.second_time
+	display: block
+	margin-bottom: 25px
+	color: #fff
+	text-align: center
+	line-height: 36px
+	font-family: RobotoMedium, sans-serif
+	font-style: normal
+	font-weight: 500
+	font-size: 19px
+	width: 100%
+	height: 36px
+	background-color: rgba(242, 134, 0, 0.62)
+
+.section7_text
+	font-family: RobotoLight, sans-serif
+	font-style: normal
+	font-weight: 300
+	line-height: normal
+	font-size: 19px
+	color: #DADADA
+
+.section8
+	padding-top: 60px
+	padding-bottom: 160px
+
+.section8.section8_2
+	padding-bottom: 35px
+
+.section8_title
+	display: block
+	margin-bottom: 60px
+	text-align: center
+	font-family: RobotoBold, sans-serif
+	font-style: normal
+	font-weight: bold
+	line-height: normal
+	font-size: 30px
+	text-transform: uppercase
+	color: $text
+
+.section8_block
+	display: block
+	width: 100%
+	margin: 0
+	padding: 0
+	li
+		margin-bottom: 40px
+		list-style-type: none
+		width: 100%
+	li:last-child
+		margin-bottom: 0
+
+.section8_number
+	position: relative
+	bottom: -7px
+	font-family: RobotoBold, sans-serif
+	font-style: normal
+	font-weight: bold
+	line-height: 55px
+	font-size: 55px
+	text-transform: uppercase
+	color: $text-orange
+
+.section8_text
+	display: block
+	margin-bottom: 5px
+	padding-right: 50px
+	font-family: RobotoLight, sans-serif
+	font-style: normal
+	font-weight: 300
+	line-height: normal
+	font-size: 19px
+
+.section8_indent
+	position: absolute
+	top: 100%
+	left: 0
+	width: 190px
+	height: 1px
+	background-color: $text-orange
+
+.section9_bg
+	background-image: url('../img/Монтажная область 1 2.1.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	
+.section9
+	padding-top: 200px
+	padding-bottom: 50px
+
+.section9.section9_2
+	padding-top: 100px
+
+.form
+	position: relative
+	display: block
+	margin: -300px auto 0 auto
+	padding: 40px 40px 15px 40px
+	background-color: #252E37
+	box-shadow: 0px 0px 41px rgba(0, 0, 0, 0.09)
+	max-width: 1040px
+	input
+		border: none
+		padding: 0 33px 0 23px
+		width: 191px
+		height: 43px
+		background-color: #DADADA
+		font-family: RobotoLight, sans-serif
+		font-style: normal
+		font-weight: 300
+		line-height: normal
+		font-size: 13px
+		color: $text
+	input[type="checkbox"]
+		cursor: pointer
+		display: inline-block
+		border-radius: 5px
+		width: 26px
+		height: 26px
+	label
+		display: inline-block
+		cursor: pointer
+		width: 255px
+		font-family: RobotoLight, sans-serif
+		font-style: normal
+		font-weight: 300
+		line-height: normal
+		font-size: 12px
+		color: #FFFFFF
+	button.form_button
+		display: block
+		cursor: pointer
+		border: none
+		text-align: center
+		line-height: 43px
+		width: 295px
+		height: 43px
+		font-size: 18px
+		color: $text-while
+		text-transform: uppercase
+		background-color: $text-orange
+		border-radius: 5px
+		transition: 0.4s
+		&:hover
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	h2.form_title
+		display: block
+		margin-bottom: 20px
+		font-family: RobotoMedium, sans-serif
+		font-style: normal
+		font-weight: 500
+		line-height: 26px
+		font-size: 20px
+		text-transform: uppercase
+		color: #FFFFFF
+		span
+			display: inline-block
+			color: $text-orange
+
+.section9_block_info
+	display: block
+	width: 100%
+	h3.section9_title
+		display: block
+		margin-bottom: 20px
+		font-family: RobotoBold, sans-serif
+		font-style: normal
+		font-weight: bold
+		line-height: normal
+		font-size: 21px
+		text-transform: uppercase
+		color: $text
+	p
+		display: block
+		margin-bottom: 20px
+		font-family: RobotoLight, sans-serif
+		font-style: normal
+		font-weight: 300
+		line-height: normal
+		font-size: 19px
+		color: #5A5A5A
+	p:last-child
+		margin-bottom: 40px
+
+.section10
+	padding-top: 40px
+	padding-bottom: 90px
+	box-shadow: 0px -21px 21px -21px rgba(0,0,0,.09), 0px 21px 21px -21px rgba(0,0,0,.09)
+	form
+		margin-top: 0px
+		margin-bottom: 75px
+
+.section10_title
+	display: block
+	font-family: RobotoBold, sans-serif
+	font-style: normal
+	font-weight: bold
+	line-height: normal
+	font-size: 30px
+	text-transform: uppercase
+	color: #000
+
+.section10_subtitle
+	display: block
+	margin: 10px 0 30px
+	max-width: 450px
+	font-family: RobotoLight, sans-serif
+	font-style: normal
+	font-weight: 300
+	line-height: normal
+	font-size: 19px
+	color: $text
+
+.section10_block_info
+	display: block
+	width: 100%
+	padding: 0 0 0 30px
+	margin: 0 0 0 0
+	list-style-image: url('../img/Line.png')
+	li
+		font-family: RobotoLight, sans-serif
+		font-style: normal
+		font-weight: 300
+		line-height: 30px
+		font-size: 19px
+		color: #5A5A5A
+
+.section10_video
+	display: block
+	width: 100%
+	padding-left: 50px
+	height: 286px
+
+.form.form_transparent
+	background-color: inherit
+	margin: -40px 0 0 0
+	padding: 0
+	box-shadow: none
+	h2.form_title
+		color: $text
+	label
+		color: #5A5A5A
+
+.section10_bot
+	padding-bottom: 20px
+
+.thanks_bg
+	background-image: url('../img/thanks-bg.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	height: 100vh
+
+.thanks
+	padding-top: 65px
+	padding-bottom: 65px
+
+.thanks_block_info
+	h2
+		font-family: RobotoBlack, sans-serif
+		font-style: normal
+		font-weight: 900
+		line-height: normal
+		font-size: 33px
+		color: $text
+	p
+		display: block
+		margin-top: 30px
+		font-family: RobotoRegular, sans-serif
+		font-style: normal
+		font-weight: normal
+		line-height: normal
+		font-size: 27px
+		color: #5A5A5A
+	span
+		display: block
+		margin-top: 50px
+		max-width: 450px
+		font-family: RobotoRegular, sans-serif
+		font-style: normal
+		font-weight: normal
+		line-height: normal
+		font-size: 22px
+		color: #787878
+
+.thanks_link
+	padding: 0
+	margin: 20px 0 0 0
+	li
+		display: inline-block
+		margin: 0 10px
+	li:first-child
+		margin-left: 0
+	li:last-child
+		text-decoration: underline
+		margin-right: 0
+
+
+.section5_video img
+	max-width: 100%;
+
+
+
+@import "media" // Always at the end

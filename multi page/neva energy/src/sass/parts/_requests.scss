@@ -1,0 +1,164 @@
+.requests__caption {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #9A9A9A;
+}
+
+.requestsItem {
+  position: relative;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.09);
+  margin-bottom: 15px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    background-color: #10A519;
+  }
+
+  &.completed {
+    box-shadow: none;
+
+    &::before {
+      background-color: #D0021B;
+    }
+
+    .requestsItem__status::before {
+      background-color: #D0021B;
+    }
+  }
+}
+
+.requestsItem__status {
+  position: relative;
+  white-space: nowrap;
+}
+
+.requestsItem__status::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #43DC4C;
+  margin-right: 10px;
+}
+
+.requestsItem__next {
+  white-space: nowrap;
+  
+  a {
+    font-weight: 400;
+    font-size: 12px;
+    color: #0C6BC9;
+    text-decoration: none;
+  }
+
+  .fa {
+    margin-left: 6px;
+  }
+
+}
+
+.requestsItem__info {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #A1A1A1;
+}
+
+.requestsItem__details {
+
+  .fa {
+    font-size: 14px;
+    color: #A1A1A1;
+    text-decoration: none;
+  }
+}
+
+.requestsItem__set {
+  margin-right: 15px;
+}
+
+.requests__header {
+  display: flex;
+  padding: 0 30px 20px;
+}
+
+.requestsItem__col {
+  width: 25%;
+  padding: 0 15px;
+
+  &:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+  .requestsItem {
+    padding: 20px 10px;
+  }
+  .requests__header {
+    padding: 20px 10px;
+  }
+}
+
+@media ($mobile) {
+
+}
+
+@media ($smobile) {
+
+.content__header {
+  text-align: center;
+}
+
+.requestsItem__status  {
+  &::before {
+    display: inline-block;
+    vertical-align: middle;
+      width: 15px;
+      height: 15px;
+    }
+  span {
+   display: none;
+  }
+}
+
+.requests__caption {
+  font-size: 12px;
+  text-align: left;
+}
+.requestsItem__col {
+  padding: 0 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.requestsItem__link {
+  display: none;
+}
+
+.requestsItem__next {
+  .fa-long-arrow-right {
+    font-size: 20px;
+  }
+}
+
+}
+

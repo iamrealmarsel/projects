@@ -1,0 +1,56 @@
+{% macro step1() %}
+
+  <div class="steps">
+  <!-- <span>Выполняется</span> -->
+  <span class="step active">Шаг 1</span>
+  <span class="step">Шаг 2</span>
+  <span class="step">Шаг 3</span>
+  <span class="step">Шаг 4</span>
+  </div>
+
+{% endmacro %}
+
+{% macro step2() %}
+
+  <div class="steps">
+  <!-- <span>Выполнено</span> -->
+  <span class="step completed">Шаг 1</span>
+  <!-- <span>Выполняется</span> -->
+  <span class="step active">Шаг 2</span>
+  <span class="step">Шаг 3</span>
+  <span class="step">Шаг 4</span>
+  <a href="#" class="steps__prev"><i class="fa fa-long-arrow-left"></i>Перейти к шагу 1</a>
+  </div>
+
+{% endmacro %}
+
+{% macro step3() %}
+
+  <div class="steps">
+  <!-- <span>Выполнено</span> -->
+  <span class="step completed">Шаг 1</span>
+  <!-- <span>Выполнено</span> -->
+  <span class="step completed">Шаг 2</span>
+  <!-- <span>Выполняется</span> -->
+  <span class="step active">Шаг 3</span>
+  <span class="step">Шаг 4</span>
+  <a href="#" class="steps__prev"><i class="fa fa-long-arrow-left"></i>Перейти к шагу 2</a>
+  </div>
+
+{% endmacro %}
+
+{% macro step4() %}
+
+  <div class="steps">
+  <!-- <span>Выполнено</span> -->
+  <span class="step completed">Шаг 1</span>
+  <!-- <span>Выполнено</span> -->
+  <span class="step completed">Шаг 2</span>
+  <!-- <span>Выполнено</span> -->
+  <span class="step completed">Шаг 3</span>
+  <!-- <span>Выполняется</span> -->
+  <span class="step active">Шаг 4</span>
+  <a href="#" class="steps__prev"><i class="fa fa-long-arrow-left"></i>Перейти к шагу 3</a>
+  </div>
+
+{% endmacro %}

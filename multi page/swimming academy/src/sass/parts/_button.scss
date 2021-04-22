@@ -1,0 +1,63 @@
+.btn {
+  display: inline-block;
+  padding: 18px 24px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  background-color: $cBase;
+  font-size: 14px;
+  font-family: $ffBase;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: transparent;
+  box-shadow: 0 0 25px rgba(108,170,61,0.3);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: saturate($cBase, 20%);
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.btn_white {
+  background-color: #fff;
+  color: $cBlue;
+  box-shadow: none;
+}
+
+.btn_white:hover {
+  background-color: #fff;
+}
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+
+}
+
+@media ($smobile) {
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361 93.08">
+	<defs>
+		<style>
+		.cls-1 {
+			font-size: 28px;
+			font-family: Geometria-ExtraBold, Geometria;
+			letter-spacing: 0.04em;
+		}
+
+		.cls-1,
+		.cls-5 {
+			font-weight: 700;
+		}
+
+		.cls-2 {
+			letter-spacing: 0.02em;
+		}
+
+		.cls-3 {
+			letter-spacing: 0.04em;
+		}
+
+		.cls-4 {
+			letter-spacing: -0.06em;
+		}
+
+		.cls-5 {
+			font-size: 18px;
+			font-family: Geometria-Bold, Geometria;
+			letter-spacing: 0.29em;
+		}
+
+		.cls-6 {
+			letter-spacing: 0.28em;
+		}
+
+		.cls-7 {
+			letter-spacing: 0.29em;
+		}
+
+		.cls-8 {
+			fill: none;
+			stroke: #000;
+			stroke-miterlimit: 10;
+			stroke-width: 5px;
+		}
+		</style>
+	</defs>
+	<title>logo2(vers3)</title>
+	<g id="Layer_2" data-name="Layer 2">
+		<g id="Layer_1-2" data-name="Layer 1">
+			<text class="cls-1" transform="translate(15.67 43.41)">P
+				<tspan class="cls-2" x="19.52" y="0">R</tspan>
+				<tspan class="cls-3" x="40.49" y="0">OGRAMM</tspan>
+				<tspan class="cls-4" x="181.41" y="0">A</tspan>
+				<tspan x="201.6" y="0">TIC LAB</tspan>
+			</text>
+			<text class="cls-5" transform="translate(54.84 75.02)">
+				<!-- <tspan class="cls-6" x="124.49" y="0"></tspan> -->
+				<tspan class="cls-7" x="138.24" y="0">digital-агентство</tspan>
+			</text>
+			<path class="cls-8" d="M34.85,70.5" />
+			<polyline class="cls-8" points="34.85 70.5 2.5 70.5 2.5 2.5 349.5 2.5 349.5 70.5 317.05 70.5" />
+		</g>
+	</g>
+</svg>

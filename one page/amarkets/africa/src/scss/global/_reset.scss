@@ -1,0 +1,42 @@
+html * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  min-width: 320px;
+  font-family: $ffMajor;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 300;
+  color: $cFont;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+
+}
+
+@media ($mobileS) {
+  html, body {
+    font-size: 18px;
+  }
+}

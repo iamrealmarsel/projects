@@ -1,0 +1,53 @@
+{% macro main() %}
+
+<div class="about" id="about">
+  <div class="about__container">
+
+<div class="about__cnt">
+  <h2 class="title">О компании</h2>
+  <span class="desc">Немного о нас</span>
+  
+  <p class="about__txt">Центр детского плавания «____» успешно работает с ____ года и был создан для родителей, которые хотят и готовы развивать своего ребенка всесторонне, прививать им навыки здорового образа жизни и любовь к плаванию с первых дней. 
+  </p>
+  <div class="about__note">
+    <p class="about__brackets">“</p>
+    <div>
+      <p class="about__quote">Мы не просто учим плаванию — мы оздоравливаем вашего ребенка по специальным методикам!</p>
+      <p class="about__author">
+        <span class="about__name">Иван Иванов</span> <span class="about__post"> - Руководитель центра</span>
+      </p>
+    </div>
+  </div>
+
+</div>
+    
+    <form action="" class="form js-submit">
+
+      <div class="form__col">
+        <label class="label"><i class="fa fa-phone"></i><span>Ваш номер телефона:</span>
+        <input type="text" class="inp telMask" placeholder="+7 (___) ___-__-__" required="true" name="tel">
+        </label>
+      </div>
+          
+      <div class="form__col">
+        <label class="label"><i class="fa-user fa"></i><span>Ваше имя:</span>
+        <input type="text" class="inp" placeholder="Иван Иванов" required="true" name="name">
+        </label>
+      </div>
+          
+      <div class="form__col">
+        <button class="btn" type="submit">Оставить заявку</button>
+        <label class="label label_pers">
+          <input type="checkbox" required="true">
+          <i class="checkbox"></i>
+          <span>Вы соглашаетесь с условиями
+                обработки персональных данных</span>
+        </label>
+      </div>
+    
+    </form>
+    
+  </div>
+</div>
+
+{% endmacro %}

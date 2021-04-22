@@ -1,0 +1,143 @@
+.inputBg {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  height: 35px;
+  width: 100%;
+  padding: 0 25px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  // letter-spacing: 0.1em;
+  color: #000;
+  background-color: $gray-blue-light;
+  border-radius: 18px;
+  border: none;
+  outline: transparent;
+  &::-moz-placeholder { color: $gray-blue-dark; }
+  &:-ms-input-placeholder { color: $gray-blue-dark; }
+  &::-ms-input-placeholder { color: $gray-blue-dark; }
+  &::placeholder { color: $gray-blue-dark; } 
+  &::-webkit-input-placeholder { color: $gray-blue-dark; }
+}
+
+.inputBg--focus {
+  &:focus {
+    box-shadow: 0 0 0 2px $stroke-input;
+    background-color: #fff;
+  }
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: $gray-blue-light;
+  &::before {
+    @include fa-icon($fa-var-check, 12px, #000);
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+  }
+}
+
+
+.selectBrand,
+.selectSort {
+  display: inline-block;
+  vertical-align: middle;
+}
+.selectBrand {
+  width: 100px;
+}
+.selectSort {
+  width: 155px;
+}
+
+.ui-selectmenu-button.ui-button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.ui-selectmenu-button {
+  padding: 7px 5px 7px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: transparent;
+}
+
+.ui-selectmenu-text {
+  font-family: $fontFamily;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.ui-menu-item {
+  font-family: $fontFamily;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.ui-menu .ui-state-active {
+  margin: 0;
+  font-family: $fontFamily;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.ui-selectmenu-button:focus,
+.ui-selectmenu-button:hover,
+.ui-selectmenu-button:active {
+  border: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.ui-widget-content .ui-state-active {
+  border: none;
+}
+
+.ui-icon-triangle-1-s {
+  text-indent: 0;
+  text-align: center;
+}
+
+.ui-icon-triangle-1-s::before {
+  @include fa-icon($fa-var-angle-down, 14px, #000);
+}
+
+
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.selectBrand {
+  width: 115px;
+}
+
+.selectSort {
+  width: 175px;
+}
+
+
+
+}
+
+
+
+
+
+

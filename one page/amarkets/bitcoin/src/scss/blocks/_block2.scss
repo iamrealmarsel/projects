@@ -1,0 +1,284 @@
+
+.block2 {
+  padding: 75px 0 86px;
+  background-repeat: repeat-x, no-repeat;
+  background-position: calc(50% - 50px) 50%, 0% 0%;
+  background-image: 
+  url(../img/block2.png),
+  linear-gradient(238.96deg, #FF3366 0%, #BB6BD9 100%);
+
+
+  .title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+
+.block2__slogan {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: $ffMinor;
+  text-transform: uppercase;
+}
+
+.block2__list {
+  padding: 45px 120px;
+  padding-right: 80px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  margin-bottom: 35px;
+}
+
+.block2__item {
+  display: flex;
+  margin-bottom: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+
+    .block2___ico::before {
+      display: none;
+    }
+  }
+}
+
+.block2___ico {
+  display: inline-block;
+  position: relative;
+  margin-right: 50px;
+
+  img {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 13px;
+    top: 14px;
+    z-index: 1;
+    background-image: url(../img/blcok2_arrow.svg);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 90px;
+  }
+}
+
+.block2___ico_1 img {
+  left: -38px;
+  top: -28px;
+}
+.block2___ico_2 img {
+  left: 15px;
+  top: -20px;
+}
+.block2___ico_3 img {
+  left: -38px;
+  top: -25px;
+}
+
+.block2__num {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  vertical-align: top;
+  font-style: normal;
+  color: #D58483;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.block2__txt {
+  display: inline-block;
+  max-width: 672px;
+  vertical-align: top;
+}
+
+.block2__btn {
+  text-align: center;
+
+  .btn {
+    position: relative;
+  }
+}
+
+.block2__cat {
+  position: relative;
+  max-width: 380px;
+  margin: 0 auto;
+
+  .cat {
+    position: relative;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -3px;
+  }
+  .eye {
+    position: absolute;
+    right: 47px;
+    top: 114px;
+  }
+}
+
+.block2__eye01 {
+  position: absolute;
+  // z-index: 10;
+  right: 67px;
+  top: 127px;
+  width: 15px;
+  height: 15px;
+  // outline: red solid 1px;
+
+  .eye01 {
+    position: absolute;
+    left: 13%;
+    top: 10%;
+  }
+}
+
+.block2__eye02 {
+  position: absolute;
+  // z-index: 10;
+  width: 15px;
+  height: 15px;
+  right: 67px;
+  top: 170px;
+  // outline: red solid 1px;
+
+  .eye02 {
+    position: absolute;
+    left: 13%;
+    top: 9%;
+  }
+}
+
+.block2__slogan {
+  // margin-bottom: 30px;
+}
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+  .block2__slogan {
+    font-size: 30px;
+  }
+
+}
+
+@media ($mobile) {
+
+  .block2__list {
+    padding: 60px 30px 40px;
+    padding-left: 70px;
+  }
+  .block2__slogan {
+    font-size: 20px;
+  }
+  .block2 {
+    padding-bottom: 80px;
+  }
+
+}
+
+@media ($mobileS) {
+
+  .block2 {
+    padding-top: 70px;
+  }
+
+  .block2__list {
+    padding: 55px 30px 40px;
+    padding-left: 50px;
+  }
+
+  .block2___ico {
+    margin-right: 40px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .block2__item {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .block2___ico {
+    margin: 0 auto 30px;
+  }
+
+
+  .block2__cat {
+    max-width: 290px;
+
+    .cat {
+      width: 290px;
+    }
+    .eye {
+      width: 37px;
+      right: 35px;
+      top: 91px;
+      // z-index: 10;
+    }
+  }
+
+  .block2__eye01 {
+    position: absolute;
+    // z-index: 10;
+    right: 49px;
+    top: 101px;
+    width: 10px;
+    height: 10px;
+    // outline: red solid 1px;
+
+    .eye01 {
+      width: 9px;
+      left: 13%;
+      top: 10%;
+    }
+  }
+
+  .block2__eye02 {
+    position: absolute;
+    // z-index: 10;
+    width: 10px;
+    height: 10px;
+    right: 49px;
+    top: 133px;
+    // outline: red solid 1px;
+
+    .eye02 {
+      width: 9px;
+      left: 13%;
+      top: 9%;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+

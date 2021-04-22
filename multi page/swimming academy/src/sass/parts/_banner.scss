@@ -1,0 +1,79 @@
+.banner {
+  background-image: url(../img/tariffs_banner.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+}
+
+.banner__title {
+  font-family: $ffSecond;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+  max-width: 405px;
+}
+
+.banner__price {
+  padding-left: 40px;
+  padding-right: 15px;
+}
+
+.banner__value {
+  display: block;
+  text-align: center;
+  font-family: $ffSecond;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.banner__unit {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+  .banner {
+    padding: 30px;
+  }
+  
+}
+
+@media ($mobile) {
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .banner__price {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .banner__title {
+    margin-bottom: 30px;
+  }
+  
+}
+
+@media ($smobile) {
+  
+}
+
+
+
+
+
+

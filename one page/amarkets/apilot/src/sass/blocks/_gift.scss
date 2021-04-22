@@ -1,0 +1,293 @@
+.gift {
+	padding: 110px 0 170px;
+	background-image: url(../img/gift.jpg);
+	background-size: cover;
+	background-position: center;
+
+	.subtitle {
+		text-align: center;
+		margin-bottom: 120px;
+		color: #5FDE12;
+	}
+
+	.btn {
+		border: 1px solid #82FF36;
+		margin-bottom: 40px;
+	}
+}
+
+.gift__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+// счетчик
+
+.gift__counter {
+	// width: 350px;
+	width: auto;
+	margin: 0;
+	margin-bottom: 45px;
+	padding-bottom: 34px;
+}
+
+
+.flip-clock-wrapper ul {
+	height: 138px;
+	width: 78px;
+	margin: 0;
+	margin-right: 4px;
+	border-radius: 2px;
+}
+
+.flip-clock-wrapper ul:nth-of-type(2) {
+	margin-right: 25px;
+}
+
+.flip-clock-divider {
+	width: 0;
+}
+
+.flip-clock-divider .flip-clock-label {
+	color: #fff;
+	bottom: -66px;
+	top: auto;
+	font-size: 18px;
+	font-weight: 300;
+	font-family: $ffBase;
+	text-transform: uppercase;
+}
+
+.flip-clock-divider.seconds .flip-clock-label {
+	right: -118px;
+}
+.flip-clock-divider.minutes .flip-clock-label {
+	right: -112px;
+}
+
+.flip-clock-dot {
+	display: none;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+	color: #333;
+	font-family: $ffMinor;
+	font-size: 130px;
+	line-height: 130px;
+	font-weight: 400;
+	text-shadow: none;
+	border-radius: 2px;
+	background-color: #fff;
+	background-image: linear-gradient(180deg, #fff 0%, #fff 50%, #E0E0E0 50%, #E0E0E0 100%);
+}
+
+.flip-clock-wrapper ul li a div.up:after {
+	top: 68px;
+	// display: none;
+}
+
+.flip-clock-wrapper ul li a div.down {
+	border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.danger.flip-clock-wrapper ul li a div div.inn {
+	color: #fff;
+	background-color: #fff;
+	background-image: linear-gradient(180deg, #FF3B3B 0%, #FF3B3B 50%, #E03434 50%, #E03434 100%);
+}
+
+.gift__expire {
+	display: none;
+	// position: absolute;
+	// width: 100%;
+}
+.gift__count {
+	// position: absolute;
+	// width: 100%;
+}
+
+
+.gift__text {
+	position: relative;
+	// width: 100%;
+	max-width: 600px;
+	color: #fff;
+	font-size: 36px;
+}
+
+.gift__form {
+	max-width: 410px;
+}
+
+.gift__inp {
+	margin-bottom: 20px;
+}
+
+.gift__inp:nth-child(3)
+ {
+	margin-bottom: 40px;
+}
+
+
+@media (max-width: 1175px) {
+
+.gift__text {
+	max-width: 470px;
+}
+}
+
+@media (max-width: 991px) {
+
+	.gift__row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.gift__col {
+		display: flex;
+		// justify-content: space-between;
+		margin-bottom: 75px;
+		max-width: 730px;
+		width: 100%;
+	}
+
+	.gift__counter {
+		margin-right: 30px;
+	}
+
+	.gift__text {
+		font-size: 24px;
+		max-width: 330px;
+	}
+
+	.gift__form {
+		width: 100%;
+		max-width: 730px;
+	}
+
+	.gift__inps {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	.gift__inp {
+		width: 50%;
+		padding: 0 15px;
+		margin-bottom: 30px;
+	}
+
+	.gift .btn {
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+.gift__inps {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+	.gift__inp {
+		width: 100%;
+	}
+
+	.gift__col {
+		flex-direction: column;
+		width: auto;
+		align-items: center;
+	}
+
+	.gift__counter {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+
+	.gift__text {
+		text-align: center;
+	}
+
+	.gift .subtitle {
+		margin-bottom: 90px;
+	}
+
+	.gift {
+		padding: 90px 0 100px;
+	}
+
+	.gift__inp {
+		margin-bottom: 20px;
+	}
+
+	.gift__inp:nth-child(3)
+	 {
+		margin-bottom: 40px;
+	}
+
+
+
+}
+
+@media (max-width: 575px) {
+
+	.gift {
+		padding: 60px 0 70px;
+	}
+
+	.gift__counter {
+		// max-width: 350px;
+		// width: 100%;
+		// margin: 0 auto 40px;
+	}
+
+	.gift__text {
+		font-size: 18px;
+		max-width: 250px;
+		margin: 0 auto;
+	}
+
+	.gift .subtitle {
+		margin-bottom: 45px;
+	}
+
+	.gift__col {
+		width: 100%;
+		margin-bottom: 45px;
+	}
+
+	.flip-clock-wrapper ul li a div.up:after {
+		top: 56px;
+	}
+
+	.flip-clock-wrapper ul {
+		width: 60px;
+		height: 114px;
+	}
+
+	.flip-clock-wrapper ul li a div div.inn {
+		font-size: 100px;
+		line-height: 110px;
+	}
+
+	.flip-clock-wrapper ul:nth-of-type(2) {
+		margin-right: 20px;
+	}
+
+	.flip-clock-divider .flip-clock-label {
+		font-size: 14px;
+		bottom: -46px;
+	}
+
+	.flip-clock-divider.seconds .flip-clock-label {
+		right: -90px;
+	}
+	.flip-clock-divider.minutes .flip-clock-label {
+		right: -86px;
+	}
+
+}
+
+

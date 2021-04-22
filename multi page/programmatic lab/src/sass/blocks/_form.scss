@@ -1,0 +1,270 @@
+// кнопки
+
+.btn {
+  position: relative;
+  display: inline-block;
+  font-family: $ffBase;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  color: #222642;
+  text-transform: uppercase;
+  padding: 12px 14px;
+  padding-top: 14px;
+  outline: transparent;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  // z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  border-radius: 5px;
+  z-index: -1;
+  top: 50%;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+  transition: all 0.4s;
+}
+
+.btn_close {
+  background-image: linear-gradient(140deg, #FEB692 5%, #EA5455 100%);
+  color: #fff;
+  padding-top: 13px;
+}
+
+.btn_modal {
+  background-image: linear-gradient(140deg, #97ABFF 5%, #123597 100%);
+  color: #fff;
+  padding-top: 13px;
+}
+
+.btn_blue {
+  padding: 12px 18px;
+  padding-top: 14px;
+  border-radius: 2px;
+  background-color: #0062CC;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+
+.btn:hover::before {
+  box-shadow: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn_mob {
+  display: none;
+}
+
+
+.btn_mob_1 {
+  background-image: linear-gradient(140deg, #97ABFF 5%, #123597 100%);
+  color: #fff;
+}
+.btn_mob_2 {
+  background-image: linear-gradient(140deg, #81FBB8 5%, #28C76F 100%);
+  color: #fff;
+}
+.btn_mob_3 {
+  background-image: linear-gradient(140deg, #CE9FFC 5%, #7367F0 100%);
+  color: #fff;
+}
+.btn_mob_4 {
+  background-image: linear-gradient(140deg, #FEB692 5%, #EA5455 100%);
+  color: #fff;
+}
+.btn_mob_5 {
+  background-image: linear-gradient(140deg, #65FDF0 5%, #1D6FA3 100%);
+  color: #fff;
+}
+.btn_mob_6 {
+  background-image: linear-gradient(140deg, #FFE985 5%, #FA742B 100%);
+  color: #fff;
+}
+
+
+// кнопка градиент
+
+.btnGrad {
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.4s;
+  font-size: 0;
+  z-index: 10;
+}
+
+.btnGrad::before {
+  content: '';
+  position: absolute;
+  border: 0;
+  border-radius: 5px;
+  z-index: -1;
+  top: 50%;
+  bottom: 3px;
+  left: 16px;
+  right: 16px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+  transition: all 0.4s;
+}
+
+.btnGrad:hover::before {
+  box-shadow: none;
+}
+
+.btnGrad__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btnGrad__link:hover {
+  text-decoration: none;
+}
+
+#btnGradient stop {
+  transition: all 1s;
+}
+
+
+// инпуты
+
+.inp {
+  font-family: $ffBase;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  // padding: 0 0 10px;
+  padding-bottom: 1px;
+  border: 0;
+  border-bottom: solid #fff 1px;
+  color: #fff;
+  background-color: transparent;
+  outline: transparent;
+
+}
+
+.inp::-moz-placeholder { color: #fff; }
+.inp::-webkit-input-placeholder { color: #fff; }
+.inp:-ms-input-placeholder { color: #fff; }
+.inp::-ms-input-placeholder { color: #fff; }
+.inp::placeholder { color: #fff; } 
+
+
+.inpCol {
+  position: relative;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+.phSlide {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  line-height: 1;
+  cursor: text;
+  transition: all 0.3s;
+}
+
+label.error {
+  position: absolute;
+  font-size: 12px;
+  font-style: italic;
+  color: #e21515;
+  line-height: 42px;
+  right: 15px;
+  top: 0;
+  // top: 50%;
+  // transform: translateY(-50%);
+}
+
+.inp.error {
+  border-bottom: solid #e21515 1px;
+}
+
+
+.slide__form .inp:focus ~  .phSlide,
+.slide__form .inp.filled ~  .phSlide {
+  font-size: 12px;
+  bottom: 100%;
+}
+
+
+
+@media (max-width: 767px) {
+
+  .inp_desc {
+    display: none;
+  }
+
+  .btn_mob {
+    display: inline-block;
+
+  }
+
+  .btnGrad {
+    position: fixed;
+    top: 11px;
+    right: 50%;
+    transform: translatex(50%);
+    // left: calc(50% - 40px);
+    bottom: auto;
+    width: 120px;
+    height: 30px;
+    z-index: 250;
+  }
+
+  .btnGrad__link {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 700;
+    padding-top: 2px;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .btn_blue {
+    font-size: 14px;
+  }
+
+}
+
+
+@media (max-width: 374px) {
+
+  .btnGrad {
+    right: calc(50% - 25px);
+  }
+
+}
+
+
+
+
+
+

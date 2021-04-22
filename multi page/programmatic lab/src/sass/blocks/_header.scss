@@ -1,0 +1,214 @@
+.header {
+	position: relative;
+	margin-bottom: 60px;
+	padding: 30px 0;
+	// z-index: 10;
+	z-index: 200;
+	// cursor: pointer;
+
+}
+
+.header_black {
+	border-bottom: solid #E6E6E6 1px;
+	margin-bottom: 0;
+}
+
+.header_black .container {
+	// display: flex;
+	// justify-content: space-between;
+	// align-items: center;
+}
+
+.header_black .header__menu a {
+	color: #000;
+}
+
+.header:hover {
+	// background-color: red;
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.header__nav {
+	// display: none;
+	margin-left: auto;
+	margin-right: 50px;
+	width: 100%;
+	max-width: 450px;
+}
+
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__menu li {
+	line-height: 1;
+}
+
+.header__menu a {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 1.5px;
+}
+
+
+.header__burger {
+	cursor: pointer;
+}
+
+.burger {
+	position: relative;
+	width: 33px;
+	height: 23px;
+}
+
+
+.burger:hover .burger__line,
+.burger:hover::before,
+.burger:hover::after {
+	left: 0;
+}
+
+.burger::before,
+.burger::after,
+.burger__line {
+	position: absolute;
+	content: '';
+	height: 3px;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	transition: all 0.3s;
+}
+
+.burger::before {
+	top: 0;
+}
+
+.burger__line {
+	left: 50%;
+	top: 50%;
+	margin-top: -1px;
+}
+
+
+.burger::after {
+	left: 5px;
+	bottom: 0;
+}
+
+.burger_black::before,
+.burger_black::after,
+.burger_black .burger__line
+{
+	background-color: #000;
+}
+
+
+
+@media (max-width: 991px) {
+	.header__nav {
+		display: none;
+	}
+
+	.header {
+		margin-bottom: 30px;
+	}
+
+	.header_black {
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 767px) {
+
+	.burger {
+		height: 22px;
+	}
+	
+	.header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		// display: none;
+		margin: 0;
+		padding: 15px 0;
+		padding-bottom: 0;
+		padding-top: 15px;
+	}
+
+	.header_black {
+		position: relative;
+		padding-bottom: 15px;
+	}
+
+	.header__logo img {
+		width: 90px;
+	}
+
+	.header__logo {
+
+	}
+
+
+}
+
+
+
+
+// логотип
+
+// .cls-1 {
+// 	font-size: 28px;
+// 	font-family: Geometria-ExtraBold, Geometria;
+// 	letter-spacing: 0.04em;
+// }
+
+// .cls-1,
+// .cls-5 {
+// 	font-weight: 700;
+// 	fill: #fff;
+// }
+
+// .cls-2 {
+// 	letter-spacing: 0.02em;
+// }
+
+// .cls-3 {
+// 	letter-spacing: 0.04em;
+// }
+
+// .cls-4 {
+// 	letter-spacing: -0.06em;
+// }
+
+// .cls-5 {
+// 	font-size: 18px;
+// 	font-family: Geometria-Bold, Geometria;
+// 	letter-spacing: 0.29em;
+// }
+
+// .cls-6 {
+// 	letter-spacing: 0.28em;
+// }
+
+// .cls-7 {
+// 	letter-spacing: 0.29em;
+// }
+
+// .cls-8 {
+// 	fill: none;
+// 	stroke: #fff;
+// 	stroke-miterlimit: 10;
+// 	stroke-width: 5px;
+// }

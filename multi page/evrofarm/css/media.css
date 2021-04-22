@@ -1,0 +1,478 @@
+@media (max-width: 1199px) {
+
+  .reviews__right {
+    padding-right: 0;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .footer .row > div {
+    margin-bottom: 20px;
+  }
+  .header__nav li a {
+    /*padding: 20px 0px;*/
+  }
+  .pharma__filter {
+    align-items: flex-end;
+    /*justify-content: space-around;*/
+    padding: 20px;
+  }
+  .pharma__filter label {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .pharmaCard__headline {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .pharmaCard__headline ul {
+    margin-top: 10px;
+    order: 2;
+  }
+
+  .pharmaCard__tab {
+  }
+
+  .reviews__right {
+    margin: 0;
+    text-align: center;
+  }
+  .reviews__rate {
+    display: block;
+    margin: 0;
+  }
+
+  .header__nav {
+    justify-content: space-around;
+
+  }
+
+  .offers__logo,
+  .offers__btn {
+    padding: 0;
+  }
+  .pharma__itemImg img {
+    max-width: 120px;
+  }
+  .offers__img img {
+    max-width: 120px;
+  }
+  .pharmaCard__table .pharma__rate {
+    margin: 0;
+  }
+  .pharma__rate {
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .pharmaCard__titleWrap {
+    width: auto;
+  }
+/*  .pharma__filter {
+    justify-content: space-around;
+  }*/
+  .pharma__filter label {
+    margin-bottom: 15px;
+  }
+  .pharma__filter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pharma__filter > div {
+    margin-bottom: 15px;
+  }
+  .pharma__filter .btn {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .productBannerList > div:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .subheader__searchForm .inp {
+    width: 100%;
+  }
+  .footer__socs {
+    text-align: right;
+  }
+  .catalog__category {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .catalog__category li {
+    width: 50%;
+  }
+  .catalog__priceInp {
+    /*justify-content: space-around;*/
+  }
+  .catalog__priceInp .inp {
+    max-width: 320px;
+  }
+  .catalog__priceInp .inp:first-child {
+    margin-right: 30px;
+  }
+  .catalog__filter {
+    margin-bottom: 30px;
+  }
+  .pharma__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .pharma__item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 48%;
+  }
+  .pharma__item > div {
+    width: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .pharma__itemName a {
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+
+  .offers__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .offers__item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 48%;
+  }
+  .offers__item > div {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .pharmaCard__tableWrap {
+    flex-direction: column;
+  }
+  .pharmaCard__table:nth-child(2) table {
+    margin-bottom: 30px;
+  }
+  .pharmaCard__tableWrap {
+
+  }
+  .pharmaCard__info .btn {
+    align-self: flex-start;
+  }
+
+  .pharma__delivery, .pharma__country {
+    margin-right: 0;
+  }
+  .pharma__item {
+    width: 100%;
+  }
+  .pharma__reset {
+    margin: 0 auto;
+  }
+  .pharma__reset .btn {
+    width: 160px;
+    margin-bottom: 0;
+  }
+  .productCard__header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .productCard__img {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .productCard__info,
+  .productCard__shape {
+    width: auto;
+  }
+  .productCard__info {
+    margin: 0 0 30px;
+
+  }
+  .productCard__title::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .productCard__table {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 767px) {
+  
+  #magicLine {
+    display: none;
+  }
+
+  .reviews__bottom {
+    justify-content: center;
+  }
+  .pharmaCard__pricelist {
+    padding: 10px;
+  }
+  .pharmaCard__searchForm {
+    max-width: none;
+  }
+  .pharmaCard__info .btn {
+    margin: 0 auto;
+  }
+  .pharmaCard__tableMain th {
+    font-size: 14px;
+  }
+  .pharmaCard__tableMain td {
+    font-size: 14px;
+  }
+
+  .pharmaCard__pricelist {
+    flex-direction: column;
+  }
+  .pharmaCard__pricelist h2 {
+    margin-bottom: 10px;
+  }
+  .pharmaCard__img {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .pharmaCard__titleWrap {
+    width: auto;
+  }
+/*  .pharmaCard__info td:first-child {
+    width: 40%;
+  }*/
+  .pharmaCard__table {
+    align-items: center;
+  }
+  .pharmaCard__table table {
+    width: 100%;
+  }
+  .pharmaCard__table:first-child {
+    margin-right: 0;
+  }
+  .pharmaCard__header {
+    /*text-align: center;*/
+    flex-direction: column;
+    align-items: center;
+  }
+  .productCard__accordion {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productCard__close {
+    padding-right: 20px;
+    padding-left: 0;
+    font-size: ;
+  }
+  .productCard__close::before {
+    right: 0;
+  }
+  .offers__header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.productCard__img {
+  margin-bottom: 30px;
+  margin-right: 0;
+}
+
+.productCard__bottom {
+  flex-direction: column;
+}
+.productCard__price {
+  margin-bottom: 15px;
+}
+
+
+.productCard__cell {
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: auto;
+}
+.productCard__cell:first-child {
+  width: auto;
+  padding: 0;
+  text-align: center;
+}
+.productCard__cell:last-child {
+  width: auto;
+}
+
+  .offers__item {
+    width: 100%;
+  }
+  .header__nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin: 0 auto;
+  }
+  .header .static {
+    position: static;
+  }
+  .subheader {
+    /*padding: 10px 0 0;*/
+  }
+  .subheader__searchForm {
+    text-align: left;
+    /*margin-bottom: 10px;*/
+  }
+  .subheader__crumb {
+    /*margin-bottom: 10px;*/
+  }
+  .subheader .row {
+    min-height: 80px;
+  }
+  .footer__socs {
+    text-align: left;
+  }
+  .burger--open + .header__nav {
+    display: block;
+    position: absolute;
+    flex-direction: column;
+    /*width: 540px;*/
+    /*width: 1000px;*/
+    width: 100%;
+    left: 0;
+    top: 54px;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /*margin-left: -270px;*/
+    background-color: #fff;
+    box-shadow: 0 0 8.6px 1.4px rgba(0, 0, 0, 0.17);
+    border: 1px solid #3bb09f;
+    z-index: 100;
+    text-align: center;
+  }
+  .burger--open + .header__nav li {
+    display: block;
+  }
+  .burger--open + .header__nav li:hover {
+    background-color: #ff6666;
+  }
+  .burger--open + .header__nav li:hover a {
+    color: #fff;
+  }
+  .burger--open + .header__nav li a {
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .reviews__rate {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .reviews__top {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__left {
+    order: 1;
+  }
+  .reviews__left,
+  .reviews__right {
+    display: block;
+    width: auto;
+  }
+  .reviews__right {
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  .burger--open + .header__nav {
+    /*width: 100%;*/
+    /*margin-left: -200px;*/
+  }
+
+ .productBannerList > div:nth-child(-n+2) {
+   margin-bottom: 0;
+ }
+ .productBannerList .productBanner {
+  height: auto;
+  margin-bottom: 30px;
+ }
+ .productBannerList .productBanner--big {
+  margin-bottom: 0;
+ }
+ .product {
+  height: auto;
+ }
+ .logo__info {
+  display: none;
+ }
+ .footer {
+  text-align: center;
+ }
+ .footer br {
+  display: none;
+ }
+ .footer__socs {
+   text-align: center;
+ }
+ .footer__subsWrap {
+   margin: 0 auto;
+ }
+ .catalog__priceInp {
+   /*justify-content: space-around;*/
+   flex-direction: column;
+ }
+ .catalog__priceInp .inp {
+   max-width: none;
+ }
+ .catalog__priceInp .inp:first-child {
+   margin-right: 0;
+   margin-bottom: 15px;
+ }
+ .catalog__category {
+   display: block;
+   /*flex-wrap: no-wrap;*/
+ }
+ .catalog__category li {
+  width: auto;
+ }
+ .sort span {
+  display: block;
+  margin-bottom: 5px;
+ }
+}
+
+
+
+
+

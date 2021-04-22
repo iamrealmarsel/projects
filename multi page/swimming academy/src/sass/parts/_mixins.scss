@@ -1,0 +1,29 @@
+@mixin container {
+  position: relative;
+  max-width: 1220px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@mixin border {
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(238, 236, 241);
+  border-radius: 10px;
+}
+
+@mixin number {
+  font-family: $ffSecond;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1;
+  color: $cBlue;
+  white-space: nowrap;
+}

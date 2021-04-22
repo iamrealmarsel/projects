@@ -1,0 +1,267 @@
+@media (max-width:1800px) {
+	.body> .header {
+		max-width: calc(100% - 40px);
+	}
+}
+	
+@media (max-width:1199px) {
+
+
+}
+
+
+@media (max-width:991px) {
+
+  .main__card {
+    /*padding-right: 80px;*/
+  }
+  .main__col_1,
+  .main__col_2 {
+    padding: 0;
+    padding-bottom: 60px;
+
+  }
+  .main__col_1 {
+    padding-top: 100px;
+  }
+
+}
+
+@media (max-width:767px) {
+
+.header__logo-desc {
+  display: none;
+}
+
+.footer__years {
+  width: auto;
+}
+}
+
+
+@media (max-width: 575px) {
+
+  #timere99eea8559beb4335b8c3f422c9d0ab1 {
+    text-align: center !important;
+  }
+
+  .main__marketing-txt_caption {
+    min-width: auto;
+    padding-right: 56px;
+  }
+
+  .header__soc {
+    display: none;
+  }
+  .header__call {
+    text-align: right;
+  }
+
+  .footer {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__col_2 {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .footer__soc-email {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .footer__col_1 {
+    margin-bottom: 30px;
+    display: none;
+  }
+  .footer__email {
+    margin-bottom: 15px;
+  }
+  .footer__col_3 {
+    display: block;
+  }
+
+  footer .header {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: ;
+  }
+  footer .header__logo-desc {
+    display: block;
+  }
+  footer .header__logo {
+    margin: 0 0 15px;
+  }
+  footer .header__col {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  footer .header__call {
+    text-align: center;
+  }
+  .footer__col_3 {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .main {
+    text-align: center;
+  }
+  
+.container.main {
+	margin-top: 0px;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.container.main::before {
+	top: -22px;
+	left: 5px;
+	width: 62px;
+	height: 66px;
+	background: url(../img/mobg_top.png) 0px 0px no-repeat;
+}
+
+p.mt1 {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+p.mt1> b {
+	font-size: 16px;
+}
+
+p.mt2, p.mt3 {
+	font-size: 14px;
+	line-height: 23px;
+	padding: 3px 0 0;
+}
+
+p.mt2> span, p.mt3> span, p.mt1> span {
+	display: inline;
+}
+
+.main__txt {
+	position: relative;
+}
+
+.main__txt> p {
+	position: relative;
+	z-index: 2;
+}
+
+p.mt3 {
+	padding-bottom: 10px;
+}
+
+.main__txt::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: -15px;
+	width: 46px;
+	height: 81px;
+	background: url(../img/mobg_right.jpg) no-repeat;
+}
+
+.main__txt::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 60px;
+	left: -15px;
+	width: 43px;
+	height: 59px;
+	background: url(../img/mobg_left.jpg) no-repeat;
+}
+
+  .title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+.main__card {
+	text-align: left;
+	/*padding-right: 75px;*/
+	/* background-position: calc(100% + 20px) -30px; */
+}
+	.main__col_1 {
+		-webkit-background-size: contain;
+		background-size: contain;
+		background-position: 50% 0%;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+  .main__txt_2 {
+    /*max-width: auto;*/
+    margin: 0 auto 50px;
+  }
+  
+	.header {
+		padding: 10px 0 25px;
+	}
+	
+	.header__call a {
+		color: #fff;
+	}
+
+
+	.megatimer {
+		transform: scale(1);
+	}
+
+	.main__royalti {
+		padding: 25px 0px !important;
+	}
+	
+	h2.subtitle.actiontitle {
+		margin: -5px 0 13px;
+		font-size: 21px;
+	}
+
+}
+
+
+@media (max-width: 450px) {
+.header__call {
+	width: 180px;
+}
+
+.header__phone {
+	font-size: 21px;
+}
+
+.btn {
+	font-size: 18px;
+}
+
+
+}

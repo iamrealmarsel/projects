@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400px" height="800px" viewBox="0 0 1400 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="16.2034759%" y1="19.0134946%" x2="83.3084955%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFE985" offset="0%"></stop>
+            <stop stop-color="#FA742B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="head_2-(contacts)">
+            <g id="bg" transform="translate(-889.000000, -1164.000000)">
+                <path d="M245.934318,1676.96462 L1537.13118,2418.16823 L1537.13118,2418.16823 C1555.69798,2428.82639 1578.28097,2429.81686 1597.70959,2420.82516 L3644,1473.78777 L3015.98915,877 L0,1183.53512 L245.934318,1676.96462 Z" id="Path-2" fill="url(#linearGradient-1)"></path>
+                <path d="M796.422021,898.768332 L1557.96903,1431.38691 L1557.96903,1431.38691 C1578.7785,1445.94085 1606.09238,1447.26513 1628.2122,1434.79256 L2843.28101,749.658967 L2464.99237,311.68268 L648.281015,536.645589 L796.422021,898.768332 Z" id="Path-2-Copy" fill-opacity="0.2" fill="#FFFFFF" transform="translate(1745.781015, 877.492458) rotate(-18.000000) translate(-1745.781015, -877.492458) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

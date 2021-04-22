@@ -1,0 +1,109 @@
+.inp {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fff;
+  color: $cType;
+  border: none;
+  border-bottom: #f0f3f8 solid 2px;
+  outline: transparent;
+  font-family: $ffBase;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  color: #5e5e5e;
+
+  .fa {
+    font-size: 24px;
+    // line-height: 0.6;
+    color: $cBlue;
+    margin-right: 20px;
+  }
+
+  .inp {
+    margin-top: 30px;
+  }
+
+}
+
+.label_pers {
+  display: flex;
+  font-size: 12px;
+  line-height: 1.4;
+  cursor: pointer;
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  input[type='checkbox']:checked + .checkbox:before {
+    display: block;
+  }
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  height: 26px;
+  width: 100%;
+  max-width: 26px;
+  border: 5px #f0f3f8 solid;
+  margin-right: 18px;
+
+  &:before {
+    display: none;
+    content: '';
+    position: absolute;
+    background-color: #558ad8;
+    width: 7px;
+    height: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+.form {
+  @include border;
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 970px;
+
+  .btn {
+    margin-bottom: 20px;
+  }
+
+}
+
+.form__col {
+  width: 240px;
+}
+
+
+
+@media ($desktop) {
+  
+}
+
+@media ($tablet) {
+  
+}
+
+@media ($mobile) {
+  
+}
+
+@media ($smobile) {
+  
+}
+

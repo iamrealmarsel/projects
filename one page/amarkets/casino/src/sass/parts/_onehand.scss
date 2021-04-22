@@ -1,0 +1,453 @@
+.onehand  {
+  padding-top: 90px;
+  padding-bottom: 140px;
+
+  // background-color: #fff;
+}
+
+.onehand__container {
+  @include container;
+}
+
+.onehand__title {
+  @include subtitle;
+  font-weight: 400;
+  text-transform: uppercase;
+  // margin-bottom: 30px;
+  margin-bottom: 100px;
+}
+
+.onehand__desc  {
+  font-family: $ffMinor;
+  font-size: 36px;
+  line-height: 1.2;
+  max-width: 810px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+
+
+// ОДНОРУКИЙ БАНДИТ ==---
+
+.onehand__img {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 120px;
+  margin-left: 50px;
+
+  // outline: lime solid 1px;
+
+  img {
+    // max-width: 100%;
+    // max-height: 100%;
+  }
+}
+
+.onehand_base {
+  position: relative;
+  z-index: 5;
+}
+
+.onehand_edging {
+  position: absolute;
+  left: -22px;
+  top: -12px;
+  z-index: 30;
+}
+
+.onehand_glass {
+  position: absolute;
+  left: -8px;
+  top: 0;
+  z-index: 20;
+
+  // outline: red solid 1px;
+}
+
+.onehand__fruits {
+  // display: none;
+  position: absolute;
+  top: calc(50% - 4px);
+  transform: translatey(-50%);
+  left: 0;
+  width: 100%;
+  height: 90%;
+  z-index: 10;
+  overflow: hidden;
+
+  // outline: green solid 2px;
+}
+
+
+
+// ФРУКТЫ ==---
+
+// общие фрукты
+
+.onehand_left {
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: auto;
+  bottom: calc(100% - 40px);
+  left: 130px;
+  transform: translateX(-50%) rotateX(85deg);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  // outline: red solid 1px;
+}
+
+.onehand_center {
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: auto;
+  bottom: calc(100% - 40px);
+  left: 300px;
+  transform: translateX(-50%) rotateX(85deg);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  // outline: red solid 1px;
+}
+
+.onehand_right {
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: auto;
+  bottom: calc(100% - 40px);
+  left: 480px;
+  transform: translateX(-50%) rotateX(85deg);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  // outline: red solid 1px;
+}
+
+// конкретные фрукты
+
+.onehand_call {
+  // top: -66px;
+  background-image: url(../img/onehand_call.svg);
+  // width: 120px;
+  // width: 133px;
+  // height: 120px;
+  // height: 137px;
+}
+.onehand_7 {
+  // top: -80px;
+  background-image: url(../img/onehand_7.svg);
+  // width: 133px;
+  // height: 137px;
+}
+.onehand_orange {
+  // top: -65px;
+  background-image: url(../img/onehand_orange.svg);
+  // width: 109px;
+  // width: 133px;
+  // height: 109px;
+  // height: 137px;
+}
+.onehand_bar{
+  // top: -20px;
+  background-image: url(../img/onehand_bar.svg);
+  // width: 133px;
+  // height: 35px;
+  // height: 100px;
+}
+.onehand_25 {
+  // top: -60px;
+  background-image: url(../img/onehand_25.svg);
+  // width: 120px;
+  // width: 133px;
+  // height: 110px;
+  // height: 137px;
+}
+.onehand_cherry {
+  // top: -70px;
+  background-image: url(../img/onehand_cherry.svg);
+  // width: 133px;
+  // width: 116px;
+  // height: 116px;
+  // height: 137px;
+}
+
+
+// РУКОЯТКА ==---
+
+.onehand_ball {
+  position: absolute;
+  // top: -85px;
+  // right: -100px;
+  bottom: calc(100% - 20px);
+  left: calc(100% - 10px);
+  z-index: 2;
+
+}
+
+.onehand_stick {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 32px;
+  height: 192px;
+  transform-origin: 50% 100%;
+  transform: rotate(15deg);
+
+}
+
+.onehand_handle.active {
+
+  .onehand_ball {
+    top: calc(100% - 20px);
+    left: calc(100% - 20px);
+    bottom: auto;
+  }
+  .onehand_stick {
+    transform: rotate(165deg);
+  }
+}
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+  .onehand__img {
+    width: 500px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .onehand_base {
+  }
+
+  .onehand_edging {
+    left: -20px;
+    top: -12px;
+  }
+
+  .onehand_glass {
+    left: -8px;
+    top: 0;
+  }
+
+  .onehand__fruits {
+    top: calc(50% - 4px);
+    transform: translatey(-50%);
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+  }
+
+  // ФРУКТЫ ==---
+
+  // общие фрукты
+
+  .onehand_left {
+    width: 80px;
+    height: 80px;
+    // top: auto;
+    bottom: calc(100% - 30px);
+    left: 100px;
+    // transform: translateX(-50%) rotateX(85deg);
+  }
+
+  .onehand_center {
+    width: 80px;
+    height: 80px;
+    // top: auto;
+    bottom: calc(100% - 30px);
+    left: 230px;
+    // transform: translateX(-50%) rotateX(85deg);
+  }
+
+  .onehand_right {
+    width: 80px;
+    height: 80px;
+    // top: auto;
+    bottom: calc(100% - 30px);
+    left: 365px;
+    // transform: translateX(-50%) rotateX(85deg);
+  }
+
+
+  // РУКОЯТКА ==---
+
+  .onehand_ball {
+    width: 70px;
+  }
+
+  .onehand_stick {
+    width: 20px;
+    height: auto;
+  }
+
+  .onehand_handle.active {
+
+    .onehand_ball {
+      top: calc(100% - 40px);
+      left: calc(100% - 5px);
+    }
+    .onehand_stick {
+    }
+  }
+
+
+
+  .onehand__title {
+    @include subtitle_tb;
+  }
+  .onehand__desc {
+    font-size: 30px;
+    max-width: 710px;
+  }
+
+}
+
+@media ($mobile) {
+
+  .onehand__title {
+    @include subtitle_mob;
+    margin-bottom: 80px;
+  }
+  .onehand__desc {
+    font-size: 22px;
+    max-width: 510px;
+    margin-bottom: 30px;
+  }
+  .onehand {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+  .onehand__img {
+    margin-bottom: 40px;
+  }
+
+
+  .onehand__img {
+    width: 290px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    padding: 0 15px;
+
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .onehand_base {
+  }
+
+  .onehand_edging {
+    width: 266px;
+    left: 2px;
+    top: -6px;
+  }
+
+  .onehand_glass {
+    left: -8px;
+    top: 0;
+  }
+
+  .onehand__fruits {
+    top: calc(50% - 4px);
+    transform: translatey(-50%);
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+  }
+
+  // ФРУКТЫ ==---
+
+  // общие фрукты
+
+  .onehand_left {
+    width: 40px;
+    height: 40px;
+    top: auto;
+    bottom: calc(100% - 14px);
+    left: 64px;
+    transform: translateX(-50%) rotateX(85deg);
+  }
+
+  .onehand_center {
+    width: 40px;
+    height: 40px;
+    top: auto;
+    bottom: calc(100% - 14px);
+    left: 135px;
+    transform: translateX(-50%) rotateX(85deg);
+  }
+
+  .onehand_right {
+    width: 40px;
+    height: 40px;
+    top: auto;
+    bottom: calc(100% - 14px);
+    left: 206px;
+    transform: translateX(-50%) rotateX(85deg);
+  }
+
+
+  // РУКОЯТКА ==---
+
+  .onehand_handle {
+    display: none;
+  }
+
+  .onehand_ball {
+    width: 70px;
+  }
+
+  .onehand_stick {
+    width: 20px;
+    height: auto;
+  }
+
+  .onehand_handle.active {
+
+    .onehand_ball {
+      top: calc(100% - 40px);
+      left: calc(100% - 5px);
+    }
+    .onehand_stick {
+    }
+  }
+
+}
+
+@media ($mobileS) {
+
+}
+
+
+
+
+
+

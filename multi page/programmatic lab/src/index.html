@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Programmatic-Lab</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page overflow">
+	<div class="page_bg"></div>
+
+		<svg class="bgSvg bgSvg_desc" width="100%" height="100%" viewBox="0 0 1400 800" preserveAspectRatio="none slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <defs>
+		        <linearGradient x1="16.2034759%" y1="19.0134946%" x2="83.3084955%" y2="100%" id="bgGradient">
+		            <stop stop-color="#97ABFF" offset="0%"></stop>
+		            <stop stop-color="#123597" offset="100%"></stop>
+		        </linearGradient>
+		    </defs>
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="head_2-(prod)">
+		            <g id="bg" transform="translate(-408.000000, -2868.000000)">
+		                <path d="M144.625,3161.29688 L910.433849,3643.54597 L910.433849,3643.54597 C930.950857,3656.46604 956.900106,3657.09628 978.02014,3645.18745 L2195,2958.97629 L1816.71136,2521 L0,2745.96291 L144.625,3161.29688 Z" id="Path-2" fill="url(#bgGradient)"></path>
+		                <path d="M315.422021,2602.76833 L1076.96903,3135.38691 L1076.96903,3135.38691 C1097.7785,3149.94085 1125.09238,3151.26513 1147.2122,3138.79256 L2362.28101,2453.65897 L1983.99237,2015.68268 L167.281015,2240.64559 L315.422021,2602.76833 Z" id="Path-2-Copy" fill-opacity="0.2" fill="#FFFFFF" transform="translate(1264.781015, 2581.492458) rotate(-18.000000) translate(-1264.781015, -2581.492458) "></path>
+		            </g>
+		        </g>
+		    </g>
+		</svg>
+
+	<svg class="bgSvg_mob" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" >
+		<defs>
+			<linearGradient x1="16.2034759%" y1="19.0134946%" x2="83.3084955%" y2="100%" id="bgGradient_mob">
+				<stop stop-color="#97ABFF" offset="0%"></stop>
+				<stop stop-color="#123597" offset="100%"></stop>
+			</linearGradient>
+		</defs>
+		<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			<g id="head_2(dev)">
+				<g id="bg" transform="translate(-889.000000, -1164.000000)">
+
+					<path d="M245.934318,1676.96462 L1537.13118,2418.16823 L1537.13118,2418.16823 C1555.69798,2428.82639 1578.28097,2429.81686 1597.70959,2420.82516 L3644,1473.78777 L3015.98915,877 L0,1183.53512 L245.934318,1676.96462 Z" id="Path-2" fill="url(#bgGradient_mob)"></path>
+					<path d="M796.422021,898.768332 L1557.96903,1431.38691 L1557.96903,1431.38691 C1578.7785,1445.94085 1606.09238,1447.26513 1628.2122,1434.79256 L2843.28101,749.658967 L2464.99237,311.68268 L648.281015,536.645589 L796.422021,898.768332 Z" id="Path-2-Copy" fill-opacity="0.2" fill="#FFFFFF" transform="translate(1745.781015, 877.492458) rotate(-18.000000) translate(-1745.781015, -877.492458) "></path>
+				</g>
+			</g>
+		</g>
+	</svg>
+
+	
+	
+
+<header class="header ">
+  <div class="container">
+    <a href="index.html" class="header__logo">
+      <img src="img/logo.png" alt="">
+    </a>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="aboutus.html">Компания</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="index.html#6" data-slide="6">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__burger">
+      <div class="burger  ">
+        <span class="burger__line"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+	<div class="pagemenu">
+  <header class="pagemenu__header">
+    <div class="container">
+      <a href="/" class="pagemenu__logo">
+        <img src="img/logo_black.png" alt="">
+      </a>
+      <div class="pagemenu__burger">
+        <div class="burger burger_close">
+          <span class="burger__line"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="navigation"><div class="container">
+      <ul class="navigation__menu">
+        <li><a href="aboutus.html">Компания</a></li>
+        <li><a href="/">Услуги</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="index.html#6">Контакты</a></li>
+      </ul>
+      <ul class="navigation__submenu">
+        <li><a href="aboutus.html">Наша команда</a></li>
+        <!-- <li><a href="vacancy.html">Вакансии</a></li> -->
+        <li><a href="dummy.html">Вакансии</a></li>
+        <!-- <li><a href="partnership.html">Партнерство</a></li> -->
+        <li><a href="dummy.html">Партнерство</a></li>
+      </ul>
+    </div></nav>
+  <footer class="pagemenu__footer">
+    <div class="container">
+      <div class="pagemenu__socials">
+        <a class="fa fa-facebook" href="#"></a>
+        <a class="fa fa-vk" href="#"></a>
+        <a class="fa fa-instagram" href="#"></a>
+      </div>
+      <div class="pagemenu__contacts">
+        <a class="t_contacts" href="mailto:hello@programmatic-lab.ru">hello@programmatic-lab.ru</a>
+        <a class="t_contacts nowrap pagemenu__tel" href="tel:+74957909546">+7 495 790-95-46</a>
+        <a class="t_contacts" target="_blank" href="https://yandex.ru/maps/213/moscow/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.510%252C55.811%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%259B%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25BD%25D0%25B3%25D1%2580%25D0%25B0%25D0%25B4%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%25D0%25BF%25D1%2580%25D0%25BE%25D1%2581%25D0%25BF%25D0%25B5%25D0%25BA%25D1%2582%252C%252080%25D0%2593%2520&ll=37.509747%2C55.811220&z=16">Москва, Ленинградский проспект, 80Г</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+	<main class="main">
+		<section class="slider">
+			<div class="slide slide_1 section">
+				<div class="container">
+					<header class="slide__header">
+						<div class="header__logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<nav class="header__nav">
+							<ul class="header__menu">
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__burger">
+							<img src="img/burger.png" alt="бургер">
+						</div>
+					</header>
+					<div class="slide__text">
+						<h1 class="t_title_main">Разрабатываем сайты <br> для бизнеса</h1>
+						<p class="slide__desc">Делаем яркие и запоминающиеся проекты, приносящие вам прибыль</p>
+						<a href="#5" class="btn" data-slide="5">Посмотреть проекты</a>
+					</div>
+					<div class="media media_1">
+						<img src="img/media_1.png" alt="медиа">
+					</div>
+					<footer class="slide__footer">
+						<div class="footer__contacts">
+							<span class="t_label">Наш телефон</span>
+							<a class="t_contacts nowrap" href="tel:+74957909546">+7 495 790-95-46</a>
+							<button class="btn btn_mob_1" data-modal data-target="modal1">Отправить заявку</button>
+						</div>
+					</footer>
+				</div>
+			</div>
+			<div class="slide slide_2 section">
+				<div class="container">
+					<header class="slide__header">
+						<div class="header__logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<nav class="header__nav">
+							<ul class="header__menu">
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__burger">
+							<img src="img/burger.png" alt="бургер">
+						</div>
+					</header>
+					<div class="slide__text">
+						<h1 class="t_title_main">Веб разработка</h1>
+						<p class="slide__desc">
+							Воплощаем в жизнь любые задумки.  Реализуем сложный функционал <br> и интеграции. Заставляем нервничать ваших конкурентов.</p>
+						<!-- <a href="#" class="btn" data-modal data-target="modal1">Подробнее</a> -->
+					</div>
+					<div class="media media_2">
+						<img src="img/media_2.svg" alt="медиа">
+					</div>
+					<footer class="slide__footer">
+						<div class="footer__contacts">
+							<span class="t_label">Наш телефон</span>
+							<a class="t_contacts nowrap" href="tel:+74957909546">+7 495 790-95-46</a>
+							<button class="btn btn_mob_2" data-modal data-target="modal1" type="button">Отправить заявку</button>
+						</div>
+					</footer>
+				</div>
+			</div>
+			<div class="slide slide_3 section">
+				<div class="container">
+					<header class="slide__header">
+						<div class="header__logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<nav class="header__nav">
+							<ul class="header__menu">
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__burger">
+							<img src="img/burger.png" alt="бургер">
+						</div>
+					</header>
+					<div class="slide__text">
+						<h1 class="t_title_main">Делаем рекламу <br> в интернете</h1>
+						<p class="slide__desc">
+							Донесем до аудитории суть вашего бизнеса и преимущества предложения. Создадим прочную основу для роста и развития.
+						</p>
+						<!-- <a href="#" class="btn" data-modal data-target="modal1">Подробнее</a> -->
+					</div>
+					<div class="media media_3">
+						<img src="img/media_4.svg" alt="медиа">
+					</div>
+					<footer class="slide__footer">
+						<div class="footer__contacts">
+							<span class="t_label">Наш телефон</span>
+							<a class="t_contacts nowrap" href="tel:+74957909546">+7 495 790-95-46</a>
+							<button class="btn btn_mob_3" data-modal data-target="modal1">Отправить заявку</button>
+						</div>
+					</footer>
+				</div>
+			</div>
+			<div class="slide slide_4 section">
+				<div class="container">
+					<header class="slide__header">
+
+						<div class="header__logo">
+							<img src="img/logo.png" alt="">
+						</div>
+
+						<nav class="header__nav">
+							<ul class="header__menu">
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+
+						<div class="header__burger">
+							<img src="img/burger.png" alt="бургер">
+						</div>
+
+					</header>
+					<div class="slide__text">
+						<h1 class="t_title_main">Создаем логотипы <br> и фирменный стиль</h1>
+						<p class="slide__desc">Покажем клиентам идею, концепцию и статус вашей компании через логотип и фирменный стиль.</p>
+						<!-- <a href="#" class="btn" data-modal data-target="modal1">Подробнее</a> -->
+					</div>
+					<div class="media media_4">
+						<img src="img/media_3.svg" alt="медиа">
+					</div>
+					<footer class="slide__footer">
+						<div class="footer__contacts">
+							<span class="t_label">Наш телефон</span>
+							<a class="t_contacts nowrap" href="tel:+74957909546">+7 495 790-95-46</a>
+							<button class="btn btn_mob_4" data-modal data-target="modal1">Отправить заявку</button>
+						</div>
+					</footer>
+				</div>
+			</div>
+
+			<div class="slide slide_5 section">
+				<div class="container">
+					<header class="slide__header">
+						<div class="header__logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<nav class="header__nav">
+							<ul class="header__menu">
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__burger">
+							<img src="img/burger.png" alt="бургер">
+						</div>
+					</header>
+					<div class="slide__text">
+						<h1 class="t_title_main">Портфолио</h1>
+						<!-- <a href="#" class="btn">Посмотреть все работы</a> -->
+					</div>
+					<div class="portfolioList">
+						<div class="portfolioList__col">
+							<a href="https://online.atol.ru/" target="_blank" class="portfolioView portfolioView_1">
+								<span class="portfolioView__cat">Landing page</span>
+								<span class="portfolioView__link">перейти на сайт </span>
+								<div class="portfolioView__logo">
+									<img class="portfolioView__img" src="img/portfol_1.png" alt="Атол Онлайн">
+								</div>
+							</a>
+						</div>
+						<div class="portfolioList__col">
+							<a href="https://hmtx.ru/" target="_blank" class="portfolioView portfolioView_2">
+								<span class="portfolioView__cat">Landing page</span>
+								<span class="portfolioView__link">перейти на сайт </span>
+								<div class="portfolioView__logo">
+									<img class="portfolioView__img" src="img/portfol_2.png" alt="Himtex">
+								</div>
+							</a>
+						</div>
+						<div class="portfolioList__col">
+							<a href="http://foundation.jetskills.ru/" target="_blank" class="portfolioView portfolioView_3">
+								<span class="portfolioView__cat">Landing page</span>
+								<span class="portfolioView__link">перейти на сайт </span>
+								<div class="portfolioView__logo">
+									<img class="portfolioView__img" src="img/portfol_3.png" alt="Jetskills">
+								</div>
+							</a>
+						</div>
+						<div class="portfolioList__col">
+							<a href="http://yurius.su/" target="_blank" class="portfolioView portfolioView_4">
+								<span class="portfolioView__cat">Landing page</span>
+								<span class="portfolioView__link">перейти на сайт </span>
+								<div class="portfolioView__logo">
+									<img class="portfolioView__img" src="img/portfol_4.png" alt="Юридические услуги">
+								</div>
+							</a>
+						</div>
+					</div>
+					<footer class="slide__footer">
+						<div class="footer__contacts">
+							<span class="t_label">Наш телефон</span>
+							<a class="t_contacts nowrap" href="tel:+74957909546">+7 495 790-95-46</a>
+							<button class="btn btn_mob_5" data-modal data-target="modal1">Отправить заявку</button>
+						</div>
+					</footer>
+				</div>
+			</div>
+
+
+
+			<div class="slide slide_6 section">
+				<div class="container">
+					<header class="slide__header">
+						<div class="header__logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<nav class="header__nav">
+							<ul class="header__menu">
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__burger">
+							<img src="img/burger.png" alt="бургер">
+						</div>
+					</header>
+					<div class="slide__row">
+						<div class="slide__text">
+							<h1 class="t_title_main">Контакты</h1>
+							<div class="slide__contacts">
+
+								<span class="t_label">Наш телефон</span>
+								<a class="t_contacts nowrap" href="tel:+74957909546">+7 495 790-95-46</a>
+								<span class="t_label">Электронная почта</span>
+								<a class="t_contacts" href="mailto:hello@programmatic-lab.ru">hello@programmatic-lab.ru</a>
+							<div class="slide__addressWrap">
+								<span class="t_label">Адрес</span>
+								<a class="t_contacts" target="_blank" href="https://yandex.ru/maps/213/moscow/?source=wizgeo&utm_source=serp&l=map&utm_medium=maps-desktop&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.510%252C55.811%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%259B%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25BD%25D0%25B3%25D1%2580%25D0%25B0%25D0%25B4%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%25D0%25BF%25D1%2580%25D0%25BE%25D1%2581%25D0%25BF%25D0%25B5%25D0%25BA%25D1%2582%252C%252080%25D0%2593%2520&ll=37.509747%2C55.811220&z=16">Москва, Ленинградский проспект, 80Г</a>
+							</div>
+
+							</div>
+
+							<button class="btn btn_mob" type="button" data-modal data-target="modal1">Напишите нам</button>
+
+						</div>
+						<div class="slide__right">
+							<form class="slide__form slide__form_i js-submit js_validate" action="post">
+								<legend class="t_caption">Здравствуйте,</legend>
+								<div class="inpCol">
+									<input id="nameSlide" name="name" class="inp" type="text" placeholder="" required="true">
+									<label class="phSlide" for="nameSlide">Как Вас зовут *</label>
+								</div>
+								<div class="inpCol">
+									<input id="taskSlide" name="task" class="inp inp_desc" type="text" placeholder="">
+									<label class="phSlide" for="taskSlide">Опишите свою задачу</label>
+
+								</div>
+								<div class="inpCol">
+									<input id="moneySlide" name="money" class="inp inp_desc" type="text" placeholder="">
+									<label class="phSlide" for="moneySlide">Укажите свой бюджет</label>
+								</div>
+								<div class="inpCol">
+									<input id="emailSlide" name="email"  class="inp" type="email" placeholder="" required="true">
+									<label class="phSlide" for="emailSlide">Ваша электронная почта *</label>
+
+								</div>
+								<div class="inpCol">
+									<input id="telSlide" name="tel" class="inp telMask" type="tel" placeholder="" required="true">
+									<label class="phSlide" for="telSlide">Ваш контактный телефон *</label>
+								</div>
+								<button class="btn" type="submit">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__contacts">
+
+				<span class="t_label">Наш телефон</span>
+				<a class="t_contacts nowrap" href="tel:+74957909546">+7 495 790-95-46</a>
+
+				<div class="btnGrad">
+					<svg class="btnGrad__svg" width="100%" height="100%" preserveAspectRatio="none slice" viewBox="0 0 208 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<defs>
+					<linearGradient x1="5%" y1="50%" x2="90%" y2="50%" id="btnGradient">
+					    <stop stop-color="#97ABFF" offset="5%"></stop>
+					    <stop stop-color="#123597" offset="90%"></stop>
+					</linearGradient>
+					</defs>
+					<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					<g id="head_2-(prod)" transform="translate(-130.000000, -738.000000)" fill="url(#btnGradient)">
+					    <g id="UI/отправить-заявку-Component-Copy-2" transform="translate(130.000000, 738.000000)">
+					        <rect id="BG-Copy-3" x="0" y="0" rx="5" width="100%" height="100%"></rect>
+					    </g>
+					</g>
+					</g>
+					</svg>
+					<a class="btnGrad__link" href="#" data-modal data-target="modal1">Отправить заявку</a>
+				</div>
+				
+			</div>
+
+		</div>
+	</footer>
+
+<!-- модалка -->
+<div class="overlay js-close">
+	<div class="modal" id="modal1">
+		<form class="slide__form js-submit js_validate" action="post">
+			<h4 class="modal__title">Оставьте Вашу заявку и мы свяжемся с Вами в течении 15 минут!</h4>
+			<i class="modal__close js-close"></i>
+
+			<legend class="t_caption">Здравствуйте,</legend>
+			<div class="inpCol">
+				<input id="nameModal" name="name" class="inp" type="text" placeholder="" required="true">
+				<label class="phSlide" for="nameModal">Как Вас зовут *</label>
+			</div>
+			<div class="inpCol">
+				<input id="taskModal" name="task" class="inp" type="text" placeholder="">
+				<label class="phSlide" for="taskModal">Опишите свою задачу</label>
+
+			</div>
+			<div class="inpCol">
+				<input id="moneyModal" name="money" class="inp" type="text" placeholder="">
+				<label class="phSlide" for="moneyModal">Укажите свой бюджет</label>
+			</div>
+			<div class="inpCol">
+				<input id="emailModal" name="email"  class="inp" type="email" placeholder="" required="true">
+				<label class="phSlide" for="emailModal">Ваша электронная почта *</label>
+
+			</div>
+			<div class="inpCol">
+				<input id="telModal" name="tel" class="inp telMask" type="tel" placeholder="" required="true">
+				<label class="phSlide" for="telModal">Ваш контактный телефон *</label>
+			</div>
+			<div class="modal__btnList">
+				<button class="btn btn_close js-close" type="button">Закрыть</button>
+				<button class="btn btn_modal" type="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.onepage-scroll.js"></script>
+<script src="js/script.js"></script>
+
+</html>

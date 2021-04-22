@@ -1,0 +1,109 @@
+.profit {
+  padding-top: 70px;
+  padding-bottom: 135px;
+  text-align: left;
+  background-image: url(../img/profit_bg.jpg);
+  // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 100px) 0%;
+}
+
+.profit__container {
+  @include container;
+}
+
+.profit__title {
+  @include subtitle;
+  font-weight: 400;
+  margin-bottom: 90px;
+}
+
+.profit__list {
+  margin-bottom: 90px;
+}
+
+.profit__item {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.profit__txt {
+  max-width: 460px;
+}
+
+.profit__img {
+  margin-right: 40px;
+}
+
+.profit__desc {
+  font-family: $ffMinor;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+
+
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+  .profit__title {
+    @include subtitle_tb;
+  }
+  .profit__desc {
+    font-size: 30px;
+  }
+
+  .profit {
+    background-image: url(../img/profit_bg.jpg);
+    background-position: calc(50% - 400px) 0%;
+  }
+
+}
+
+@media ($mobile) {
+
+  .profit {
+    text-align: center;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 85px;
+  }
+  .profit__list {
+    max-width: 510px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .profit__title {
+    @include subtitle_mob;
+    margin-bottom: 60px;
+  }
+  .profit__desc {
+    font-size: 22px;
+  }
+
+}
+
+@media ($mobileS) {
+
+  .profit__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profit__img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+
+
+}
+
+
+

@@ -1,0 +1,34 @@
+<svg width="133" height="137" viewBox="0 0 133 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1768 -2510)">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(1768.79 2510.53)" fill="url(#paint0_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(1775.65 2515.87)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(1779.85 2519.3)" fill="url(#paint2_linear)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 -135.966 135.957 0 -2.16029 135.809)">
+<stop offset="0"/>
+<stop offset="0.3308" stop-color="#4D0009"/>
+<stop offset="0.6731" stop-color="#540202"/>
+<stop offset="1" stop-color="#53301C"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 -118.189 118.181 0 -4.45969 118.153)">
+<stop offset="0" stop-color="#A1008B"/>
+<stop offset="0.3308" stop-color="#EE031C"/>
+<stop offset="0.6731" stop-color="#FF0404"/>
+<stop offset="1" stop-color="#FC8E53"/>
+</linearGradient>
+<path id="path0_fill" d="M 26.2985 135.694L 26.6796 126.546C 27.823 87.6673 51.4536 54.125 70.5105 33.5423L 47.2611 33.5423C 35.4458 33.5423 35.4458 33.5423 32.7778 42.309L 30.1099 48.7888L 5.8157e-06 48.7888L 11.4341 2.90804e-06L 121.202 2.90804e-06L 131.492 14.4842L 126.538 19.8204C 109.386 37.7351 97.1901 56.412 89.5673 77.3759C 82.3257 94.9094 78.8955 111.299 78.8955 127.308L 78.8955 136.075L 26.2985 136.075L 26.2985 135.694Z"/>
+<path id="path1_fill" d="M 25.1551 124.64L 25.1551 121.21C 26.6796 77.376 57.9329 40.4032 76.6087 22.4886L 40.0194 22.4886C 25.1551 22.4886 23.6305 23.6321 19.8192 35.0669L 19.0569 37.3539L -1.16314e-05 37.3539L 8.76616 -5.81608e-06L 111.673 -5.81608e-06L 117.39 8.00441L 115.485 9.91022C 97.5712 28.206 84.9937 47.6453 76.9898 69.3716C 69.7482 87.2862 65.9368 104.438 65.9368 121.21L 65.9368 124.259L 25.1551 124.259L 25.1551 124.64Z"/>
+<path id="path2_fill" d="M 1.16314e-05 30.8741L 7.2416 0L 105.575 0L 109.005 4.57395C 97.1901 16.7711 80.42 36.5916 69.7482 65.1787C 63.2688 80.8064 58.6952 98.721 58.314 118.16L 24.0117 118.16C 25.5362 67.8469 68.6048 26.6814 80.42 16.0088L 35.8269 16.0088C 20.2003 16.0088 17.1512 17.5335 12.5775 30.8741L 1.16314e-05 30.8741Z"/>
+</defs>
+</svg>

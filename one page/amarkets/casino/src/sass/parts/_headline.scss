@@ -1,0 +1,56 @@
+.headline {
+  padding-bottom: 135px;
+}
+
+.headline__container {
+  @include container;
+}
+
+.headline__title {
+  @include title;
+  color: $cBrown;
+  margin-top: -10px;
+}
+
+.headline__desc {
+  font-size: 24px;
+  margin-bottom: 85px;
+}
+
+
+
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+  .headline__title {
+    @include title_tb;
+  }
+
+}
+
+@media ($mobile) {
+  .headline__title {
+    @include title_mob;
+  }
+  .headline__desc {
+    margin-bottom: 60px;
+  }
+  .headline {
+    padding-bottom: 100px;
+  }
+}
+
+@media ($mobileS) {
+  .headline__title {
+    font-size: 30px;
+  }
+
+}
+
+

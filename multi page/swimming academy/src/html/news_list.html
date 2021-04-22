@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+
+  {% import "parts/meta.html" as meta %}
+  {{ meta.head() }}
+
+</head>
+
+<body class="page">
+
+  {% import "parts/header.html" as header %}
+  {{ header.main() }}
+
+  {% import "parts/caption.html" as caption %}
+  {{ caption.main() }}
+
+  {% import "parts/news_list.html" as news_list %}
+  {{ news_list.main() }}
+
+  {% import "parts/map.html" as map %}
+  {{ map.main() }}
+
+  {% import "parts/footer.html" as footer %}
+  {{ footer.main() }}
+
+  {% import "parts/modal.html" as modal %}
+  {{ modal.main() }}
+  
+</body>
+
+  {% import "parts/meta.html" as meta %}
+  {{ meta.foot() }}
+
+</html>

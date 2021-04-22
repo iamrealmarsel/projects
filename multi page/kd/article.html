@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="//yastatic.net/share2/share.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+<!-- хэдэр начало -->
+<div class="header">
+<!-- лого -->
+  <a class="header__logo" href="index.html">
+    <img src="img/logo.png" alt="логотип">
+  </a>
+<!-- кнопка меню мобильная -->
+<span class="menuMobileBtn"></span>
+<!-- поиск -->
+  <div class="header__searchWrap">
+    <label class="header__search">
+      <input class="inputBg inputBg--focus" type="text" placeholder="Поиск среди 300 000 товаров">
+    </label>
+    <button type="submit"></button>
+  </div>
+<!-- незалогиненный юзер -->
+  <div class="header__user header__userEmpty visible">
+    <a class="fa fa-shopping-basket" href="cart.html"></a>
+    <a class="fa fa-heart" href="liked_items.html"></a>
+    <a class="fa fa-user" href=""></a>
+  </div>
+<!-- залогиненный юзер -->
+  <div class="header__user header__userFull">
+    <a class="fa fa-shopping-basket" href=""></a>
+    <span class="header__cartCount">74 342 р.
+      <!-- корзина -->
+      <div class='header__cartFullDrop'>
+       <div class="header__shopItem">
+         <div class="img">
+           <img src="img/products/product1.png" alt="">
+         </div>
+         <span class="header__shopTitle">
+           Quechua Forclaz 50L ForclazForclazForclaz Forclaz
+         </span>
+         <span class="header__shopPrice">
+          55  р.
+         </span>
+       </div>
+       <div class="header__shopItem">
+         <div class="img">
+           <img src="img/slider/slAvto.png" alt="">
+         </div>
+         <span class="header__shopTitle">
+           Quechua Forclaz50LQuechuaForclaz 50LQuechuaForclaz50L Quechua Forclaz 50L
+         </span>
+         <span class="header__shopPrice">
+          999 999 р.
+         </span>
+       </div>
+       <div class="header__shopItem">
+         <div class="img">
+           <img src="img/products/product1.png" alt="">
+         </div>
+         <span class="header__shopTitle">
+           Quechua Forclaz 50L
+         </span>
+         <span class="header__shopPrice">
+           3500 р.
+         </span>
+       </div>
+       <a class="header__shopAll" href="">Все товары</a>
+       <div class="header__wrapBtn">
+         <button type="button" class="btn btn--yellow">Оформить заказ</button>
+       </div>
+      </div>
+    </span>
+    <a class="fa fa-heart" href=""></a>
+    <span class="header__likeCount">18
+      <!-- отложенные -->
+      <div class='header__likedFullDrop'>
+         <div class="header__shopItem">
+           <div class="img">
+             <img src="img/products/product1.png" alt="">
+           </div>
+           <span class="header__shopTitle">
+             Quechua Forclaz 50L
+           </span>
+           <span class="header__shopPrice">
+             3500 р.
+           </span>
+         </div>
+         <div class="header__shopItem">
+           <div class="img">
+             <img src="img/slider/slAvto.png" alt="">
+           </div>
+           <span class="header__shopTitle">
+             Quechua Forclaz 50L Quechua Forclaz 50LQuechuaForclazForclaz
+           </span>
+           <span class="header__shopPrice">
+             3 500 000 р.
+           </span>
+         </div>
+         <div class="header__shopItem">
+           <div class="img">
+             <img src="img/products/product1.png" alt="">
+           </div>
+           <span class="header__shopTitle">
+             Quechua Forclaz 50L
+           </span>
+           <span class="header__shopPrice">
+             3500 р.
+           </span>
+         </div>
+           <a class="header__shopAll" href="">Все товары</a>
+       </div>
+    </span>
+    <a class="fa fa-user" href=""></a>
+    <a class="fa-cog" href=""></a>
+    <a class="fa-times" href=""></a>
+  </div>
+  <!-- профиль (незалогиненный юзер) -->
+  <div class='header__userEmptyDrop'>
+    <button class="header__login btn btn--blue" type="button">Войти</button>
+    <button class="header__signup btn btn--blue" type="button">Регистрация</button>
+  </div>
+  <!-- профиль (залогиненный юзер) -->
+  <div class='header__userFullDrop'>
+    <p><a href="">Василий К.</a></p>
+    <p>Заказы</p>
+    <p>Список сравнения</p>
+    <p>Отложенные товары</p>
+    <p><a href="" class="header__userLogOut">Выйти</a></p>
+  </div>
+</div>
+<!-- хэдэр конец -->
+
+<div class="grid">
+
+<div class="sidebar">
+  <div class="sidebar__fixed">
+    <div class="sidebar__visible">
+      <ul class="menu">
+        <li class="menu__catalog">
+          <a href="catalog.html" class="fa fa-bars"><span>Каталог</span></a>
+          <div class="submenuWrap">
+            <div class="submenuWrap__crumbs">
+              <div class="submenuWrap__text">
+              </div>
+            </div>
+            <span class="submenuWrap__arrUp"></span>
+            <div class="submenuScrollHidden">
+              <div class="submenuScroll">
+                <ul class="submenu">
+                  <li><a href="">Летние товары</a></li>
+                  <li><a href="">Одежда и обувь</a>
+                    <div class="submenuWrap">
+                      <div class="submenuWrap__crumbs">
+                        <div class="submenuWrap__text"></div>
+                      </div>
+                      <span class="submenuWrap__arrUp"></span>
+                      <div class="submenuScrollHidden">
+                        <div class="submenuScroll">
+                          <ul class="submenu">
+                            <li><a href="">пункт-1</a></li>
+                            <li><a href="">пункт-2</a></li>
+                            <li><a href="">пункт-3</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <span class="submenuWrap__arrDown"></span>
+                      <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                    </div>
+                  </li>
+                  <li><a href="">Текстиль</a></li>
+                  <li><a href="">Детские товары</a></li>
+                  <li>
+                    <a href="subcatalog.html">Бытовая техника</a>
+                    <div class="submenuWrap">
+                      <div class="submenuWrap__crumbs">
+                        <div class="submenuWrap__text">
+                        </div>
+                      </div>
+                      <span class="submenuWrap__arrUp"></span>
+                      <div class="submenuScrollHidden">
+                        <div class="submenuScroll">
+                          <ul class="submenu">
+                            <li><a href="">Бытовая техника для дома</a>
+                            <div class="submenuWrap">
+                              <div class="submenuWrap__crumbs">
+                                <div class="submenuWrap__text"></div>
+                              </div>
+                              <span class="submenuWrap__arrUp"></span>
+                              <div class="submenuScrollHidden">
+                                <div class="submenuScroll">
+                                  <ul class="submenu">
+                                    <li><a href="">пункт-1</a></li>
+                                    <li><a href="">пункт-2</a></li>
+                                    <li><a href="">пункт-3</a></li>
+                                    <li><a href="">пункт-4</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <span class="submenuWrap__arrDown"></span>
+                              <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                            </div>
+                            </li>
+                            <li>
+                              <a href="subsubcatalog.html">Бытовая техника для кухни</a>
+                              <div class="submenuWrap">
+                                <div class="submenuWrap__crumbs">
+                                  <div class="submenuWrap__text">
+                                  </div>
+                                </div>
+                                <span class="submenuWrap__arrUp"></span>
+                                <div class="submenuScrollHidden">
+                                  <div class="submenuScroll">
+                                    <ul class="submenu">
+                                      <li><a href="">пункт-1</a></li>
+                                      <li><a href="subsubcatalogCard.html">пункт-2</a></li>
+                                      <li><a href="">пункт-3</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li>
+                                        <a href="">пункт-5 здесь</a>
+                                        <div class="submenuWrap">
+                                          <div class="submenuWrap__crumbs">
+                                            <div class="submenuWrap__text"></div>
+                                          </div>
+                                          <span class="submenuWrap__arrUp"></span>
+                                          <div class="submenuScrollHidden">
+                                            <div class="submenuScroll">
+                                              <ul class="submenu">
+                                                <li><a href="">пункт-1</a></li>
+                                                <li><a href="">пункт-2</a></li>
+                                                <li><a href="">пункт-3</a></li>
+                                                <li><a href="">пункт-4</a></li>
+                                                <li><a href="">пункт-5</a></li>
+                                                <li><a href="">пункт-5</a></li>
+                                                <li><a href="">пункт-5</a></li>
+                                                <li><a href="">пункт-5</a></li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <span class="submenuWrap__arrDown"></span>
+                                          <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                                        </div>
+                                      </li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              <span class="submenuWrap__arrDown"></span>
+                              <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                              </div>
+                            </li>
+                            <li><a href="">Климатическая техника</a></li>
+                            <li><a href="">Красота и здоровье</a></li>
+                            <li><a href="">Аудио-видео</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <span class="submenuWrap__arrDown"></span>
+                      <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                    </div>
+                  </li>
+                  <li><a href="subcatalog.html">Автотовары</a></li>
+                  <li><a href="">Электротовары</a></li>
+                  <li><a href="">Косметика и парфюм</a></li>
+                  <li><a href="">Бижутерия</a></li>
+                  <li><a href="">Кожгалантерея</a></li>
+                  <li><a href="">Сувениры</a></li>
+                  <li><a href="">Игрушки</a></li>
+                  <li><a href="">Эксклюзив</a></li>
+                  <li><a href="">Подбор подарков</a></li>
+                  <li><a href="">Праздники</a></li>
+                  <li><a href="">Интерьер</a></li>
+                  <li><a href="">Хозтовары</a></li>
+                  <li><a href="">Галантерея</a></li>
+                  <li><a href="">Спорт и отдых</a></li>
+                  <li><a href="">Строительство и ремонт</a></li>
+                  <li><a href="">Сад и огород</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда Посуда Посуда Посуда Посуда Посуда</a></li>
+                </ul>
+              </div>
+            </div>
+            <span class="submenuWrap__arrDown"></span>
+            <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+          </div>
+        </li>
+        <li>
+          <a href="" class="fa fa-truck"><span>Доставка <br class="br"> и оплата</span></a>
+        </li>
+        <li><a href="" class="fa fa-mail-reply"><span>Возврат</span></a></li>
+        <li><a href="" class="fa fa-map-marker"><span>Пункты самовывоза</span></a></li>
+        <li><a href="blog.html" class="fa fa-comments-o"><span>Письмо руководству</span></a></li>
+        <li class="menu__phoneItem">
+          <a href="" class="fa fa-phone"><span>8 (833) 226-68-99<br class="br">
+          <b>Пн-Пт: 10:00-17:00</b></span>
+          </a>
+        </li>
+      </ul>
+      <div class="social">  
+        <a href="" class="fa fa-facebook"><span>/kd_ru</span></a>
+        <a href="" class="fa fa-vk"><span>/kupi_deshevle</span></a>
+        <a href="" class="fa fa-odnoklassniki"><span>/kupi_ru</span></a>
+        <a href="" class="fa fa-instagram"><span>/kupi-d-ru</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page wrapper">
+  <div class="page__breadcrumbs">
+    <span><a href="">Главная</a></span>
+    <span class="fa fa-angle-right"></span>
+    <span>Шаблон</span>
+  </div>
+  
+  <h1> Шаблон статьи / Новости </h1>
+  
+  <div class="page__article">
+    <div>
+      <h2>KD43.ru – отличный интернет магазин дешевых товаров</h2>
+      <p>Вы ищете дешевые товары для себя, своей семьи или другу на подарок? Мы поможем подобрать необходимую вещь на любой случай! Если вы хотите сэкономить драгоценное время на поиски подарка или домашней техники, обязательно загляните в наш онлайн супермаркет недорогих товаров для комфортной жизни!</p>
+      <h3>Что получают наши клиенты:</h3>        
+      <h3>Большой ассортимент</h3>
+      <p>В каталоге представлены самые разнообразные товары, начиная от ложки и заканчивая инструментами для ремонта и строительства. Каждая категория насчитывает несколько сотен наименований от проверенных отечественных и зарубежных производителей, а всего в магазине представлено более 300 тысяч изделий различного назначения. Подобрать нужный товар можно по названию в поиске, производителю или путем подбора в выбранной категории.</p>
+      <h3>Низкие цены</h3>
+      <p>Наш супермаркет – это дешевый интернет магазин в рунете. В этом может убедиться каждый посетитель, сравнив наши цены и цены других интернет площадок. А если вдруг вы в каком-то магазине нашли аналогичный товар по более низкой цене, то мы обязательно снизим на него стоимость специально для вас!</p>
+      <h3>Экономия времени</h3>
+      <p>Бытовые мелочи, товары для школы, одежда, игрушки, мебель, садовая утварь - теперь не нужно тратить огромное количество времени на походы по рынкам и магазинам в поиске нужных вещей. Эти и другие товары вы можете выбрать и заказать буквально за несколько минут, и даже не выходя из дому. Только представьте – сколько времени и денег вы сэкономите, если закажете нужные товары на нашем сайте! А если за окном 
+        гололед или дождь? Или домашние хлопоты не оставляют ни единого шанса, чтобы сбегать в магазин за подарком! Убедитесь сами, как быстро вы справитесь с поиском товара и его покупкой!</p>
+      <h3>Акции</h3>
+      <p>Наш магазин дешевых товаров регулярно проводит акции. Многие наши постоянные покупатели с удовольствием используют Акцию «Не имей 100 рублей, а имей сто друзей!», которая расшифруется так: приведи к нам друга, и получили приятный бонус в виде 100 рублей на покупку! Подробности этой и других акций можно узнать у операторов.</p>
+      <h3>Бесплатная доставка</h3>
+      <p>Не хотите переплачивать за доставку товара? Тогда заказывай у нас подарки, сувениры или любую малогабаритную вещь от 500 рублей и жди звонка от курьера! Оплата товаров при получении! А если при визуальном осмотре вы нашли дефект или товар не отвечает вашим критериям, вы можете отказаться от покупки.</p>
+      <h3>Оплата и Доставка</h3>
+      <p>Чтобы нашим посетителям было удобно совершать покупки, мы добавили несколько вариантов для расчета. Теперь оплатить можно карточкой любого банка VISA  или MasterCard, через систему электронных платежей QIWI, карту Сбербанка, Webmoney или Яндекс Деньги. Для тех, кто хочет сэкономить время на доставке, предлагаем забрать приобретенный товар на пункте  самовывоза, который расположен по адресу: г.Киров, ТЦ "Максимум", ул. Пролетарская 15, 3 этаж отдел "Апельсин" центральный вход</p>
+      <h3>Остались вопросы?</h3>
+      <p>Звоните по телефону +7 (8332) 266-899 с понедельника по пятницу (09.00 до 17.00) и наши операторы ответят на любые, интересующие вас вопросы.</p>
+    </div>
+    <div class="page__readmore">
+      <a href="">Читать далее</a>
+    </div>
+  </div>
+  
+  <div class="page__aside">
+    <h2>Подразделы</h2>
+    <ul>
+      <li><a href="">Раздел</a></li>
+      <li><a href="">Новость</a></li>
+      <li><a href="">Статья</a></li>
+      <li><a href="">Раздел</a></li>
+      <li><a href="">Новость</a></li>
+      <li><a href="">Статья</a></li>
+      <li><a href="">Раздел</a></li>
+      <li><a href="">Новость</a></li>
+      <li><a href="">Статья</a></li>
+      <li><a href="">Все материалы</a></li>
+    </ul>
+    <div class="page__banners"></div>
+    <div class="page__banners"></div>
+    <div class="page__banners"></div>
+  </div>
+</div>
+
+
+<div class="subs">
+  <div class="wrapper">
+    <div class="subs__textWrap">
+      <i class="fa fa-envelope-o"></i>
+      <div class="subs__text">
+        <p>Экслюзивные скидки</p>
+        <p>Подпишись на наши новости и горящие предложения</p>
+      </div>
+    </div>
+    <input class="inputBg inputBg--focus" type="text" placeholder="E-mail">
+    <button class="btn btn--blue" type="submit">Подписаться</button>
+  </div>
+</div>
+
+</div>
+
+<!-- футер начало -->
+<div class="footer">
+  <div class="wrapper clearfix">
+    <ul>
+      <li><a href="catalog.html">Каталог</a>
+        <ul>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">Возврат товаров</a></li>
+          <li><a href="">Пункты самовывоза</a></li>
+          <li><a href="">Письмо руководству</a></li>
+        </ul>
+      </li>
+      <li><a href="account.html">Личный кабинет</a>
+        <ul>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="article.html">Статьи</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="footer__contacts">
+      <a href="contacts.html">Контактная информация</a>
+      <p>
+        г. Киров, ТЦ "Максимум" ул. Пролетарская 15, 3 этаж,
+        отдел "Апельсин" каждый день с 9.00 - 20.00
+      </p>
+      <p>
+        график работы операторов 
+        <span>Пн-Пт 10.00 - 17.00 8 (8332) 266-899</span>
+        <a href="mailto:kd43@bk.ru">kd43@bk.ru</a>
+      </p>
+    </div>
+    <div class="footer__floatR">
+      <div class="footer__socialList">
+        <p>Мы в социальных сетях:</p>
+        <a class="fa fa-facebook" href=""></a>
+        <a class="fa fa-vk" href=""></a>
+        <a class="fa fa-odnoklassniki" href=""></a>
+        <a class="fa fa-instagram" href=""></a>
+      </div>
+      <p>© 2017 KD43.ru</p>
+    </div>
+  </div>
+</div>
+<!-- футер конец -->
+
+<!--== Оверлей ==-->
+<div class="overlayTrans"></div>
+<div class="overlay"></div>
+<!--== Поп-апы ==-->
+<!-- Войти -->
+<form class="form form__login" action="">
+  <fieldset >
+    <legend>Войти в личный кабинет</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail"></label>
+    <label><input class="inputBg" type="password" placeholder="Пароль"></label>
+    <div class="form__info clearfix">
+      <div class="form__floatL"><a href="">Забыли пароль?</a></div>
+      <div class="form__floatR"><a href="">Регистрация</a></div>
+    </div>
+    <label class="form__checkbox">
+      <input type="checkbox">
+      <i class="checkbox"></i>
+      <span>Запомнить</span>
+    </label>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Войти</button>
+    </div>
+  </fieldset>
+</form>
+<!-- Регистрация -->
+<form class="form form__signup" action="">
+  <fieldset>
+    <legend>Создать учетную запись</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+    <label><input class="inputBg" type="password" placeholder="Пароль *"></label>
+    <label><input class="inputBg" type="password" placeholder="Подтверждение пароля *"></label>
+    <p class="form__info">Подпишитесь на нашу рассылку!</p>
+    <label class="form__checkbox">
+      <input type="checkbox">
+      <i class="checkbox"></i>
+      <span>Новости компании и уникальные скидки для подписчиков</span>
+    </label>
+    <div class="form__captcha">
+      <label><input class="inputBg" type="text"></label>
+      <div class="captcha">
+      </div>
+      <p class="form__info">Введите символы (цифры и латинские буквы), которые видите на картинке.</p>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Регистрация</button>
+    </div>
+  </fieldset>
+</form>
+<!-- Письмо руководству -->
+<form class="form form__message" action="">
+  <fieldset>
+    <legend>Письмо руководству</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+    <label><input class="inputBg" type="text" placeholder="Ваше имя"></label>
+    <textarea class="inputBg" placeholder="Сообщение"></textarea>
+    <div class="form__captcha">
+      <label><input class="inputBg" type="text"></label>
+      <div class="captcha">
+      </div>
+      <p class="form__info">Введите символы (цифры и латинские буквы), которые видите на картинке.</p>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Отправить</button>
+    </div>
+  </fieldset>
+</form>
+<!-- Стоимость доставки -->
+<form class="form form__costDelivery" action="">
+  <fieldset>
+    <legend>Рассчитать стоимость доставки</legend>
+    <div class="form__country">
+      <select class="selectMenu" name="country" id="">
+        <option value="default" selected>Страна</option>
+        <option value="Russia">Россия</option>
+        <option value="USA">Америка Америка Америка Америка</option>
+      </select>
+    </div>
+    <div class="form__region">
+      <select class="selectMenu" name="region" id="">
+        <option value="default" selected>Обасть / Район</option>
+        <option value="Moscow">Московская Московская Московская область</option>
+        <option value="Lipetsk">Липетская область</option>
+      </select>          
+    </div>       
+    <label><input class="inputBg" type="text" placeholder="Почтовый индекс"></label>
+    <div class="form__countRes">
+      <p class="form__info">Наш менеджер перезвонит Вам для выбора способа доставки</p>
+      <p class="form__info">Итого:<span class="form__costResult">1120</span>р.</p>
+      <div class="form__wrapBtn">
+        <button class="form__countBtn2 btn btn--blue" type="submit">Пересчитать расценки</button>
+      </div>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="form__countBtn btn btn--blue" type="submit">Получить расценки</button>
+    </div>
+  </fieldset>
+</form> 
+
+</body>
+</html>
+
+
+
+
+
+
+

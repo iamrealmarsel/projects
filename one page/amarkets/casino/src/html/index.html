@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+
+  {% import "_meta.html" as meta %}
+  {{ meta.head() }}
+
+</head>
+
+<body>
+
+  {% import "_header.html" as header %}
+  {{ header.main() }}
+  
+  {% import "_headline.html" as headline %}
+  {{ headline.main() }}
+  
+  {% import "_features.html" as features %}
+  {{ features.main(data.features) }}
+
+  {% import "_profit.html" as profit %}
+  {{ profit.main() }}
+
+  {% import "_onehand.html" as onehand %}
+  {{ onehand.main() }}
+
+  {% import "_rep.html" as rep %}
+  {{ rep.main(data.rep) }}
+
+  {% import "_footer.html" as footer %}
+  {{ footer.main() }}
+
+
+</body>
+
+  {% import "_meta.html" as meta %}
+  {{ meta.foot() }}
+
+</html>

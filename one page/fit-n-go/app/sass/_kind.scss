@@ -1,0 +1,171 @@
+.kind {
+	min-height: 380px;
+	padding-bottom: 50px;
+}
+
+.kind__list {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 980px;
+	margin: 0 auto;
+	margin-top: -160px;
+}
+
+.kind__col {
+	width: 33.33%;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.kind__item {
+	box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 170px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.kind__item::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: $green;
+	// background-color: $yell;
+	// background-image: $gradient2;
+	opacity: 0.7;
+	z-index: 1;
+	transition: all 0.4s;
+}
+
+.kind__item span {
+	position: relative;
+	z-index: 10;
+	transition: all 0.2s;
+}
+
+.kind__item .btn {
+	position: absolute;
+	width: 100%;
+  max-width: 240px;
+  line-height: 1.2;
+  padding: 5px;
+  padding-bottom: 3px;
+  font-size: 16px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	z-index: 10;
+	transition: all 0.4s;
+}
+
+.kind__item:hover span {
+	transform: scale(0);
+}
+
+.kind__item:hover .btn {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.kind__item:hover::before {
+	background-image: none;
+	background-color: #2e3746;
+}
+
+
+
+.kind__item_1 {
+	background-image: url(../img/kind1.jpg);
+}
+.kind__item_2 {
+	background-image: url(../img/kind2.jpg);
+}
+.kind__item_3 {
+	background-image: url(../img/kind3.jpg);
+}
+.kind__item_4 {
+	background-image: url(../img/kind4.jpg);
+}
+.kind__item_5 {
+	background-image: url(../img/kind5.jpg);
+}
+.kind__item_6 {
+	background-image: url(../img/kind6.jpg);
+}
+
+.kind__img {
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 80px;
+	margin-bottom: 15px;
+}
+
+.kind__img_1 {
+	background-image: url(../img/kind1_ico.png);
+}
+.kind__img_2 {
+	background-image: url(../img/kind2_ico.png);
+}
+.kind__img_3 {
+	background-image: url(../img/kind3_ico.png);
+}
+.kind__img_4 {
+	background-image: url(../img/kind4_ico.png);
+}
+.kind__img_5 {
+	background-image: url(../img/kind5_ico.png);
+}
+.kind__img_6 {
+	background-image: url(../img/kind6_ico.png);
+}
+
+
+@media (max-width: 1199px) {
+
+
+}
+
+
+@media (max-width: 991px) {
+	
+	
+}
+
+@media (max-width: 767px) {
+
+	.kind__col {
+		width: 50%;
+	}
+	.kind__list {
+		// margin: 0 auto;
+		margin-top: -80px;
+	}
+
+}
+
+@media (max-width: 575px) {
+
+	.kind__col {
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+

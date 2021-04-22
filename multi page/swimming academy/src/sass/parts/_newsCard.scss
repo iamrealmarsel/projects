@@ -1,0 +1,47 @@
+.newsCard {
+
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.newsCard__container {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsCard__main {
+  margin-right: 124px;
+  max-width: 777px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+
+
+@media ($desktop) {
+  
+}
+
+@media ($tablet) {
+  
+}
+
+@media ($mobile) {
+  .newsCard__container {
+    flex-direction: column;
+  }
+
+  .newsCard__main {
+    max-width: none;
+    order: 1;
+  }
+  
+}
+
+@media ($smobile) {
+  
+}

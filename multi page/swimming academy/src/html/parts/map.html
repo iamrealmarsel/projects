@@ -1,0 +1,29 @@
+{% macro main() %}
+
+<div class="map" id="contacts">
+  <div class="map__container">
+    
+<div class="map__main">
+  <h2 class="title">Наши двери открыты <span class="nowrap">с 08:00</span> <span class="nowrap">до 18:00</span></h2>
+  <span class="desc">и не закрываются даже на выходных</span>
+  
+  <form action="" class="map__form js-submit">
+
+    <label class="map__lbl">
+      <i class="fa fa-phone"></i>
+      <input class="map__inp telMask" type="text" placeholder="Телефон" required="true" name="tel">
+    </label>
+    <label class="map__lbl">
+      <i class="fa fa-user"></i>
+      <input class="map__inp" type="text" placeholder="Имя" required="true" name="name">
+    </label>
+    <button class="btn" type="submit">ПЕРЕЗВОНИТЕ МНЕ</button>
+  </form>
+</div>
+  </div>
+
+  <div id="map">
+  </div>
+</div>
+
+{% endmacro %}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Личный кабинет | Мои заявки</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="layout layout_req">
+
+  {% import "parts/sidebar.html" as sidebar %}
+  {{ sidebar.body() }}
+
+    <div class="content">
+      <div class="content__header">
+        <h2 class="content__title">Мои заявки на подключение</h2>
+        <a href="step1.html" class="btn btn_acc">Создать новую заявку</a>
+      </div>
+
+      <div class="requests">
+
+        <div class="requests__header">
+          <div class="requestsItem__col">
+            <span class="requests__caption">№ Заявки</span>
+          </div>
+          <div class="requestsItem__col">
+            <span class="requests__caption">Дата создания:</span>
+          </div>
+          <div class="requestsItem__col">
+            <span class="requests__caption">Статус:</span>
+          </div>
+          <div class="requestsItem__col">
+          </div>
+        </div>
+
+        <div class="requestsItem">
+          <div class="requestsItem__col">
+            <span>34226547</span>
+          </div>
+          <div class="requestsItem__col">
+            <span>22.11.2017</span>
+          </div>
+          <div class="requestsItem__col">
+            <span class="requestsItem__status"><span>Активно</span></span>
+          </div>
+          <div class="requestsItem__col">
+            <div class="requestsItem__next">
+              <a href="#"><span class="requestsItem__link">Продолжить</span><i class="fa fa-long-arrow-right"></i></a>
+              <span class="requestsItem__info">Вы на 2 шаге</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="requestsItem completed">
+          <div class="requestsItem__col">
+            <span>34234834</span>
+          </div>
+          <div class="requestsItem__col">
+            <span>20.11.2017</span>
+          </div>
+          <div class="requestsItem__col">
+            <span class="requestsItem__status"><span>Завершено</span></span>
+          </div>
+          <div class="requestsItem__col">
+            <div class="requestsItem__details">
+              <a class="requestsItem__set fa fa-gear" href="#"></a>
+              <a class="requestsItem__trash fa fa-trash" href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

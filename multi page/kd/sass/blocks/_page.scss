@@ -1,0 +1,1100 @@
+// ---== главная ==---
+
+.page {
+  padding-top: 15px;
+}
+
+.page__index {
+  padding-bottom: 50px;
+}
+
+.page__index > h1 {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  text-align: center;
+}
+.page__seotext {
+  columns: 2;
+  column-gap: 30px;
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.page__readmore {
+  a {
+    font-weight: bold;
+  }
+}
+
+.page__index .page__readmore,
+.page__article .page__readmore {
+  display: none;
+}
+
+.page__backward {
+  display: none;
+  a {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bold;
+    color: #000;
+  }
+  .fa {
+    margin-right: 5px;
+  }
+}
+
+.page__btnWrap {
+  text-align: center;
+}
+
+// ---== хлебные крошки ==---
+
+.page__breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 5px;
+  span {
+    margin-right: 5px;
+    a {
+      font-size: 14px;
+      color: #000;
+    }
+  }
+}
+
+// ---== каталог ==---
+
+.page__catalog {
+  // display: table;
+  // border-spacing: 30px 0;
+  @include clearfix;
+  .page__catalogCol {
+    // display: table-cell;
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+    padding-right: 20px;
+    h2 {
+      margin: 0;
+      margin-bottom: 10px;
+      line-height: 1.2;
+      a {
+        // font-size: 14px;
+        line-height: 18px;
+        color: #000;
+      }
+    }
+    .page__gift {
+      position: relative;
+      ul li:last-child a {
+        color: #000;
+      }
+      h2, ul {
+        position: relative;
+      }
+      .page__giftLine {
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 2px $blue-ico;
+        background: transparent;
+      }
+      li:last-child {
+        // visibility: hidden;
+      }
+    }
+    ul {
+      margin-bottom: 40px;
+      li {
+        line-height: 18px;
+        margin-bottom: 10px;
+      }
+      li a {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #000;
+      }
+      li:last-child a {
+        color: $blue-ico;
+      }
+    }
+  }
+}
+
+// ---== статья ==---
+
+.page__article, 
+.page__blogList {
+  display: inline-block;
+  vertical-align: top;
+  width: 600px;
+  padding-bottom: 35px;
+  margin-right: 100px;
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.page__aside {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  padding: 0 5px;
+  ul {
+    margin-bottom: 30px;
+    li {
+      margin-bottom: 10px;
+      line-height: 16px;
+    }
+  }
+  ul li a{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #000;
+  }
+  ul li:last-child a {
+    color: $blue-ico;
+  }
+  .page__banners {
+    width: 180px;
+    height: 220px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 40px;
+  }
+}
+
+// ---== блог ==---
+
+.page__blogList .btn__wrap {
+  text-align: center;
+}
+
+.page__blogList .img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.page__blogItem {
+  margin-bottom: 40px;
+}
+
+.page__blogList .btn {
+  font-weight: 500;
+}
+
+// ---== контакты ==---
+
+.page__contacts {
+  padding-right: 100px;
+  h2 {
+    margin: 0;
+  }
+  p {
+    margin-bottom: 25px;
+    b {
+      font-weight: bold;
+    }
+  }
+  a {
+    font-weight: bold;
+    color: $blue-ico;
+    text-decoration: underline;
+  }
+}
+
+.page__contactsWrap {
+  padding-right: 460px;
+}
+
+.page__schedule {
+  float: right;
+  box-sizing: border-box;
+  padding: 15px 20px 5px;
+  width: 430px;
+  border-radius: 5px;
+  border: solid $blue-ico 2px;
+  h2 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  .page__time {
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .justify {
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: justify;
+    font-weight: bold;
+    line-height: 1;
+    span {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    span.break {
+      width: 100%;
+      height: 0;
+      font-size: 0;
+    }
+  }
+}
+
+.googleMap {
+  height: 400px;
+  margin-bottom: 30px;
+  border: solid $gray 2px;
+}
+
+.googleMap__frame {
+  width: 100%;
+  height: 100%;
+}
+
+// ---== фоны для подкаталогов ==---
+
+// авто
+.bgAvto  {
+  background-color: $bgAvto;
+  background-image: url('../img/bg/avto.png');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 1000px auto;
+}
+.bgAvto--list {
+  background-position: calc(100% + 600px) 50%;
+  background-size: auto;
+}
+.bgAvto--card {
+  background-position: calc(100% + 600px) 150px;
+  background-size: auto;
+}
+
+// книги
+.bgBooks  {
+  background-color: $bgBooks;
+  background-image: url('../img/bg/books.png');
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
+}
+.bgBooks--list {
+  background-position: calc(100% + 80px) 50%;
+}
+.bgBooks--card {
+  background-position: calc(100% + 80px) 170px;
+}
+
+// товары для творчества
+.bgCreative  {
+  background-color: $bgCreative;
+  background-image: url('../img/bg/creative.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgCreative--list {
+  background-position: calc(100% + 450px) 50%;
+}
+.bgCreative--card {
+  background-position: calc(100% + 450px) 200px;
+}
+
+// канцтовары
+.bgStationery  {
+  background-color: $bgStationery;
+  background-image: url('../img/bg/stationery.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgStationery--list {
+  background-position: calc(100% + 300px) 50%;
+}
+.bgStationery--card {
+  background-position: calc(100% + 300px) 170px;
+}
+
+// зоотовары
+.bgPets  {
+  background-color: $bgPets;
+  background-image: url('../img/bg/pets.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgPets--list {
+  background-position: calc(100% + 350px) 50%;
+}
+.bgPets--card {
+  background-position: calc(100% + 350px) 170px;
+}
+
+// сад и огород
+.bgGarden  {
+  background-color: $bgGarden;
+  background-image: url('../img/bg/garden.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgGarden--list {
+  background-position: calc(100% + 370px) 50%;
+}
+.bgGarden--card {
+  background-position: calc(100% + 370px) 150px;
+}
+
+// галантерея
+.bgHaberdashery  {
+  background-color: $bgHaberdashery;
+  background-image: url('../img/bg/haberdashery.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgHaberdashery--list {
+  background-position: calc(100% + 300px) 50%;
+}
+.bgHaberdashery--card {
+  background-position: calc(100% + 300px) 150px;
+}
+
+// хозтовары
+.bgHouseholdgoods  {
+  background-color: $bgHouseholdgoods;
+  background-image: url('../img/bg/householdgoods.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgHouseholdgoods--list {
+  background-position: calc(100% + 370px) 50%;
+}
+.bgHouseholdgoods--card {
+  background-position: calc(100% + 370px) 150px;
+}
+
+// праздники / подбор подарков
+.bgHolidays  {
+  background-color: $bgHolidays;
+  background-image: url('../img/bg/holidays.png');
+  background-repeat: no-repeat;
+  background-position: 90% calc(0 + 20px);
+}
+.bgHolidays--list {
+  background-position: calc(100% + 370px) 50%;
+}
+.bgHolidays--card {
+  background-position: calc(100% + 370px) 100px;
+}
+
+// эксклюзив
+.bgExclusive  {
+  background-color: $bgExclusive;
+  background-image: url('../img/bg/exclusive.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgExclusive--list {
+  background-position: calc(100% + 220px) 50%;
+}
+.bgExclusive--card {
+  background-position: calc(100% + 220px) 200px;
+}
+
+// сувениры
+.bgSouvenirs  {
+  background-color: $bgSouvenirs;
+  background-image: url('../img/bg/souvenirs.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgSouvenirs--list {
+  background-position: calc(100% + 300px) 50%;
+}
+.bgSouvenirs--card {
+  background-position: calc(100% + 300px) 150px;
+}
+
+// кожгалантерея
+.bgLeathergoods  {
+  background-color: $bgLeathergoods;
+  background-image: url('../img/bg/leathergoods.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgLeathergoods--list {
+  background-position: calc(100% + 500px) 50%;
+}
+.bgLeathergoods--card {
+  background-position: calc(100% + 500px) 150px;
+}
+
+// электротовары
+.bgElectric  {
+  background-color: $bgElectric;
+  background-image: url('../img/bg/electric.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgElectric--list {
+  background-position: calc(100% + 600px) 50%;
+}
+.bgElectric--card {
+  background-position: calc(100% + 600px) 170px;
+}
+
+// косметика и парфюм
+.bgCosmetics  {
+  background-color: $bgCosmetics;
+  background-image: url('../img/bg/cosmetics.png');
+  background-repeat: no-repeat;
+  background-position: calc(100% + 50px) 50%;
+}
+.bgCosmetics--list {
+  background-position: calc(100% + 600px) 50%;
+}
+.bgCosmetics--card {
+  background-position: calc(100% + 600px) 150px;
+}
+
+// бижутерия
+.bgBijouterie  {
+  background-color: $bgBijouterie;
+  background-image: url('../img/bg/bijouterie.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgBijouterie--list {
+  background-position: calc(100% + 400px) 50%;
+}
+.bgBijouterie--card {
+  background-position: calc(100% + 400px) 170px;
+}
+
+// строительство и ремонт
+.bgBuilding  {
+  background-color: $bgBuilding;
+  background-image: url('../img/bg/building.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgBuilding--list {
+  background-position: calc(100% + 350px) 50%;
+}
+.bgBuilding--card {
+  background-position: calc(100% + 350px) 170px;
+}
+
+// бытовая техника
+.bgAppliances  {
+  background-color: $bgAppliances;
+  background-image: url('../img/bg/appliances.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgAppliances--list {
+  background-position: calc(100% + 150px) 50%;
+}
+.bgAppliances--card {
+  background-position: calc(100% + 150px) 170px;
+}
+
+// игрушки / детские товары
+.bgToys  {
+  background-color: $bgToys;
+  background-image: url('../img/bg/toys.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgToys--list {
+  background-position: calc(100% + 530px) 50%;
+}
+.bgToys--card {
+  background-position: calc(100% + 530px) 170px;
+}
+
+// спортивные товары
+.bgSport  {
+  background-color: $bgSport;
+  background-image: url('../img/bg/sport.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgSport--list {
+  background-position: calc(100% + 400px) 50%;
+}
+.bgSport--card {
+  background-position: calc(100% + 400px) 150px;
+}
+
+// текстиль
+.bgTextile  {
+  background-color: $bgTextile;
+  background-image: url('../img/bg/textile.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgTextile--list {
+  background-position: calc(100% + 470px) 50%;
+}
+.bgTextile--card {
+  background-position: calc(100% + 470px) 170px;
+}
+
+// одежда и обувь
+.bgClothes  {
+  background-color: $bgClothes;
+  background-image: url('../img/bg/clothes.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+.bgClothes--list {
+  background-position: calc(100% + 300px) 50%;
+}
+.bgClothes--card {
+  background-position: calc(100% + 300px) 150px;
+}
+
+// Летние товары
+.bgSummer  {
+  background-color: $bgSummer;
+  background-image: url('../img/bg/summer.png');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 900px auto;
+}
+.bgSummer--list {
+  background-position: calc(100% + 650px) 50%;
+  background-size: auto;
+}
+.bgSummer--card {
+  background-position: calc(100% + 650px) 100px;
+  background-size: auto;
+}
+
+// интерьер
+.bgInterier  {
+  background-color: $bgInterier;
+  background-image: url('../img/bg/interier.png');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.bgInterier--list {
+  background-position: calc(100% + 600px) 50%;
+}
+.bgInterier--card {
+  background-position: calc(100% + 600px) 150px;
+}
+
+
+
+// ---== подкаталог ==---
+
+.page__subcatalog {
+  padding-bottom: 35px;
+  width: 240px;
+}
+
+.page__subcatalog ul li {
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.page__subcatalog ul li a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #000;
+  &:hover {
+    color: #fff;
+  }
+}
+
+// ---== подподкаталог ==---
+
+.page__subsubcatalog {
+  padding-bottom: 30px;
+  width: 785px;
+}
+
+.page__subsubcatalog .btn {
+  display: none;
+}
+
+.page__filter {
+  margin-bottom: 25px;
+  font-size: 0;
+}
+
+.page__filter .sliderRange {
+  margin-right: 10px;
+}
+
+.page__filter .selectBrand {
+  margin-right: 10px;
+}
+
+.page__products {
+  margin-bottom: 10px;
+  font-size: 0;
+}
+
+.page__products .productItem {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.page__products .productItem:nth-child(4n) {
+  margin-right: 0;
+}
+
+.page__paginator  {
+  text-align: center;
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+  }
+  .my-angle-left {
+    float: left;
+  }
+  .my-angle-right {
+    float: right;
+  }
+  .my-angle-left::before, 
+  .my-angle-right::after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .my-angle-left::before {
+    content: "\f104";
+    margin-right: 10px;
+  }
+  .my-angle-right::after {
+    content: "\f105";
+    margin-left: 10px;
+  }
+}
+
+// ---== карточка товара ==---
+
+.page__subsubcatalogCard {
+  padding-bottom: 35px;
+  width: 805px;
+}
+
+.page .productCard {
+  margin-bottom: 40px;
+}
+
+.page__productsAnalogTitle {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.page__productsAnalog {
+  font-size: 0;
+  margin-bottom: 30px;
+}
+
+.page__productsAnalog .productItem {
+  margin-right: 25px;
+}
+
+.page__productsAnalog .productItem:last-of-type {
+  margin-right: 0;
+}
+
+.page__btnWrap {
+  text-align: center;
+}
+
+.page__btnWrap .btn {
+  font-weight: 500;
+}
+
+// ---== отзывы ==---
+
+.page__reviewList {
+  width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.page__reviewList .review {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+// ---== отложенные товары ==---
+
+.page__likedItems {
+  margin-bottom: 30px;
+}
+
+.page__productList {
+  width: 990px;
+  font-size: 0;
+}
+
+.page__productList .productItem {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  &:nth-of-type(5n) {
+    margin-right: 0;
+  }
+  &:nth-last-of-type(-n+6) {
+    margin-bottom: 30px;
+  }
+}
+
+// ---== оформление заказа ==---
+
+.page__ordering {
+  padding-bottom: 50px;
+}
+
+.page__blogList .page__blogItem:last-child {
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.page__index {
+  padding-bottom: 30px;
+}
+
+.page__index > h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.page__seotext {
+  columns: auto;
+  column-gap: normal;
+  text-align: justify;
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.page__index .page__readmore {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+// ---== хлебные крошки ==---
+
+.page__breadcrumbs {
+  font-size: 12px;
+  margin-bottom: 10px;
+  span {
+    margin-right: 5px;
+    a {
+      font-size: 12px;
+      color: #000;
+    }
+  }
+}
+
+// ---== статья ==---
+
+.page__article, 
+.page__blogList {
+  display: block;
+  width: auto;
+  padding-bottom: 30px;
+  margin-right: 0;
+  p {
+    text-align: justify;
+  }
+}
+
+.page__aside {
+  display: none;
+}
+
+.page__article .page__readmore  {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+// ---== блог ==---
+
+.page__blogList .img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.page__blogItem {
+  margin-bottom: 30px;
+}
+
+// ---== каталог ==---
+
+.page__catalog {
+  margin-bottom: 25px;
+  .page__catalogCol {
+    float: none;
+    width: auto;
+    padding-right: 0;
+  }
+  ul {
+    display: none;
+  }
+  h2 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  a {
+    font-size: 14px;
+    // line-height: 18px;
+    color: #000;
+  }
+  .page__gift {
+    h2 {
+      display: inline-block;
+      padding: 5px;
+      border-radius: 5px;
+      border:  solid 2px $blue-ico;
+    }
+    .page__giftLine {
+      display: none;
+    }
+  }
+}
+
+// ---== контакты ==---
+
+.page__contacts {
+  padding-right: 0;
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.page__contactsWrap {
+  padding-right: 0;
+}
+
+.page__schedule {
+  float: none;
+  width: 300px;
+  padding: 10px 10px 5px;
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .justify {
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+.googleMap {
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+// ---== подкаталог ==---
+
+
+.page__subcatalog {
+  width: auto;
+}
+
+.page__subcatalog ul {
+  margin-bottom: 25px;
+}
+
+.page__backward {
+  display: block;
+}
+
+// ---== отзывы ==---
+
+.page__reviewList {
+  width: auto;
+}
+
+.page__reviewList .review {
+  margin-bottom: 10px;
+}
+
+.page__reviewList .review:last-of-type {
+  margin-bottom: 30px;
+}
+
+// ---== подподкаталог ==---
+
+
+.page__subsubcatalog {
+  width: auto;
+  .btn {
+    display: inline-block;
+  }
+}
+
+.page__filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 75px;
+  margin-bottom: 20px;
+
+}
+
+.page__filter .sliderRange {
+  margin-right: 0;
+}
+
+.page__filter .selectBrand {
+  margin-right: 0;
+}
+
+.page__products {
+  text-align: center;
+}
+
+.page__products .productItem {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.page__paginator  {
+  display: none;
+}
+
+// ---== карточка товара ==---
+
+.page__subsubcatalogCard {
+  width: auto;
+}
+
+.page .productCard {
+  margin-bottom: 30px;
+}
+
+.page__productsAnalogTitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+//   font-weight: bold;
+}
+
+.page__productsAnalog {
+  margin-bottom: 20px;
+  font-size: 0;
+  text-align: center;
+}
+
+.page__productsAnalog .productItem {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+// .page__productsAnalog .productItem:last-of-type {
+//   margin-right: 0;
+// }
+
+// .page__btnWrap {
+//   text-align: center;
+// }
+
+// .page__btnWrap .btn {
+//   font-weight: 500;
+// }
+
+// ---== отложенные товары ==---
+
+.page__likedItems {
+  margin-bottom: 30px;
+}
+
+.page__productList {
+  width: auto;
+  font-size: 0;
+  text-align: center;
+}
+
+.page__productList .productItem {
+  margin-right: 0;
+  margin-bottom: 20px;
+  &:nth-of-type(5n) {
+    margin-right: 0;
+  }
+  &:nth-last-of-type(-n+6) {
+    margin-bottom: 30px;
+  }
+}
+
+// ---== фоны для подкаталогов ==---
+
+.bgAvto,
+.bgBooks,
+.bgCreative,
+.bgStationery,
+.bgPets,
+.bgGarden,
+.bgHaberdashery,
+.bgHouseholdgoods,
+.bgHolidays,
+.bgExclusive,
+.bgSouvenirs,
+.bgLeathergoods,
+.bgElectric,
+.bgCosmetics,
+.bgBijouterie,
+.bgBuilding,
+.bgAppliances,
+.bgToys,
+.bgSport,
+.bgTextile,
+.bgClothes,
+.bgSummer,
+.bgInterier {
+  background-image: none;
+}
+
+
+
+}
+
+
+
+
+
+

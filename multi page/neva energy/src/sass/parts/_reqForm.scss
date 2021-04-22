@@ -1,0 +1,248 @@
+.reqForm {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 940px;
+}
+
+.reqForm__left {
+  width: 60%;
+  padding-right: 100px;
+}
+
+.reqForm__right {
+  width: 40%;
+}
+
+.reqForm__bottom {
+  margin-top: auto;
+  width: 100%;
+}
+
+.reqForm__item {
+  position: relative;
+  // z-index: 20;
+  display: block;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
+}
+
+.reqForm__hidden {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  opacity: 0;
+}
+
+.reqForm__select {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .fa-angle-down {
+    padding-left: 5px;
+  }
+}
+
+.reqForm__selectmenu {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: calc(100% - 3px);
+  left: 0;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  background: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+  li {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #000;
+
+    &:hover {
+      background-color: rgba(100,100,100,0.1);
+    }
+  }
+
+}
+
+.reqForm__selecttxt {
+  color: #858585;
+}
+
+.reqForm__selecttxt.active {
+  color: #000;
+}
+
+.reqForm__lbl {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.reqForm__val {
+  display: block;
+  font-weight: 500;
+}
+
+.reqForm__title {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.reqForm__apps {
+  font-size: 14px;
+}
+
+.reqForm__item {
+
+  margin-bottom: 20px;
+
+  label {
+    position: relative;
+    display: block;
+  }
+}
+
+.reqForm__txt {
+  margin-bottom: 7px;
+}
+
+.js_file {
+  // position: absolute;
+  opacity: 0;
+  // cursor: pointer;
+}
+
+
+.reqForm__upload {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: inline-block;
+  font-size: 12px;
+  color: #0C6BC9;
+  text-decoration: none;
+  cursor: pointer;
+  // margin-bottom: 25px;
+
+  .fa {
+    margin-right: 10px;
+  }
+}
+
+.reqForm__file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: none;
+  cursor: pointer;
+
+  .fa-trash {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    color: #848484;
+    font-size: 14px;
+    padding: 5px;
+    // outline: solid 1px red;
+  }
+}
+
+.reqForm__filetxt {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #828282;
+  width: 100%;
+  max-width: 150px;
+  min-height: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.reqForm__checkboxes {
+  margin-top: 80px;
+}
+
+@media ($desktop) {
+  .reqForm__checkboxes {
+    margin-top: 50px;
+  }
+  .reqForm__left {
+    padding-right: 60px;
+  }
+}
+
+@media ($tablet) {
+  .reqForm__left {
+    padding-right: 30px;
+  }
+}
+
+@media ($mobile) {
+
+}
+
+@media ($smobile) {
+
+  .reqForm__checkboxes {
+    margin-top: 0;
+  }
+
+  .reqForm__left {
+    width: 100%;
+    padding: 0;
+    // margin-bottom: 30px;
+  }
+  .reqForm__right {
+    width: 100%;
+  }
+  .reqForm .btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .reqForm__item:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  .reqForm__btn {
+    margin: 0 auto;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

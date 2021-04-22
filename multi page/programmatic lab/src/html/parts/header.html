@@ -1,0 +1,23 @@
+{% macro main(headerClass='', burgerClass='', logo='logo') %}
+
+<header class="header {{headerClass}}">
+  <div class="container">
+    <a href="index.html" class="header__logo">
+      <img src="img/{{logo}}.png" alt="">
+    </a>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="aboutus.html">Компания</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="index.html#6" data-slide="6">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__burger">
+      <div class="burger {{burgerClass}} ">
+        <span class="burger__line"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+{% endmacro %}

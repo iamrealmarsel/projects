@@ -1,0 +1,32 @@
+/* ---== услуги ==--- */
+
+.servicesPage {
+  margin-bottom: 0;
+  /*background-color: #fbfbfb;*/
+}
+
+.servicesPage__title {
+  float: none;
+  margin: 20px 0 60px;
+}
+
+
+.servicesSeo {
+  /*max-width: 900px;*/
+  padding-bottom: 40px;
+}
+
+.servicesSeo__title {
+  margin-bottom: 30px;
+  /*margin-top: 0;*/
+}
+
+.servicesSeo__list {
+  list-style: outside disc;
+  padding-left: 10px;
+}
+
+
+.services .title {
+  margin-bottom: 70px;
+}

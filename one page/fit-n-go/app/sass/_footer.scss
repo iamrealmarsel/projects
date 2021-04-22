@@ -1,0 +1,18 @@
+.footer {
+	background-color: #2e3746;
+}
+
+
+.footer .header__head {
+	margin-bottom: 0;
+}
+
+
+@media (max-width: 575px) {
+	.footer {
+		padding: 15px 0;
+	}
+	.footer .btn {
+		display: none;
+	}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="jetskills-landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-174.000000, -2015.000000)" id="what-we-can" stroke="#227ACD" stroke-width="1.5">
+            <g transform="translate(175.000000, 1781.000000)">
+                <g id="checkbox" transform="translate(0.000000, 235.000000)">
+                    <path d="M17.5,35 C27.1649831,35 35,27.1649831 35,17.5 C35,7.83501688 27.1649831,0 17.5,0 C7.83501688,0 0,7.83501688 0,17.5 C0,25.4789481 5.33984947,32.2107075 12.6408433,34.3165731 C14.1836195,34.7615645 15.813965,35 17.5,35 Z" id="Oval"></path>
+                    <polyline id="Path-2" stroke-linecap="round" stroke-linejoin="round" points="9 15.2885742 16.5991211 24.4604492 25.7817383 10"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

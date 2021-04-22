@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+@@include('blocks/header.html')
+
+
+<div style="padding-left: 50px">
+
+  <h1>Pop-ups</h1>
+<!-- стоимость доставки -->
+<form class="form" action="">
+  <fieldset class="form__costDelivery">
+    <legend>Рассчитать стоимость доставки</legend>
+    <div class="form__country">
+      <select class="selectMenu" name="country" id="">
+        <option value="default" selected>Страна</option>
+        <option value="Russia">Россия</option>
+        <option value="USA">Америка</option>
+      </select>
+    </div>
+    <div class="form__region">
+      <select class="selectMenu" name="region" id="">
+        <option value="default" selected>Обасть / Район</option>
+        <option value="Moscow">Московская область</option>
+        <option value="Lipetsk">Липетская область</option>
+      </select>          
+    </div>       
+    <label><input class="inputBg" type="text" placeholder="Почтовый индекс"></label>
+    <p class="form__info">Наш менеджер перезвонит Вам для выбора способа доставки</p>
+    <p class="form__info">Итого: <span class="form__costResult">0</span> р.</p>
+    <div class="form__wrapBtn hidden">
+      <button class="btn btn--blue" type="submit">Получить расценки</button>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue" type="submit">Пересчитать расценки</button>
+    </div>
+  </fieldset>
+</form>
+
+<!-- письмо руководству -->
+<form class="form" action="">
+  <fieldset class="form__message">
+    <legend>Письмо руководству</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+    <label><input class="inputBg" type="text" placeholder="Ваше имя"></label>
+    <textarea class="inputBg" placeholder="Сообщение"></textarea>
+    <div class="form__captcha">
+      <label><input class="inputBg" type="text"></label>
+      <div class="captcha">
+      </div>
+      <p class="form__info">Введите символы (цифры и латинские буквы), которые видите на картинке.</p>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Отправить</button>
+    </div>
+  </fieldset>
+</form>
+<!-- обратный звонок -->
+<form class="form" action="">
+  <fieldset class="form__call">
+    <legend>Заказать обратный звонок</legend>
+    <label><input class="inputBg" type="text" placeholder="Ваше имя"></label>
+    <label><input class="inputBg" type="text" placeholder="+7 ( ___ ) ___ - __ - __"></label>
+    <p class="form__info">
+      Удобное время с: <input type="text" value="09:00"> 
+      до: <input type="text" value="22:00">
+    </p>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Отправить</button>
+    </div>
+  </fieldset>
+</form>
+
+<!-- Войти -->
+<form class="form form__login" action="">
+  <fieldset >
+    <legend>Войти в личный кабинет</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail"></label>
+    <label><input class="inputBg" type="password" placeholder="Пароль"></label>
+    <div class="form__info clearfix">
+      <div class="form__floatL"><a href="">Забыли пароль?</a></div>
+      <div class="form__floatR"><a href="">Регистрация</a></div>
+    </div>
+    <label class="form__checkbox">
+      <input type="checkbox">
+      <i class="checkbox"></i>
+      <span>Запомнить</span>
+    </label>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Войти</button>
+    </div>
+  </fieldset>
+</form>
+
+<!-- Регистрация -->
+<form class="form form__signup" action="">
+  <fieldset>
+    <legend>Создать учетную запись</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+    <label><input class="inputBg" type="password" placeholder="Пароль *"></label>
+    <label><input class="inputBg" type="password" placeholder="Подтверждение пароля *"></label>
+    <p class="form__info">Подпишитесь на нашу рассылку!</p>
+    <label class="form__checkbox">
+      <input type="checkbox">
+      <i class="checkbox"></i>
+      <span>Новости компании и уникальные скидки для подписчиков</span>
+    </label>
+    <div class="form__captcha">
+      <label><input class="inputBg" type="text"></label>
+      <div class="captcha">
+      </div>
+      <p class="form__info">Введите символы (цифры и латинские буквы), которые видите на картинке.</p>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Регистрация</button>
+    </div>
+  </fieldset>
+</form>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

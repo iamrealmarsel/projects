@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+	<!-- <link rel="stylesheet" href="slick.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/jquery.selectric/selectric.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="libs/flatpickr/flatpickr.min.css">
+	<link rel="stylesheet" href="css/custom-typ.css?v=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+</head>
+<body class="reg-page">
+	<header class="header inner">
+		<header class="flex align-items-center">
+			<div class="logo">
+				<a href="/">
+					<img src="img/logo.png">
+					<span>
+						Незабываемые праздники и командные игры по мотивам всемирно известных телешоу в 60 городах мира
+					</span>
+				</a>
+			</div>
+			<div class="contacts__socials-wrap">
+			  <div class="contacts__socials">
+			    <a href="https://wa.me/79119665028"><i class="fab fa-whatsapp"></i></a>
+			    <a href="viber://chat?number=+79119665028"><i class="fab fa-viber"></i></a>
+			    <a href="https://t.me/fortfamily_bot"><i class="fab fa-telegram-plane"></i></a>
+			  </div>
+			  <p class="contacts__txt">Ответим за 5 минут</p>
+			</div>
+			<!-- <div class="phones">
+				<div class="phone">
+					<a href="/investments/" class="header-top__callback dashed link">Вернуться на сайт</a>
+				</div>
+			</div> -->
+		</header>
+	</header>
+	<div class="wrap">
+		<div class="reg-block">
+			<img src="img/ok.png">
+			<div class="name">Спасибо за регистрацию!</div>
+			<p>Менеджер перезвонит вам в указанное время и проконсультирует по всем вопросам. <br>
+Вы также можете подписаться на нас в соцсетях, чтобы узнать больше о сети Fort Family!
+</p>
+			<a href="mailto:fr@fortfamily.ru" class="mail">fr@fortfamily.ru</a>
+			<a href="https://www.instagram.com/fortfamily.m/" target="_blank"><img src="img/social1.png"></a>
+			<a href="https://vk.com/fr_fortfamily" target="_blank"><img src="img/social2.png"></a>
+			<a href="https://www.facebook.com/fortfamily.ru" target="_blank"><img src="img/social3.png"></a>
+		</div>
+	</div>
+
+	<form class="white-popup-block mfp-hide modal-callback form send_form_2" id="callback">
+	  <div class="modal-callback__title">Укажите контактные данные и удобное время для звонка</div>
+	  <div class="modal-callback__text">Менеджер компании позвонит вам прямо сейчас или в другое рабочее время: мы работаем по будням с 10:00 до 20:00 по Москве</div>
+	  <div class="modal-callback__fields">
+	    <div class="form__input-group">
+	      <label>Как к вам обращаться?</label>
+	      <input type="text" name="name" placeholder="Имя и Фамилия" required>
+	    </div>
+	    <div class="form__input-group">
+	      <label>Введите телефон</label>
+	      <div id="phone-input-3" class="">
+	      <!-- 
+	            <div class="custom-phone__select">
+	                <div class="custom-phone__select-current">
+	                    <div class="custom-phone__select-flag">
+	                        <img src="css/flags/blank.gif" :class="[`flag`, `flag-${countryTarget['prefix']}`]" :alt="countryTarget['alt']" />
+	                    </div>
+
+	                    <div class="custom-phone__select-code">
+	                        <input name="phone-code"
+	                               placeholder="Код"
+	                               autocomplete="off"
+	                               :value="codeCountry"
+	                               @keydown="codePress"
+	                               @keydown.enter="codeFocus"
+	                        />
+	                    </div>
+	                </div>
+	            </div> -->
+	            <input class="" type="tel" name="phone" placeholder="Номер телефона" required>
+	        </div>
+	    </div>
+	    <div class="modal-callback__when">
+	      <input id="call-me-now" type="radio" name="callback-call-me" value="now" checked>
+	      <label for="call-me-now">Позвонить сейчас</label>
+	      <input class="js-call-me" id="call-me-at" type="radio" name="callback-call-me" value="at">
+	      <label for="call-me-at">По времени</label>
+	    </div>
+	    <div class="form__input-group">
+	      <input class="js-call-me-input" id="datetimepicker" type="text" name="callback-datetime" placeholder="Например: 21 января в 14:00" disabled>
+	    </div>
+	    <button class="btn" type="submit">Перезвоните мне</button>
+	    <div class="form__terms">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с Политикой конфиденциальности</div>
+	  </div>
+	</form>
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
+	<script src="libs/jquery.mask/jquery.mask.min.js"></script>
+	<script src="libs/jquery.selectric/jquery.selectric.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
+	<script src="libs/flatpickr/flatpickr.min.js"></script>
+	<!-- <script src="libs/flatpickr/ru-custom.js"></script> -->
+	<script src="js/custom.js?v=2"></script>
+</body>
+</html>

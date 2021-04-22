@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+@@include('blocks/head.html')
+</head>
+<body>
+
+@@include('blocks/header.html')
+
+<div class="grid">
+
+@@include('blocks/sidebar.html')
+
+<div class="page wrapper">
+  <div class="page__breadcrumbs">
+    <span><a href="">Главная</a></span>
+    <span class="fa fa-angle-right"></span>
+    <span>Личный кабинет</span>
+  </div>
+  
+  <h1>Личный кабинет</h1>
+  
+<div class="account">
+  <span class="m-accountHead">Учетная запись</span>
+  <!-- <div class="account"> -->
+    <div class="account__head">
+      <div class="account__profile">
+        <a class="active" href="">Учетная запись</a>
+      </div>
+      <div class="account__orders">
+        <a href="">Заказы</a>
+      </div>
+      <div class="account__compare">
+        <a href="">Список сравнения</a>
+      </div>
+      <div class="account__liked">
+        <a href="">Отложенные товары</a><span class="account__amount">(0)</span>
+      </div>
+      <div class="account__logout">
+        <a class="account__logoutLink" href="">Выйти</a>
+      </div>
+    </div>
+  <!-- </div> -->
+</div>
+  
+  <div class="accountProfile">
+    <form action="" class="accountProfileForm">
+      <div class="accountProfileForm__wrapper">
+        <fieldset class="accountProfileForm__user">
+          <legend class="accountProfileForm__title1">Информация об учетной записи пользователя:</legend>
+
+          <div class="accountProfileForm__fileUploadWrap">
+            <label class="accountProfileForm__ava" for="fileAva"></label>
+            <div class="accountProfileForm__fileUpload">
+              <label class="accountProfileForm__fileAva">
+                <span class="accountProfileForm__fileName"></span>
+                <div class="accountProfileForm__choose btn btn--blueLine">Выбрать файл</div>
+                <input id="fileAva" type="file">
+              </label>
+              <button class="accountProfileForm__upload btn btn--blue" type="button">Загрузить</button>
+            </div>
+          </div>
+
+          <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+          <label><input class="inputBg" type="password" placeholder="Пароль *"></label>
+          <label><input class="inputBg" type="password" placeholder="Подтверждение пароля *"></label>
+        </fieldset>
+  
+        <fieldset class="accountProfileForm__user">
+          <legend class="accountProfileForm__title2">Пожалуйста заполните поля:</legend>
+          <div class="accountProfileForm__floatWrap">
+            <label><input class="inputBg" type="text" placeholder="Имя *"></label>
+            <label><input class="inputBg" type="text" placeholder="Фамилия *"></label>
+          </div>
+          <div class="accountProfileForm__floatWrap">
+            <label><input class="inputBg" type="text" placeholder="+7 ( ___ ) ___ - __ - __"></label>
+            <label><input class="inputBg" type="text" placeholder="Город"></label>
+          </div>
+          <label><input class="inputBg" type="text" placeholder="Адрес"></label>
+          <div class="accountProfileForm__countryWrap">
+            <div class="accountProfileForm__country" name="country" id="">
+              <select name="country" class="selectMenu"><option value="default" selected>Страна *</option>
+                <option value="Russia">Россия</option>
+                <option value="USA">Америка Америка Америка Америка</option>
+              </select>
+            </div>
+            <div class="accountProfileForm__region" name="region" id="">
+              <select name="region" class="selectMenu"><option value="default" selected>Обасть / Район *</option>
+                <option value="Moscow">Московская Московская Московская область</option>
+                <option value="Lipetsk">Липетская область</option>
+              </select>
+            </div>
+          </div>
+          <label><input class="inputBg" type="text" placeholder="Почтовый индекс *"></label>
+        </fieldset>
+        <fieldset class="accountProfileForm__subs">
+          <legend class="accountProfileForm__title3">Списки рассылок:</legend>
+          <p>Подпишитесь на наши рассылки!</p>
+          <label>
+            <input type="checkbox">
+            <i class="checkbox"></i>
+            <span>Новости компании и уникальные скидки 
+              для подписчиков</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <i class="checkbox"></i>
+            <span>Новости компании и уникальные скидки 
+              для подписчиков</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <i class="checkbox"></i>
+            <span>Новости компании и уникальные скидки 
+              для подписчиков</span>
+          </label>
+        </fieldset>
+      </div>
+      <div class="accountProfileForm__details">
+        <h3>Детали учетной записи:</h3>
+        <p>
+          На этой странице вы можете изменить данные для авторизации и персональную информацию для её использования при размещении заказов. Чтобы повысить уровень безопасности своей учетной записи, рекомендуется избегать паролей, в которых используются:
+          <ul>
+            <li>Слова из словарей на любом языке.</li>
+            <li>Слова, написанные задом наперед, и абревиатуры.</li>
+            <li>Последовательности символов или повторяющиеся символы. Например: 12345678, 222222, abcdefg или соседние буквы на вашей клавиатуре (qwerty).</li>
+            <li>Персональную информацию. ваше имя, дата рождения, номер водительских прав, номер паспорта или подобную информацию.</li>
+          </ul>
+        </p>
+        <div class="page__btnWrap">
+          <button class="btn btn--blue" type="submit">Сохранить</button>
+          <button class="btn" type="reset">Сбросить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <hr>
+  
+  <div class="accountOrders">
+    <form class="accountOrdersForm" action="">
+      <div class="accountOrdersForm__top">
+        <input class="inputBg" type="text" placeholder="Номер заказа">
+        <div class="sliderRange">
+          <label class="sliderRange__minLabel" for="sliderRange__min">
+            От: <input class="sliderRange__min" id="sliderRange__min" type="text"> р. 
+          </label>
+          <div class="sliderUIWrap">
+            <div class="sliderUI"></div>
+          </div>
+          <label for="sliderRange__max"> 
+           До: <input class="sliderRange__max" id="sliderRange__max" type="text"> р.
+          </label>
+        </div>
+        <div class="accountOrdersForm__period">
+          <select name="period" class="selectMenu">
+            <option value="default">Период</option>
+            <option value="period1">период 1</option>
+            <option value="period2">период 2 периодпериод период дата</option>
+          </select>
+        </div>
+        <div class="accountOrdersForm__date">
+          <select name="date" class="selectMenu">
+            <option value="default">Дата с:</option>
+            <option value="date1">дата 1 датадатадата дата</option>
+            <option value="date2">дата 2</option>
+            <option value="date2">03.01.2017</option>
+          </select>
+        </div>
+        <div class="accountOrdersForm__date">
+          <select name="date" class="selectMenu"><option value="default">Дата по:</option>
+            <option value="date1">дата 1</option>
+            <option value="date2">дата 2 датадатадата дата</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="accountOrdersForm__checkboxWrap">
+        <div class="accountOrdersForm__checkboxWrap1">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Ожидает оплаты</span></label>
+          <label><input type="checkbox"><i class="checkbox"></i><span>Выполнен</span></label>
+        </div>
+        <div class="accountOrdersForm__checkboxWrap2">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Сборка 1</span></label>
+          <label><input type="checkbox"><i class="checkbox"></i><span>Сборка 2</span></label>
+        </div>
+        <div class="accountOrdersForm__checkboxWrap3">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Самовывоз</span></label>
+          <label><input type="checkbox"><i class="checkbox"></i><span>Аннулирован</span></label>
+        </div>
+        <div class="accountOrdersForm__checkboxWrap4">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Ожидает звонка</span></label>
+          <label><input type="checkbox"><i class="checkbox"></i><span>Ожидает звонка (Оплачен)</span></label>
+        </div>
+        <div class="accountOrdersForm__checkboxWrap5">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Доставка</span></label>
+        </div>
+      </div>
+      <div class="page__btnWrap">
+        <button class="btn btn--blue" type="submit">Найти</button>
+        <button class="btn" type="reset">Сбросить</button>
+      </div>
+    </form>
+    <div class="accountOrder__head">
+      <div class="accountOrder__ID">
+        ID
+      </div>
+      <div class="accountOrder__status">
+        Статус
+      </div>
+      <div class="accountOrder__buyer">
+        Покупатель
+      </div>
+      <div class="accountOrder__data">
+        Дата
+      </div>
+      <div class="accountOrder__total">
+        Итого
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="accountLiked__list">
+    @@include('blocks/productItem1--active.html')
+    @@include('blocks/productItem2--active.html')
+    @@include('blocks/productItem1--active.html')
+    @@include('blocks/productItem2--active.html')
+    @@include('blocks/productItem1--active.html')
+    @@include('blocks/productItem2--active.html')
+    @@include('blocks/productItem1--active.html')
+    @@include('blocks/productItem2--active.html')
+    @@include('blocks/productItem1--active.html')
+    @@include('blocks/productItem2--active.html')
+  </div>
+  
+  <div class="page__btnWrap">
+    <button class="btn btn--blue">Показать больше товаров</button>
+  </div>
+  
+  <hr>
+  
+  <div class="accountCompare">
+  <table>
+    <col>
+    <col>
+    <col>
+    <col>
+    <col>
+    <thead>
+      <tr>
+        <td>
+          <button class="btn btn--blue" type="button">Сравнить</button>
+        </td>
+        <td>
+          @@include('blocks/productItem1.html')  
+        </td>
+        <td>
+          @@include('blocks/productItem2.html')
+        </td>
+        <td>
+          @@include('blocks/productItem1.html')
+        </td>
+        <td>
+          @@include('blocks/productItem2.html')
+        </td>
+      </tr>
+      <tr class="accountCompare__btnList">
+        <td></td>
+        <td>
+          <button class="btn accountCompare__del" type="button">Удалить</button>
+        </td>
+        <td>
+          <button class="btn accountCompare__del" type="button">Удалить</button>
+        </td>
+        <td>
+          <button class="btn accountCompare__del" type="button">Удалить</button>
+        </td>
+        <td>
+          <button class="btn accountCompare__del" type="button">Удалить</button>
+        </td>
+      </tr>
+    </thead>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>да</td>
+      <td>да</td>
+      <td>да</td>
+      <td>да</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>нет</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>0,01</td>
+      <td>0,01</td>
+      <td>0,01</td>
+      <td>0,01</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>красный</td>
+      <td>красный</td>
+      <td>красный</td>
+      <td>красный</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>есть</td>
+      <td>есть</td>
+      <td>есть</td>
+      <td>есть</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>нет</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>да</td>
+      <td>да</td>
+      <td>да</td>
+      <td>да</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>в наличии</td>
+      <td>в наличии</td>
+      <td>в наличии</td>
+      <td>в наличии</td>
+    </tr>
+  </table>
+  </div>  
+</div>
+
+</div>
+
+@@include('blocks/footer.html')
+
+@@include('blocks/popups.html')
+
+</body>
+</html>
+
+
+
+
+
+
+

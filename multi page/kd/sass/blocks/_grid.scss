@@ -1,0 +1,18 @@
+.grid {
+  position: relative;
+  // min-height: 750px;
+  padding-left: 70px;
+  padding-bottom: 1px;
+}
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.grid {
+  padding-left: 0;
+}
+
+
+}

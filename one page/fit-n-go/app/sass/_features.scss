@@ -1,0 +1,169 @@
+.features {
+
+}
+
+.features__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.features__col {
+	width: 33.33%;
+	padding: 0 15px;
+	margin-bottom: 15px;
+}
+
+.features__item {
+	width: 100%;
+	height: 280px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.features__back {
+	position: relative;
+	z-index: 20;
+	background-image: url(../img/features1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	padding: 20px 40px 25px;
+	transform: translatey(-100%);
+	transition: all 0.3s ease-out;
+}
+
+.features__back ul {
+	line-height: 1.4;
+	width: 100%;
+}
+
+
+.features__front {
+	position: relative;
+	z-index: 10;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	justify-content: flex-start;
+	padding: 35px 15px 15px;
+	align-items: center;
+	transform: translatey(-100%);
+}
+
+.features__ico {
+	background-position: top;
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 120px;
+	margin-bottom: 30px;
+}
+
+.features__ico_1 {
+	background-image: url(../img/features_ico1.png);
+}
+.features__ico_2 {
+	background-image: url(../img/features_ico2.png);
+}
+.features__ico_3 {
+	background-image: url(../img/features_ico3.png);
+}
+.features__ico_4 {
+	background-image: url(../img/features_ico4.png);
+}
+.features__ico_5 {
+	background-image: url(../img/features_ico5.png);
+}
+.features__ico_6 {
+	background-image: url(../img/features_ico6.png);
+}
+.features__ico_7 {
+	background-image: url(../img/features_ico7.png);
+}
+
+.features__caption {
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	width: 206px;
+	text-transform: uppercase;
+}
+
+
+.features__item:hover .features__back {
+	transform: translatey(0);
+	
+}
+
+
+
+@media (max-width: 1199px) {
+
+	.features__item {
+		height: 300px;
+	}
+	.features__back {
+		padding: 20px;
+	}
+
+}
+
+
+@media (max-width: 991px) {
+
+	.features__col {
+		width: 50%;
+	}
+
+	.features__item {
+		height: 260px;
+	}
+  
+
+  
+}
+
+@media (max-width: 767px) {
+  
+  .features__col {
+  	width: 100%;
+  	padding: 0;
+  }
+
+  .features__item {
+  	// height: 200px;
+  }
+
+  .features__back {
+  	padding: 20px;
+  }
+  .features__back ul {
+  	width: 100%;
+  	max-width: 550px;
+  	margin: 0 auto;
+  }
+   
+
+}
+
+@media (max-width: 575px) {
+
+	.features__item {
+		height: 290px;
+	}
+
+
+}
+
+
+
+
+
+

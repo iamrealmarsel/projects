@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="259px" height="259px" viewBox="0 0 259 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <path d="M2.57571742e-14,-1.14680263e-14 L256,-1.14680263e-14 L256,-1.15463195e-14 C257.656854,-1.18506786e-14 259,1.34314575 259,3 L259,259 L2.57571742e-14,-1.14680263e-14 Z" id="Rectangle" fill="#3BB09F"></path>
+            <text id="Скидка" transform="translate(179.549513, 85.549513) rotate(45.000000) translate(-179.549513, -85.549513) " font-family="Roboto-Light, Roboto" font-size="48" font-weight="300" fill="#FFFFFF">
+                <tspan x="98.5495129" y="104.049513">Скидка</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

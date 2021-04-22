@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лекарства из Европы и США</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/waves.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+ <section class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-3 col-md-6 col-5">
+          <div class="logo">
+            <a href="#" class="logo__img">
+              <img src="img/logo.png" alt="логотип">
+              <p class="logo__info">Лекарства
+                <br> из Европы и США</p>
+            </a>
+
+          </div>
+        </div>
+        <div class="col-xl-8 col-md-12 col-2 order-xl-1 order-md-2 static">
+          <div class="burger burger--close">
+              <div class="burgerInner"></div>
+          </div>
+          <ul class="header__nav">
+            <li class="active"><a href="#">Медикоменты</a></li>
+            <li><a href="#">Здоровье</a></li>
+            <li><a href="#">Бады</a></li>
+            <li><a href="#">Медицинская техника</a></li>
+            <li><a href="#">Аптеки</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Доставка</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-1 col-md-6 col-5 order-xl-2 order-md-1">
+          <div class="header__lang">
+            <a class="header__ru active" href="#">RU</a> /
+            <a class="header__en" href="#">EN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="subheader">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-md-7 subheader__breadcrumbs order-2 order-md-1">
+          <a class="subheader__crumb subheader__crumb--first" href="#">Главная</a>
+          <a class="subheader__crumb" href="#">Каталог</a>
+          <span class="subheader__crumb active">Карточка товара</span>
+        </div>
+        <div class="col-12 col-md-5 order-1 order-md-2">
+          <form action="" class="subheader__searchForm">
+            <div class="subheader__searchWrap">
+              <input type="text" class="inp" placeholder="Я ищу...">
+              <button type="submit" class="btn">Поиск</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="catalog">
+    <div class="container">
+
+<div class="sort"><span>Сортировать по:</span>   <a href="#" class="active">цене</a>  |  <a href="#">дозировке</a>   |  <a href="#">рейтингу</a></div>
+
+<div class="row">
+  <div class="col-lg-4 col-xl-3">
+  <form class="catalog__filter" action="">
+  <h3 class="catalog__title">Лекарственные препараты</h3>
+  <ul class="catalog__category">
+  <li><input type="checkbox" id="checkbox1" name="category1" class="checkbox"><label for="checkbox1">Анальгетики, спазмолиттики</label></li>
+  <li><input type="checkbox" id="checkbox2" name="category2" class="checkbox"><label for="checkbox2">НПВС</label></li>
+  <li><input type="checkbox" id="checkbox3" name="category3" class="checkbox"><label for="checkbox3">Антигистаминные</label></li>
+  <li><input type="checkbox" id="checkbox4" name="category4" class="checkbox"><label for="checkbox4">Витамины</label></li>
+  <li><input type="checkbox" id="checkbox5" name="category5" class="checkbox"><label for="checkbox5">Гомеопатия</label></li>
+  <li><input type="checkbox" id="checkbox6" name="category6" class="checkbox"><label for="checkbox6">Гормональные, п/опухолевые</label></li>
+  <li><input type="checkbox" id="checkbox7" name="category7" class="checkbox"><label for="checkbox7">ЖКТ, гепатопротекторы</label></li>
+  <li><input type="checkbox" id="checkbox8" name="category8" class="checkbox"><label for="checkbox8">Aерменты</label></li>
+  <li><input type="checkbox" id="checkbox9" name="category9" class="checkbox"> <label for="checkbox9">Наружные</label></li>
+  <li><input type="checkbox" id="checkbox10" name="category10" class="checkbox"><label for="checkbox10">Нейротропы</label></li>
+  <li><input type="checkbox" id="checkbox11" name="category11" class="checkbox"><label for="checkbox11">НПВП</label></li>
+  <li><input type="checkbox" id="checkbox12" name="category12" class="checkbox"><label for="checkbox12">Офтальмология</label></li>
+  <li><input type="checkbox" id="checkbox13" name="category13" class="checkbox"><label for="checkbox13">П/микробные, п/грибковые</label></li>
+  <li><input type="checkbox" id="checkbox14" name="category14" class="checkbox"><label for="checkbox14">П/Гельминтные</label></li>
+  <li><input type="checkbox" id="checkbox15" name="category15" class="checkbox"><label for="checkbox15">П/простудные</label></li>
+  <li><input type="checkbox" id="checkbox16" name="category16" class="checkbox"><label for="checkbox16">П/вирусные средства</label></li>
+  <li><input type="checkbox" id="checkbox17" name="category17" class="checkbox"><label for="checkbox17">Препараты для женщин</label></li>
+  <li><input type="checkbox" id="checkbox18" name="category18" class="checkbox"><label for="checkbox18">Препараты для мужчин</label></li>
+  <li><input type="checkbox" id="checkbox19" name="category19" class="checkbox"><label for="checkbox19">Противогрибковые препараты</label></li>
+  <li><input type="checkbox" id="checkbox20" name="category20" class="checkbox"><label for="checkbox20">Противомикробные средства</label></li>
+  <li><input type="checkbox" id="checkbox21" name="category21" class="checkbox"><label for="checkbox21">Противоопухолевые препараты</label></li>
+  <li><input type="checkbox" id="checkbox22" name="category22" class="checkbox"><label for="checkbox22">СД, ГКС, Тиреоз</label></li>
+  <li><input type="checkbox" id="checkbox23" name="category23" class="checkbox"><label for="checkbox23">Сердечно-сосудистые препараты</label></li>
+  <li><input type="checkbox" id="checkbox24" name="category24" class="checkbox"><label for="checkbox24">Спазмолитики</label></li>
+  <li><input type="checkbox" id="checkbox25" name="category25" class="checkbox"><label for="checkbox25">Ферментные препараты</label></li>
+  <li><input type="checkbox" id="checkbox26" name="category26" class="checkbox"><label for="checkbox26">Препараты кальция</label></li>
+  <li><input type="checkbox" id="checkbox27" name="category27" class="checkbox"><label for="checkbox27">Прочие</label></li>
+  </ul>
+  
+<!--   
+  <div class="catalog__search">
+    <input type="text" placeholder="поиск" class="inp">
+  </div> -->
+
+<div class="catalog__country">
+  <h4>Выберите страну</h4>
+  <div class="catalog__select fa-caret-down">
+    <span class="catalog__selected selectedJs"></span>
+    <select class="selectJs" name="country" id="country">
+      <option value="">Германия</option>
+      <option value="">Франция</option>
+      <option value="">Россия</option>
+      <option value="">США</option>
+    </select>
+  </div>
+</div>
+  
+<div class="catalog__priceRange">
+  <h4>Цена, руб.</h4>
+<div class="catalog__priceInp">
+  <input type="number" step="10" min="0" class=" inp" placeholder="от">
+  <input type="number" step="10" min="0" class=" inp" placeholder="до">
+</div>
+</div>
+
+<div class="catalog__forwhom">
+  <h4>Для кого</h4>
+<div class="catalog__select fa-caret-down">
+  <span class="catalog__selected selectedJs"></span>
+  <select class="selectJs" name="forwhom" id="forwhom">
+  <option value="">Для беременных</option>
+  <option value="">Для беременных</option>
+  <option value="">Для беременных</option>
+  <option value="">Для беременных</option>
+  </select>
+</div>
+</div>
+
+<div class="catalog__delivery">
+  <h4>Тип доставки</h4>
+<div class="catalog__select fa-caret-down">
+  <span class="catalog__selected selectedJs"></span>
+  <select class="selectJs" name="delivery" id="delivery">
+  <option value="">Бесплатная</option>
+  <option value="">Бесплатная</option>
+  </select>
+</div>
+</div>
+
+
+<div class="catalog__dosage">
+  <h4>Дозировка</h4>
+  <div class="catalog__select fa-caret-down">
+    <span class="catalog__selected selectedJs"></span>
+    <select class="selectJs" name="dosage" id="dosage" >
+    <option value="">Дозировка1 Дозировка1 Дозировка1 Дозировка1</option>
+    <option value="">Дозировка2</option>
+    </select>
+  </div>
+</div>
+
+<div class="catalog__payment">
+  <h4>Способы оплаты</h4>
+  <div class="catalog__select fa-caret-down">
+    <span class="catalog__selected selectedJs"></span>
+    <select class="selectJs" name="payment" id="payment">
+    <option value="">Viza</option>
+    <option value="">Master Card</option>
+    </select>
+  </div>
+</div>
+
+<div class="catalog__reception">
+  <input type="checkbox" name="reception" class="checkbox" id="reception"> <label for="reception">Рецепт не требуется</label>
+</div>
+
+<div class="catalog__reset">
+  <button type="button" class="btn">Сбросить фильтр</button>
+</div>
+
+  
+  </form>
+  </div>
+      
+<div class="col-lg-8 col-xl-9">
+  <div class="row productList">
+    <div class="col-sm-6 col-lg-6 col-xl-4">
+  <div class="product">
+    <a class="product__card" href="#">
+
+      <!-- maedit "флажок скидка" BEGIN -->
+      <div class="product__flag">
+        <img src="img/flag1.svg" alt="">
+      </div>
+      <!-- maedit "флажок скидка" END -->
+      
+     <div class="product__img">
+       <img src="img/logotest.png" alt="">
+     </div>
+     <div class="product__info">
+       <h3 class="product__title">ОТИПАКС 16г (15мл)</h3>
+       <p class="product__desc">капли ушные Биокодекс</p>
+     </div>
+    </a>
+    <div class="product__bottom">
+      <p class="product__price">От <span class="">1000</span> рублей</p>
+      <a href="#" class="product__more">Подробнее</a>
+      <a href="#" class="product__buy">Купить</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 col-xl-4">
+  <div class="product">
+    <a class="product__card" href="#">   
+
+    <!-- maedit "флажок акция" BEGIN -->
+    <div class="product__flag">
+      <img src="img/flag2.svg" alt="">
+    </div>
+    <!-- maedit "флажок акция" END -->  
+
+     <div class="product__img">
+       <img src="img/logotest1.png" alt="">
+     </div>
+     <div class="product__info">
+       <h3 class="product__title">ОТИПАКС 16г (15мл)</h3>
+       <p class="product__desc">капли ушные Биокодекс</p>
+     </div>
+    </a>
+    <div class="product__bottom">
+      <p class="product__price">От <span class="">1000</span> рублей</p>
+      <a href="#" class="product__more">Подробнее</a>
+      <a href="#" class="product__buy">Купить</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 col-xl-4">
+  <div class="product">
+    <a class="product__card" href="#">         
+     <div class="product__img">
+       <img src="img/logotest2.png" alt="">
+     </div>
+     <div class="product__info">
+       <h3 class="product__title">ОТИПАКС 16г (15мл)</h3>
+       <p class="product__desc">капли ушные Биокодекс</p>
+     </div>
+    </a>
+    <div class="product__bottom">
+      <p class="product__price">От <span class="">1000</span> рублей</p>
+      <a href="#" class="product__more">Подробнее</a>
+      <a href="#" class="product__buy">Купить</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 col-xl-4">
+  <div class="product">
+    <a class="product__card" href="#">         
+     <div class="product__img">
+       <img src="img/item1.png" alt="">
+     </div>
+     <div class="product__info">
+       <h3 class="product__title">ОТИПАКС 16г (15мл)</h3>
+       <p class="product__desc">капли ушные Биокодекс</p>
+     </div>
+    </a>
+    <div class="product__bottom">
+      <p class="product__price">От <span class="">1000</span> рублей</p>
+      <a href="#" class="product__more">Подробнее</a>
+      <a href="#" class="product__buy">Купить</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 col-xl-4">
+  <div class="product">
+    <a class="product__card" href="#">         
+     <div class="product__img">
+       <img src="img/item1.png" alt="">
+     </div>
+     <div class="product__info">
+       <h3 class="product__title">ОТИПАКС 16г (15мл)</h3>
+       <p class="product__desc">капли ушные Биокодекс</p>
+     </div>
+    </a>
+    <div class="product__bottom">
+      <p class="product__price">От <span class="">1000</span> рублей</p>
+      <a href="#" class="product__more">Подробнее</a>
+      <a href="#" class="product__buy">Купить</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 col-xl-4">
+  <div class="product">
+    <a class="product__card" href="#">         
+     <div class="product__img">
+       <img src="img/item1.png" alt="">
+     </div>
+     <div class="product__info">
+       <h3 class="product__title">ОТИПАКС 16г (15мл)</h3>
+       <p class="product__desc">капли ушные Биокодекс</p>
+     </div>
+    </a>
+    <div class="product__bottom">
+      <p class="product__price">От <span class="">1000</span> рублей</p>
+      <a href="#" class="product__more">Подробнее</a>
+      <a href="#" class="product__buy">Купить</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 col-xl-4">
+   <div class="product">
+    <a class="product__card" href="#">         
+     <div class="product__img">
+       <img src="img/item1.png" alt="">
+     </div>
+     <div class="product__info">
+       <h3 class="product__title">ОТИПАКС 16г (15мл)</h3>
+       <p class="product__desc">капли ушные Биокодекс</p>
+     </div>
+    </a>
+    <div class="product__bottom">
+      <p class="product__price">От <span class="">1000</span> рублей</p>
+      <a href="#" class="product__more">Подробнее</a>
+      <a href="#" class="product__buy">Купить</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 col-xl-4">
+  <div class="product">
+    <a class="product__card" href="#">         
+     <div class="product__img">
+       <img src="img/item1.png" alt="">
+     </div>
+     <div class="product__info">
+       <h3 class="product__title">ОТИПАКС 16г (15мл)</h3>
+       <p class="product__desc">капли ушные Биокодекс</p>
+     </div>
+    </a>
+    <div class="product__bottom">
+      <p class="product__price">От <span class="">1000</span> рублей</p>
+      <a href="#" class="product__more">Подробнее</a>
+      <a href="#" class="product__buy">Купить</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 col-xl-4">
+   <div class="product">
+    <a class="product__card" href="#">         
+     <div class="product__img">
+       <img src="img/item1.png" alt="">
+     </div>
+     <div class="product__info">
+       <h3 class="product__title">ОТИПАКС 16г (15мл)</h3>
+       <p class="product__desc">капли ушные Биокодекс</p>
+     </div>
+    </a>
+    <div class="product__bottom">
+      <p class="product__price">От <span class="">1000</span> рублей</p>
+      <a href="#" class="product__more">Подробнее</a>
+      <a href="#" class="product__buy">Купить</a>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="interest__more">
+    <button class="btn fa fa-caret-down" type="button">Больше</button>
+  </div>
+
+  <div class="catalog__notfound">
+    <p>По вашему запросу ничего не найдено. По вашему запросу ничего не найдено. По вашему запросу ничего не найдено. По вашему запросу ничего не найдено. По вашему запросу ничего не найдено. По вашему запросу ничего не найдено. По вашему запросу ничего не найдено. По вашему запросу ничего не найдено. По вашему запросу ничего не найдено. По вашему запросу ничего не найдено. Я в трансе</p>
+    <p>виамоваиморваим</p>
+  </div>
+
+
+</div>
+
+</div>
+
+    </div>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer__nav">
+            <h3 class="footer__title">Пользователям</h3>
+            <ul>
+              <li><a href="#">Как сделать заказ</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Возврат и обмен</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+              <li><a href="#">Обратная связь</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer__socs">
+            <h3 class="footer__title">Мы в соц сетях</h3>
+            <div class="socials">
+             <a class="socials__vk fa fa-vk" href="#"></a>
+             <a class="socials__fb fa fa-facebook" href="#"></a>
+             <a class="socials__tw fa fa-twitter" href="#"></a>
+             <a class="socials__ok fa fa-odnoklassniki" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="footer__subs">
+            <h3 class="footer__title">Подпишитесь на наши обновления и будьте в курсе новинок</h3>
+            <form class="footer__subsForm" action="">
+<div class="footer__subsWrap">
+  <input class="inp" type="email" placeholder="Почта">
+  <button class="btn" type="submit">Подписаться</button>
+</div>
+            </form>
+            <div class="footer__info">
+              <p>Наш портал предоставляет возможность приобрести медикоменты, <br> которые не доступны в вашей странеи или регионе. </p>
+              <p>Цены указаны с учетом НДС и без учета заявок.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Оставьте Ваши контакты и мы свяжемся с Вами <br> в ближайшее время!</h4>
+        </div>
+        <div class="modal-body">
+          <form action="" class="form js_form">
+            <input type="text" name="name" class="inp" placeholder="Имя">
+            <input type="text" name="phone" class="inp phoneMask" placeholder="Телефон +7 (___) ___ __ __">
+            <button type="submit" class="btn">Записаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/waves.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

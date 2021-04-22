@@ -1,0 +1,68 @@
+.title {
+  font-size: 64px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.subtitleh3 {
+	font-size: 36px;
+	font-weight: 300;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+// typ
+
+.title__top {
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.medium {
+	font-weight: 500;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+@media (max-width: 1175px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+  .subtitle {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .subtitle,
+  .subtitleh3 {
+    font-size: 24px;
+  }
+
+}
+
+
+

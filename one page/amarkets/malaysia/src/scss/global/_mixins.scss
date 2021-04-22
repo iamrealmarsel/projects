@@ -1,0 +1,19 @@
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@mixin col($width) {
+  max-width: $width;
+  width: 100%;
+  padding: 0 15px;
+}
+
+
+
+
+
+
+

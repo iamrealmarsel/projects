@@ -1,0 +1,377 @@
+.header {
+	position: relative;
+	background-image: url(../img/header.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	min-height: 1038px;
+
+	.title {
+		padding-top: 366px;
+		text-shadow: 0px 0px 40px #FFFFFF, 0px 0px 40px #FFFFFF;
+	}
+
+}
+
+.header__click {
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	left: 50px;
+	right: 50px;
+	cursor: pointer;
+	// outline: red solid 1px;
+}
+
+.header__apilotoff {
+	position: absolute;
+	width: 391px;
+	height: 179px;
+	// width: 297px;
+	// height: 84px;
+	bottom: 70px;
+	left: 50%;
+	margin-left: -200px;
+	// transform: translatex(-50%);
+	background-image: url(../img/apilotoff.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.header__apiloton {
+	text-align: center;
+	background-image: url(../img/apiloton.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	// opacity: 0;
+	animation: apilot 1s ease-out infinite alternate;
+	// animation-fill-mode: backwards;
+}
+
+.header__apilotoff span {
+	position: absolute;
+	top: 62px;
+	left: 50%;
+	transform: translatex(-50%);
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-family: $ffMinor;
+	font-weight: 300;
+	white-space: nowrap;
+}
+
+@keyframes apilot {
+
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+.header__apiloton img {
+	max-width: 100%;
+}
+
+.header__logo {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+
+// страница благодарности
+
+.typ-header {
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-image: url(../img/typ_header.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	min-height: 465px;
+
+	.title {
+		max-width: 830px;
+		margin: 0 auto;
+		text-transform: none;
+	}
+}
+
+
+// страница благодарности 2
+
+.html-typ2 {
+	height: 100%;
+
+	.typ {
+		height: 100%;
+	}
+}
+
+.typ__logo {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 1900px;
+	margin: 0 auto;
+	padding-top: 44px;
+	// right: 230px;
+	// top: 44px;
+	z-index: 50;
+}
+
+.typ__logo img {
+	flex-shrink: 0;
+}
+
+.typ-header2 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	// height: 100%;
+	min-height: 100%;
+	text-align: center;
+	background-image: url(../img/typ2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center ;
+
+	.subtitle {
+		text-transform: none;
+	}
+	.header__apilotoff {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		margin: 0 auto 25px;
+	}
+	.header__apilotoff span {
+		top: 66px;
+	}
+}
+
+.typ__title {
+	margin-bottom: 60px;
+}
+
+.typ__subtitle {
+}
+
+
+.typ__txt {
+	position: relative;
+	z-index: 10;
+	max-width: 1150px;
+	margin-top: auto;
+	margin-bottom: 125px;
+	padding: 0 15px;
+
+	&::before {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		top: -50px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #CDE3EA;
+		filter: blur(100px);
+		border-radius: 50px;
+	}
+}
+
+.no-cssfilters .typ__txt::before {
+	display: none;
+}
+
+
+@media (max-height: 650px) {
+
+	.typ__txt {
+		margin-bottom: auto;
+	}
+	.typ__title {
+		margin-bottom: 30px;
+	}
+
+}
+
+
+@media (min-width: 1650px) {
+
+	.header {
+		min-height: 1500px;
+
+		.title {
+			padding-top: 550px;
+		}
+	}
+
+	.header__apilotoff {
+		bottom: 140px;
+	}
+
+}
+
+@media (min-width: 1900px) {
+
+	.typ-header {
+		background-size: cover;
+	}
+
+}
+
+@media (max-width: 1439px) {
+
+	.typ__logo {
+		padding-top: 0;
+	}
+
+	}
+
+
+@media (max-width: 1175px) {
+
+	.header {
+
+		.title {
+			padding-top: 320px;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+	}
+
+}
+
+@media (max-width: 991px) {
+
+	.typ__logo {
+		justify-content: center;
+	}
+	.typ__logo img {
+		width: 150px;
+		height: 100%;
+	}
+
+	.header {
+		.title {
+			font-size: 48px;
+			padding-top: 350px;
+			max-width: 700px;
+		}
+	}
+
+	.typ-header {
+		.title {
+			font-size: 36px;
+		}
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.typ__logo img {
+		width: 100px;
+	}
+
+
+	.header {
+		.title {
+			font-size: 40px;
+			max-width: 650px;
+			padding-top: 360px;
+		}
+	}
+
+	.typ-header {
+		.title {
+			font-size: 26px;
+		}
+	}
+
+
+
+}
+
+@media (max-width: 575px) {
+
+	.typ__logo img {
+		width: 50px;
+	}
+
+	.typ-header2 {
+
+		.header__apilotoff span {
+			top: 72px;
+			font-size: 24px;
+		}
+	}
+
+	.header {
+		min-height: 738px;
+
+		.title {
+			font-size: 24px;
+			max-width: 300px;
+			padding-top: 260px;
+		}
+	}
+
+	.typ-header {
+		.title {
+			font-size: 22px;
+		}
+	}
+
+	.header__apilotoff {
+		width: 296px;
+		margin-left: -150px;
+		background-size: 200px auto;
+		bottom: 30px;
+	}
+
+	.header__apiloton {
+		background-size: 260px auto;
+		background-position: 50% 50%;
+	}
+
+	.header__apilotoff span {
+		// font-size: 30px;
+		top: 64px;
+		left: 0;
+		transform: translatex(0);
+		width: 100%;
+		text-align: center;
+	}
+
+	.header__logo {
+		right: auto;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 136px;
+	}
+
+
+}
+
+
+
+
+
+
+

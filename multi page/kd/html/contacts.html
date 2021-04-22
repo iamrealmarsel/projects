@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+@@include('blocks/head.html')
+</head>
+<body>
+
+@@include('blocks/header.html')
+
+<div class="grid">
+
+@@include('blocks/sidebar.html')
+
+<div class="page wrapper">
+  <div class="page__breadcrumbs">
+    <span><a href="">Главная</a></span>
+    <span class="fa fa-angle-right"></span>
+    <span>Контакты</span>
+  </div>
+  <h1> Контактная информация </h1>
+  <div class="page__contacts clearfix">
+
+    <div class="page__schedule">
+      <h2>Рабочее время консультантов интернет-магазина:</h2>
+      <p class="page__time">09:00 — 20:00</p>
+      <p>(время Московское)</p>
+      <p class="justify">
+        <span>Понедельник</span> <span>Вторник</span> <span>Среда</span> <span>Четверг</span> <span>Пятница</span><span class="break"></span>
+      </p>
+    </div>
+    
+    <div class="page__contactsWrap">
+      <h2>Телефон</h2>
+      <p><b>8 (8332) 266-899</b></p>
+      <h2>e-mail</h2>
+      <p><a href="mailto:kd43.bk.ru">kd43.bk.ru</a></p>
+      <h2>Адрес:</h2>
+      <p>г. Киров, Октябрьский проспект, 120</p>
+    </div>
+    <h2>Как  к нам добраться</h2>
+    <h3>На автомобиле:</h3>
+    <p>ТРЦ "Максимум" находится в напротив Центрального рынка и ТЦ "Зенит". Справа от торгового центра есть удобная парковка для вашего автомобиля.</p>
+    <h3>Городским транспортом:</h3>
+    <p>От жд вокзала: можно доехать на автобусах № 67, 90, 23 и троллейбусе №1 до остановки "Центральный рынок" затем пройти пешком 700 метров в сторону Центрального рынка. Или на автобусах №16, 68, 44, 3, 37 до остановки "Центральный рынок" затем подняться вверх по улице Свободы до ТРЦ "Максимум". Или на 28 автолайне с юго-запада и на 17 автобусе от северной больницы.</p>
+    <h3>На такси:</h3>
+    <p>Номера телефонов, проверенных служб такси в Кирове: +7 (8332) 700-700, +7 (8332) 207-207, +7 (8332) 50-50-50. Средняя стоимость поездки на такси по г. Кирову составит 80-150 рублей.</p>
+  </div>
+  <div class="googleMap" ="map">
+    <iframe class="googleMap__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2079.68588130262!2d49.65713131604235!3d58.583979981404234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fcf69d3020e41b%3A0xe91fcaef61886569!2z0J7QutGC0Y_QsdGA0YzRgdC60LjQuSDQv9GALiwgMTIwLCDQmtC40YDQvtCyLCDQmtC40YDQvtCy0YHQutCw0Y8g0L7QsdC7LiwgNjEwMDAx!5e0!3m2!1sru!2sru!4v1491772024459" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="subs">
+  <div class="wrapper">
+    <div class="subs__textWrap">
+      <i class="fa fa-envelope-o"></i>
+      <div class="subs__text">
+        <p>Экслюзивные скидки</p>
+        <p>Подпишись на наши новости и горящие предложения</p>
+      </div>
+    </div>
+    <input class="inputBg inputBg--focus" type="text" placeholder="E-mail">
+    <button class="btn btn--blue" type="submit">Подписаться</button>
+  </div>
+</div>
+
+</div>
+
+@@include('blocks/footer.html')
+
+@@include('blocks/popups.html')
+
+</body>
+</html>
+
+
+
+
+

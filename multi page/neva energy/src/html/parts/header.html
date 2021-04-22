@@ -1,0 +1,146 @@
+{% macro body() %}
+
+<header class="header">
+  <div class="header__container">
+    <div class="header__row">
+      <div class="header__col header__col_1">
+        <a class="header__logo1" href="index.html">
+        <img src="img/logo.png" alt="">
+      </a>
+      </div>
+      <div class="header__col header__col_2">
+        <div>
+          <button class="header__city inp" data-modal data-target="modalCity">Выбрать город<i class="fa fa-angle-down"></i></button>
+        </div>
+      </div>
+      <div class="header__col header__col_3">
+        <a href="signin.html" class="btn"><i class="fa fa-user"></i>Личный кабинет</a>
+      </div>
+      <div class="header__col header__col_4">
+        <form class="search">
+          <button type="submit" class="fa fa-search"></button>
+          <input class="inp inp_empty" type="text" placeholder="Поиск">
+        </form>
+      </div>
+      <div class="header__col header__col_5">
+        <a class="header__logo2" href="index.html">
+        <img src="img/logoveolia.png" alt="">
+      </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+{% endmacro %}
+
+{% macro city(cityName) %}
+
+<header class="header">
+  <div class="header__container">
+    <div class="header__row">
+      <div class="header__col header__col_1">
+        <a class="header__logo1" href="index.html">
+        <img src="img/logo.png" alt="">
+      </a>
+      </div>
+      <div class="header__col header__col_2">
+        <div>
+          <button class="header__city inp" data-modal data-target="modalCity">{{cityName}}<i class="fa fa-angle-down"></i></button>
+        </div>
+      </div>
+      <div class="header__col header__col_3">
+        <a href="signin.html" class="btn"><i class="fa fa-user"></i>Личный кабинет</a>
+      </div>
+      <div class="header__col header__col_4">
+        <form class="search">
+          <button type="submit" class="fa fa-search"></button>
+          <input class="inp inp_empty" type="text" placeholder="Поиск">
+        </form>
+      </div>
+      <div class="header__col header__col_5">
+        <a class="header__logo2" href="index.html">
+        <img src="img/logoveolia.png" alt="">
+      </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+{% endmacro %} 
+
+{% macro nav() %}
+
+<div class="navigation">
+  <div class="navigation__container">
+    <div class="navigation__row">
+      <div class="navigation__col">
+        <ul class="menu">
+          <li class="fa fa-close"></li>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Объекты</a></li>
+          <li><a href="#">Документы</a></li>
+          <li><a href="#">Стандарты раскрытия информации</a></li>
+          <li><a href="#">Закупки</a></li>
+          <li><a href="#">Сотрудничество</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="navigation__col">
+        <span class="btn" data-modal data-target="modalCity">Потребителям</span>
+        <span class="burger fa fa-navicon"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}
+
+{% macro navCity() %}
+
+<div class="navigation">
+  <div class="navigation__container">
+    <div class="navigation__row">
+      <div class="navigation__col">
+        <ul class="menu">
+          <li class="fa fa-close"></li>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Объекты</a></li>
+          <li><a href="#">Документы</a></li>
+          <li><a href="#">Стандарты раскрытия информации</a></li>
+          <li><a href="#">Закупки</a></li>
+          <li><a href="#">Сотрудничество</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="navigation__col">
+        <span class="btn btn_city">Потребителям<i class="fa fa-angle-down"></i>
+          <ul class="menuCity">
+            <li><a href="">Тарифы</a></li>
+            <li><a href="">Рекомендации <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="">Население <i class="fa fa-angle-right"></i></a>
+              <ul class="menuCity__submenu">
+                <li><a href="">Текущая информация</a></li>
+                <li><a href="">Оплата за тепловую энергию и передача показаний индивидуальных приборов учета ГВС</a>
+                </li>
+                <li><a href="">Законодательство
+                </a></li>
+              </ul>
+            </li>
+            <li><a href="">Юридические лица</a></li>
+          </ul>
+        </span>
+        <span class="burger fa fa-navicon"></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+{% endmacro %}
+
+

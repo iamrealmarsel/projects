@@ -1,0 +1,28 @@
+/* ---== цены ==--- */
+
+.prices td {
+  padding: 15px;
+  border: 1px solid #5da9c2;
+}
+
+.prices tr:nth-child(odd) {
+
+}
+
+.prices table {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.prices caption {
+  color: #000;
+  font-size: 18px;
+}
+
+.prices__title {
+  margin-bottom: 20px;
+}
+
+td.prices__numbers {
+  padding: 10px;
+}

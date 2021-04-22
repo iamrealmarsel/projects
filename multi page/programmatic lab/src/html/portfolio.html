@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Programmatic-Lab</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+	<div class="page_bg"></div>
+	
+	{% import "parts/header.html" as header %}
+	{{ header.main('header_black', 'burger_black', 'logo_black') }}
+	
+	{% include "parts/pagemenu.html" %}
+
+	<main class="mainInner portfolioPage">
+		<section class="portfolio">
+			<div class="container">
+				<h1 class="t_title">Портфолио</h1>
+
+				<div class="portfolio__row">
+					<div class="portfolio__col">
+						<a href="#" target="_blank" class="portfolio__img portfolio__img_atol">
+							<img src="img/portfol_1.png" alt="">
+							<div class="portfolio__ovl">
+								<span class="portfolio__text">Сайт по настройки
+								и продажи кассовых аппаратов</span>
+								<span class="portfolio__click">перейти на сайт</span>
+							</div>
+						</a>
+						<a href="#" target="_blank" class="portfolio__link">Atol</a>
+					</div>
+
+					<div class="portfolio__col">
+						<a href="#" target="_blank" class="portfolio__img">
+							<img src="img/portfol_2.png" alt="">
+							<div class="portfolio__ovl">
+								<span class="portfolio__text">Сайт по настройки
+								и продажи кассовых аппаратов</span>
+								<span class="portfolio__click">перейти на сайт</span>
+							</div>
+						</a>
+						<a href="#" target="_blank" class="portfolio__link">Himtex</a>
+					</div>
+
+					<div class="portfolio__col">
+						<a href="#" target="_blank" class="portfolio__img portfolio__img_jet">
+              <img src="img/portfol_3.png" alt="Himtex">
+							<div class="portfolio__ovl">
+								<span class="portfolio__text">Сайт по настройки
+								и продажи кассовых аппаратов</span>
+								<span class="portfolio__click">перейти на сайт</span>
+							</div>
+						</a>
+						<a href="#" target="_blank" class="portfolio__link">JetSkills</a>
+					</div>
+
+					<div class="portfolio__col">
+						<a href="#" target="_blank" class="portfolio__img portfolio__img_yurius">
+							<img src="img/portfol_4.png" alt="">
+							<div class="portfolio__ovl">
+								<span class="portfolio__text">Сайт по настройки
+								и продажи кассовых аппаратов</span>
+								<span class="portfolio__click">перейти на сайт</span>
+							</div>
+						</a>
+						<a href="#" target="_blank" class="portfolio__link">Yurius</a>
+					</div>
+
+					<div class="portfolio__col">
+						<a href="#" target="_blank" class="portfolio__img">
+							<img src="img/portfol_5.png" alt="">
+							<div class="portfolio__ovl">
+								<span class="portfolio__text">Сайт по настройки
+								и продажи кассовых аппаратов</span>
+								<span class="portfolio__click">перейти на сайт</span>
+							</div>
+						</a>
+						<a href="#" target="_blank" class="portfolio__link">A-Markets</a>
+					</div>
+
+					<div class="portfolio__col">
+						<a href="#" target="_blank" class="portfolio__img portfolio__img_mark">
+							<img src="img/portfol_6.png" alt="">
+							<div class="portfolio__ovl">
+								<span class="portfolio__text">Сайт по настройки
+								и продажи кассовых аппаратов</span>
+								<span class="portfolio__click">перейти на сайт</span>
+							</div>
+						</a>
+						<a href="#" target="_blank" class="portfolio__link">МаркИнвест</a>
+					</div>
+
+					<div class="portfolio__col">
+						<a href="#" target="_blank" class="portfolio__img portfolio__img_ef">
+							<img src="img/portfol_7.png" alt="">
+							<div class="portfolio__ovl">
+								<span class="portfolio__text">Сайт по настройки
+								и продажи кассовых аппаратов</span>
+								<span class="portfolio__click">перейти на сайт</span>
+							</div>
+						</a>
+						<a href="#" target="_blank" class="portfolio__link">EuroFarm</a>
+					</div>
+
+          <div class="portfolio__col">
+            <a href="#" target="_blank" class="portfolio__img portfolio__img_ks">
+              <img src="img/portfol_8.png" alt="">
+              <div class="portfolio__ovl">
+                <span class="portfolio__text">Сайт по настройки
+                и продажи кассовых аппаратов</span>
+                <span class="portfolio__click">перейти на сайт</span>
+              </div>
+            </a>
+            <a href="#" target="_blank" class="portfolio__link">Kommunal Service</a>
+          </div>
+
+          <div class="portfolio__col">
+            <a href="#" target="_blank" class="portfolio__img portfolio__img_alex">
+              <img src="img/portfol_9.png" alt="">
+              <div class="portfolio__ovl">
+                <span class="portfolio__text">Сайт по настройки
+                и продажи кассовых аппаратов</span>
+                <span class="portfolio__click">перейти на сайт</span>
+              </div>
+            </a>
+            <a href="#" target="_blank" class="portfolio__link">"Алекс"</a>
+          </div>
+
+          <div class="portfolio__col">
+            <a href="#" target="_blank" class="portfolio__img portfolio__img_vac">
+              <img src="img/portfol_10.png" alt="">
+              <div class="portfolio__ovl">
+                <span class="portfolio__text">Сайт по настройки
+                и продажи кассовых аппаратов</span>
+                <span class="portfolio__click">перейти на сайт</span>
+              </div>
+            </a>
+            <a href="#" target="_blank" class="portfolio__link">VaclaV</a>
+          </div>
+
+				</div>
+
+			</div>
+		</section>
+	</main>
+	
+	{% import "parts/footer.html" as footer %}
+	{{ footer.main() }}
+	
+	<!-- модалка -->
+	<div class="overlay js-close">
+		<div class="modal" id="modal1">
+			<form class="slide__form js-submit js_validate" action="post">
+				<h4 class="modal__title">Оставьте Вашу заявку и мы свяжемся с Вами в течении 15 минут!</h4>
+				<i class="modal__close js-close"></i>
+				<legend class="t_caption">Здравствуйте,</legend>
+				<div class="inpCol">
+					<input id="nameModal" name="name" class="inp" type="text" placeholder="" required="true">
+					<label class="phSlide" for="nameModal">Как Вас зовут *</label>
+				</div>
+				<div class="inpCol">
+					<input id="taskModal" name="task" class="inp" type="text" placeholder="">
+					<label class="phSlide" for="taskModal">Опишите свою задачу</label>
+				</div>
+				<div class="inpCol">
+					<input id="moneyModal" name="money" class="inp" type="text" placeholder="">
+					<label class="phSlide" for="moneyModal">Укажите свой бюджет</label>
+				</div>
+				<div class="inpCol">
+					<input id="emailModal" name="email" class="inp" type="email" placeholder="" required="true">
+					<label class="phSlide" for="emailModal">Ваша электронная почта *</label>
+				</div>
+				<div class="inpCol">
+					<input id="telModal" name="tel" class="inp telMask" type="tel" placeholder="" required="true">
+					<label class="phSlide" for="telModal">Ваш контактный телефон *</label>
+				</div>
+				<div class="modal__btnList">
+					<button class="btn btn_close js-close" type="button">Закрыть</button>
+					<button class="btn btn_modal" type="submit">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

@@ -1,0 +1,96 @@
+
+.pagination {
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: auto;
+    }
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $cType;
+    text-decoration: none;
+  }
+
+  a.active, a:hover {
+    color: #a1a3a5;
+  }
+
+  .fa {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .fa-caret-right {
+    padding-left: 30px;
+    border-left: solid 2px #eeecf1;
+  }
+  .fa-caret-left {
+    padding-right: 30px;
+    border-right: solid 2px #eeecf1;
+  }
+
+}
+
+
+@media ($desktop) {
+  
+}
+
+@media ($tablet) {
+  
+}
+
+@media ($mobile) {
+  .pagination {
+  
+    ul {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    li {
+      margin: 0;
+
+      &:last-child {
+        margin: 0;
+      }
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    .fa-caret-right {
+      padding-left: 15px;
+    }
+    .fa-caret-left {
+      padding-right: 15px;
+    }
+
+  }
+  
+}
+
+@media ($smobile) {
+  
+}
+
+

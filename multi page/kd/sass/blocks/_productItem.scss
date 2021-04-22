@@ -1,0 +1,119 @@
+.productItem {
+  @include panelBig;
+  box-sizing: border-box;
+  // position: relative; // для индекса (другая анимация)
+  display: inline-block;
+  vertical-align: top;
+  width: 180px;
+  // height: 240px; // размер плашки (инфо)
+  padding: 15px;
+  // margin-right: 20px; // временно
+  // margin-bottom: 20px; // временно
+  text-align: left;
+  transition:  0.3s;
+}
+
+.productItem:hover {
+  // width: 200px; // масштаб по ширине (другая анимация)
+  // height: 260px; //размер плашки ховер (инфо)
+  // padding: 25px; // масштаб по высоте (другая анимация)
+  // margin-top: -10px; // чтоб от центра масштабировалось (другая анимация)
+  // margin-left: -10px; // чтоб от центра масштабировалось (другая анимация)
+  // margin-right: 10px; // временно (другой анимация)
+  // margin-bottom: 10px; // временно (другая анимация)
+  // z-index: 10; // для тени (другая анимация)
+  transform: scale(1.1);
+  box-shadow: 0 15px 15px rgba(0,0,0,0.30);
+}
+
+.productItem__img {
+  display: block;
+  width: 100%;
+  height: 145px;
+  margin-bottom: 10px;
+  line-height: 145px;
+  text-align: center;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.productItem__title {
+  // min-height: 35px;
+  height: 32px;
+  overflow-y: hidden;
+  margin-bottom: 0;
+  // font-size: 14px;
+  // line-height: 16px;
+  // font-weight: bold;
+  // color: $gray-blue-dark;
+  a {
+    display: block;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: $gray-blue-dark;
+  }
+}
+
+.productItem__price {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.productItem__like {
+  display: inline-block;
+  // width: 20px;
+  // height: 20px;
+}
+
+.productItem__like::before {
+  @include fa-icon($fa-var-heart-o, 18px, $pink-ico);
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.productItem__like:hover::before {
+  content: $fa-var-heart;
+}
+
+.productItem__like.active::before {
+  content: $fa-var-heart;
+}
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.productItem {
+  width: 200px;
+  padding: 20px 25px;
+}
+
+.productItem:hover {
+  transform: scale(1);
+  box-shadow: 0 7px 7px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+}
+
+
+
+
+

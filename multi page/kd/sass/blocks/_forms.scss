@@ -1,0 +1,196 @@
+.form {
+  @include panelSmall;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 20px 10px;
+  // margin-bottom: 30px; // временно
+}
+
+.form legend {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__country,
+.form__region {
+  // display: block;
+  width: 280px;
+  // height: 35px; //временно
+  margin-bottom: 20px;
+  // font-size: 14px;
+  // font-weight: bold;
+  .ui-selectmenu-button {
+    padding: 10px 5px 10px 10px;
+    // border: none;
+    background-color: $gray-blue-light;
+    // outline: transparent;
+  }
+  .ui-selectmenu-text {
+    // font-family: $fontFamily;
+    // font-size: 14px;
+    // line-height: 16px;
+    // font-weight: 500;
+  }
+
+  .ui-selectmenu-button:focus,
+  .ui-selectmenu-button:hover,
+  .ui-selectmenu-button:active {
+    // border: none;
+    background-color: $gray-blue-light;
+    // color: #000;
+  }
+}
+
+.form__wrapBtn {
+  text-align: center;
+  line-height: 24px;
+}
+
+.form .inputBg {
+  margin-bottom: 20px;
+}
+
+.form__info {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form__countRes .form__costResult {
+  color: $blue-ico;
+  padding: 0 3px 0 8px;
+}
+
+.form textarea {
+  padding: 10px 25px;
+  height: 110px;
+  border-radius: 5px;
+}
+
+.form__captcha {
+  @include clearfix;
+  .inputBg {
+    margin-bottom: 15px;
+  }
+  label {
+    float: left;
+    width: 40%;
+  }
+  .captcha {
+    //временно
+    float: right;
+    width: 40%;
+    height: 35px;
+    background-color: lightgreen;
+  }
+  p {
+    font-weight: normal;
+    clear: both;
+  }
+}
+
+.form__call {
+  .form__info {
+    input[type='text'] {
+      vertical-align: middle;
+      width: 50px;
+      height: 25px;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      border: 1px solid $gray-blue-dark;
+      border-radius: 5px;
+      outline: transparent;
+    }
+  }
+}
+
+.form__checkbox {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  .checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 240px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  input[type='checkbox'] {
+    display: none;
+  }
+  input[type='checkbox']:checked ~ .checkbox::before {
+    display: block;
+  }
+}
+
+.form__login,
+.form__signup,
+.form__message,
+.form__costDelivery {
+  display: none;
+  position: fixed;
+  z-index: 40;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.form__login .form__checkbox {
+  text-align: center;
+  span {
+    width: auto;
+  }
+  .checkbox {
+    margin-left: 0;
+  }
+}
+
+.form__login .btn {
+  width: 120px;
+}
+
+.form__floatL {
+  float: left;
+  a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+.form__floatR {
+  float: right;
+  a {
+    font-size: 14px;
+  }
+}
+
+
+// ---== кнопки ==---
+
+.form__countRes {
+  display: none;
+}
+
+
+@media ($mobile) {
+
+.form__login .btn {
+  width: 270px;
+}
+
+
+
+}

@@ -1,0 +1,298 @@
+.navigation {
+  background-color: #F7F7F7;
+  padding: 10px 0;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.navigation__container {
+  @include container;
+}
+
+.navigation__row {
+  @include row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__col {
+  padding: 0 15px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 -10px;
+
+  .fa-close {
+    display: none;
+  }
+
+  li {
+    padding: 0 10px;
+  }
+
+  a {
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+.navigation .btn_city:hover .menuCity {
+  display: block;
+}
+
+
+.menuCity {
+  display: none;
+  position: absolute;
+  right: 15px;
+  // bottom: -100%;
+  top: calc(100% + 12px);
+  padding: 30px 0;
+  list-style: none;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10);
+  border-radius: 5px;
+  width: 220px;
+  z-index: 777;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    // outline: solid 1px red;
+    // background-color: #fff;
+    z-index: 999;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translatex(-50%) rotate(-45deg);
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+  }
+
+  .fa-angle-right::before {
+    display: block;
+    transition: all 0.3s;
+  }
+
+  li {
+    position: relative;
+    padding: 7px 20px;
+    line-height: 1.1;
+    text-align: left;
+
+    &.rotate > a > .fa-angle-right::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  li:hover {
+    background-color: #E9E9E9;
+
+    > ul {
+      display: block;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    letter-spacing: 0.88px;
+    line-height: 1.1;
+    color: #000;
+    text-decoration: none;
+  }
+
+}
+
+.menuCity__submenu {
+  display: none;
+  position: absolute;
+  right: 100%;
+  top: -16px;
+  padding: 16px 0;
+  width: 306px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10);
+  border-radius: 5px;
+  z-index: 888;
+
+  li {
+    padding: 7px 15px;
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+
+
+@media ($desktop) {
+
+  .burger {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+    font-size: 32px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    right: -280px;
+    top: 0;
+    bottom: 0;
+    // height: 120%;
+    background-color: #fff;
+    padding-top: 15px;
+    z-index: 999;
+    transition: 0.3s;
+    margin: 0;
+
+    .fa-close {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+
+    &.active {
+      right: 0;
+    }
+
+    li {
+      padding: 10px 10px;
+      padding-left: 30px;
+      line-height: 1.1;
+
+      a {
+        font-size: 14px;
+        line-height: 1.1;
+      }
+    }
+  }
+
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+
+}
+
+@media ($smobile) {
+
+  .navigation__col {
+    display: flex;
+    // justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .btn {
+      margin-left: auto;
+      margin-right: -30px;
+    }
+  }
+
+  .burger {
+    margin-left: auto;
+  }
+
+  .menu {
+    width: 100%;
+    right: -100%;
+    align-items: center;
+
+    li {
+      padding: 15px;
+    }
+  }
+
+  .navigation .btn_city:hover .menuCity {
+    display: none;
+  }
+
+  .menuCity {
+    width: 100%;
+    right: auto;
+    left: 0;
+    padding: 20px 0;
+
+    li:hover {
+      background-color: transparent;
+
+      > ul {
+        display: none;
+      }
+    }
+    a {
+      line-height: 1.6;
+    }
+  }
+
+  .menuCity__submenu {
+    position: static;
+    right: 100%;
+    top: -16px;
+    padding: 10px 0 0;
+    padding-left: 10px;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 5px;
+    z-index: 888;
+
+    // outline: solid 1px red;
+
+    li {
+      padding: 7px 0;
+    }
+
+    a {
+      font-size: 12px;
+      line-height: 1.6;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+

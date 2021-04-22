@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="//yastatic.net/share2/share.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+<!-- хэдэр начало -->
+<div class="header">
+<!-- лого -->
+  <a class="header__logo" href="index.html">
+    <img src="img/logo.png" alt="логотип">
+  </a>
+<!-- кнопка меню мобильная -->
+<span class="menuMobileBtn"></span>
+<!-- поиск -->
+  <div class="header__searchWrap">
+    <label class="header__search">
+      <input class="inputBg inputBg--focus" type="text" placeholder="Поиск среди 300 000 товаров">
+    </label>
+    <button type="submit"></button>
+  </div>
+<!-- незалогиненный юзер -->
+  <div class="header__user header__userEmpty visible">
+    <a class="fa fa-shopping-basket" href="cart.html"></a>
+    <a class="fa fa-heart" href="liked_items.html"></a>
+    <a class="fa fa-user" href=""></a>
+  </div>
+<!-- залогиненный юзер -->
+  <div class="header__user header__userFull">
+    <a class="fa fa-shopping-basket" href=""></a>
+    <span class="header__cartCount">74 342 р.
+      <!-- корзина -->
+      <div class='header__cartFullDrop'>
+       <div class="header__shopItem">
+         <div class="img">
+           <img src="img/products/product1.png" alt="">
+         </div>
+         <span class="header__shopTitle">
+           Quechua Forclaz 50L ForclazForclazForclaz Forclaz
+         </span>
+         <span class="header__shopPrice">
+          55  р.
+         </span>
+       </div>
+       <div class="header__shopItem">
+         <div class="img">
+           <img src="img/slider/slAvto.png" alt="">
+         </div>
+         <span class="header__shopTitle">
+           Quechua Forclaz50LQuechuaForclaz 50LQuechuaForclaz50L Quechua Forclaz 50L
+         </span>
+         <span class="header__shopPrice">
+          999 999 р.
+         </span>
+       </div>
+       <div class="header__shopItem">
+         <div class="img">
+           <img src="img/products/product1.png" alt="">
+         </div>
+         <span class="header__shopTitle">
+           Quechua Forclaz 50L
+         </span>
+         <span class="header__shopPrice">
+           3500 р.
+         </span>
+       </div>
+       <a class="header__shopAll" href="">Все товары</a>
+       <div class="header__wrapBtn">
+         <button type="button" class="btn btn--yellow">Оформить заказ</button>
+       </div>
+      </div>
+    </span>
+    <a class="fa fa-heart" href=""></a>
+    <span class="header__likeCount">18
+      <!-- отложенные -->
+      <div class='header__likedFullDrop'>
+         <div class="header__shopItem">
+           <div class="img">
+             <img src="img/products/product1.png" alt="">
+           </div>
+           <span class="header__shopTitle">
+             Quechua Forclaz 50L
+           </span>
+           <span class="header__shopPrice">
+             3500 р.
+           </span>
+         </div>
+         <div class="header__shopItem">
+           <div class="img">
+             <img src="img/slider/slAvto.png" alt="">
+           </div>
+           <span class="header__shopTitle">
+             Quechua Forclaz 50L Quechua Forclaz 50LQuechuaForclazForclaz
+           </span>
+           <span class="header__shopPrice">
+             3 500 000 р.
+           </span>
+         </div>
+         <div class="header__shopItem">
+           <div class="img">
+             <img src="img/products/product1.png" alt="">
+           </div>
+           <span class="header__shopTitle">
+             Quechua Forclaz 50L
+           </span>
+           <span class="header__shopPrice">
+             3500 р.
+           </span>
+         </div>
+           <a class="header__shopAll" href="">Все товары</a>
+       </div>
+    </span>
+    <a class="fa fa-user" href=""></a>
+    <a class="fa-cog" href=""></a>
+    <a class="fa-times" href=""></a>
+  </div>
+  <!-- профиль (незалогиненный юзер) -->
+  <div class='header__userEmptyDrop'>
+    <button class="header__login btn btn--blue" type="button">Войти</button>
+    <button class="header__signup btn btn--blue" type="button">Регистрация</button>
+  </div>
+  <!-- профиль (залогиненный юзер) -->
+  <div class='header__userFullDrop'>
+    <p><a href="">Василий К.</a></p>
+    <p>Заказы</p>
+    <p>Список сравнения</p>
+    <p>Отложенные товары</p>
+    <p><a href="" class="header__userLogOut">Выйти</a></p>
+  </div>
+</div>
+<!-- хэдэр конец -->
+
+<div class="grid">
+
+<div class="sidebar">
+  <div class="sidebar__fixed">
+    <div class="sidebar__visible">
+      <ul class="menu">
+        <li class="menu__catalog">
+          <a href="catalog.html" class="fa fa-bars"><span>Каталог</span></a>
+          <div class="submenuWrap">
+            <div class="submenuWrap__crumbs">
+              <div class="submenuWrap__text">
+              </div>
+            </div>
+            <span class="submenuWrap__arrUp"></span>
+            <div class="submenuScrollHidden">
+              <div class="submenuScroll">
+                <ul class="submenu">
+                  <li><a href="">Летние товары</a></li>
+                  <li><a href="">Одежда и обувь</a>
+                    <div class="submenuWrap">
+                      <div class="submenuWrap__crumbs">
+                        <div class="submenuWrap__text"></div>
+                      </div>
+                      <span class="submenuWrap__arrUp"></span>
+                      <div class="submenuScrollHidden">
+                        <div class="submenuScroll">
+                          <ul class="submenu">
+                            <li><a href="">пункт-1</a></li>
+                            <li><a href="">пункт-2</a></li>
+                            <li><a href="">пункт-3</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <span class="submenuWrap__arrDown"></span>
+                      <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                    </div>
+                  </li>
+                  <li><a href="">Текстиль</a></li>
+                  <li><a href="">Детские товары</a></li>
+                  <li>
+                    <a href="subcatalog.html">Бытовая техника</a>
+                    <div class="submenuWrap">
+                      <div class="submenuWrap__crumbs">
+                        <div class="submenuWrap__text">
+                        </div>
+                      </div>
+                      <span class="submenuWrap__arrUp"></span>
+                      <div class="submenuScrollHidden">
+                        <div class="submenuScroll">
+                          <ul class="submenu">
+                            <li><a href="">Бытовая техника для дома</a>
+                            <div class="submenuWrap">
+                              <div class="submenuWrap__crumbs">
+                                <div class="submenuWrap__text"></div>
+                              </div>
+                              <span class="submenuWrap__arrUp"></span>
+                              <div class="submenuScrollHidden">
+                                <div class="submenuScroll">
+                                  <ul class="submenu">
+                                    <li><a href="">пункт-1</a></li>
+                                    <li><a href="">пункт-2</a></li>
+                                    <li><a href="">пункт-3</a></li>
+                                    <li><a href="">пункт-4</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <span class="submenuWrap__arrDown"></span>
+                              <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                            </div>
+                            </li>
+                            <li>
+                              <a href="subsubcatalog.html">Бытовая техника для кухни</a>
+                              <div class="submenuWrap">
+                                <div class="submenuWrap__crumbs">
+                                  <div class="submenuWrap__text">
+                                  </div>
+                                </div>
+                                <span class="submenuWrap__arrUp"></span>
+                                <div class="submenuScrollHidden">
+                                  <div class="submenuScroll">
+                                    <ul class="submenu">
+                                      <li><a href="">пункт-1</a></li>
+                                      <li><a href="subsubcatalogCard.html">пункт-2</a></li>
+                                      <li><a href="">пункт-3</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li>
+                                        <a href="">пункт-5 здесь</a>
+                                        <div class="submenuWrap">
+                                          <div class="submenuWrap__crumbs">
+                                            <div class="submenuWrap__text"></div>
+                                          </div>
+                                          <span class="submenuWrap__arrUp"></span>
+                                          <div class="submenuScrollHidden">
+                                            <div class="submenuScroll">
+                                              <ul class="submenu">
+                                                <li><a href="">пункт-1</a></li>
+                                                <li><a href="">пункт-2</a></li>
+                                                <li><a href="">пункт-3</a></li>
+                                                <li><a href="">пункт-4</a></li>
+                                                <li><a href="">пункт-5</a></li>
+                                                <li><a href="">пункт-5</a></li>
+                                                <li><a href="">пункт-5</a></li>
+                                                <li><a href="">пункт-5</a></li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <span class="submenuWrap__arrDown"></span>
+                                          <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                                        </div>
+                                      </li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                      <li><a href="">пункт-4</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              <span class="submenuWrap__arrDown"></span>
+                              <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                              </div>
+                            </li>
+                            <li><a href="">Климатическая техника</a></li>
+                            <li><a href="">Красота и здоровье</a></li>
+                            <li><a href="">Аудио-видео</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                            <li><a href="">Удлинители, разветвители, сетевые фильтры</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <span class="submenuWrap__arrDown"></span>
+                      <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+                    </div>
+                  </li>
+                  <li><a href="subcatalog.html">Автотовары</a></li>
+                  <li><a href="">Электротовары</a></li>
+                  <li><a href="">Косметика и парфюм</a></li>
+                  <li><a href="">Бижутерия</a></li>
+                  <li><a href="">Кожгалантерея</a></li>
+                  <li><a href="">Сувениры</a></li>
+                  <li><a href="">Игрушки</a></li>
+                  <li><a href="">Эксклюзив</a></li>
+                  <li><a href="">Подбор подарков</a></li>
+                  <li><a href="">Праздники</a></li>
+                  <li><a href="">Интерьер</a></li>
+                  <li><a href="">Хозтовары</a></li>
+                  <li><a href="">Галантерея</a></li>
+                  <li><a href="">Спорт и отдых</a></li>
+                  <li><a href="">Строительство и ремонт</a></li>
+                  <li><a href="">Сад и огород</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда</a></li>
+                  <li><a href="">Посуда Посуда Посуда Посуда Посуда Посуда</a></li>
+                </ul>
+              </div>
+            </div>
+            <span class="submenuWrap__arrDown"></span>
+            <span class="submenuWrap__arrLeft"><span>Назад</span></span>
+          </div>
+        </li>
+        <li>
+          <a href="" class="fa fa-truck"><span>Доставка <br class="br"> и оплата</span></a>
+        </li>
+        <li><a href="" class="fa fa-mail-reply"><span>Возврат</span></a></li>
+        <li><a href="" class="fa fa-map-marker"><span>Пункты самовывоза</span></a></li>
+        <li><a href="blog.html" class="fa fa-comments-o"><span>Письмо руководству</span></a></li>
+        <li class="menu__phoneItem">
+          <a href="" class="fa fa-phone"><span>8 (833) 226-68-99<br class="br">
+          <b>Пн-Пт: 10:00-17:00</b></span>
+          </a>
+        </li>
+      </ul>
+      <div class="social">  
+        <a href="" class="fa fa-facebook"><span>/kd_ru</span></a>
+        <a href="" class="fa fa-vk"><span>/kupi_deshevle</span></a>
+        <a href="" class="fa fa-odnoklassniki"><span>/kupi_ru</span></a>
+        <a href="" class="fa fa-instagram"><span>/kupi-d-ru</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page wrapper">
+  <div class="page__breadcrumbs">
+    <span><a href="">Главная</a></span>
+    <span class="fa fa-angle-right"></span>
+    <span>Личный кабинет</span>
+  </div>
+  
+  <h1>Личный кабинет</h1>
+  
+<div class="account">
+  <span class="m-accountHead">Учетная запись</span>
+  <!-- <div class="account"> -->
+    <div class="account__head">
+      <div class="account__profile">
+        <a class="active" href="">Учетная запись</a>
+      </div>
+      <div class="account__orders">
+        <a href="">Заказы</a>
+      </div>
+      <div class="account__compare">
+        <a href="">Список сравнения</a>
+      </div>
+      <div class="account__liked">
+        <a href="">Отложенные товары</a><span class="account__amount">(0)</span>
+      </div>
+      <div class="account__logout">
+        <a class="account__logoutLink" href="">Выйти</a>
+      </div>
+    </div>
+  <!-- </div> -->
+</div>
+  
+  <div class="accountProfile">
+    <form action="" class="accountProfileForm">
+      <div class="accountProfileForm__wrapper">
+        <fieldset class="accountProfileForm__user">
+          <legend class="accountProfileForm__title1">Информация об учетной записи пользователя:</legend>
+
+          <div class="accountProfileForm__fileUploadWrap">
+            <label class="accountProfileForm__ava" for="fileAva"></label>
+            <div class="accountProfileForm__fileUpload">
+              <label class="accountProfileForm__fileAva">
+                <span class="accountProfileForm__fileName"></span>
+                <div class="accountProfileForm__choose btn btn--blueLine">Выбрать файл</div>
+                <input id="fileAva" type="file">
+              </label>
+              <button class="accountProfileForm__upload btn btn--blue" type="button">Загрузить</button>
+            </div>
+          </div>
+
+          <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+          <label><input class="inputBg" type="password" placeholder="Пароль *"></label>
+          <label><input class="inputBg" type="password" placeholder="Подтверждение пароля *"></label>
+        </fieldset>
+  
+        <fieldset class="accountProfileForm__user">
+          <legend class="accountProfileForm__title2">Пожалуйста заполните поля:</legend>
+          <div class="accountProfileForm__floatWrap">
+            <label><input class="inputBg" type="text" placeholder="Имя *"></label>
+            <label><input class="inputBg" type="text" placeholder="Фамилия *"></label>
+          </div>
+          <div class="accountProfileForm__floatWrap">
+            <label><input class="inputBg" type="text" placeholder="+7 ( ___ ) ___ - __ - __"></label>
+            <label><input class="inputBg" type="text" placeholder="Город"></label>
+          </div>
+          <label><input class="inputBg" type="text" placeholder="Адрес"></label>
+          <div class="accountProfileForm__countryWrap">
+            <div class="accountProfileForm__country" name="country" id="">
+              <select name="country" class="selectMenu"><option value="default" selected>Страна *</option>
+                <option value="Russia">Россия</option>
+                <option value="USA">Америка Америка Америка Америка</option>
+              </select>
+            </div>
+            <div class="accountProfileForm__region" name="region" id="">
+              <select name="region" class="selectMenu"><option value="default" selected>Обасть / Район *</option>
+                <option value="Moscow">Московская Московская Московская область</option>
+                <option value="Lipetsk">Липетская область</option>
+              </select>
+            </div>
+          </div>
+          <label><input class="inputBg" type="text" placeholder="Почтовый индекс *"></label>
+        </fieldset>
+        <fieldset class="accountProfileForm__subs">
+          <legend class="accountProfileForm__title3">Списки рассылок:</legend>
+          <p>Подпишитесь на наши рассылки!</p>
+          <label>
+            <input type="checkbox">
+            <i class="checkbox"></i>
+            <span>Новости компании и уникальные скидки 
+              для подписчиков</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <i class="checkbox"></i>
+            <span>Новости компании и уникальные скидки 
+              для подписчиков</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <i class="checkbox"></i>
+            <span>Новости компании и уникальные скидки 
+              для подписчиков</span>
+          </label>
+        </fieldset>
+      </div>
+      <div class="accountProfileForm__details">
+        <h3>Детали учетной записи:</h3>
+        <p>
+          На этой странице вы можете изменить данные для авторизации и персональную информацию для её использования при размещении заказов. Чтобы повысить уровень безопасности своей учетной записи, рекомендуется избегать паролей, в которых используются:
+          <ul>
+            <li>Слова из словарей на любом языке.</li>
+            <li>Слова, написанные задом наперед, и абревиатуры.</li>
+            <li>Последовательности символов или повторяющиеся символы. Например: 12345678, 222222, abcdefg или соседние буквы на вашей клавиатуре (qwerty).</li>
+            <li>Персональную информацию. ваше имя, дата рождения, номер водительских прав, номер паспорта или подобную информацию.</li>
+          </ul>
+        </p>
+        <div class="page__btnWrap">
+          <button class="btn btn--blue" type="submit">Сохранить</button>
+          <button class="btn" type="reset">Сбросить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <hr>
+  
+  <div class="accountOrders">
+    <form class="accountOrdersForm" action="">
+      <div class="accountOrdersForm__top">
+        <input class="inputBg" type="text" placeholder="Номер заказа">
+        <div class="sliderRange">
+          <label class="sliderRange__minLabel" for="sliderRange__min">
+            От: <input class="sliderRange__min" id="sliderRange__min" type="text"> р. 
+          </label>
+          <div class="sliderUIWrap">
+            <div class="sliderUI"></div>
+          </div>
+          <label for="sliderRange__max"> 
+           До: <input class="sliderRange__max" id="sliderRange__max" type="text"> р.
+          </label>
+        </div>
+        <div class="accountOrdersForm__period">
+          <select name="period" class="selectMenu">
+            <option value="default">Период</option>
+            <option value="period1">период 1</option>
+            <option value="period2">период 2 периодпериод период дата</option>
+          </select>
+        </div>
+        <div class="accountOrdersForm__date">
+          <select name="date" class="selectMenu">
+            <option value="default">Дата с:</option>
+            <option value="date1">дата 1 датадатадата дата</option>
+            <option value="date2">дата 2</option>
+            <option value="date2">03.01.2017</option>
+          </select>
+        </div>
+        <div class="accountOrdersForm__date">
+          <select name="date" class="selectMenu"><option value="default">Дата по:</option>
+            <option value="date1">дата 1</option>
+            <option value="date2">дата 2 датадатадата дата</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="accountOrdersForm__checkboxWrap">
+        <div class="accountOrdersForm__checkboxWrap1">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Ожидает оплаты</span></label>
+          <label><input type="checkbox"><i class="checkbox"></i><span>Выполнен</span></label>
+        </div>
+        <div class="accountOrdersForm__checkboxWrap2">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Сборка 1</span></label>
+          <label><input type="checkbox"><i class="checkbox"></i><span>Сборка 2</span></label>
+        </div>
+        <div class="accountOrdersForm__checkboxWrap3">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Самовывоз</span></label>
+          <label><input type="checkbox"><i class="checkbox"></i><span>Аннулирован</span></label>
+        </div>
+        <div class="accountOrdersForm__checkboxWrap4">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Ожидает звонка</span></label>
+          <label><input type="checkbox"><i class="checkbox"></i><span>Ожидает звонка (Оплачен)</span></label>
+        </div>
+        <div class="accountOrdersForm__checkboxWrap5">
+          <label><input type="checkbox"><i class="checkbox"></i><span>Доставка</span></label>
+        </div>
+      </div>
+      <div class="page__btnWrap">
+        <button class="btn btn--blue" type="submit">Найти</button>
+        <button class="btn" type="reset">Сбросить</button>
+      </div>
+    </form>
+    <div class="accountOrder__head">
+      <div class="accountOrder__ID">
+        ID
+      </div>
+      <div class="accountOrder__status">
+        Статус
+      </div>
+      <div class="accountOrder__buyer">
+        Покупатель
+      </div>
+      <div class="accountOrder__data">
+        Дата
+      </div>
+      <div class="accountOrder__total">
+        Итого
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+    <div class="accountOrder__item">
+      <div class="accountOrder__ID">
+        1234567890
+      </div>
+      <div class="accountOrder__status">
+        Выполнен
+      </div>
+      <div class="accountOrder__buyer">
+        Анрей В.
+      </div>
+      <div class="accountOrder__data">
+        18.05.15
+      </div>
+      <div class="accountOrder__total">
+        3 200 р.
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="accountLiked__list">
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L FORCLAZ FORCLAZ FORCLAZ</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product1.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product2.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L FORCLAZ FORCLAZ FORCLAZ</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product1.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product2.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L FORCLAZ FORCLAZ FORCLAZ</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product1.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product2.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L FORCLAZ FORCLAZ FORCLAZ</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product1.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product2.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L FORCLAZ FORCLAZ FORCLAZ</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product1.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+    <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product2.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like active"></i></div>
+</div>
+  </div>
+  
+  <div class="page__btnWrap">
+    <button class="btn btn--blue">Показать больше товаров</button>
+  </div>
+  
+  <hr>
+  
+  <div class="accountCompare">
+  <table>
+    <col>
+    <col>
+    <col>
+    <col>
+    <col>
+    <thead>
+      <tr>
+        <td>
+          <button class="btn btn--blue" type="button">Сравнить</button>
+        </td>
+        <td>
+          <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L FORCLAZ FORCLAZ FORCLAZ</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product1.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like"></i></div>
+</div>  
+        </td>
+        <td>
+          <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product2.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like"></i></div>
+</div>
+        </td>
+        <td>
+          <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L FORCLAZ FORCLAZ FORCLAZ</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product1.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like"></i></div>
+</div>
+        </td>
+        <td>
+          <div class="productItem">
+  <h2 class="productItem__title"><a href="subsubcatalogCard.html">QUECHUA FORCLAZ 50L</a></h2>
+  <a class="productItem__img" href="subsubcatalogCard.html">
+    <img src="img/products/product2.png" alt="">
+  </a>
+  <div class="productItem__price">3 200 р.<i class="productItem__like"></i></div>
+</div>
+        </td>
+      </tr>
+      <tr class="accountCompare__btnList">
+        <td></td>
+        <td>
+          <button class="btn accountCompare__del" type="button">Удалить</button>
+        </td>
+        <td>
+          <button class="btn accountCompare__del" type="button">Удалить</button>
+        </td>
+        <td>
+          <button class="btn accountCompare__del" type="button">Удалить</button>
+        </td>
+        <td>
+          <button class="btn accountCompare__del" type="button">Удалить</button>
+        </td>
+      </tr>
+    </thead>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>да</td>
+      <td>да</td>
+      <td>да</td>
+      <td>да</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>нет</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>0,01</td>
+      <td>0,01</td>
+      <td>0,01</td>
+      <td>0,01</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>красный</td>
+      <td>красный</td>
+      <td>красный</td>
+      <td>красный</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>есть</td>
+      <td>есть</td>
+      <td>есть</td>
+      <td>есть</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>нет</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>да</td>
+      <td>да</td>
+      <td>да</td>
+      <td>да</td>
+    </tr>
+    <tr>
+      <td>Характеристика товара</td>
+      <td>в наличии</td>
+      <td>в наличии</td>
+      <td>в наличии</td>
+      <td>в наличии</td>
+    </tr>
+  </table>
+  </div>  
+</div>
+
+</div>
+
+<!-- футер начало -->
+<div class="footer">
+  <div class="wrapper clearfix">
+    <ul>
+      <li><a href="catalog.html">Каталог</a>
+        <ul>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">Возврат товаров</a></li>
+          <li><a href="">Пункты самовывоза</a></li>
+          <li><a href="">Письмо руководству</a></li>
+        </ul>
+      </li>
+      <li><a href="account.html">Личный кабинет</a>
+        <ul>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="article.html">Статьи</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="footer__contacts">
+      <a href="contacts.html">Контактная информация</a>
+      <p>
+        г. Киров, ТЦ "Максимум" ул. Пролетарская 15, 3 этаж,
+        отдел "Апельсин" каждый день с 9.00 - 20.00
+      </p>
+      <p>
+        график работы операторов 
+        <span>Пн-Пт 10.00 - 17.00 8 (8332) 266-899</span>
+        <a href="mailto:kd43@bk.ru">kd43@bk.ru</a>
+      </p>
+    </div>
+    <div class="footer__floatR">
+      <div class="footer__socialList">
+        <p>Мы в социальных сетях:</p>
+        <a class="fa fa-facebook" href=""></a>
+        <a class="fa fa-vk" href=""></a>
+        <a class="fa fa-odnoklassniki" href=""></a>
+        <a class="fa fa-instagram" href=""></a>
+      </div>
+      <p>© 2017 KD43.ru</p>
+    </div>
+  </div>
+</div>
+<!-- футер конец -->
+
+<!--== Оверлей ==-->
+<div class="overlayTrans"></div>
+<div class="overlay"></div>
+<!--== Поп-апы ==-->
+<!-- Войти -->
+<form class="form form__login" action="">
+  <fieldset >
+    <legend>Войти в личный кабинет</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail"></label>
+    <label><input class="inputBg" type="password" placeholder="Пароль"></label>
+    <div class="form__info clearfix">
+      <div class="form__floatL"><a href="">Забыли пароль?</a></div>
+      <div class="form__floatR"><a href="">Регистрация</a></div>
+    </div>
+    <label class="form__checkbox">
+      <input type="checkbox">
+      <i class="checkbox"></i>
+      <span>Запомнить</span>
+    </label>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Войти</button>
+    </div>
+  </fieldset>
+</form>
+<!-- Регистрация -->
+<form class="form form__signup" action="">
+  <fieldset>
+    <legend>Создать учетную запись</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+    <label><input class="inputBg" type="password" placeholder="Пароль *"></label>
+    <label><input class="inputBg" type="password" placeholder="Подтверждение пароля *"></label>
+    <p class="form__info">Подпишитесь на нашу рассылку!</p>
+    <label class="form__checkbox">
+      <input type="checkbox">
+      <i class="checkbox"></i>
+      <span>Новости компании и уникальные скидки для подписчиков</span>
+    </label>
+    <div class="form__captcha">
+      <label><input class="inputBg" type="text"></label>
+      <div class="captcha">
+      </div>
+      <p class="form__info">Введите символы (цифры и латинские буквы), которые видите на картинке.</p>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Регистрация</button>
+    </div>
+  </fieldset>
+</form>
+<!-- Письмо руководству -->
+<form class="form form__message" action="">
+  <fieldset>
+    <legend>Письмо руководству</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+    <label><input class="inputBg" type="text" placeholder="Ваше имя"></label>
+    <textarea class="inputBg" placeholder="Сообщение"></textarea>
+    <div class="form__captcha">
+      <label><input class="inputBg" type="text"></label>
+      <div class="captcha">
+      </div>
+      <p class="form__info">Введите символы (цифры и латинские буквы), которые видите на картинке.</p>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Отправить</button>
+    </div>
+  </fieldset>
+</form>
+<!-- Стоимость доставки -->
+<form class="form form__costDelivery" action="">
+  <fieldset>
+    <legend>Рассчитать стоимость доставки</legend>
+    <div class="form__country">
+      <select class="selectMenu" name="country" id="">
+        <option value="default" selected>Страна</option>
+        <option value="Russia">Россия</option>
+        <option value="USA">Америка Америка Америка Америка</option>
+      </select>
+    </div>
+    <div class="form__region">
+      <select class="selectMenu" name="region" id="">
+        <option value="default" selected>Обасть / Район</option>
+        <option value="Moscow">Московская Московская Московская область</option>
+        <option value="Lipetsk">Липетская область</option>
+      </select>          
+    </div>       
+    <label><input class="inputBg" type="text" placeholder="Почтовый индекс"></label>
+    <div class="form__countRes">
+      <p class="form__info">Наш менеджер перезвонит Вам для выбора способа доставки</p>
+      <p class="form__info">Итого:<span class="form__costResult">1120</span>р.</p>
+      <div class="form__wrapBtn">
+        <button class="form__countBtn2 btn btn--blue" type="submit">Пересчитать расценки</button>
+      </div>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="form__countBtn btn btn--blue" type="submit">Получить расценки</button>
+    </div>
+  </fieldset>
+</form> 
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,222 @@
+{% macro main() %}
+
+<div class="tariffs" id="tariffs">
+
+<div class="tariffs__container">
+  <h2 class="title">Абонементы</h2>
+  <span class="desc">Выберите подходящий абонемент для вашего малыша</span>
+
+  <div class="tariffs__list">
+    <div class="tariffs__row">
+      <span class="tariffs__col tariffs__col_1">Разовый</span>
+      <span class="tariffs__col tariffs__col_2">1</span>
+      <span class="tariffs__col tariffs__col_3">занятие</span>
+      <span class="tariffs__col tariffs__col_4">900</span>
+      <span class="tariffs__col tariffs__col_5">стоимость (1=900)</span>
+    </div>
+    <div class="tariffs__row">
+      <span class="tariffs__col tariffs__col_1">ВЫХОДНОЙ</span>
+      <span class="tariffs__col tariffs__col_2">4</span>
+      <span class="tariffs__col tariffs__col_3">занятия</span>
+      <span class="tariffs__col tariffs__col_4">2 500</span>
+      <span class="tariffs__col tariffs__col_5">стоимость (1=625)</span>
+    </div>
+    <div class="tariffs__row">
+      <span class="tariffs__col tariffs__col_1">АБОНЕМЕНТ 8</span>
+      <span class="tariffs__col tariffs__col_2">8</span>
+      <span class="tariffs__col tariffs__col_3">занятий</span>
+      <span class="tariffs__col tariffs__col_4">4 900</span>
+      <span class="tariffs__col tariffs__col_5">стоимость (1=612)</span>
+    </div>
+    <div class="tariffs__row">
+      <span class="tariffs__col tariffs__col_1">АБОНЕМЕНТ 12</span>
+      <span class="tariffs__col tariffs__col_2">12</span>
+      <span class="tariffs__col tariffs__col_3">занятий</span>
+      <span class="tariffs__col tariffs__col_4">7 200</span>
+      <span class="tariffs__col tariffs__col_5">стоимость (1=600)</span>
+    </div>
+    <div class="tariffs__row">
+      <span class="tariffs__col tariffs__col_1">АБОНЕМЕНТ 16</span>
+      <span class="tariffs__col tariffs__col_2">16</span>
+      <span class="tariffs__col tariffs__col_3">занятий</span>
+      <span class="tariffs__col tariffs__col_4">9 200</span>
+      <span class="tariffs__col tariffs__col_5">стоимость (1=575)</span>
+    </div>
+    <div class="tariffs__row">
+      <span class="tariffs__col tariffs__col_1">АБОНЕМЕНТ 24</span>
+      <span class="tariffs__col tariffs__col_2">24</span>
+      <span class="tariffs__col tariffs__col_3">занятий</span>
+      <span class="tariffs__col tariffs__col_4">13 200</span>
+      <span class="tariffs__col tariffs__col_5">стоимость (1=550)</span>
+    </div>
+  </div>
+  
+<!--   <ul class="tariffs__tabs">
+    <li class="active"><a href="#">РАЗОВЫЙ</a></li>
+    <li><a href="#">ВЫХОДНОЙ</a></li>
+    <li><a href="#">АБОНЕМЕНТ 8</a></li>
+    <li><a href="#">АБОНЕМЕНТ 12</a></li>
+    <li><a href="#">АБОНЕМЕНТ 16</a></li>
+    <li><a href="#">АБОНЕМЕНТ 24</a></li>
+  </ul> -->
+  
+  <div class="banner">
+    <span class="banner__title">Первая пробная запись в бассейн</span>
+    <div class="banner__price">
+      <span class="banner__value">350</span>
+      <span class="banner__unit">рублей</span>
+    </div>
+    <button class="btn btn_white" type="button" data-modal data-target="modalCall">Оставить заявку</button>
+  </div>
+  
+  <!-- <div class="tariffs__main">
+    <div class="tariffs__wimg">
+      <img src="img/tariffs1.jpg" alt="">
+    </div>
+    <div class="tariffs__cnt">
+      <div class="tariffs__top">
+        <div class="tariffs__item">
+          <span class="tariffs__num">4</span>
+          <span class="tariffs__end">занятий</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2 800</span>
+          <span class="tariffs__end">стоимость (1=700)</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2</span>
+          <span class="tariffs__end">время занятия</span>
+        </div>
+      </div>
+      <p class="tariffs__txt">1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      <button class="btn" type="button" data-modal data-target="modalCall">ЗАПИСАТЬСЯ</button>
+    </div>
+  </div> -->
+
+  <!-- <div class="tariffs__main">
+    <div class="tariffs__wimg">
+      <img src="img/tariffs1.jpg" alt="">
+    </div>
+    <div class="tariffs__cnt">
+      <div class="tariffs__top">
+        <div class="tariffs__item">
+          <span class="tariffs__num">4</span>
+          <span class="tariffs__end">занятий</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2 800</span>
+          <span class="tariffs__end">стоимость (1=700)</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2</span>
+          <span class="tariffs__end">время занятия</span>
+        </div>
+      </div>
+      <p class="tariffs__txt">2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      <button class="btn" type="button" data-modal data-target="modalCall">ЗАПИСАТЬСЯ</button>
+    </div>
+  </div> -->
+
+  <!-- <div class="tariffs__main">
+    <div class="tariffs__wimg">
+      <img src="img/tariffs1.jpg" alt="">
+    </div>
+    <div class="tariffs__cnt">
+      <div class="tariffs__top">
+        <div class="tariffs__item">
+          <span class="tariffs__num">4</span>
+          <span class="tariffs__end">занятий</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2 800</span>
+          <span class="tariffs__end">стоимость (1=700)</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2</span>
+          <span class="tariffs__end">время занятия</span>
+        </div>
+      </div>
+      <p class="tariffs__txt">3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      <button class="btn" type="button" data-modal data-target="modalCall">ЗАПИСАТЬСЯ</button>
+    </div>
+  </div> -->
+
+  <!-- <div class="tariffs__main">
+    <div class="tariffs__wimg">
+      <img src="img/tariffs1.jpg" alt="">
+    </div>
+    <div class="tariffs__cnt">
+      <div class="tariffs__top">
+        <div class="tariffs__item">
+          <span class="tariffs__num">4</span>
+          <span class="tariffs__end">занятий</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2 800</span>
+          <span class="tariffs__end">стоимость (1=700)</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2</span>
+          <span class="tariffs__end">время занятия</span>
+        </div>
+      </div>
+      <p class="tariffs__txt">4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      <button class="btn" type="button" data-modal data-target="modalCall">ЗАПИСАТЬСЯ</button>
+    </div>
+  </div> -->
+
+  <!-- <div class="tariffs__main">
+    <div class="tariffs__wimg">
+      <img src="img/tariffs1.jpg" alt="">
+    </div>
+    <div class="tariffs__cnt">
+      <div class="tariffs__top">
+        <div class="tariffs__item">
+          <span class="tariffs__num">4</span>
+          <span class="tariffs__end">занятий</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2 800</span>
+          <span class="tariffs__end">стоимость (1=700)</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2</span>
+          <span class="tariffs__end">время занятия</span>
+        </div>
+      </div>
+      <p class="tariffs__txt">5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      <button class="btn" type="button" data-modal data-target="modalCall">ЗАПИСАТЬСЯ</button>
+    </div>
+  </div> -->
+
+  <!-- <div class="tariffs__main">
+    <div class="tariffs__wimg">
+      <img src="img/tariffs1.jpg" alt="">
+    </div>
+    <div class="tariffs__cnt">
+      <div class="tariffs__top">
+        <div class="tariffs__item">
+          <span class="tariffs__num">4</span>
+          <span class="tariffs__end">занятий</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2 800</span>
+          <span class="tariffs__end">стоимость (1=700)</span>
+        </div>
+        <div class="tariffs__item">
+          <span class="tariffs__num">2</span>
+          <span class="tariffs__end">время занятия</span>
+        </div>
+      </div>
+      <p class="tariffs__txt">6 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      <button class="btn" type="button" data-modal data-target="modalCall">ЗАПИСАТЬСЯ</button>
+    </div>
+  </div> -->
+
+</div>
+
+</div>
+
+
+
+{% endmacro %}

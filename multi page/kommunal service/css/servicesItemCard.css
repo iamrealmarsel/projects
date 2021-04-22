@@ -1,0 +1,109 @@
+
+/* ---== услуги карточка товара ==--- */
+.servicesItemCard {
+  margin-bottom: 30px;
+}
+
+
+.servicesItemCard__slider {
+  border: solid #ccc 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.servicesItemCard__slider1 {
+  margin-bottom: 20px;
+}
+
+.servicesItemCard__slide1 {
+  height: 400px;
+}
+
+.servicesItemCard__slide1 img,
+.servicesItemCard__slide2 img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.servicesItemCard__slide2 {
+  margin: 0px 10px;
+}
+
+.servicesItemCard__priceWrap {
+  margin-bottom: 20px;
+}
+
+.servicesItemCard__price {
+  margin-bottom: 0;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.servicesItemCard__price1 {
+  margin-right: 10px;
+}
+
+.servicesItemCard__btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+}
+
+.servicesItemCard__table td {
+  padding: 10px 20px;
+}
+
+.servicesItemCard__table tr:nth-child(odd) {
+  background-color: #a8deff;
+}
+
+.servicesItemCard__also {
+  margin-bottom: 50px;
+}
+
+.servicesItemCard__also .row {
+  padding: 10px 0;
+  border-radius: 5px;
+  border: solid 1px #0072b9;
+}
+
+.servicesItemCard__item {
+  max-width: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.servicesItemCard__item a {
+  display: block;
+}
+
+.servicesItemCard__item img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+}
+
+.servicesItemCard__subtitle {
+  font-size: 14px;
+}
+
+.servicesItemCard__line {
+  padding: 0 10px;
+}
+
+.servicesItemCard__also h3 {
+  margin-bottom: 20px;
+}
+
+
+.servicesItemCard__seo {
+  margin-top: 50px;
+}
+
+

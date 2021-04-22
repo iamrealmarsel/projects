@@ -1,0 +1,57 @@
+/* ---== блог ==--- */
+
+.blog__title {
+  margin: 20px 0 40px;
+}
+
+
+.blog__list {
+  font-size: 0;
+  /*width: 800px;*/
+}
+
+.blog__list .news__focus {
+  margin-bottom: 30px;
+}
+
+
+.blog__item {
+  margin-bottom: 30px;
+  display: block;
+  /*border: solid 1px #f1f1f1;*/
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.blog__date {
+    display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.blog__item p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.blog__subtitle {
+    margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.blog__img {
+  padding-top: 10px;
+}
+
+.blog__img img {
+  width: 100%;
+}
+
+.blog__banner {
+  display: block;
+  margin-bottom: 30px;
+}
+
+

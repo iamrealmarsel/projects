@@ -1,0 +1,30 @@
+.inp {
+	font-family: $ffBase;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 300;
+	border: solid #BDBDBD 1px;
+	padding: 15px;
+	width: 100%;
+	outline: transparent;
+	border-radius: 1px;
+}
+
+.inp:focus {
+	border-color: #5FDE12;
+}
+
+.btn {
+	font-family: $ffBase;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 300;
+	background-color: #5FDE12;
+	border-radius: 1px;
+	text-transform: uppercase;
+	color: #333;
+	padding: 15px;
+	cursor: pointer;
+	outline: transparent;
+	border: none;
+}

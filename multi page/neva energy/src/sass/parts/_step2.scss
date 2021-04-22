@@ -1,0 +1,127 @@
+.step2__row {
+  display: flex;
+
+  .fa-file-text {
+    font-size: 48px;
+    color: #818181;
+  }
+}
+
+.step2__doc {
+  margin-right: 30px;
+}
+
+.step2__cnt {
+  margin-bottom: 30px;
+}
+
+.step2__txt {
+  margin-bottom: 15px;
+}
+
+.step2__txt2 {
+  font-weight: 500;
+}
+
+.step2__statusList {
+  margin-bottom: 66px;
+}
+
+.step2__status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.step2__btn {
+  display: inline-block;
+  background: #C6C6C6;
+  padding: 10px 5px;
+  color: #747474;
+  font-size: 12px;
+  border-radius: 100px;
+  margin-right: 25px;
+  width: 100%;
+  max-width: 100px;
+  text-align: center;
+
+  &.completed {
+    background-color: #12D03E;
+    color: #fff;
+  }
+}
+
+.step4__completed {
+  font-size: 20px;
+  font-weight: 500;
+}
+.step4__city {
+  font-size: 14px;
+  color: #0062CC;
+  font-weight: 500;
+}
+
+.step4__txt {
+  margin-bottom: 30px;
+}
+
+.step2__apps {
+  // max-width: 390px;
+}
+
+.step__download {
+  margin-bottom: 30px;
+
+  a {
+    color: #0C6BC9;
+  }
+}
+
+
+@media ($desktop) {
+  
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+
+}
+
+@media ($smobile) {
+
+  .step2__doc {
+    display: none;
+  }
+  .step2 .btn_acc {
+    padding: 16px 15px;
+    margin: 0 auto;
+    display: block;
+    max-width: 300px;
+  }
+  .steps__prev {
+    margin-top: 0;
+  }
+
+  .step4 .btn_acc {
+    max-width: 260px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .step__download {
+    text-align: center;
+  }
+
+
+}
+
+
+
+

@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fit-n-Go!</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Scada:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__head">
+			<div class="container">
+				<div class="header__row">
+					<div class="header__logo">
+						<img class="" src="img/logo.png" alt="">
+						<span class="header__desc">ГРИЗЛИ</span>
+					</div>
+					<!-- <img class="header__logo2" src="img/logo2.png" alt="Fit-n-Go!"> -->
+					<nav class="header__nav">
+						<ul class="header__menu">
+							<li><a href="#kind">Для кого</a></li>
+							<li><a href="#coupon" class="header__coupon">Акции</a></li>
+							<li><a href="#features">Преимущества</a></li>
+							<li><a href="#tasks">Задачи</a></li>
+							<li><a href="#prices">Цены</a></li>
+							<li><a href="#video">Видео</a></li>
+							<li><a href="#reviews">Отзывы</a></li>
+						</ul>
+						<div class="burger--open">
+						  <i class="burger__lines"></i>
+						</div>
+					</nav>
+					<div class="header__contacts">
+						<a class="header__phone fa-mobile-phone" href="tel:+79258677411">+7 (925) 867-74-11</a>
+						<span class="header__address">Одинцово, Можайское ш., д. 122</span>
+					</div>
+					<button data-modal data-target='modal1' class="btn" type="button">Оставить заявку</button>
+					<div class="burger">
+					  <i class="burger__lines"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__body">
+			<div class="container">
+				<h1 class="title"> Студия персонального фитнеса "ГРИЗЛИ" приглашает Вас на занятия:</h1>
+
+				<!-- <p class="header__info">EMC Тренировки длятся всего 20 минут</p> -->
+				<!-- <p class="header__text">В среднем для проработки всех групп мышц в зале необходимо не менее 2-х часов вашего времени</p> -->
+				<div class="programs">
+
+<div class="programs__col">
+	<div class="programs__item">
+		<div class="programs__img programs__img_1"></div>
+		<div class="programs__title">ФИТНЕС</div>
+		<div class="programs__txt">кардио и силовые тренировки</div>
+		<div class="programs__btns">
+			<button class="btn btn_whln" type="button" data-modal data-target='modal1'>Оставить заявку</button>
+			<button class="btn btn_whln" type="button" data-modal data-target='modal_more1'>Подробности</button>
+		</div>
+	</div>
+</div>
+
+<div class="programs__col">
+	<div class="programs__item">
+		<div class="programs__img programs__img_2"></div>
+		<div class="programs__title ">EMS-ТРЕНИРОВКИ</div>
+		<div class="programs__txt">20 минут вместо 2-х часов <span class="nowrap">в обычном</span> зале</div>
+		<div class="programs__btns">
+			<button class="btn btn_whln" type="button" data-modal data-target='modal1'>Оставить заявку</button>
+			<button class="btn btn_whln" type="button" data-modal data-target='modal_more2'>Подробности</button>
+		</div>
+	</div>
+</div>
+
+<div class="programs__col">
+	<div class="programs__item">
+		<div class="programs__img programs__img_3"></div>
+		<div class="programs__title">ЛИМФОДРЕНАЖНЫЙ МАССАЖ</div>
+		<div class="programs__txt">антицелюлитный <span class="nowrap">EMS-массаж</span></div>
+		<div class="programs__btns">
+			<button class="btn btn_whln" type="button" data-modal data-target='modal1'>Оставить заявку</button>
+			<button class="btn btn_whln" type="button" data-modal data-target='modal_more3'>Подробности</button>
+		</div>
+	</div>
+</div> 
+
+<div class="programs__col">
+	<div class="programs__item">
+		<div class="programs__img programs__img_4"></div>
+		<div class="programs__title">БИОИМПЕДАНСНЫЙ АНАЛИЗ ТЕЛА (BMi)</div>
+		<div class="programs__txt">анализ состава тела</div>
+		<div class="programs__btns">
+			<button class="btn btn_whln" type="button" data-modal data-target='modal1'>Оставить заявку</button>
+			<button class="btn btn_whln" type="button" data-modal data-target='modal_more4'>Подробности</button>
+		</div>
+	</div>
+</div>
+
+				</div>
+			
+
+<!-- 				<form action="POST" class="form js-submit">
+					<input type="text" class="inp" name="name" required="true" placeholder="Введите ваше имя">
+					<input type="tel" class="inp telMask" name="tel" required="true" placeholder="Введите ваш телефон">
+					<div class="personal">
+						<input id="personal__check1" type="checkbox" required="true">
+						<label for="personal__check1">
+							<i class="fa fa-check"></i>
+							<span>Я даю согласие на обработку персональных данных</span>
+						</label>
+					</div>
+					<button  class="btn" type="submit">Оставить заявку</button>
+				</form> -->
+			</div>
+		</div>
+
+	</header>
+	<section class="kind">
+		<div class="kind__list" id="kind">
+			<div class="kind__col">
+				<div class="kind__item kind__item_1">
+					<span class="kind__img kind__img_1"></span>
+					<span>молодые мамы</span>
+					<button type="button" data-modal data-target='modal1' class="btn btn_whln">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ за 15 мин</button>
+				</div>
+			</div>
+			<div class="kind__col">
+				<div class="kind__item kind__item_2">
+					<span class="kind__img kind__img_2"></span>
+					<span>занятые люди</span>
+					<button type="button" data-modal data-target='modal1' class="btn btn_whln">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ за 15 мин</button>
+				</div>
+			</div>
+			<div class="kind__col">
+				<div class="kind__item kind__item_3">
+					<span class="kind__img kind__img_3"></span>
+					<span>ПОЛНЫЕ ЛЮДИ</span>
+					<button type="button" data-modal data-target='modal1' class="btn btn_whln">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ за 15 мин</button>
+				</div>
+			</div>
+			<div class="kind__col">
+				<div class="kind__item kind__item_4">
+					<span class="kind__img kind__img_4"></span>
+					<span>ПОЖИЛЫЕ ЛЮДИ</span>
+					<button type="button" data-modal data-target='modal1' class="btn btn_whln">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ за 15 мин</button>
+				</div>
+			</div>
+			<div class="kind__col">
+				<div class="kind__item kind__item_5">
+					<span class="kind__img kind__img_5"></span>
+					<span>СПОРТСМЕНЫ</span>
+					<button type="button" data-modal data-target='modal1' class="btn btn_whln ">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ за 15 мин</button>
+				</div>
+			</div>
+			<div class="kind__col">
+				<div class="kind__item kind__item_6">
+					<span class="kind__img kind__img_6"></span>
+					<span>ТРАВМИРОВАННЫЕ ЛЮДИ</span>
+					<button type="button" data-modal data-target='modal1' class="btn btn_whln">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ за 15 мин</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="stock">
+		<div class="stock__block">
+			<h2 class="stock__title title">Начните улучшать свое тело</h2>
+			<span class="stock__info">вместе с ГРИЗЛИ Одинцово</span>
+			<button type="button" data-modal data-target='modal1' class="btn btn_whln">Записаться на тренировку</button>
+		</div>
+	</section>
+	<section class="features" id="features">
+		<div class="container">
+			<h2 class="subtitle">ПРЕИМУЩЕСТВА ЕМС-тренировок</h2>
+			<div class="features__row">
+				<div class="features__col">
+					<div class="features__item">
+						<div class="features__back">
+							<ul>
+								<li>- 20 минут в Гризли = 2-3 часам в спортзале</li>
+								<li>- задействованы 20 групп мышц одновременно</li>
+								<li>- 3 процедуры в 1: тренировка мышц, лимфодренажный массаж, подтяжка кожи</li>
+							</ul>
+							<button data-modal data-target='modal1' class="btn btn_whln" type="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+						</div>
+						<div class="features__front">
+							<div class="features__ico features__ico_1"></div>
+							<span class="features__caption">EMS - это фитнес <br>
+		будущего</span>
+						</div>
+					</div>
+				</div>
+				<div class="features__col">
+					<div class="features__item">
+						<div class="features__back">
+							<ul>
+								<li>- длительность тренировки - всего 20 минут, занимайтесь в любое удобное время</li>
+								<li>- клубная карта не нужна, платите только за персональный тренинг</li>
+								<li>- стоимость персональной тренировки от 1 000 рублей</li>
+							</ul>
+							<button data-modal data-target='modal1' class="btn btn_whln" type="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+						</div>
+						<div class="features__front">
+							<div class="features__ico features__ico_2"></div>
+							<span class="features__caption">эКОНОМИЯ ВРЕМЕНИ 
+И ДЕНЕГ</span>
+						</div>
+					</div>
+				</div>
+				<div class="features__col">
+					<div class="features__item">
+						<div class="features__back">
+							<ul>
+								<li>- нет нагрузки на суставы</li>
+								<li>- подходит для людей с любым уровнем подготовленности</li>
+								<li>- технология EMS широко используется в медицине и профессиональном спорте для реабилитации после травм</li>
+							</ul>
+							<button data-modal data-target='modal1' class="btn btn_whln" type="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+						</div>
+						<div class="features__front">
+							<div class="features__ico features__ico_3"></div>
+							<span class="features__caption">ВАША БЕЗОПАСНОСТЬ</span>
+						</div>
+					</div>
+				</div>
+				<div class="features__col">
+					<div class="features__item">
+						<div class="features__back">
+							<ul>
+								<li>- технология известна более 30-ти лет</li>
+								<li>- на сегодняшний день в Мире около 5000 эмс-студий</li>
+								<li>- используется для подготовки ведущих спортсменов Мира</li>
+							</ul>
+							<button data-modal data-target='modal1' class="btn btn_whln" type="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+						</div>
+						<div class="features__front">
+							<div class="features__ico features__ico_4"></div>
+							<span class="features__caption">ДОКАЗАННАЯ 
+ЭФФЕКТИВНОСТЬ</span>
+						</div>
+					</div>
+				</div>
+				<div class="features__col">
+					<div class="features__item">
+						<div class="features__back">
+							<ul>
+								<li>- тренировка один-на-один с персональным тренером</li>
+								<li>- без посторонних глаз и отвлекающих факторов</li>
+								<li>- приходите налегке - все необходимое мы выдадим в студии</li>
+							</ul>
+							<button data-modal data-target='modal1' class="btn btn_whln" type="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+						</div>
+						<div class="features__front">
+							<div class="features__ico features__ico_5"></div>
+							<span class="features__caption">ИНДИВИДУАЛЬНЫЙ
+ПОДХОД</span>
+						</div>
+					</div>
+				</div>
+				<div class="features__col">
+					<div class="features__item">
+						<div class="features__back">
+							<ul>
+								<li>- возможность заниматься всей семьей</li>
+								<li>- детишки могут находиться в студии вместе с Вами, в студии есть детский уголок</li>
+								<li>- заниматься можно со 2-го месяца после родов</li>
+								<li>- каждой Маме положена скидка!</li>
+							</ul>
+							<button data-modal data-target='modal1' class="btn btn_whln" type="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+						</div>
+						<div class="features__front">
+							<div class="features__ico features__ico_6"></div>
+							<span class="features__caption">CHILDREN FRIENDLY</span>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="features__col">
+					<div class="features__item">
+						<div class="features__back">
+							<ul>
+								<li>- к Вашим услугам высококвалифицированный персонал, ориентированный на достижение результата</li>
+								<li>- мы используем лучшее Европейское оборудование, имеющее все сертификаты и лицензии</li>
+								<li>- мы любим наших Клиентов - система скидок и бонусов сделает Ваши тренировки еще приятнее</li>
+							</ul>
+							<button data-modal data-target='modal1' class="btn btn_whln" type="button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+						</div>
+						<div class="features__front">
+							<div class="features__ico features__ico_7"></div>
+							<span class="features__caption">СЕРВИС <br>
+И ЛОЯЛЬНОСТЬ</span>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<section class="tasks" id="tasks">
+		<div class="container">
+			<h2 class="subtitle">задачи, которые позволяют решить EMS-тренировки</h2>
+			<div class="tasks__row">
+				<div class="tasks__col">
+					<span class="tasks__text"><b>Сбросить</b> лишний вес</span>
+				</div>
+				<div class="tasks__col">
+					<span class="tasks__text"><b>Нарастить</b> мышечную массу и сделать фигуру более рельефной</span>
+				</div>
+				<div class="tasks__col">
+					<span class="tasks__text"><b>Убрать</b> целлюлит и повысить упругость кожи</span>
+				</div>
+				<div class="tasks__col">
+					<span class="tasks__text"><b>Нормализовать</b> кровяное давление, снизить уровень сахара в крови</span>
+				</div>
+				<div class="tasks__col">
+					<span class="tasks__text"><b>Укрепить</b> мышцы</span>
+				</div>
+				<div class="tasks__col">
+					<span class="tasks__text"><b>Восстановить</b> функции мышц после травм</span>
+				</div>
+				<div class="tasks__col">
+					<span class="tasks__text"><b>Избавить</b> от болей в спине, шее и тяжести в ногах</span>
+				</div>
+				<div class="tasks__col">
+					<span class="tasks__text">Эффективно <b>стимулировать</b> обменные процессы</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="trial">
+		<div class="container">
+			<h2 class="title">
+			ПРОБНОЕ ЕМС ЗАНЯТИЕ БЕСПЛАТНО
+		</h2>
+			<span class="trial__info">При покупке любого абонемента нашей студии</span>
+			<form action="POST" class="form js-submit">
+				<input type="text" class="inp" name="name" required="true" placeholder="Введите ваше имя">
+				<input type="tel" class="inp telMask" name="tel" required="true" placeholder="Введите ваш телефон">
+				<div class="personal">
+					<input id="personal__check2" type="checkbox" required="true">
+					<label for="personal__check2">
+						<i class="fa fa-check"></i>
+						<span>Я даю согласие на обработку персональных данных</span>
+					</label>
+				</div>
+				<button  class="btn" type="submit">Оставить заявку</button>
+			</form>
+		</div>
+	</section>
+	<section class="prices" id="prices">
+		<div class="container">
+			<h2 class="subtitle">наши цены</h2>
+			<div class="prices__accordion">
+				<h3 class="prices__subtitle fa-angle-down"> Абонементы на EMS-ТРЕНИРОВКИ (30 минут)</h3>
+				<div class="prices__block">
+					<div class="prices__row">
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>8 занятий</h4>
+									<span class="prices__value prices__value_lt">22&nbsp;000&nbsp;р.</span>
+									<span class="prices__value">17&nbsp;600&nbsp;р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>12 занятий</h4>
+									<span class="prices__value prices__value_lt">30&nbsp;000&nbsp;р.</span>
+									<span class="prices__value">24&nbsp;000&nbsp;р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>24 занятия</h4>
+									<span class="prices__value prices__value_lt">55&nbsp;000&nbsp;р.</span>
+									<span class="prices__value">44&nbsp;000&nbsp;р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>50 занятий</h4>
+									<span class="prices__value prices__value_lt">90&nbsp;000&nbsp;р.</span>
+									<span class="prices__value">72&nbsp;000&nbsp;р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+					</div>
+				</div>
+			</div>
+			<div class="prices__accordion">
+				<h3 class="prices__subtitle">  Абонементы на тренировки без EMS-костюма (60 минут)</h3>
+				<div class="prices__block">
+					<div class="prices__row">
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>8 занятий</h4>
+									<span class="prices__value">17&nbsp;600&nbsp;р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>12 занятий</h4>
+									<span class="prices__value">24&nbsp;000&nbsp;р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>24 занятия</h4>
+									<span class="prices__value">44&nbsp;000&nbsp;р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>50 занятий</h4>
+									<span class="prices__value">72&nbsp;000&nbsp;р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="prices__accordion">
+				<h3 class="prices__subtitle fa-angle-down">Лимфодренажный массаж в EMS-костюме</h3>
+				<div class="prices__block">
+					<div class="prices__row">
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>1 сеанс</h4>
+									<span class="prices__value">1 000 р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<h4>12 сеансов</h4>
+									<span class="prices__value">10&nbsp;000&nbsp;р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+					</div>
+				</div>
+			</div>
+			<div class="prices__accordion">
+				<h3 class="prices__subtitle fa-angle-down">Биоимпедансный анализ тела (BMi)</h3>
+				<div class="prices__block">
+					<div class="prices__row">
+						<div class="prices__col"><div class="prices__border">
+								<div class="prices__item">
+									<span class="prices__value">800 р.</span>
+									<a class="prices__more" data-modal data-target='modal1' href="#">подробнее ></a>
+								</div>
+							</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="video" id="video">
+		<h2 class="subtitle">Видео тренировок</h2>
+		<div class="video__row">
+			
+			<div class="video__sliderNav">
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video1.jpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video2.jpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video3.jpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video4.jpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video5.jpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video6.jpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video7.jpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video8.jpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video9.jpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="video__slideNav">
+						<img src="img/video10.jpg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="video__slider">
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/cxAT_9urJ-8?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/VnaplCBJLvY?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/N8DhTwt5nQ4?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/8H2h7f3Oj_I?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/JfimjmMBQHE?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/O6YiizDlVVk?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/wurMSy1AeJY?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/xFwvo2Sm34o?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/Yft_X8w2MUo?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div>
+					<div class="video__slide">
+						<iframe width="100%" height="435" src="https://www.youtube.com/embed/lSUy0PMFnEA?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<a href="https://www.instagram.com/grizlyfitnessodintsovo/" target="_blank" class="btn">Подписаться на инстаграм</a>
+		
+	</section>
+	<section class="reviews" id="reviews"><div class="container">
+			<h2 class="subtitle">Отзывы</h2>
+			<div class="reviews__slider">
+				<div>
+					<div class="reviews__slide">
+						<div class="reviews__head">
+							<img class="reviews__ava" src="img/reviews1.png" alt="">
+		<div class="reviews__author">
+		<!-- <span class="reviews__type">Молодая мама</span> -->
+		<span class="reviews__name">Елена</span>
+		</div>
+						</div>
+						<div class="reviews__body">
+							<p  class="reviews__text">Моя упругость с @grizlyfitnessodintsovo зашкаливает!!!???
+Сегодня была третья тренировка, эффект вижу уже. Скажу главный плюс — это время , я теперь трачу на тренировку 20 минут, но чувства, что я провела в зале более 2 х часов!</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="reviews__slide">
+						<div class="reviews__head">
+							<img class="reviews__ava" src="img/reviews2.jpg" alt="">
+		<div class="reviews__author">
+		<!-- <span class="reviews__type">ОПЫТНЫЙ СПОРТСМЕН</span> -->
+		<span class="reviews__name">Роман</span>
+		</div>
+						</div>
+						<div class="reviews__body">
+							<p class="reviews__text">Хороший способ привести себя в форму. Я занимаюсь хоккеем регулярно, т. е. физически более менее подготовлен. Было тяжело, но форму улучшил, немного в размере уменьшился. Прошёл 2 пробных тренироровки + 5 по акции.</p>
+						</div>
+					</div>
+				</div>
+						<div>
+							<div class="reviews__slide">
+								<div class="reviews__head">
+									<img class="reviews__ava" src="img/reviews3.png" alt="">
+				<div class="reviews__author">
+				<!-- <span class="reviews__type">Мастер спорта по художественной гимнастике</span> -->
+				<span class="reviews__name">Олечка Гажиенко</span>
+				</div>
+								</div>
+								<div class="reviews__body">
+									<p  class="reviews__text">Это я такая замученная после второй тренировки в @grizlyfitnessodintsovo После каждой 20-ти минутной тренировки полагается массаж, если можно так сказать. Ты лежишь на пуфе, а твои мышцы сокращаются. Всего 2 тренировки, а я уже почувствовала, как мышцы стали крепче! Представляю, что будет дальше!)</p>
+								</div>
+							</div>
+						</div>
+
+								<div>
+									<div class="reviews__slide">
+										<div class="reviews__head">
+											<img class="reviews__ava" src="img/reviews4.png" alt="">
+						<div class="reviews__author">
+						<span class="reviews__type"></span>
+						<span class="reviews__name">Евгения</span>
+						</div>
+										</div>
+										<div class="reviews__body">
+											<p class="reviews__text">Обычный день в любимом зале?. Никакая усталость после работы не отобьёт желания провести время с пользой?. До сих пор не понимаю, как объяснить людям, что это за система… Это надо просто попробовать?</p>
+										</div>
+									</div>
+								</div>
+
+			</div>
+		</div></section>
+	<section class="trial2"><div class="container">
+			<h2 class="trial2__title title">Попробуйте инновационный метод тренировок</h2>
+			<p class="trial2__info">При покупке абонемента
+				<br> - она будет для Вас бесплатной</p>
+			<form action="POST" class="form js-submit">
+				<input type="text" class="inp" name="name" required="true" placeholder="Введите ваше имя">
+				<input type="tel" class="inp telMask" name="tel" required="true" placeholder="Введите ваш телефон">
+				<div class="personal">
+					<input id="personal__check3" type="checkbox" required="true">
+					<label for="personal__check3">
+						<i class="fa fa-check"></i>
+						<span>Я даю согласие на обработку персональных данных</span>
+					</label>
+				</div>
+				<button  class="btn" type="submit">Оставить заявку</button>
+			</form>
+		</div></section>
+	<section class="faq">
+		<h2 class="subtitle">ВОПРОС - ОТВЕТ</h2>
+		<div class="faq__block">
+			<ul class="faq__head">
+				<li class="faq__tab active"><a href="#">Как достигнуть результата</a></li>
+				<li class="faq__tab"><a href="#">Тренажер-бабочка</a></li>
+				<li class="faq__tab"><a href="#">Как это работает</a></li>
+				<li class="faq__tab"><a href="#">Бег или скакалка</a></li>
+			</ul>
+			<div class="faq__body">
+				<div class="faq__cnt">
+					<h4 class="faq__subtitle">ЕСЛИ НИЧЕГО НЕ НУЖНО ДЕЛАТЬ,
+КАК ТОГДА МОЖНО ДОСТИГНУТЬ РЕЗУЛЬТАТА?</h4>
+					<p class="faq__text">
+						Это одна из самых распространенных ошибок. Никто, ничего и никогда не будет делать за вас. Студия тренировок on Target поможет задать вам правильное направление и предоставит все необходимые инструменты для достижения желаемого результата в кратчайшие сроки. От вас требуется терпение и упорная, кропотливая работа под руководством тренера.
+					</p>
+				</div>
+				<div class="faq__cnt">
+					<h4 class="faq__subtitle">ЭТО ЖЕ КАК ТРЕНАЖЕР-БАБОЧКА,
+КОТОРЫЙ КРЕПИТСЯ НА ЖИВОТ
+ДЛЯ ПРОКАЧИКИ ПРЕССА?</h4>
+					<p class="faq__text">
+						При создании тренажера-бабочки был использован принцип Электро Мышечной Стимуляции, но между ним и персональными тренировками on-target колоссальная разница. Занятия проходят в присутствии профессионального тренера на современном оборудовании. ЭМС костюм тренирует практически все группы мышц, а тренажер-бабочка был создан для решения лишь одной задачи – прокачка пресса.
+					</p>
+				</div>
+				<div class="faq__cnt">
+					<h4 class="faq__subtitle">ЭТО ВСЕ ЧИСТО МАРКЕТИНГ И
+НИКАКОГО ЭФФЕКТА?</h4>
+					<p class="faq__text">
+						Импульсы, исходящие от костюма ЭМС, способствуют быстрому сокращению мышц. Данная технология максимально нагружает мышцу даже при выполнении элементарных упражнений. Такой подход позволяет существенно сократить время, затрачиваемое на тренировку. Вы сможете ощутить сокращение мышц сразу после настройки мощности ЭМС костюма.
+					</p>
+				</div>
+				<div class="faq__cnt">
+					<h4 class="faq__subtitle">ЛУЧШЕ НА СКАКАЛКЕ ПОПРЫГАТЬ
+ИЛИ ПОБЕГАТЬ?</h4>
+					<p class="faq__text">
+						Безусловно, бег и скакалка – прародители кардио нагрузок. Весьма эффективные тренировки, но во время бега, большая часть нагрузки идет на суставы, кроме того есть вероятность порвать связки, травмировать сухожилия и навредить позвоночнику. Интенсивные прыжки на скакалке не доступны для людей, страдающих от лишнего веса или имеющих хронических заболевания позвоночника и суставов.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts">
+		<div class="contacts__inner">
+<div class="contacts__row">
+	<div id="map">
+		<iframe src="https://yandex.ru/map-widget/v1/-/CBafERT9WD" width="100%" height="100%" frameborder="0"></iframe>
+	</div>
+	<div class="contacts__right">
+	<h2 class="title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+	<p class="contacts__info">При покупке любого абонемента нашей студии пробная тренировка будет <span class="nowrap">для Вас</span> бесплатной</p>
+	<form action="POST" class="form js-submit">
+		<input type="text" class="inp" name="name" required="true" placeholder="Введите ваше имя">
+		<input type="tel" class="inp telMask" name="tel" required="true" placeholder="Введите ваш телефон">
+		<div class="personal">
+			<input id="personal__check4" type="checkbox" required="true">
+			<label for="personal__check4">
+				<i class="fa fa-check"></i>
+				<span>Я даю согласие на обработку персональных данных</span>
+			</label>
+		</div>
+		<button  class="btn" type="submit">Оставить заявку</button>
+	</form>
+	</div>
+</div>
+		<div class="contacts__bottom">
+		<p>Московская область, город Одинцово, Можайское&nbsp;шоссе, д. 122, секция&nbsp;7, ЖК&nbsp;"Да&nbsp;Винчи"</p>
+		<p>Работаем <span class="nowrap">ПН-СБ с 9.00-22.00 без перерыва</span>, <span class="nowrap">ВС - выходной</span></p>
+		<p><b>Телефон: </b> <a href="tel:+79258677411">+7&nbsp;(925)&nbsp;867-74-11</a></p>
+		<p><b>Инстаграмм: </b> <a href="https://www.instagram.com/grizlyfitnessodintsovo/" target="_blank">@grizlyfitnessodintsovo</a></p>
+		<!-- <p><b>Почта: </b><a href="mailto:ems.odintsovo@gmail.com">ems.odintsovo@gmail.com</a></p> -->
+		</div>
+		</div></section>
+	<footer class="footer">
+		<div class="header__head">
+					<div class="container">
+						<div class="header__row">
+							<img class="header__logo" src="img/logo.png" alt="">
+							<nav class="header__nav">
+								<ul class="header__menu">
+									<li><a href="#kind">Для кого</a></li>
+									<li><a href="#coupon" class="header__coupon">Акции</a></li>
+									<li><a href="#features">Преимущества</a></li>
+									<li><a href="#tasks">Задачи</a></li>
+									<li><a href="#prices">Цены</a></li>
+									<li><a href="#video">Видео</a></li>
+									<li><a href="#reviews">Отзывы</a></li>
+								</ul>
+							</nav>
+							<a class="header__phone fa-mobile-phone" href="tel:+79258677411">+7 (925) 867-74-11</a>
+							<button data-modal data-target='modal1' class="btn" type="button">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+	</footer>
+
+
+<div class="overlay">
+	<div class="modal modal_big" id="modal_more1">
+		<h4 class="modal__title">Фитнес</h4>
+		<i class="modal__close js-close fa-close"></i>
+		<div class="modal__txt">
+			<p>Кардио и силовые тренировки.</p>
+			<p>Кардиотренировка — это синоним аэробной тренировки. Данный вид упражнений предполагает совершение мышечных движений за счёт энергии, которая добывается в ходе окисления молекул глюкозы кислородом. В биохимии этот процесс называют аэробным гликолизом. Этим кардио и отличается от силовой тренировки, где энергия добывается организмом бескислородным способом, или анаэробным. В ходе кардиотренировок тренируются не только мышцы, но и сама сердечно-сосудистая система: повышается её работоспособность и выносливость.</p>
+			<p>Силовые тренировки применяются всегда, когда необходимо приведение в тонус любой группы мышц: банальная прокачка пресса, входящая в школьную программу, также относится к силовым тренировкам, как и сложные упражнения с отягощениями на силовых станках. По сути, силовая тренировка – это другая сторона медали кардиотренировки: если последняя позволяет сбросить вес, то первая позволяет сформировать красивое и упругое тело с сильными рельефными мышцами. Именно эта цель – формирование сильного, подтянутого и красивого тела – и является центральной во всей системе силовых тренировок. </p>
+		</div>
+	</div>
+
+	<div class="modal modal_big" id="modal_more2">
+		<h4 class="modal__title">ЧТО ТАКОЕ EMS-ТРЕНИРОВКА?</h4>
+		<i class="modal__close js-close fa-close"></i>
+		<div class="modal__txt">
+			<p>EMS-тренировки позволяют добиться максимальных результатов при минимальной затрате времени. Специальный костюм оказывает воздействие одновременно на все группы мышц, активизирует обмен веществ, повышает скорость кровообращения. Из-за высокой интенсивности тренировки достаточно всего двадцати минут, чтобы ощутить всю пользу занятий спортом, прилив бодрости и легкость. В обычном же спортзале для аналогичных результатов понадобится целых два часа.</p>
+			<p>Еще недавно EMS-тренировки были доступны лишь профессиональным спортсменам. Сейчас они становятся все популярнее и среди тех, кто лишь недавно встал на путь здорового образа жизни и предпочитает умеренные физические нагрузки. За счет стимулирования обменных процессов EMS помогает наиболее быстро сбросить лишний вес и нарастить мышечную массу, избавляет от болей в спине и ускоряет восстановление мышц.</p>
+		</div>
+	</div>
+
+	<div class="modal modal_big" id="modal_more3">
+		<h4 class="modal__title">Лимфодренажный массаж в EMS-костюме:</h4>
+		<i class="modal__close js-close fa-close"></i>
+		<div class="modal__txt">
+<ul>
+	<li>Избавляет от целлюлита и избыточных жировых отложений.</li>
+	<li>Уменьшает отеки на проблемных зонах ног и других частях тела.</li>
+	<li>Ускоряет регенерацию клеток кожи и улучшает контуры тела.</li>
+	<li>Устраняет дряблости кожи, избыточную межклеточную жидкость.</li>
+	<li>Снимает мышечное напряжение и расслабляет.</li>
+	<li>Лечит нарушения лимфотока и варикоз.</li>
+	<li>Повышает иммунитет.</li>
+</ul>
+		</div>
+	</div>
+
+
+		<div class="modal modal_big" id="modal_more4">
+			<h4 class="modal__title">Биоимпедансный анализ (BMi)</h4>
+			<i class="modal__close js-close fa-close"></i>
+			<div class="modal__txt">
+				<p>Биоимпедансный анализ - это точный метод оценки состава тела. </p>
+
+<p>Он представляет собой контактный метод измерения электрической проводимости тела и даёт возможность оценивать объёмы клеточной и внеклеточной жидкости, а также жировую, безжировую, мышечную и клеточную массу тела.</p>
+<h4 class="modal__subtitle">Исследуемые показатели BMi:</h4>
+<ul>
+	<li>Масса тела (кг)</li>
+	<li>Масса мышечной ткани (кг)</li>
+	<li>Масса костной ткани (кг)</li>
+	<li>Коэффициент висцерального жира</li>
+	<li>Процент подкожного жира (%)</li>
+	<li>Процент жидкости (%)</li>
+	<li>Количество рекомендуемых калорий (ккал)</li>
+	<li>Метаболический (биологический) возраст</li>
+</ul>
+			</div>
+		</div>
+
+
+
+
+	Биоимпедансный анализ (BMi)
+	Биоимпедансный анализ - это точный метод оценки состава тела. 
+
+	Он представляет собой контактный метод измерения электрической проводимости тела и даёт возможность оценивать объёмы клеточной и внеклеточной жидкости, а также жировую, безжировую, мышечную и клеточную массу тела.
+
+
+	<div class="modal" id="modal1">
+		<h4 class="modal__title">Получите консультацию <br> в течении 15 минут!</h4>
+		<i class="modal__close js-close fa-close"></i>
+		<form action="POST" class="modal__form form js-submit">
+			<input type="text" class="modal__inp inp" name="name" required="true" placeholder="Введите ваше имя">
+			<input type="tel" class="modal__inp inp telMask" name="tel" required="true" placeholder="Введите ваш телефон">
+			<div class="personal">
+				<input id="personal__check5" type="checkbox" required="true">
+				<label for="personal__check5">
+					<i class="fa fa-check"></i>
+					<span>Я даю согласие на обработку персональных данных</span>
+				</label>
+			</div>
+			<div class="modal__btnList">
+				<button class="btn js-close" type="button">Закрыть</button>
+				<button class="btn" type="submit">Оставить заявку</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- 	<div class="modal modal_banner" id="modal_banner">
+		<i class="modal__close js-close fa-close"></i>
+		<img class="modal__img" src="img/banner1.jpg" alt="" data-modal data-target='modal1'>
+	</div> -->
+
+	<!-- <div class="overlay"></div> -->
+
+</body>
+
+
+</html>

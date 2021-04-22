@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Личный кабинет | Шаг 1</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="layout layout_req">
+
+  
+  
+
+<div class="sidebar">
+  <a class="sidebar__logo" href="requests.html">
+    <img src="img/logoacc.png" alt="">
+  </a>
+  <a class="sidebar__link" href="calc.html">Условия подключения 
+  <span class="nowrap">к системе</span> теплоснабжения</a>
+  <a class="sidebar__link active" href="requests.html" class="active">Мои заявки на подключение</a>
+  <a class="sidebar__link" href="index.html">На главную</a>
+  <div class="sidebar__col">
+    <a href="#" class="btn btn_acc">Выйти</a>
+  </div>
+</div>
+
+
+
+
+<div class="content">
+
+  
+  
+
+  <div class="steps">
+  <!-- <span>Выполняется</span> -->
+  <span class="step active">Шаг 1</span>
+  <span class="step">Шаг 2</span>
+  <span class="step">Шаг 3</span>
+  <span class="step">Шаг 4</span>
+  </div>
+
+
+
+<h2 class="content__title">Заявление на тех. условия</h2>
+
+<form class="reqForm">
+
+<div class="reqForm__left">
+
+  <label class="reqForm__item">
+    <span class="reqForm__lbl">Ваше ФИО:</span>
+    <input type="text" class="inp" placeholder="Иванов Иван Иванович" required="true">
+  </label>
+  
+  <label class="reqForm__item">
+  <span class="reqForm__lbl">Объект:</span>
+
+  <input class="js_select reqForm__hidden" required="true">
+  <span class="reqForm__select inp">
+    <span class="reqForm__selecttxt">Выберите объект</span> 
+    <i class="fa fa-angle-down"></i>
+    <ul class="reqForm__selectmenu">
+      <li>Жилой дом 1</li>
+      <li>Жилой дом 2</li>
+      <li>Жилой дом 3</li>
+    </ul>
+  </span>
+
+  </label>
+  
+  <label class="reqForm__item">
+    <span class="reqForm__lbl">Присоединяемая тепловая нагрузка на отопление (max), <span class="nowrap">Гкал/ч:</span></span>
+    <input class="inp" type="text" placeholder="150">
+  </label>
+  
+  <label class="reqForm__item">
+    <span class="reqForm__lbl">Присоединяемая тепловая нагрузка на вентиляцию (max), <span class="nowrap">Гкал/ч:</span></span>
+    <input class="inp" type="text" placeholder="120">
+  </label>
+  
+  <label class="reqForm__item">
+    <span class="reqForm__lbl">Местоположение объекта:</span>
+    <!-- <input class="inp" type="text" placeholder="Москва"> -->
+
+    <input class="js_select reqForm__hidden" required="true">
+    <span class="reqForm__select inp">
+      <span class="reqForm__selecttxt">Выберите местоположение</span> 
+      <i class="fa fa-angle-down"></i>
+      <ul class="reqForm__selectmenu">
+        <li>Сланцы</li>
+        <li>Гдов</li>
+        <li>Пушкинские Горы</li>
+      </ul>
+    </span>
+  </label>
+  
+  <label class="reqForm__item">
+    <span class="reqForm__lbl">Контактный номер для связи:</span>
+    <input class="inp telMask" type="text" placeholder="+7 (___)-___-__-__">
+  </label>
+  
+</div>
+
+<div class="reqForm__right">
+  <div class="reqForm__apps">
+    <h3 class="reqForm__title">Приложения</h3>
+    
+  <div class="reqForm__item">
+    <p class="reqForm__txt">План расположения подключаемого объекта
+    с привязкой к существующим объектам
+    с указанием адресов …</p>
+    <label>
+      <input class="js_file" type="file" required="true">
+      <span class="reqForm__upload"><i class="fa fa-download"></i>Загрузить</span>
+      <span class="reqForm__file"><span class="reqForm__filetxt"></span><i class="js_trash fa fa-trash"></i></span>
+    </label>
+  </div>
+
+    <div class="reqForm__item">
+      <p class="reqForm__txt">Техническая или проектная документация, 
+      подтверждающая тепловую …</p>
+      <label>
+        <input class="js_file" type="file" required="true">
+        <span class="reqForm__upload"><i class="fa fa-download"></i>Загрузить</span>
+        <span class="reqForm__file"><span class="reqForm__filetxt"></span><i class="js_trash fa fa-trash"></i></span>
+      </label>
+    </div>
+
+  </div>
+</div>
+
+<div class="reqForm__btn">
+  <button type="submit" class="btn btn_acc">Подать заявку</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</html>
+
+
+
+
+
+

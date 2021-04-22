@@ -1,0 +1,122 @@
+.header {
+  background-color: #04384a;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  
+  .btn {
+    box-shadow: none;
+    font-weight: 500;
+  }
+}
+
+
+.header__container {
+  @include container;
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.header__nav {
+  max-width: 780px;
+  width: 100%;
+
+  .fa {
+    display: none;
+  }
+}
+
+.header__btn {
+}
+
+@media ($desktop) {
+
+  .header__nav {
+    position: fixed;
+    max-width: none;
+    width: 250px;
+    right: -250px;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding-top: 15px;
+    z-index: 999;
+    transition: 0.3s right;
+    margin: 0;
+
+    .fa-close {
+      text-align: right;
+      margin-right: 30px;
+      display: block;
+      font-size: 26px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+    &.active {
+      right: 0;
+    }
+  }
+  .header__btn {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+}
+
+@media ($tablet) {
+
+
+  
+}
+
+@media ($mobile) {
+  
+}
+
+@media ($smobile) {
+
+  .header__container {
+    justify-content: space-between;
+  }
+  .header__nav {
+    right: -100%;
+    width: 100%;
+    text-align: center;
+    .fa-close {
+      text-align: center;
+      margin: 0 0 30px;
+    }
+  }
+
+  .header__btn {
+    .btn {
+      font-size: 12px;
+      padding: 15px;
+    }
+    margin: 0;
+  }
+
+  .header__logo {
+    width: 70px;
+
+  }
+}
+
+
+
+
+
+
+
+
+

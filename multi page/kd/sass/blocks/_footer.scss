@@ -1,0 +1,144 @@
+.footer {
+  padding-left: 70px;
+  background-color: $gray;
+}
+
+.footer .wrapper {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.footer .wrapper > ul {
+  float: left;
+  // outline: solid red;
+  ul {
+    width: 200px;
+    margin-right: 40px;
+    // outline: blue solid;
+    li {
+      margin-bottom: 7px;
+      line-height: 18px;
+    }
+  }
+  > li {
+    display: inline-block;
+    vertical-align: top;
+    > a {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    a {
+      color: #fff;
+      font-size: 14px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.footer__contacts {
+  float: left;
+  > a {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  p {
+    width: 440px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: normal;
+    color: #fff;
+    > a {
+      display: block;
+      text-transform: lowercase;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__floatR {
+  float: right;
+  text-align: right;
+  p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+  }
+}
+
+.footer__socialList {
+  a {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 20px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+    margin-bottom: 50px;
+}
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.footer {
+  padding-left: 0;
+}
+
+.footer .wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer .wrapper > ul {
+  display: none;
+}
+
+.footer__contacts {
+  float: none;
+  text-align: center;
+  > a {
+    margin-bottom: 5px;
+  }
+  p {
+    width: auto;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+  span {
+    display: block;
+  }
+}
+
+.footer__floatR {
+  float: none;
+  text-align: center;
+  p {
+    line-height: 20px;
+  }
+}
+
+.footer__socialList {
+  margin-bottom: 20px;
+  a {
+    line-height: 18px;
+  }
+}
+
+
+}
+
+
+
+
+
+

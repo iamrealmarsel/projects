@@ -1,0 +1,97 @@
+<!--== Оверлей ==-->
+<div class="overlayTrans"></div>
+<div class="overlay"></div>
+<!--== Поп-апы ==-->
+<!-- Войти -->
+<form class="form form__login" action="">
+  <fieldset >
+    <legend>Войти в личный кабинет</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail"></label>
+    <label><input class="inputBg" type="password" placeholder="Пароль"></label>
+    <div class="form__info clearfix">
+      <div class="form__floatL"><a href="">Забыли пароль?</a></div>
+      <div class="form__floatR"><a href="">Регистрация</a></div>
+    </div>
+    <label class="form__checkbox">
+      <input type="checkbox">
+      <i class="checkbox"></i>
+      <span>Запомнить</span>
+    </label>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Войти</button>
+    </div>
+  </fieldset>
+</form>
+<!-- Регистрация -->
+<form class="form form__signup" action="">
+  <fieldset>
+    <legend>Создать учетную запись</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+    <label><input class="inputBg" type="password" placeholder="Пароль *"></label>
+    <label><input class="inputBg" type="password" placeholder="Подтверждение пароля *"></label>
+    <p class="form__info">Подпишитесь на нашу рассылку!</p>
+    <label class="form__checkbox">
+      <input type="checkbox">
+      <i class="checkbox"></i>
+      <span>Новости компании и уникальные скидки для подписчиков</span>
+    </label>
+    <div class="form__captcha">
+      <label><input class="inputBg" type="text"></label>
+      <div class="captcha">
+      </div>
+      <p class="form__info">Введите символы (цифры и латинские буквы), которые видите на картинке.</p>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Регистрация</button>
+    </div>
+  </fieldset>
+</form>
+<!-- Письмо руководству -->
+<form class="form form__message" action="">
+  <fieldset>
+    <legend>Письмо руководству</legend>
+    <label><input class="inputBg" type="text" placeholder="E-mail *"></label>
+    <label><input class="inputBg" type="text" placeholder="Ваше имя"></label>
+    <textarea class="inputBg" placeholder="Сообщение"></textarea>
+    <div class="form__captcha">
+      <label><input class="inputBg" type="text"></label>
+      <div class="captcha">
+      </div>
+      <p class="form__info">Введите символы (цифры и латинские буквы), которые видите на картинке.</p>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="btn btn--blue">Отправить</button>
+    </div>
+  </fieldset>
+</form>
+<!-- Стоимость доставки -->
+<form class="form form__costDelivery" action="">
+  <fieldset>
+    <legend>Рассчитать стоимость доставки</legend>
+    <div class="form__country">
+      <select class="selectMenu" name="country" id="">
+        <option value="default" selected>Страна</option>
+        <option value="Russia">Россия</option>
+        <option value="USA">Америка Америка Америка Америка</option>
+      </select>
+    </div>
+    <div class="form__region">
+      <select class="selectMenu" name="region" id="">
+        <option value="default" selected>Обасть / Район</option>
+        <option value="Moscow">Московская Московская Московская область</option>
+        <option value="Lipetsk">Липетская область</option>
+      </select>          
+    </div>       
+    <label><input class="inputBg" type="text" placeholder="Почтовый индекс"></label>
+    <div class="form__countRes">
+      <p class="form__info">Наш менеджер перезвонит Вам для выбора способа доставки</p>
+      <p class="form__info">Итого:<span class="form__costResult">1120</span>р.</p>
+      <div class="form__wrapBtn">
+        <button class="form__countBtn2 btn btn--blue" type="submit">Пересчитать расценки</button>
+      </div>
+    </div>
+    <div class="form__wrapBtn">
+      <button class="form__countBtn btn btn--blue" type="submit">Получить расценки</button>
+    </div>
+  </fieldset>
+</form> 

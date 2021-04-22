@@ -1,0 +1,140 @@
+html * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  position: relative;
+  // width: 100%;
+  font-family: $ffBase;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $cBase;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 650px;
+  // временно
+  // min-width: 1250px;
+}
+
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+}
+
+// .pagination {
+//   position: absolute;
+//   max-width: 1170px;
+//   width: 100%;
+//   height: 80px;
+//   left: 50%;
+//   bottom: 0;
+//   transform: translatex(-50%);
+//   padding: 0 15px;
+//   z-index: 300;
+// }
+
+.overflow {
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page_bg {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/bg_contacts.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 2;
+}
+
+.bgSvg_desc,
+.bgSvg_mob {
+  position: absolute;
+  z-index: 1;
+}
+
+.bgSvg_mob {
+  display: none;
+}
+
+
+
+#bgGradient stop,
+#bgGradient_mob stop
+{
+  transition: all 1s;
+}
+
+.bgSvg #Path-2,
+.bgSvg #Path-2-Copy,
+.bgSvg #bg {
+  transition: all 1s;
+}
+
+
+.main {
+  position: relative;
+  z-index: 100;
+  flex-grow: 1;
+}
+
+
+@media (max-width: 767px) {
+
+  // .pagination {
+  //   display: none;
+  // }
+
+  .bgSvg_desc {
+    display: none;
+  }
+
+  .bgSvg_mob {
+    display: block;
+    // width: 300%;
+  }
+
+
+  .main {
+    position: relative;
+    z-index: 100;
+    height: 100%;
+
+  }
+
+  html, body {
+    min-height: auto;
+  }
+
+
+}
+
+
+
+
+
+

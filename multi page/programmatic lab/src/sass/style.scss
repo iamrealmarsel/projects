@@ -1,0 +1,34 @@
+// font awesome
+@import "../../node_modules/font-awesome/scss/variables.scss";
+@import "../../node_modules/font-awesome/scss/mixins.scss";
+@import "../../node_modules/font-awesome/scss/path.scss";
+@import "../../node_modules/font-awesome/scss/core.scss";
+@import "../../node_modules/font-awesome/scss/larger.scss";
+@import "../../node_modules/font-awesome/scss/fixed-width.scss";
+@import "../../node_modules/font-awesome/scss/list.scss";
+@import "../../node_modules/font-awesome/scss/bordered-pulled.scss";
+@import "../../node_modules/font-awesome/scss/animated.scss";
+@import "../../node_modules/font-awesome/scss/rotated-flipped.scss";
+@import "../../node_modules/font-awesome/scss/stacked.scss";
+@import "../../node_modules/font-awesome/scss/icons.scss";
+@import "../../node_modules/font-awesome/scss/screen-reader.scss";
+
+// общее
+@import "global/vars";
+@import "global/fonts";
+@import "global/base";
+
+// блоки
+@import "blocks/grid";
+@import "blocks/type";
+@import "blocks/slider";
+@import "blocks/form";
+@import "blocks/modal";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/portfolioIndex";
+@import "blocks/portfolio";
+@import "blocks/aboutus";
+@import "blocks/reviews";
+@import "blocks/pagemenu";
+@import "blocks/dummy";

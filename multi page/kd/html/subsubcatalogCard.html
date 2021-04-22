@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+@@include('blocks/head.html')
+</head>
+<body>
+
+@@include('blocks/header.html')
+
+<div class="grid">
+
+@@include('blocks/sidebar.html')
+
+<div class="page bgInterier bgInterier--card">
+  <div class="wrapper">
+    <div class="page__breadcrumbs">
+      <span><a href="">Главная</a></span>
+      <span class="fa fa-angle-right"></span>
+      <span>Каталог</span>
+      <span class="fa fa-angle-right"></span>
+      <span>Спорт и отдых</span>
+    </div>
+    
+    <h1> Рюкзаки туристические </h1>
+    
+    <div class="page__subsubcatalogCard">
+      <div class="productCard">
+        <div class="productCard__wrapFloat">
+          <div class="productCard__slider">
+            <div class="productCard__sliderFor">
+              <div><img src="img/products/backpack/original/img1.png" alt=""></div>
+              <div><img src="img/products/backpack/original/img2.png" alt=""></div>
+              <div><img src="img/products/backpack/original/img3.png" alt=""></div>
+              <div><img src="img/products/backpack/original/img4.png" alt=""></div>
+            </div>
+            <div class="productCard__sliderNav">
+              <div><img src="img/products/backpack/mini/small_img1.png" alt=""></div>
+              <div><img src="img/products/backpack/mini/small_img2.png" alt=""></div>
+              <div><img src="img/products/backpack/mini/small_img3.png" alt=""></div>
+              <div><img src="img/products/backpack/mini/small_img4.png" alt=""></div>
+            </div>
+          </div>
+      
+          <div class="productCard__options">
+            <h2 class="productCard__title">Рюкзак туристический "Горы", 1 отдел, 6 наружных карманов, усиленная спинка, цвет серый</h2>
+            <table>
+              <col>
+              <col>
+              <tr>
+                <td>Артикул:</td>
+                <td>sl_791198</td>
+              </tr>
+              <tr>
+                <td>Доступность:</td>
+                <td>В наличии</td>
+              </tr>
+              <tr>
+                <td>Размеры (ШxВxГ):</td>
+                <td>38 × 57 × 23 см</td>
+              </tr>
+              <tr>
+                <td>Страна производитель:</td>
+                <td>Китай</td>
+              </tr>
+              <tr>
+                <td>Материал:</td>
+                <td>Текстиль</td>
+              </tr>
+            <tr class="productCard__price">
+              <td colspan="2">
+                <span>Цена:</span>
+                <span class="productCard__priceOld">4 800 р.</span>
+                <input type="number" min="1" value="1">
+                <span class="productCard__priceNew">3 200 р.</span>
+              </td>
+            </tr>
+            </table>
+            <div class="productCard__btnWrap">
+              <button class="btn btn--favorite" type="button">В избранное</button>
+              <button class="btn btn--cart" type="button">В корзину</button>
+            </div>
+          </div>
+        </div>
+        <div class="productCard__desc">
+          <h3>Описание:</h3>
+          <p>Made for Trekking &quot,backpacker&quot, style travelling on marked trails for several days. A simple, lightweight and functional bag with pockets and easy access. Practical for both occasional hiking and travelling. Made for Trekking &quot,backpacker&quot, style travelling on marked trails for several days.</p>
+        </div>
+        <div class="ya-share2" data-services="facebook,vkontakte,twitter,gplus" data-counter></div>
+      </div>
+      <div class="page__productsAnalogTitle">Товары за аналогичную стоимость:</div>
+      <div class="page__productsAnalog">
+        @@include('blocks/productItem1.html')  
+        @@include('blocks/productItem2.html')
+        @@include('blocks/productItem1.html')  
+        @@include('blocks/productItem2.html')
+      </div>
+      <div class="page__btnWrap">
+        <button class="btn" type="button">Показать больше товаров</button>
+      </div>
+        
+    </div>
+  </div>
+</div>
+    
+
+<div class="subs">
+  <div class="wrapper">
+    <div class="subs__textWrap">
+      <i class="fa fa-envelope-o"></i>
+      <div class="subs__text">
+        <p>Экслюзивные скидки</p>
+        <p>Подпишись на наши новости и горящие предложения</p>
+      </div>
+    </div>
+    <input class="inputBg inputBg--focus" type="text" placeholder="E-mail">
+    <button class="btn btn--blue" type="submit">Подписаться</button>
+  </div>
+</div>
+
+</div>
+
+@@include('blocks/footer.html')
+
+@@include('blocks/popups.html')
+
+</body>
+</html>
+
+
+
+
+
+
+

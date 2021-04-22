@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  {% import "_meta.html" as meta %}
+  {{ meta.head() }}
+</head>
+
+<body>
+  {% import "_block1.html" as block1 %}
+  {{ block1.main() }}
+  {% import "_block2.html" as block2 %}
+  {{ block2.main() }}
+  {% import "_block3.html" as block3 %}
+  {{ block3.main() }}
+  {% import "_block4.html" as block4 %}
+  {{ block4.main() }}
+  {% import "_block5.html" as block5 %}
+  {{ block5.main(data.rateSlider) }}
+  {% import "_block6.html" as block6 %}
+  {{ block6.main() }}
+  {% import "_footer.html" as footer %}
+  {{ footer.main() }}
+  {{ meta.foot() }}
+</body>
+</html>

@@ -1,0 +1,58 @@
+.btn {
+  position: relative;
+  display: block;
+  max-width: 362px;
+  padding: 12px 10px;
+  background-color: #EB5757;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  font-family: $ffMinor;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: transparent;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #B52E2E;
+  box-shadow: none;
+}
+
+.btn_blue {
+  background-color: #2F80ED;
+}
+
+.btn_blue:hover {
+  background-color: #1C62C0;
+  box-shadow: none;
+}
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+  .btn {
+    font-size: 20px;
+    max-width: 300px;
+  }
+
+}
+
+@media ($mobileS) {
+
+}

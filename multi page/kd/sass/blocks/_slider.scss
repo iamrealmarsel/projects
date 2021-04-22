@@ -1,0 +1,363 @@
+@keyframes mouseShake { 
+0% { transform: translatex(0); } 
+4% { transform: translatex(-10px); } 
+8% { transform: translatex(10px); } 
+12% { transform: translatex(0); } 
+}
+
+
+.slider-wrap {
+  position: relative;
+  .slideArrows {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    z-index: 5;
+    // width: 110px;
+    font-size: 0;
+    text-align: center;
+    // background-image: url('../img/slider/arrows.png');
+    // background-repeat: no-repeat;
+    // background-position: 0 50%;
+    // background-size: contain;
+
+    // outline: solid red;
+    .cursor {
+      display: inline-block;
+      vertical-align: middle;
+      animation: mouseShake 5s infinite;
+
+      // outline: solid green;
+    }
+    .slick-arrow {
+      width: 35px;
+      height: 45px;
+      padding: 0;
+      font-size: 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+
+      // outline: blue solid;
+    }
+    .slick-prev {
+      margin-right: 5px;
+      background-image: url('../img/slider/arrLeft.png');
+      background-repeat: no-repeat;
+      background-position: 30% 50%;
+      // background-size: contain;
+    }
+    .slick-next {
+      margin-left: 5px;
+      background-image: url('../img/slider/arrRight.png');
+      background-repeat: no-repeat;
+      background-position: 70% 50%;
+      // background-size: contain;   
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  .slide-inner {
+    outline: none;
+  }
+  .slide {
+    position: relative;
+    margin: 0 auto;
+    // width: 1130px;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    outline: none;
+
+    // outline: solid 1px red;
+    .btn {
+      display: none;
+      font-size: 16px;
+    }
+  }
+  .slide-man {
+    background-image: 
+    url('../img/slider/slMan.png');
+    background-position: 46% 100%;
+  }
+  .slide-woman {
+    background-image: 
+    url('../img/slider/slWoman.png');
+    background-position: 46% 100%;
+  }
+  .slide-teen {
+    background-image: 
+    url('../img/slider/slTeen.png');
+    background-position: 44% 100%;
+  }
+  .sl-product {
+    position: absolute;
+    display: block;
+    text-align: center;
+    .img {
+      display: block;
+      margin-bottom: 10px;
+    }
+    img {
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    p, a {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    a {
+      color: $blue-ico;
+      outline: none;
+    }
+  }
+
+  // мужчина
+  .slArmchair {
+    top: 30px;
+    // left: 1.5%;
+    right: 86%;
+  }
+  .slToys {
+    top: 40px;
+    // left: 18%;
+    right: 62%;
+  }
+  .slFish {
+    top: 255px;
+    // left: 2.5%;
+    right: 72%;
+  }
+  .slMacbook {
+    top: 488px;
+    // left: 1.7%;
+    right: 72%;
+  }
+
+  .slBooks {
+    top: 52px;
+    left: 60%;
+  }
+  .slDrill {
+    top: 96px;
+    // right: 4%;
+    left: 80%;
+  }
+  .slBall {
+    top: 245px;
+    // right: 20%;
+    left: 66%;
+  }
+  .slAvto {
+    top: 458px;
+    // right: 0.5%;
+    left: 65%;
+  }
+
+  // женщина
+  .slFlowers {
+    top: 80px;
+    // left: 50px;
+    right: 84%;
+  }
+  .slDress {
+    top: 25px;
+    // left: 215px;
+    right: 68%;
+  }
+  .slIphone {
+    top: 370px;
+    // left: 70px;
+    right: 86%;
+  }
+  .slRing {
+    top: 510px;
+    // left: 245px;
+    right: 70%;
+  }
+
+  .slBag {
+    top: 40px;
+    // right: 280px;
+    left: 64%;
+  }
+  .slWash {
+    top: 50px;
+    // right: 45px;
+    left: 82%;
+  }
+  .slLipstick {
+    top: 310px;
+    // right: 250px;
+    left: 60%;
+  }
+  .slPlate {
+    top: 370px;
+    // right: 45px;
+    left: 84%;
+  }
+  .slSofa {
+    top: 560px;
+    // right: 12%;
+    left: 63%;
+  }
+
+  // дети
+  .slBooksTeen {
+    top: 40px;
+    // left: 65px;
+    right: 84%;
+  }
+  .slBalloons {
+    top: 95px;
+    // left: 230px;
+    right: 69%;
+  }
+  .slPlaystation {
+    top: 250px;
+    // left: 50px;
+    right: 81%;
+  }
+  .slSneakers {
+    top: 545px;
+    // left: 95px;
+    right: 72%;
+  }
+
+  .slCamera {
+    top: 40px;
+    // right: 295px;
+    left: 64%;
+  }
+  .slRollers {
+    top: 40px;
+    // right: 50px;
+    left: 80%;
+  }
+  .slDog {
+    top: 210px;
+    // right: 145px;
+    left: 69%;
+  }
+  .slPencil {
+    top: 265px;
+    // right: 35px;
+    left: 87%;
+  }
+  .slCars {
+    top: 490px;
+    // right: 30px;
+    left: 70%;
+  }
+}
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.slider {
+  .slide {
+    // position: relative;
+    // margin: 0 auto;
+    width: 320px;
+    height: 390px;
+    // background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto 95%;
+    // outline: none;
+    .btn {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translatex(-50%);
+      display: inline-block;
+      font-size: 16px;
+    }
+  }
+  .slide-man {
+    // background-image: url('../img/slider/slMan.png');
+    background-position: 50% 100%;
+  }
+  .slide-woman {
+    // background-image: url('../img/slider/slWoman.png');
+    background-position: 50% 100%;
+  }
+  .slide-teen {
+    // background-image: url('../img/slider/slTeen.png');
+    background-position: 40% 100%;
+  }
+  .sl-product {
+    display: none;
+  }
+}
+
+.slider-wrap {
+  // position: relative;
+  .slideArrows {
+    // position: absolute;
+    top: 130px;
+    right: 5px;
+    left: 5px;
+    bottom: auto;
+    z-index: 5;
+    // width: 110px;
+    // font-size: 0;
+    // text-align: center;
+
+    // outline: solid red;
+    .cursor {
+      display: none;
+      // display: inline-block;
+      // vertical-align: middle;
+      // animation: mouseShake 5s infinite;
+
+      // outline: solid green;
+    }
+    .slick-arrow {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      // padding: 0;
+      // font-size: 0;
+      // background-color: transparent;
+      // border: none;
+      // cursor: pointer;
+      // outline: none;
+
+      // outline: blue solid;
+    }
+    .slick-prev {
+      left: 0;
+      margin-right: 0;
+      // background-image: url('../img/slider/arrLeft.png');
+      // background-repeat: no-repeat;
+      background-position: 50% 50%;
+      // background-size: contain;
+    }
+    .slick-next {
+      right: 0;
+      margin-left: 0;
+      // background-image: url('../img/slider/arrRight.png');
+      // background-repeat: no-repeat;
+      background-position: 50% 50%;
+      // background-size: contain; 
+    }
+  }
+}
+
+
+}
+
+
+
+
+
+
+

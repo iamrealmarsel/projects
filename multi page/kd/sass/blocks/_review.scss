@@ -1,0 +1,94 @@
+.review {
+  @include panelSmall;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+}
+
+.review__head {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.review__author {
+  margin-right: 15px;
+  font-weight: bold;
+  color: $pink-ico;
+}
+
+.review__date {
+  padding-right: 110px;
+  font-size: 14px;
+}
+
+.review__starList {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.review__starO::before {
+  @include fa-icon($fa-var-star-o, 18px, $pink-ico);
+  cursor: pointer;
+}
+
+.review__starO:hover::before {
+  content: $fa-var-star;
+}
+
+.review__starO--half::before {
+  content: $fa-var-star-half-o;
+}
+
+.review__starO--full::before {
+  content: $fa-var-star;
+}
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.review {
+  padding: 10px;
+}
+
+.review__head {
+  margin-bottom: 5px;
+}
+
+.review__author {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 5px;
+  padding-right: 110px;
+}
+
+.review__date {
+  display: block;
+  padding-right: 0;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

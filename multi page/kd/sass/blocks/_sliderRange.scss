@@ -1,0 +1,102 @@
+.sliderRange {
+  @include vAlign;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 505px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 0;
+}
+
+.sliderRange label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sliderRange__min, 
+.sliderRange__max {
+  box-sizing: border-box;
+  width: 80px;
+  height: 26px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  border: $borderInput;
+  border-radius: 5px;
+  outline: transparent;
+}
+
+.sliderUIWrap {
+  position: relative;
+  height: 2px;
+  background-color: #ccc;
+  display: inline-block;
+  vertical-align: middle;
+  width: 230px;
+  margin: 0 5px;
+  font-size: 0;
+  .ui-widget-content {
+    // background-color: #ccc;
+    position: absolute;
+    top: -10px;
+    height: 22px;
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .ui-widget.ui-widget-content {
+    border: none;
+  }
+  .ui-widget-header {
+    position: absolute;
+    top: 10px;
+    height: 2px;
+    background-color: #000;
+  }
+  .ui-slider .ui-slider-handle {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: none;
+    background-color: #000;
+    outline: transparent;
+    cursor: pointer;
+  }
+  .ui-slider-horizontal .ui-slider-handle {
+    top: 6px;
+    margin-left: -4px;
+  }
+}
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.sliderRange {
+  display: flex;
+  align-items: center;
+  order: 10;
+  width: 100%;
+}
+
+.sliderUIWrap {
+  display: none;
+}
+
+.sliderRange__minLabel {
+  margin-right: auto;
+}
+
+
+
+
+
+}
+

@@ -1,0 +1,2517 @@
+html * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F8F8F8;
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1, 
+h2, 
+.page-title,
+.entry-title
+ {
+  color: #2e6960;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h2,
+.entry-title
+ {
+  font-weight: 500;
+}
+
+.page-title {
+  margin-bottom: 30px;
+}
+.entry-title {
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: #ff8a8a;
+}
+
+
+
+/* ---== ОБЩЕЕ ==--- */
+
+/* кнопки, инпуты */
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #3bb09f;
+  border-radius: 5px;
+  color: #fff;
+  outline: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 8px 15px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+.btn:hover {
+  outline: transparent;
+  background-color: #38cab4;
+  color: #fff;
+  text-decoration: none;
+}
+
+.inp {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 10px;
+  border: none;
+  outline: transparent;
+  width: 100%;
+}
+
+
+.red {
+  display: inline-block;
+  color: #ff6666;
+}
+
+
+/* товары */
+
+.productBannerList .productBanner {
+  height: 100%;
+}
+
+.productBanner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15px;
+  position: relative;
+  color: #333;
+  background-color: white;
+  /*border-radius: 8px;*/
+  text-align: center;
+  /*border: 1px solid transparent;*/
+  font-size: 16px;
+  /*height: 100%;*/
+  font-weight: 300;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.28);
+          box-shadow: 0 1px 3px rgba(0,0,0,.28);
+}
+
+
+.productBanner--big {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: #ffff99;
+  padding-top: 15px;
+}
+
+.productBanner--big .productBanner__img {
+  height: auto;
+  padding: 0 30px;
+}
+
+.productBanner--big .productBanner__center {
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 0;
+} 
+
+.productBanner:hover {
+  /*border: 1px solid #3bb09f;*/
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.28);
+          box-shadow: 0 3px 9px rgba(0,0,0,.28);
+  text-decoration: none;
+  color: #333;
+}
+
+.productBanner__center {
+  margin-bottom: 15px;
+}
+
+
+.productBanner__center,
+.productBanner__bottom {
+  padding: 0 30px;
+  text-align: left;
+}
+
+.productBanner__price {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.productList > div {
+  margin-bottom: 30px;
+}
+
+.product {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  height: 340px;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  /*border: 1px solid transparent;*/
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.28);
+          box-shadow: 0 1px 3px rgba(0,0,0,.28);
+}
+
+.product__flag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  /*background-color: #ff7979;*/
+ /* color: #fff;
+  width: 0;
+  height: 0;
+  border-top: 80px solid #ff7979; 
+  border-left: 80px solid transparent;*/
+  /*border-top-right-radius: 3px;*/
+}
+
+.product__flag img {
+  max-width: 100%;
+  max-height: 100%;
+  border-top-right-radius: 3px;
+}
+
+/*.product__flagText {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  transform: rotate(45deg);
+}
+*/
+.product__more {
+  display: none;
+  padding: 0 5px;
+  vertical-align: middle;
+  width: 50%;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  line-height: 50px;
+}
+
+.product:hover {
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.28);
+          box-shadow: 0 3px 9px rgba(0,0,0,.28);
+}
+
+.product h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+
+.product__info {
+  padding: 0 10px;
+  padding: 0 15px 15px;
+
+}
+
+.product__info a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+
+.product__card {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+
+.product__card:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+.product__bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0;
+  position: relative;
+  height: 50px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.product__bottom::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 30px;
+  right: 30px;
+  height: 1px;
+  background-color: #a2a2a2;
+}
+
+.product__bottom::after {
+  display: none;
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background-color: #fff;
+}
+
+.product__price {
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  /*transition: 0.4s;*/
+}
+.product__buy {
+  padding: 0 5px;
+  display: none;
+  vertical-align: middle;
+  width: 50%;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  line-height: 50px;
+  /*transition: 0.4s;*/
+}
+
+.product__buy:hover {
+  color: #fff;
+}
+
+.product:hover .product__bottom {
+  background-color: #ff6666;
+  /*align-items: center;*/
+}
+
+.product:hover .product__buy {
+  display: inline-block;  
+}
+
+.product:hover .product__price {
+  display: none;
+/*  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff; */
+}
+
+.product:hover .product__more {
+  display: inline-block;
+}
+
+.product__more:hover {
+  color: #fff;
+}
+
+.product:hover .product__bottom::before {
+  display: none;
+}
+
+.product:hover .product__bottom::after {
+  display: block;
+}
+
+.product__img,
+.productBanner__img {
+  font-size: 0;
+  height: 200px;
+  padding: 20px 10px 15px;
+}
+
+.product__img img,
+.productBanner__img img 
+{
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product__img::before,
+.productBanner__img::before
+{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+
+/* шапка */
+
+
+/* меню бургер */
+
+.burger {
+  display: none;
+  position: relative;
+  /*background-color: red;*/
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+.burgerInner {
+  position: absolute;
+  background: #3bb09f;
+  width: 100%;
+  height: 5px;
+  top: 50%;
+  right: 0px;
+  margin-top: -5px;
+  opacity: 1;
+}
+.burgerInner::before {
+  position: absolute;
+  background: #3bb09f;
+  width: 30px;
+  height: 5px;
+  top: 10px;
+  content: "";
+  display: block;
+}
+.burgerInner::after {
+  position: absolute;
+  background: #3bb09f;
+  width: 30px;
+  height: 5px;
+  bottom: 10px;
+  content: "";
+  display: block;
+}
+.burgerInner::after, .burgerInner::before, .burgerInner {
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+.burger.burger--open .burgerInner::after{
+   -ms-transform: rotate(-45deg);
+       transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+  bottom: 0px;
+}
+.burger.burger--open .burgerInner::before{
+   -ms-transform: rotate(45deg);
+       transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+  top: 0px;
+}
+.burger.burger--open .burgerInner{
+ background: rgba(111,111,111,.0);
+}
+
+
+/* верхний хэдэр */
+
+.header {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6.7px 0.4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6.7px 0.4px rgba(0, 0, 0, 0.1);
+}
+
+.header .row {
+  min-height: 55px;
+}
+
+.header__nav {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+
+#magicLine {
+  background-color: #ff7979;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  /*left: 0;*/
+  bottom: 0;
+  /*opacity: 0;*/
+}
+
+
+.header__nav li {
+  display: inline-block;
+}
+
+.header__nav li a {
+  position: relative;
+  color: #191919;
+  padding: 20px 15px;
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+
+.header__nav li:hover a {
+  color: #ff7979;
+  text-decoration: none;
+}
+
+
+.header__nav li:hover a::before {
+/*  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  left: 0;
+  right: 0;
+  background-color: #ff7979;*/
+}
+
+
+.header__nav .active a {
+  color: #ff7979;
+  text-decoration: none;
+}
+
+
+.header__nav .active a::before {
+/*  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  left: 0;
+  right: 0;
+  background-color: #ff7979;*/
+}
+
+
+
+.header__lang {
+  color: #3bb09f;
+  text-align: right;
+}
+
+.header__lang a:hover {
+  color: #ff8a8a;
+}
+
+.header__lang a.active {
+  color: #ff8a8a;
+}
+
+.logo__img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo__img:hover {
+  text-decoration: none;
+}
+
+.logo__img img {
+  margin-right: 5px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.logo__info {
+  display: inline-block;
+  vertical-align: middle;
+  color: #2e6960;
+}
+
+
+/* хлебные крошки */
+
+.subheader {
+  background-color: #3bb09f;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 6.7px 0.4px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 3px 6.7px 0.4px rgba(0, 0, 0, 0.07);
+  padding-top: 10px;
+}
+
+.subheader__crumb.active {
+  color: #ff8a8a;
+}
+
+.subheader__crumb {
+  position: relative;
+  display: inline-block;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 10px;
+  color: #aeaeae;
+  text-align: center;
+  padding: 5px 10px 5px;
+  z-index: 1;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.subheader__crumb:hover {
+  text-decoration: none;
+}
+
+.subheader__crumb--first {
+  border-radius: 3px;
+  margin-left: 0;
+}
+.subheader__crumb--first::before {
+  display: none;
+}
+
+.subheader__crumb::before {
+ content: "";
+ position: absolute;
+ top: 50%;
+ -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+         transform: translateY(-50%);
+ border-width: 12px 0px 12px 12px;
+ border-style: solid;
+ border-color: #f4f4f4 #f4f4f4 #f4f4f4 transparent;
+ left: -11px;
+}
+
+.subheader__crumb::after{
+ background: #f4f4f4;
+ content: "";
+ height: 17px;
+ width: 17px;
+ position: absolute;
+ top: 50%;
+ right: -7px;
+ z-index: -1;
+ -webkit-transform: translateY(-50%) rotate(45deg);
+     -ms-transform: translateY(-50%) rotate(45deg);
+         transform: translateY(-50%) rotate(45deg);
+ border-radius: 3px;
+ }
+
+.subheader__searchForm {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.subheader__searchWrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.subheader__searchForm .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 86px;
+  height: 30px;
+  background-color: #ff7979;
+  border: 1px solid white;
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px 10px;
+}
+
+.subheader__searchForm .btn:hover {
+  background-color: #ff5656;
+}
+
+
+.subheader__searchForm .inp {
+  width: 254px;
+  height: 30px;
+  padding-right: 90px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.subheader .row {
+  min-height: 55px;
+}
+
+.subheader__searchForm .inp:focus {
+  width: 100%;
+}
+
+
+
+/* футер */
+
+.footer {
+  font-size: 14px;
+  font-weight: 300;
+  -webkit-box-shadow: 0 -3px 4.6px 0.5px rgba(51, 51, 51, 0.15);
+          box-shadow: 0 -3px 4.6px 0.5px rgba(51, 51, 51, 0.15);
+  background-color: #fff;
+  padding: 30px 0;
+  margin-top: auto;
+}
+
+.footer__nav li {
+  margin-bottom: 2px;
+}
+
+
+
+.footer .row > div:last-child {
+  margin-bottom: 0;
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3bb09f;
+  margin-bottom: 20px;
+}
+
+
+.footer__subsForm {
+  /*position: relative;*/
+  /*display: inline-block;*/
+  margin-bottom: 20px;
+}
+
+.footer__subsWrap {
+  position: relative;
+  max-width: 400px;
+}
+
+.footer__subsForm .inp {
+  border: 1px solid #8bf9e9;
+  border-radius: 5px;
+  padding: 5px 15px;
+  width: 100%;
+  height: 36px;
+}
+
+.footer__subsForm .inp:focus {
+  border-color: #3bb09f;
+}
+
+.footer__subsForm .btn {
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: #3bb09f;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  text-align: center;
+  line-height: 28px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.socials a:last-child {
+  margin-right: 0;
+}
+
+.socials a:hover {
+  text-decoration: none;
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.28);
+          box-shadow: 0 3px 9px rgba(0,0,0,.28);
+}
+
+.socials__vk:hover {
+  background-color: #4380ac;
+}
+.socials__fb:hover {
+  background-color: #0b5596;
+}
+.socials__tw:hover {
+  background-color: #25aae3;
+}
+.socials__ok:hover {
+  background-color: #ee8208;
+}
+
+
+/* ---== ГЛАВНАЯ СТРАНИЦА ==--- */
+
+/* спецпредложения */
+
+.special {
+  margin-bottom: 30px;
+}
+
+.special__title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.special__title::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  /*width: 80%;*/
+  right: 0;
+  left: 185px;
+  top: 50%;
+  background-color: #3bb09f;
+}
+
+/* интересно */
+
+.interest {
+  margin-bottom: 30px;
+}
+
+.interest__title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.interest__title::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  /*width: 87%;*/
+  right: 0;
+  left: 120px;
+  top: 50%;
+  background-color: #3bb09f;
+}
+
+.interest__more {
+  position: relative;
+  text-align: center;
+}
+
+.interest__more::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: '';
+  width: 60%;
+  height: 1px;
+  background-color: #3bb09f;
+  z-index: 1;
+}
+
+.interest__more .btn {
+  position: relative;
+  padding-right: 30px;
+  z-index: 3
+}
+
+.interest__more .fa-caret-down::before {
+  font-family: Fontawesome;
+  position: absolute;
+  right: 12px;
+}
+
+
+/* ---== КАТАЛОГ ПРОДУКТОВ ==--- */
+
+.catalog {
+  margin-bottom: 30px;
+}
+
+.sort {
+  font-weight: 300;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.sort span {
+  margin-right: 5px;
+}
+
+.sort a {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.sort a.active {
+  color: #ff8a8a;
+}
+
+.catalog__notfound {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+/* фильтр */
+
+.catalog__reset  {
+  text-align: center;
+}
+
+.catalog__reset .btn {
+  /*background-color: #3bb09f;*/
+  padding: 8px 10px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.catalog__filter {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 20px 15px;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.28);
+          box-shadow: 0 1px 3px rgba(0,0,0,.28);
+}
+
+.catalog__category input,
+.catalog__reception input {
+  display: none;
+}
+
+.catalog__title {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.catalog__title::after {
+  content: "";
+  background-color: #3bb09f;
+  height: 1px;
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 0;
+}
+
+.catalog__category 
+{
+  position: relative;
+  text-align: left;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.catalog__category::after {
+  content: "";
+  background-color: #3bb09f;
+  height: 1px;
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 0;
+}
+
+.catalog__category li
+{
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.catalog__category label,
+.catalog__reception label
+{
+  font-weight: 300;
+  line-height: 1.1;
+  cursor: pointer;
+}
+
+.catalog__category label::after,
+.catalog__reception label::after 
+{
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px #DEDEDE;
+  background-color: #F8F8F8;
+  /*background-color: #3bb09f;*/
+
+}
+
+.catalog__category .checkbox:checked + label::after,
+.catalog__reception .checkbox:checked + label::after 
+{
+  background-color: #fff;
+  border: solid 1px #3bb09f;
+  background-image: url(../img/gal.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog__reception {
+  position: relative;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.catalog__reception label::after {
+  right: 13px;
+}
+
+.catalog__search .inp {
+  width: 100%;
+  height: 30px;
+  background-color: #f1f1f1;
+}
+
+.catalog__priceInp {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog__priceInp .inp {
+  max-width: 100px;
+  width: 100%;
+  height: 30px;
+  background-color: #f1f1f1;
+}
+
+.catalog__select {
+  position: relative;
+  width: 100%;
+  /*height: 30px;*/
+  background-color: #f1f1f1;
+}
+
+.catalog__select::before {
+  font-family: Fontawesome;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #3bb09f;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.catalog__selected {
+  position: absolute;
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 30px;
+  /*padding-top: 5px;*/
+  overflow: hidden;
+  line-height: 30px;
+}
+
+.catalog__select select {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  opacity: 0;
+}
+
+
+.catalog__search,
+.catalog__country,
+.catalog__priceRange,
+.catalog__forwhom,
+.catalog__delivery,
+.catalog__dosage,
+.catalog__payment,
+.catalog__reception {
+  margin-bottom: 20px;
+}
+
+.catalog__filter h4 {
+  margin-bottom: 10px;
+}
+
+
+/* ---== КАТАЛОГ АПТЕК ==--- */
+
+.pharma {
+  padding-bottom: 50px;
+}
+
+
+/* фильтр */
+
+.pharma__filter {
+  padding: 25px 20px;
+  background-color: #3bb09f;
+  border-radius: 3px;
+  /*padding-left: 40px;*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /*justify-content: space-between;*/
+  margin-bottom: 30px;
+}
+
+.pharma__delivery,
+.pharma__country {
+  font-size: 0;
+  margin-right: 20px;
+}
+
+
+.pharma__filter label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+.pharma__filter .btn {
+  background-color: #ff7979;
+  border-radius: 3px;
+  width: 160px;
+  height: 38px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.pharma__filter .btn:hover {
+  background-color: #ff5656;
+}
+
+.pharma__amount p {
+  margin-right: 15px;
+}
+
+.pharma__amount p,
+.pharma__amount span
+{
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.pharma__amount::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0;
+  font-size: 0;
+}
+
+
+.pharma__select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  width: 160px;
+  height: 38px;
+  border-radius: 3px;
+}
+
+.pharma__select::before {
+  font-family: Fontawesome;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #2e6960;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.pharma__selected {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 30px;
+  overflow: hidden;
+  line-height: 38px;
+  font-size: 14px;
+  /*font-weight: 300;*/
+}
+
+.pharma__select select {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  opacity: 0;
+  font-size: 14px;
+}
+
+
+.pharma__reset {
+  /*display: none;*/
+  margin-left: auto;
+}
+
+.pharma__reset {
+  /*padding: 10px;*/
+  /*width: 100px;*/
+}
+
+.pharma__reset .btn {
+  width: 120px;
+  margin-right: 0;
+}
+
+
+/* каталог аптек */
+
+.pharma__rate {
+  /*background-image: url(../img/rating.png);*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+  /*width: 67px;*/
+  /*height: 10px;*/
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pharma__rate:hover {
+  text-decoration: none;
+}
+
+.pharma__rate i::before {
+  font-family: Fontawesome;
+  font-style: normal;
+  line-height: 1;
+  color: #3bb09f;
+  font-size: 14px;
+}
+
+.reviews__form .pharma__rate i {
+  cursor: pointer;
+}
+
+.pharma__list .pharma__item {
+  margin-bottom: 15px;
+}
+
+.pharma__item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  min-height: 100px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 15px 0;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.28);
+          box-shadow: 0 1px 3px rgba(0,0,0,.28);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pharma__item:hover {
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.28);
+          box-shadow: 0 3px 9px rgba(0,0,0,.28);
+}
+
+.pharma__itemImg {
+  display: block;
+  /*width: 80px;*/
+  /*height: 70px;*/
+}
+
+.pharma__itemImg img {
+  max-width: 100%;
+  max-height: 70px;
+}
+
+.pharma__item h4 {
+  font-weight: 400;
+  color: #2e6960;
+  margin-bottom: 5px;
+}
+
+.pharma__itemBtn a {
+  width: 100%;
+  /*text-align: center;*/
+  /*display: block;*/
+  /*width: 186px;*/
+  /*background-color: #3bb09f;*/
+  /*border-radius: 5px;*/
+  color: #fff;
+  /*font-size: 14px;*/
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+
+.pharma__itemBtn a:hover {
+  text-decoration: none;
+}
+
+.pharma__itemReviews a {
+  font-weight: 400;
+  color: #2e6960;
+}
+
+.pharma__itemName a {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #2e6960;
+  font-weight: 400;
+}
+
+.pharma__itemName span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.pharma__itemLogo,
+.pharma__itemName,
+.pharma__itemBtn 
+{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 15px;
+}
+
+.pharma__itemLogo {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.pharma__itemDelivery,
+.pharma__itemCountry {
+  width: 16%;
+  padding: 0 15px;
+  font-weight: 300;
+}
+.pharma__itemRating,
+.pharma__itemReviews {
+  width: 12%;
+  padding: 0 15px;
+  font-weight: 300;
+}
+.pharma__itemName {
+  width: 18%;
+}
+.pharma__itemLogo {
+  width: 10%;
+}
+.pharma__itemBtn {
+  width: 22%
+}
+
+
+
+/* ---== СТРАНИЦА КАРТОЧКА ТОВАРА ==--- */
+
+.productCard__header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+
+.productCard__img {
+  background-color: #fff;
+  border-radius: 5px;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* text-align: center; */
+  padding: 20px;
+  margin-right: 30px;
+  /*width: 100%;*/
+  /*max-width: 450px;*/
+  width: 35%;
+}
+
+.productCard__img img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.productCard__title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.productCard__title::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #a2a2a2;
+}
+
+.productCard__subtitle {
+  margin-bottom: 15px;
+}
+
+.productCard__info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+  width: 35%;
+}
+
+.productCard__table {
+  margin-bottom: 30px;
+}
+
+.productCard__shape {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.28);
+  box-shadow: 0 1px 3px rgba(0,0,0,.28);
+  width: 25%;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+.productCard__top {
+  background-color: #fff;
+  padding: 30px 20px;
+  height: 50%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productCard__middle {
+  padding: 30px 20px;
+  height: 50%;
+}
+
+.productCard__pharma {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.productCard__caption {
+  margin-bottom: 5px;
+}
+
+.productCard__delivery {
+  text-align: center;
+}
+
+
+.productCard__price {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ff7979;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.productCard__delivery {
+  /*margin-bottom: 30px;*/
+}
+
+.productCard__btn {
+  font-size: 0;
+  margin-top: auto;
+}
+
+.productCard__btn .btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.productCard__info td {
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.productCard__info td:first-child {
+  width: 40%;
+  padding-right: 15px;
+}
+.productCard__info td:last-child {
+  width: 60%;
+}
+
+.productCard__info table td {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+
+.productCard__header {
+  margin-bottom: 30px;
+}
+
+
+.productCard__accordion {
+  position: relative;
+  padding: 5px 0 5px 20px;
+  background-color: #3bb09f;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productCard__close {
+  position: relative;
+  cursor: pointer;
+  padding-right: 40px;
+  padding-left: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.productCard__close::before {
+  font-family: Fontawesome;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+
+.productCard__desc {
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  padding-top: 40px;
+  margin-top: -10px;
+}
+
+.productCard__row {
+  font-size: 0;
+  margin-bottom: 15px;
+}
+
+.productCard__cell {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  vertical-align: top;
+}
+
+.productCard__cell:first-child {
+  width: 30%;
+  padding-right: 30px;
+  text-align: right;
+  font-weight: 400;
+}
+.productCard__cell:last-child {
+  width: 70%;
+}
+
+.productCard__body {
+  margin-bottom: 30px;
+}
+
+
+.offers {
+  margin-bottom: 30px;
+}
+
+.offers__name a {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.offers__header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offers__title {
+  margin-bottom: 30px;
+  /*margin-right: 30px;*/
+}
+
+.offers__item {
+  font-weight: 300;
+  padding: 15px 20px;
+  min-height: 100px;
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.28);
+          box-shadow: 0 1px 3px rgba(0,0,0,.28);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.offers__item:hover {
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.28);
+          box-shadow: 0 3px 9px rgba(0,0,0,.28);
+}
+
+.offers__name,
+.offers__reviews,
+.offers__delivery
+ {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.offers__logo  {
+  width: 50%;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.offers__btn {
+  width: 100%;
+  padding-left: 15px;
+  text-align: right;
+}
+
+.offers__reviews {
+  width: 50%;
+}
+
+.offers__price {
+  width: 60%;
+}
+
+
+.offers__logo img {
+  max-width: 100%;
+  max-height: 70px;
+}
+
+.offers__btn {
+  text-align: center;
+}
+
+.offers__reviews,
+.offers__delivery
+{
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+
+
+.offers__item h4 {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2e6960;
+}
+
+.offers__item .btn {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.offers__price span {
+  color: #ff7979;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+
+.offers__list {
+  margin-bottom: 30px;
+}
+
+
+/* ---== СТРАНИЦА КАРТОЧКА АПТЕКИ ==--- */
+
+.pharmaCard {
+  padding-bottom: 50px;
+}
+
+.pharmaCard__header {
+  margin-bottom: 30px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+/*  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;*/
+}
+
+
+.pharmaCard__titleWrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 45%;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+
+.pharmaCard__info {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.pharmaCard__info .btn {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.pharmaCard__img {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  /*text-align: center;*/
+
+  padding: 0 20px 15px;
+
+  width: 100%;
+  max-width: 300px;
+
+}
+
+.pharmaCard__img img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.pharmaCard__title {
+  /*position: relative;*/
+  /*padding-bottom: 15px;*/
+  /*margin-bottom: 15px;*/
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+.pharmaCard__titleWrap::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #a2a2a2;
+}
+
+.pharmaCard__update {
+  font-size: 10px;
+  font-weight: 300;
+  vertical-align: bottom;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.pharmaCard__info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+
+.pharmaCard__table:first-child {
+  margin-right: 30px;
+}
+
+.pharmaCard__tableWrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.pharmaCard__table {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.pharmaCard__table .btn {
+  font-weight: 700;
+  /*font-size: 16px;*/
+  text-transform: uppercase;
+}
+
+.pharmaCard__table a {
+  color: #2e6960;
+}
+
+.pharmaCard__bottom {
+  margin-top: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pharmaCard__info table td {
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.pharmaCard__info td:first-child {
+  width: 40%;
+  padding-right: 15px;
+
+}
+.pharmaCard__info td:last-child {
+  width: 60%;
+}
+
+
+.pharmaCard__price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff7979;
+}
+
+.pharmaCard__bottom .btn {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+.pharmaCard__headline {
+  position: relative;
+  /*padding: 5px 20px;*/
+  padding-right: 5px;
+  background-color: #3bb09f;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pharmaCard__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pharmaCard__searchForm {
+  text-align: right;
+  width: 100%;
+  max-width: 350px;
+}
+
+.pharmaCard__searchWrap {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.pharmaCard__searchForm .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 86px;
+  height: 30px;
+  background-color: #ff7979;
+  border: 1px solid white;
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px 10px;
+  font-weight: 700;
+}
+
+.pharmaCard__searchForm .btn:hover {
+  background-color: #ff5656;
+}
+
+
+.pharmaCard__searchForm .inp {
+  /*max-width: 350px;*/
+  width: 100%;
+  height: 30px;
+  padding-right: 90px;
+  border-radius: 5px;
+}
+
+.pharmaCard__priceTable {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+
+.pharmaCard__priceTable table {
+  width: 100%;
+}
+
+
+.pharmaCard__priceTable th {
+  font-size: 16px;
+  font-weight: 300;
+  color: #999999;
+  padding: 5px 10px;
+  padding-bottom: 15px;
+  /*margin-bottom: 15px;*/
+  /*border-bottom: 1px solid;*/
+  vertical-align: top;
+}
+
+.pharmaCard__priceTable td {
+  padding: 5px 10px;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.pharmaCard__priceTable td:first-child {
+  width: 70%;
+  color: #2e6960;
+  font-weight: 400;
+}
+.pharmaCard__priceTable td:nth-child(2) {
+  width: 20%;
+  color: #ff7979;
+  font-weight: 700;
+}
+.pharmaCard__priceTable td:last-child {
+  width: 10%;
+}
+
+.pharmaCard__headline ul {
+  font-size: 0;
+}
+
+.pharmaCard__tab {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.pharmaCard__tab.active {
+  background-color: #38cab4;
+  /*box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.2);*/
+}
+
+.pharmaCard__tab:hover {
+  background-color: #38cab4;
+  /*box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.2);*/
+}
+
+
+/* отзывы */
+
+.reviews {
+  margin-top: -5px;
+}
+
+.reviews__form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.reviews__list {
+  margin-bottom: 30px;
+}
+
+.reviewItem {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.reviewItem__title {
+  margin-bottom: 15px;
+}
+
+.reviewItem__message {
+  margin-bottom: 15px;
+}
+
+.reviews__footer {
+  text-align: right;
+}
+
+.reviewItem__date {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.reviews .inp {
+  border: solid 1px #898989;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.reviews__top {
+  font-size: 0;
+  margin-bottom: 15px;
+}
+
+.reviews__left {
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+}
+
+.reviews__right {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 11px;
+  width: 35%;
+  font-size: 16px;
+  text-align: right;
+  padding-right: 65px;
+}
+
+.reviews__note {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.reviews__rate {
+  font-weight: 500;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.reviews .pharma__rate {
+  display: inline-block;
+    vertical-align: middle;
+  margin-bottom: 0;
+}
+
+.reviews .pharma__rate i::before {
+  font-size: 20px;
+}
+
+.reviews__form .btn {
+  font-weight: 700;
+  padding: 8px 25px;
+  font-size: 16px;
+}
+
+.reviews__middle {
+  margin-bottom: 15px;
+}
+
+.reviews textarea {
+  min-height: 100px;
+}
+
+.reviews__bottom {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+/* ---== СТРАНИЦА АКЦИИ ==--- */
+
+.discount {
+  padding-bottom: 30px;
+}
+
+.discount .productBannerList > div {
+  margin-bottom: 30px;
+}
+
+.bgYellow {
+  background-color: #ffff99;
+}
+
+
+/* ---== СТРАНИЦА ПОИСКА ==--- */
+
+.search {
+  margin-bottom: 30px;
+}
+
+.search__post {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #ccc;
+}
+
+.search__post:last-child {
+  border-bottom: none;
+}
+
+.search__wrapper {
+  max-width: 690px;
+}
+
+
+.search__header {
+  margin-bottom: 5px;
+
+}
+
+.search__footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.search__summary {
+  margin-bottom: 5px;
+}
+
+.search__comment,
+.search__cat {
+  color: #2e6960;
+}
+
+.search__time {
+  font-size: 12px;
+}
+
+
+/* ---== СТРАНИЦА ШАБЛОН ==--- */
+.page {
+  margin-bottom: 30px;
+}
+
+/* ---== модальные окна ==--- */
+
+.modal__error {
+  white-space: pre-wrap;
+  border: solid 1px #d7646c;
+  padding: 10px;
+}
+
+.modal-title {
+  padding-right: 15px;
+}
+
+.modal-body p {
+  margin-bottom: 10px;
+}
+
+.modal .close {
+  cursor: pointer;
+}
+
+.modal-header {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+

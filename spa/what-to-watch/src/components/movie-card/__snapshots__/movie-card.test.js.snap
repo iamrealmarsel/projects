@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render MovieCard 1`] = `
+<article
+  className="small-movie-card catalog__movies-card"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="small-movie-card__image"
+  >
+    <img
+      alt="Bronson"
+      height="175"
+      src="https://assets.htmlacademy.ru/intensives/javascript-3/film/preview/bronson.jpg"
+      width="280"
+    />
+  </div>
+  <h3
+    className="small-movie-card__title"
+  >
+    <a
+      className="small-movie-card__link"
+      href="/films/3"
+      onClick={[Function]}
+    >
+      Bronson
+    </a>
+  </h3>
+</article>
+`;

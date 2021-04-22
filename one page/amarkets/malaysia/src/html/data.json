@@ -1,0 +1,38 @@
+{
+  "data": {
+    "rateSlider": [{
+      "img": "slide1.png",
+      "mod": "1",
+      "txt1": "Instrumen <b>Forex</b>",
+      "txt2": "Deposit <b>$282</b>",
+      "txt3": "Tempoh <b>1 month</b>",
+      "txt4": "Keuntungan $ <b>$10789</b>",
+      "txt5": "Keuntungan % <b>3825%</b>",
+      "price": "<ul> <li>$ 12500</li> <li>$ 10000</li> <li>$ 7500</li> <li>$ 5000</li> <li>$ 2500</li> <li>$ 0</li> <li>$ -2500</li> </ul>",
+      "month": "<ul> <li>30 Jan</li> <li>31 Jan</li> <li>1 Feb</li> <li>2 Feb</li> </ul>"
+    }, {
+      "img": "slide2.png",
+      "mod": "2",
+      "txt1": "Instrumen <b>Forex</b>",
+      "txt2": "Deposit <b>$1338.91</b>",
+      "txt3": "Tempoh <b>2 weeks</b>",
+      "txt4": "Keuntungan $ <b>$4599.65</b>",
+      "txt5": "Keuntungan % <b>343%</b>",
+      "price": "<ul> <li>$ 10000</li> <li>$ 7500</li> <li>$ 5000</li> <li>$ 2500</li> <li>$ 0</li> </ul>",
+      "month": "<ul> <li>8 Sep</li> <li>12 Sep</li> <li>16 Sep</li> <li>20 Sep</li> </ul>"
+    }, {
+      "img": "slide3.png",
+      "mod": "3",
+      "txt1": "Instrumen <b>Crypto CFD</b>",
+      "txt2": "Deposit <b>$3000</b>",
+      "txt3": "Tempoh <b>1 month</b>",
+      "txt4": "Keuntungan $ <b>$200 000</b>",
+      "txt5": "Keuntungan % <b>6833%</b>",
+      "price": "<ul> <li>$ 350 000</li> <li>$ 250 000</li> <li>$ 150 000</li> <li>$ 50 000</li> <li class=\"special\">0</li> </ul>",
+      "month": "<ul> <li>8 Dec</li> <li>12 Dec</li> <li>21 Dec</li> <li>12 Jan</li> <li>9 Feb</li> </ul>"
+    }]
+  }
+}
+
+
+

@@ -1,0 +1,96 @@
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+  height: 35px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 35px;
+  // line-height: 1;
+  font-weight: normal;
+  color: #000;
+  background-color: #fff;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn--favorite {
+  font-size: 16px;
+  box-shadow: 0 0 0 1px $pink-ico;
+  &::before {
+    @include fa-icon($fa-var-heart-o, 18px, $pink-ico);
+    padding-right: 10px;
+  }
+  &:hover {
+    box-shadow: none;
+    color: #fff;
+    background-color: $pink-ico;
+    &::before {
+      @include fa-icon($fa-var-heart, 18px, #fff);
+    }
+  }
+  &.active {
+    &::before {
+    @include fa-icon($fa-var-heart, 18px, $pink-ico);
+    }
+  }
+}
+
+.btn--cart {
+  background-color: #ffd400;
+  font-size: 16px;
+  &::before {
+    @include fa-icon($fa-var-shopping-basket, 18px, #000);
+    padding-right: 10px;
+  }
+  &:hover {
+    color: #fff;
+    &::before {
+      color: #fff;
+    }
+  }
+}
+
+.btn--blue {
+  font-weight: bold;
+  color: #fff;
+  background-color: $blue-ico;
+}
+
+.btn--yellow {
+  font-weight: bold;
+  color: #000;
+  background-color: $yellow-ico;
+}
+
+.btn--blueLine {
+  box-shadow: $blueLine;
+}
+
+.btn--pinkLine {
+  box-shadow: $pinkLine;
+}
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.btn {
+  width: 270px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+{
+  "data": {
+    "table": 
+      [{
+        "val1": "Торговые условия",
+        "val2": "<img src='img/a.svg' alt='' />",
+        "val3": "AMarkets"
+      }, 
+      {
+        "val1": "Начальный депозит",
+        "val2": "нет",
+        "val3": "нет"
+      },
+      {
+        "val1": "Исполнение",
+        "val2": "рыночное",
+        "val3": "<span class='small'>моментальное-рыночное</span>"
+      },
+      {
+        "val1": "Спред",
+        "val2": "плавающий от&nbsp;1.4",
+        "val3": "плавающий от&nbsp;0.2"
+      },
+      {
+        "val1": "Кредитное плечо",
+        "val2": " 1:200",
+        "val3": "1:500"
+      },
+      {
+        "val1": "Комиссия на&nbsp;ввод",
+        "val2": "нет",
+        "val3": "нет"
+      },
+      {
+        "val1": "Количество инструментов",
+        "val2": "<span>37&nbsp;форекс</span> <span>4&nbsp;метала</span> <span>7&nbsp;индексов</span> <span>2&nbsp;бонда</span> <span>8&nbsp;товаров</span> <span>63&nbsp;акции</span>",
+        "val3": "<span>46&nbsp;форекс</span> <span>7&nbsp;металов</span> <span>26&nbsp;индексов</span> <span>3&nbsp;бонда</span> <span>11&nbsp;товаров</span> <span>147&nbsp;акций CFD</span>"
+      },
+      {
+        "val1": "Криптовалюта",
+        "val2": "нет",
+        "val3": "BTC&nbsp;ETH&nbsp;LTC"
+      },
+      {
+        "val1": "Уровень Stop&nbsp;Out до&nbsp;200k и&nbsp;свыше 200k",
+        "val2": "20% и 30%",
+        "val3": "20% и 20%"
+      },
+      {
+        "val1": "Скорость исполнения",
+        "val2": "-",
+        "val3": "от 30 милисекунды"
+      },
+      {
+        "val1": "Снятие денег с&nbsp;открытыми позициями",
+        "val2": "-",
+        "val3": "можно"
+      }],
+      "rate": [{
+        "img": "rate1.png",
+        "val": "48.03%"
+      }, {
+        "img": "rate2.png",
+        "val": "34.47%"
+      }, {
+        "img": "rate3.png",
+        "val": "33.1%"
+      }, {
+        "img": "rate4.png",
+        "val": "32%"
+      }, {
+        "img": "rate5.png",
+        "val": "32%"
+      }, {
+        "img": "rate6.png",
+        "val": "31.2%"
+      }]
+  }
+}
+
+
+

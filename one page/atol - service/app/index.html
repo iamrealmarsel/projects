@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon"
+          type="image/png"
+          href="images/favicon.ico">
+    <script src="https://www.google.com/recaptcha/api.js" defer></script>
+
+    <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNyW-GHi6fSY5K9GVmBk-WrANONiLAUF8&libraries=places&language=ru"
+            type="text/javascript"></script>
+
+
+    <title>АТОЛ Сервис</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <meta name="MobileOptimized" content="480"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="yandex-verification" content="7e2df9767f4b1ba1"/>
+
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="css/styles_2.0.6_N3sP8.css">
+
+    <style>
+        body{
+            background: url('images/background.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        #application_root {
+           /* width: 100%;
+            height: 100%;*/
+        }
+
+        #for_bad_users{
+                    width: 500px;
+                    height: 120px;
+                    padding: 45px 70px 55px 70px;
+                    position: absolute;
+                    margin-top: -110px;
+                    margin-left: -320px;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    vertical-align: middle;
+                    left: 50%;
+                    top: 50%;
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 20px;
+                    display: none;
+                }
+    </style>
+    <!-- GOOGLE -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-87185015-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript"> (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter40837319 = new Ya.Metrika({
+                    id: 40837319,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true,
+                    ut: "noindex"
+                });
+            } catch (e) {
+            }
+        });
+        var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+            n.parentNode.insertBefore(s, n);
+        };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks"); </script>
+</head>
+
+
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/40837319?ut=noindex" style="position:absolute; left:-9999px;" alt=""/>
+    </div>
+</noscript> <!-- /Yandex.Metrika counter -->
+
+<body>
+    <div id="application_root"></div>
+    <div id="for_bad_users">
+        Уважаемый пользователь! Версия вашего браузера не поддерживается системой. Для входа в АТОЛ Сервис обновите версию своего браузера до 10 или выше или воспользуйтесь одним из браузеров : Google Chrome, Opera, Mozilla Firefox, Яндекс.Браузер.
+    </div>
+</body>
+<script>
+    var config = {
+        mainGate: "https://atol-accountapi.appspot.com/"
+    };
+      window.onload = function () {
+              if (navigator.appVersion.indexOf("MSIE 9") !== -1 || navigator.appVersion.indexOf("MSIE 8") !== -1 || navigator.appVersion.indexOf("MSIE 7") !== -1){
+                  console.log("Incompletable IE detected");
+                  console.log(navigator.appVersion);
+
+                  document.getElementById("for_bad_users").style.display = 'block';
+                  document.getElementById("application_root").style.display = 'none';
+              }
+          }
+</script>
+<script defer anonymous="anonymous" src="js/application_2.0.6_N3sP8.js"></script>
+</html>

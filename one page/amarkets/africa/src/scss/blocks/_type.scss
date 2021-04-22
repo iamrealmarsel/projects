@@ -1,0 +1,56 @@
+.nowrap {
+  white-space: nowrap;
+}
+
+.title {
+  font-family: $ffMinor;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.subtitle {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+.light {
+  font-weight: 300;
+}
+.medium {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 32px;
+  }
+}
+
+@media ($mobile) {
+
+}
+
+@media ($mobileS) {
+  .title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,81 @@
+/* ---== услуги тип ==--- */
+
+.servicesItem {
+  margin-bottom: 50px;
+}
+
+.servicesItem__title {
+  margin: 20px 0 30px;
+}
+
+.servicesItem__list {
+  font-size: 0;
+}
+
+.servicesItem__item {
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+  border: solid 1px #0072b9;
+  padding: 0 20px 20px;
+}
+
+.servicesItem__img {
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+
+.servicesItem__item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.servicesItem__btn {
+  margin-right: 20px;
+}
+
+.servicesItem__subtitle {
+  margin-bottom: 30px;
+}
+
+
+.servicesItem__more {
+  background-color: transparent;
+  color: #0072b9;
+  border: solid #0072b9 1px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.servicesItem__more:hover,
+.servicesItem__more:focus:active,
+.servicesItem__more:focus {
+  color: #0072b9;
+  background-color: transparent;
+}
+
+.servicesItem__more {
+  color: #0072b9;
+  background-color: transparent;
+  border: solid #0072b9 1px;
+}
+
+.servicesItem__more:hover,
+.servicesItem__more:focus:active,
+.servicesItem__more:focus {
+  color: #0072b9;
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+
+

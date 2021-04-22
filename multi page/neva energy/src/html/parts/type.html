@@ -1,0 +1,48 @@
+{% macro body() %}
+
+<div class="type_container">
+  
+  <div>
+    <h1>Съешь булочек H1</h1>
+  </div>
+  <div>
+    <h2>Съешь булочек H2</h2>
+  </div>
+  <div>
+    <h3>Съешь булочек H3</h3>
+  </div>
+  <div>
+    <h4>Съешь булочек H4</h4>
+  </div>
+  <div>
+    <p>Съешь булочек P</p>
+  </div>
+<div>
+  <ul>
+    <li>Съешь булочек LI
+      <ul>
+        <li>Съешь булочек LI>LI</li>
+        <li>Съешь булочек LI>LI</li>
+      </ul>
+    </li>
+    <li>Съешь булочек LI</li>
+  </ul>
+</div>
+  <div>
+    <a href="#">Съешь булочек A</a>
+  </div>
+  <div>
+    <button>Съешь булочек BUTTON</button>
+  </div>
+  <div>
+    <i>Съешь I</i> <b>булочек B</b>
+  </div>
+
+  <!-- класс type_img делает картинку размером не более своего контейнера и отцентровывает ее, если пропорции разные между картинкой и контейнером, но есесно у контейнера должны быть заданы размеры -->
+  <div class="type_img" style="width: 200px; height: 100px">
+    <img src="img/window3.jpg" alt="">
+  </div>
+
+</div>
+
+{% endmacro %}

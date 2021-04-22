@@ -1,0 +1,138 @@
+.map {
+  position: relative;
+  background-color: #eeecf1;
+  padding: 30px 0 0;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 94px;
+    background-image: url(../img/map_bg.png);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+  }
+}
+
+.map__container {
+  @include container;
+  position: static;
+}
+
+.map__main {
+  width: 100%;
+  max-width: 460px;
+  margin-right: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.map__inp {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 85px;
+  padding-right: 30px;
+  background-color: #fff;
+  color: $cType;
+  border: none;
+  border-radius: 30px;
+  outline: transparent;
+  font-family: $ffBase;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+.map__lbl {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    // background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $cBlue;
+  }
+  .fa {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translatey(-50%);
+    color: #fff;
+    font-size: 22px;
+    line-height: 0.9;
+  }
+}
+
+
+.map__form {
+
+  .btn {
+    margin-top: 15px;
+
+  }
+}
+
+#map {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 440px;
+  width: 100%;
+  max-width: 1100px;
+
+}
+
+
+
+@media ($desktop) {
+  
+}
+
+@media ($tablet) {
+
+  #map {
+    position: static;
+    max-width: none;
+  }
+  
+}
+
+@media ($mobile) {
+  .map {
+
+    &:before {
+      top: -30px;
+    }
+  }
+
+  
+}
+
+@media ($smobile) {
+  .map__form {
+    text-align: center;
+  }
+  .map__main {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  
+}
+
+
+

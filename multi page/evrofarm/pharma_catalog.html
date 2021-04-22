@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лекарства из Европы и США</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/waves.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+  
+<body>
+ <section class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-3 col-md-6 col-5">
+          <div class="logo">
+            <a href="#" class="logo__img">
+              <img src="img/logo.png" alt="логотип">
+              <p class="logo__info">Лекарства
+                <br> из Европы и США</p>
+            </a>
+
+          </div>
+        </div>
+        <div class="col-xl-8 col-md-12 col-2 order-xl-1 order-md-2 static">
+          <div class="burger burger--close">
+              <div class="burgerInner"></div>
+              <!-- <div class="bar"></div> -->
+              <!-- <div class="bar"></div> -->
+          </div>
+          <ul class="header__nav">
+            <li class="active"><a href="#">Медикоменты</a></li>
+            <li><a href="#">Здоровье</a></li>
+            <li><a href="#">Бады</a></li>
+            <li><a href="#">Медицинская техника</a></li>
+            <li><a href="#">Аптеки</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Доставка</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-1 col-md-6 col-5 order-xl-2 order-md-1">
+          <div class="header__lang">
+            <a class="header__ru active" href="#">RU</a> /
+            <a class="header__en" href="#">EN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="subheader">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-md-7 subheader__breadcrumbs order-2 order-md-1">
+          <a class="subheader__crumb subheader__crumb--first" href="#">Главная</a>
+          <a class="subheader__crumb" href="#">Каталог</a>
+          <span class="subheader__crumb active">Карточка товара</span>
+        </div>
+        <div class="col-12 col-md-5 order-1 order-md-2">
+          <form action="" class="subheader__searchForm">
+            <div class="subheader__searchWrap">
+              <input type="text" class="inp" placeholder="Я ищу...">
+              <button type="submit" class="btn">Поиск</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pharma">
+    <div class="container">
+      <form class="pharma__filter" action="">
+        <div class="pharma__country">
+          <label for="pharma__country">Страна</label>
+          <div class="pharma__select fa-caret-down">
+            <span class="pharma__selected selectedJs"></span>
+            <select name="" id="pharma__country" class="selectJs">
+              <option value="">Англия</option>
+              <option value="">Франция</option>
+            </select>
+          </div>
+        </div>
+        <div class="pharma__delivery">
+          <label for="pharma__delivery">Доставка</label>
+          <div class="pharma__select fa-caret-down">
+            <span class="pharma__selected selectedJs"></span>
+            <select name="" id="pharma__delivery" class="selectJs">
+              <option value="">Платная1 Платная1 Платная1</option>
+              <option value="">Платная2</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn" type="submit">Найти</button>
+        <div class="pharma__amount">
+          <p>Аптек найдено:</p> <span>56 000</span>
+        </div>
+        <!-- ma_edit кнопка фильтр >>> -->
+        <div class="pharma__reset">
+          <button type="button" class="btn">Сбросить</button>
+        </div>
+        <!-- <<< ma_edit кнопка фильтр -->
+      </form>
+      <div class="pharma__result">
+        <div class="sort"><span>Сортировать по:</span> <a href="#" class="active">рейтингу</a> | <a href="#">странам</a> | <a href="#">отзывам</a></div>
+        <div class="pharma__list">
+
+          <div class="pharma__item">
+            <div class="pharma__itemLogo">
+              <a href="#" class="pharma__itemImg">
+                <img src="img/logotest1.png" alt="">
+              </a>
+            </div>
+            <div class="pharma__itemName">
+              <a href="#">Phonempire.ru</a>
+            <span>VIZA, MasteCard, PayPal</span>
+
+
+            </div>
+            <div class="pharma__itemDelivery">
+              <h4>Доставка:</h4>
+              <ul>
+                <li>бесплатно</li>
+                <li>самовывоз</li>
+                <li>в день полкупки полкупки полкупки полкупки</li>
+              </ul>
+            </div>
+            <div class="pharma__itemCountry">
+              <h4>Страны:</h4>
+              <ul>
+                <li>Англия</li>
+                <li>Германия</li>
+              </ul>
+            </div>
+            <div class="pharma__itemRating">
+              <h4>Рейтинг:</h4>
+              <span class="pharma__rate">
+                <i class="fa-star"></i>
+                <i class="fa-star"></i>
+                <i class="fa-star"></i>
+                <i class="fa-star-half-o"></i>
+                <i class="fa-star-o"></i>
+              </span>
+            </div>
+            <div class="pharma__itemReviews">
+              <h4>Отзывы:</h4>
+              <a href="pharma.html#reviews">2569</a>
+            </div>
+            <div class="pharma__itemBtn">
+              <a class="btn" href="#">Перейти в аптеку</a>
+            </div>
+          </div>
+
+          <div class="pharma__item">
+            <div class="pharma__itemLogo">
+              <a href="#" class="pharma__itemImg">
+                <img src="img/logotest2.png" alt="">
+              </a>
+            </div>
+            <div class="pharma__itemName">
+              <a href="#">Phonempire.ru</a>
+              <span>VIZA, MasteCard, PayPal</span>
+
+            </div>
+            <div class="pharma__itemDelivery">
+              <h4>Доставка:</h4>
+              <ul>
+                <li>бесплатно</li>
+                <li>самовывоз</li>
+                <li>в день полкупки</li>
+                <li>в день полкупки</li>
+                <li>в день полкупки</li>
+              </ul>
+            </div>
+            <div class="pharma__itemCountry">
+              <h4>Страны:</h4>
+              <ul>
+                <li>Англия</li>
+                <li>Германия</li>
+                <li>Германия</li>
+                <li>Германия</li>
+              </ul>
+            </div>
+            <div class="pharma__itemRating">
+              <h4>Рейтинг:</h4>
+              <span class="pharma__rate"></span>
+            </div>
+            <div class="pharma__itemReviews">
+              <h4>Отзывы:</h4>
+              <a href="">2569</a>
+            </div>
+            <div class="pharma__itemBtn">
+              <a class="btn" href="#">Перейти в аптеку</a>
+            </div>
+          </div>
+
+
+          <div class="pharma__item">
+            <div class="pharma__itemLogo">
+              <a href="#" class="pharma__itemImg">
+                <img src="img/logotest.png" alt="">
+              </a>
+            </div>
+            <div class="pharma__itemName">
+              <a href="#">Phonempire.ru</a>
+            <span>VIZA, MasteCard, PayPal</span>
+
+            </div>
+            <div class="pharma__itemDelivery">
+              <h4>Доставка:</h4>
+              <ul>
+                <li>бесплатно</li>
+                <li>самовывоз</li>
+                <li>в день полкупки</li>
+              </ul>
+            </div>
+            <div class="pharma__itemCountry">
+              <h4>Страны:</h4>
+              <ul>
+                <li>Англия</li>
+                <li>Германия</li>
+              </ul>
+            </div>
+            <div class="pharma__itemRating">
+              <h4>Рейтинг:</h4>
+              <span class="pharma__rate"></span>
+            </div>
+            <div class="pharma__itemReviews">
+              <h4>Отзывы:</h4>
+              <a href="">2569</a>
+            </div>
+            <div class="pharma__itemBtn">
+              <a class="btn" href="#">Перейти в аптеку</a>
+            </div>
+          </div>
+
+          <div class="pharma__item">
+            <div class="pharma__itemLogo">
+              <a href="#" class="pharma__itemImg">
+                <img src="img/offers1.png" alt="">
+              </a>
+            </div>
+            <div class="pharma__itemName">
+              <a href="#">Phonempire.ru</a>
+            <span>VIZA, MasteCard, PayPal</span>
+
+            </div>
+            <div class="pharma__itemDelivery">
+              <h4>Доставка:</h4>
+              <ul>
+                <li>бесплатно</li>
+                <li>самовывоз</li>
+                <li>в день полкупки</li>
+              </ul>
+            </div>
+            <div class="pharma__itemCountry">
+              <h4>Страны:</h4>
+              <ul>
+                <li>Англия</li>
+                <li>Германия</li>
+              </ul>
+            </div>
+            <div class="pharma__itemRating">
+              <h4>Рейтинг:</h4>
+              <span class="pharma__rate"></span>
+            </div>
+            <div class="pharma__itemReviews">
+              <h4>Отзывы:</h4>
+              <a href="">2569</a>
+
+            </div>
+            <div class="pharma__itemBtn">
+              <a class="btn" href="#">Перейти в аптеку</a>
+            </div>
+          </div>
+
+          <div class="pharma__item">
+            <div class="pharma__itemLogo">
+              <a href="#" class="pharma__itemImg">
+                <img src="img/offers1.png" alt="">
+              </a>
+            </div>
+            <div class="pharma__itemName">
+              <a href="#">Phonempire.ru</a>
+            <span>VIZA, MasteCard, PayPal</span>
+
+            </div>
+            <div class="pharma__itemDelivery">
+              <h4>Доставка:</h4>
+              <ul>
+                <li>бесплатно</li>
+                <li>самовывоз</li>
+                <li>в день полкупки</li>
+              </ul>
+            </div>
+            <div class="pharma__itemCountry">
+              <h4>Страны:</h4>
+              <ul>
+                <li>Англия</li>
+                <li>Германия</li>
+              </ul>
+            </div>
+            <div class="pharma__itemRating">
+              <h4>Рейтинг:</h4>
+              <span class="pharma__rate"></span>
+
+            </div>
+            <div class="pharma__itemReviews">
+              <h4>Отзывы:</h4>
+              <a href="">2569</a>
+            </div>
+            <div class="pharma__itemBtn">
+              <a class="btn" href="#">Перейти в аптеку</a>
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="offers">
+  </section>
+<section class="footer">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer__nav">
+            <h3 class="footer__title">Пользователям</h3>
+            <ul>
+              <li><a href="#">Как сделать заказ</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Возврат и обмен</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+              <li><a href="#">Обратная связь</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer__socs">
+            <h3 class="footer__title">Мы в соц сетях</h3>
+            <div class="socials">
+             <a class="socials__vk fa fa-vk" href="#"></a>
+             <a class="socials__fb fa fa-facebook" href="#"></a>
+             <a class="socials__tw fa fa-twitter" href="#"></a>
+             <a class="socials__ok fa fa-odnoklassniki" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="footer__subs">
+            <h3 class="footer__title">Подпишитесь на наши обновления и будьте в курсе новинок</h3>
+            <form class="footer__subsForm" action="">
+<div class="footer__subsWrap">
+  <input class="inp" type="email" placeholder="Почта">
+  <button class="btn" type="submit">Подписаться</button>
+</div>
+            </form>
+            <div class="footer__info">
+              <p>Наш портал предоставляет возможность приобрести медикоменты, <br> которые не доступны в вашей странеи или регионе. </p>
+              <p>Цены указаны с учетом НДС и без учета заявок.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Оставьте Ваши контакты и мы свяжемся с Вами <br> в ближайшее время!</h4>
+        </div>
+        <div class="modal-body">
+          <form action="" class="form js_form">
+            <input type="text" name="name" class="inp" placeholder="Имя">
+            <input type="text" name="phone" class="inp phoneMask" placeholder="Телефон +7 (___) ___ __ __">
+            <button type="submit" class="btn">Записаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/waves.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

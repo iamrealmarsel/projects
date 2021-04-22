@@ -1,0 +1,174 @@
+.calc {
+  padding: 60px 0;  
+
+  .inp {
+    background-color: #F3F3F3;
+    width: 60%;
+  }
+  .reqForm {    
+    max-width: none;
+    margin-bottom: 70px;
+  }
+  .reqForm__item {
+    display: flex;
+    align-items: center;
+  }
+  .reqForm__lbl {
+    width: 40%;
+  }
+  .reqForm__title {
+    margin-bottom: 35px;
+  }
+  .reqForm__left {
+    width: 50%;
+    padding-right: 50px;
+  }
+  .reqForm__right {
+    width: 50%;
+    padding-left: 50px;
+    margin-bottom: 80px;
+
+    .reqForm__lbl {
+      width: 25%;
+    }
+  }
+}
+
+.calc__container {
+  @include container;
+}
+
+.calc__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.calc__list {
+  @include row;
+}
+
+.calc__col {
+  padding: 0 15px;
+  width: 20%;
+}
+
+.calc__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+  padding: 20px 10px;
+  border-radius: 5px;
+  min-height: 260px;
+  // justify-content: space-between;
+  height: 270px;
+}
+
+.calc__item_total {
+  background: #0062CC;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.12);
+  border-radius: 5px;
+  color: #000;
+
+  .calc__subtitle,
+  .calc__unit,
+  .calc__value {
+    color: #fff;
+  }
+}
+
+.calc__subtitle {
+  margin-bottom: auto;
+  text-align: center;
+  color: #222642;
+  font-weight: 500;
+  min-height: 46px;
+  width: 100%;
+}
+
+.calc__unit {
+  margin-bottom: auto;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 500;
+  color: #717171;
+}
+
+.calc__value {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 900;
+  color: #0C6BC9;
+}
+
+@media ($desktop) {
+  
+}
+
+@media ($tablet) {
+  .calc .reqForm__left {
+    padding-right: 15px;
+  }
+  .calc .reqForm__right {
+    padding-left: 15px;
+  }
+  .calc__unit {
+    text-align: center;
+    // font-size: 16px;
+  }
+  .calc__col {
+    width: 33.33%;
+    margin-bottom: 30px;
+  }
+}
+
+@media ($mobile) {
+  .calc .reqForm__right .reqForm__lbl {
+    width: 40%;
+  }
+}
+
+@media ($smobile) {
+
+  .calc {
+    // text-align: center;
+  }
+
+  .calc .reqForm {
+    // justify-content: center;
+  }
+
+  .calc .reqForm__left {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .calc .reqForm__right {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .calc .reqForm {
+    margin-bottom: 50px;
+  }
+
+  .calc__col {
+    width: 100%;
+  }
+
+  .calc__item {
+    min-height: auto;
+    height: auto;
+  }
+
+}
+
+
+
+
+
+
+

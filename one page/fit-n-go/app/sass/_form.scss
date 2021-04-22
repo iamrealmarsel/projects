@@ -1,0 +1,83 @@
+.btn {
+  display: inline-block;
+  font-family: $ffPrimary;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  color: #fffefe;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  padding: 12px 14px;
+  outline: transparent;
+  cursor: pointer;
+  background-color: $green;
+  background-image: $gradient;
+  transition: all 0.3s;
+}
+
+.btn_whln {
+  border: solid 1px #fff;
+}
+
+.btn:hover {
+  background-image: none;
+  text-decoration: none;
+}
+
+.inp {
+  font-family: $ffPrimary;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 20px;
+  border: solid #fff 1px;
+  color: #fff;
+  background-color: transparent;
+  outline: transparent;
+
+}
+
+.inp::-moz-placeholder { color: #fff; }
+.inp::-webkit-input-placeholder { color: #fff; }
+.inp:-ms-input-placeholder { color: #fff; }
+.inp::-ms-input-placeholder { color: #fff; }
+.inp::placeholder { color: #fff; } 
+
+.inp:focus {
+  border: solid $yell 1px;
+}
+
+.form {
+  max-width: 300px;
+}
+
+.form .inp {
+  margin-bottom: 20px;
+}
+
+
+
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 767px) {
+
+  .form {
+    margin: 0 auto;
+  }
+
+
+}
+
+@media (max-width: 575px) {
+
+
+}
+
+
+
+

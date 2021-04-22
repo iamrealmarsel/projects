@@ -1,0 +1,285 @@
+.tariffs {
+  padding-top: 140px;
+  padding-bottom: 120px;
+  background-image: url(../img/tariff_bg.png);
+  background-size: cover;
+  background-position: center;
+
+  .title, .desc {
+    display: block;
+    text-align: center;
+  }
+
+  .banner {
+    margin-bottom: 40px;
+  }
+}
+
+.tariffs__container {
+  @include container;
+}
+
+.tariffs__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+
+  a {
+    display: block;
+    padding: 16px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $cType;
+    border: solid 2px $cBlue;
+    border-radius: 100px;
+    text-decoration: none;
+  }
+
+  li.active a, li:hover a {
+    color: #fff;
+    background-color: $cBlue;
+  }
+}
+
+.tariffs__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-top: solid 2px $cBlue;
+  border-bottom: solid 2px $cBlue;
+  margin-bottom: 35px;
+}
+
+.tariffs__num {
+  @include number;
+  margin-right: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.tariffs__end {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tariffs__txt {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.tariffs__wimg {
+  margin-right: 30px;
+  width: 100%;
+  max-width: 425px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.tariffs__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tariffs__cnt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+
+  .btn {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 18px 40px;
+  }
+}
+
+
+.tariffs__list {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.tariffs__row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.tariffs__row::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #558ad8;
+}
+
+.tariffs__row:first-child::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background-color: #558ad8;
+}
+
+.tariffs__col {
+  width: 100%;
+
+  text-align: center;
+}
+
+.tariffs__col_1 {
+  max-width: 25%;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #03243a;
+  text-align: left;
+}
+.tariffs__col_2 {
+  max-width: 12%;
+
+  @include number;
+}
+.tariffs__col_3 {
+  max-width: 15%;
+}
+.tariffs__col_4 {
+  max-width: 25%;
+
+  @include number;
+}
+.tariffs__col_5 {
+  max-width: 23%;
+  text-align: right;
+}
+
+
+@media ($desktop) {
+  
+}
+
+@media ($tablet) {
+  .tariffs__top {
+    text-align: center;
+  }
+  
+  .tariffs__tabs {
+    margin: 0 -15px;
+    margin-bottom: 15px;
+
+
+    li {
+      width: 33%;
+      padding: 0 15px;
+      margin-bottom: 15px;
+    }
+    a {
+      text-align: center;
+      padding: 15px;
+    }
+  }
+  .tariffs__num {
+    font-size: 34px;
+    margin: 0;
+  }
+
+}
+
+@media ($mobile) {
+
+  .tariffs__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 5px;
+  }
+  .tariffs__col_1 {
+    max-width: 36%;
+
+    font-size: 12px;
+  }
+  .tariffs__col_2 {
+    max-width: 14%;
+
+    font-size: 20px;
+  }
+  .tariffs__col_3 {
+    max-width: 22%;
+
+    font-size: 14px;
+  }
+  .tariffs__col_4 {
+    max-width: 28%;
+
+    font-size: 20px;
+    text-align: right;
+  }
+  .tariffs__col_5 {
+    display: none;
+  }
+
+  .tariffs__num {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .tariffs__wimg {
+    display: none;
+  }
+
+}
+
+@media ($smobile) {
+  .tariffs__tabs {
+    margin: 0 -15px;
+
+    li {
+      width: 50%;
+      padding: 0 15px;
+      margin-bottom: 15px;
+    }
+    a {
+      padding: 15px 5px;
+    }
+  }
+  .tariffs__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+
+
+  .tariffs__txt {
+    text-align: center;
+  }
+
+  .tariffs__cnt .btn {
+    align-self: center;
+  }
+
+  .tariffs {
+    padding-bottom: 100px;
+  }
+
+  
+}
+
+
+
+
+

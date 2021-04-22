@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Нева Энергия | Личный кабинет</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="layout">
+
+<div class="calc">
+  <div class="calc__container">
+  
+  <h2 class="calc__title">Калькулятор расчета подключения <span class="nowrap">к Т/С</span></h2>
+  
+  <form class="reqForm">
+    <div class="reqForm__left">
+  
+    <h3 class="reqForm__title">Запрашиваемая нагрузка</h3>
+    
+    <label class="reqForm__item"><span class="reqForm__lbl">На систему отопления:</span>
+    <input class="inp" type="text" placeholder="100 Гкал/час">
+    </label>
+    
+    <label class="reqForm__item"><span class="reqForm__lbl">На систему ГВС:</span>
+    <input class="inp" type="text" placeholder="100 Гкал/час">
+    </label>
+    
+    <label class="reqForm__item"><span class="reqForm__lbl">На систему вентиляции:</span>
+    <input class="inp" type="text" placeholder="100 Гкал/час">
+    </label>
+    
+    </div>
+  
+    <div class="reqForm__right">
+  
+  
+    <h3 class="reqForm__title">Расстояние от точки подключения до объекта</h3>
+    
+    <label class="reqForm__item"><span class="reqForm__lbl">Расстояние:</span>
+    <input class="inp" type="text" placeholder="100 м">
+    </label>
+    
+    <div class="checkboxes reqForm__checkboxes">
+
+      <div class="checkbox">
+        <label>
+        <input type="checkbox">
+        <span class="checkbox__lbl">Т/С</span>
+        <i class="fa fa-check"></i>
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+        <input type="checkbox">
+        <span class="checkbox__lbl">ИТП</span>
+        <i class="fa fa-check"></i>
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+        <input type="checkbox">
+        <span class="checkbox__lbl">УУТЭ</span>
+        <i class="fa fa-check"></i>
+        </label>
+      </div>
+
+    </div>
+  
+  </div>
+  
+  <button type="submit" class="btn btn_acc">Рассчитать</button>
+
+</form>
+  
+  <div class="calc__total">
+    
+    <h3 class="reqForm__title">Результаты рассчета</h3>
+  
+  <div class="calc__list">
+  
+  <div class="calc__col">
+    <div class="calc__item">
+      <h4 class="calc__subtitle">Суммарная нагрузка</h4>
+      <span class="calc__value">300</span> 
+      <span class="calc__unit">Гкал/ч</span>
+    </div>
+  </div>
+    
+  <div class="calc__col">
+    <div class="calc__item">
+      <h4 class="calc__subtitle">Стоимость проектирования</h4>
+      <span class="calc__value">250</span> 
+      <span class="calc__unit">тыс. руб.</span>
+    </div>
+  </div>
+    
+  <div class="calc__col">
+    <div class="calc__item">
+      <h4 class="calc__subtitle">Стоимость строительства</h4>
+      <span class="calc__value">120</span> 
+      <span class="calc__unit">тыс. руб.</span>
+    </div>
+  </div>
+    
+  <div class="calc__col">
+    <div class="calc__item">
+      <h4 class="calc__subtitle">Стоимость 
+пусконаладочных
+работ</h4>
+      <span class="calc__value">230</span> 
+      <span class="calc__unit">тыс. руб.</span>
+    </div>
+  </div>
+  
+  <div class="calc__col">
+    <div class="calc__item calc__item_total">
+      <h4 class="calc__subtitle">Итоговая стоимость</h4>
+      <span class="calc__value">600</span> 
+      <span class="calc__unit">тыс. руб.</span>
+    </div>
+  </div>
+  
+  </div>
+  
+  
+  </div>
+  
+  
+  
+  
+  </div></div>
+
+</body>
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+</html>

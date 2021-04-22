@@ -1,0 +1,38 @@
+.trial {
+	background-image: url(../img/trial.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 90px 0 120px;
+}
+
+.trial__info {
+	display: inline-block;
+	margin-bottom: 47px;
+	font-size: 24px;
+}
+
+@media (max-width: 1199px) {
+
+
+}
+
+
+@media (max-width: 991px) {
+  
+  
+}
+
+@media (max-width: 767px) {
+
+  .trial {
+  	text-align: center;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+
+}

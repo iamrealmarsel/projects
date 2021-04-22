@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="15px" viewBox="0 0 32 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="jetskills-landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g transform="translate(-624.000000, -706.000000)" id="create-together" stroke-width="1.5" stroke="#FFFFFF">
+            <g>
+                <polyline id="arrow" points="625 707 640 720 655 707"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

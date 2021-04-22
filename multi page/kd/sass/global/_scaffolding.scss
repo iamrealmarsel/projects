@@ -1,0 +1,131 @@
+html,
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  min-width: 1200px;
+  color: #000;
+  background-color: $gray-blue-light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+}
+h2 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 34px;
+}
+a {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $blue-ico;
+}
+input[type='checkbox'] {
+  display: none;
+}
+hr {
+  background-color: red;
+  height: 1px;
+  border: none;
+  margin: 15px 0;
+}
+.clearfix {
+  @include clearfix;
+}
+.floatL {
+  float: left;
+}
+.floatR {
+  float: right;
+}
+.wrapper {
+  box-sizing: border-box;
+  width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.hidden {
+  display: none !important;
+}
+.visible {
+  display: block !important;
+}
+.overlayTrans,
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  z-index: 10;
+}
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  z-index: 30;
+}
+
+
+
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+html,
+body {
+  min-width: 320px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+h2 {
+  margin-bottom: 10px;
+  line-height: 130%;
+}
+
+h3 {
+}
+
+.wrapper {
+  width: 320px;
+  padding: 0 10px;
+  
+  // outline: 1px red solid;
+}
+
+.overlayTrans {
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+{% macro main(data) %}
+<div class="block5">
+  <div class="container">
+    <h2 class="block5__title titleL">Pelanggan kami</h2>
+  </div>
+  <div class="slider">
+    {% for item in data %}
+    <div>
+      <div class="slide"><div class="container">
+          <div class="slide__graph">
+            <div class="slide__top">
+              <div class="slide__price slide__price_{{ item.mod }}">
+                {{ item.price | safe }}
+              </div>
+              <div class="slide__img slide__img_{{ item.mod }}">
+                <img src="img/{{item.img | safe}}" alt="">
+              </div>
+            </div>
+            <div class="slide__bottom">
+              <div class="slide__empty slide__empty_{{ item.mod }}"></div>
+              <div class="slide__month">
+                {{ item.month | safe }}
+              </div>
+            </div>
+          </div>
+          <ul class="slide__list">
+            <li class="slide__item">{{item.txt1 | safe}}</li>
+            <li class="slide__item">{{item.txt2 | safe}}</li>
+            <li class="slide__item">{{item.txt3 | safe}}</li>
+            <li class="slide__item">{{item.txt4 | safe}}</li>
+            <li class="slide__item">{{item.txt5 | safe}}</li>
+          </ul>
+        </div></div>
+    </div>
+    {% endfor %}
+  </div>
+    <a href="#" class="btn">Sertai mereka!</a>
+</div>
+{% endmacro %}

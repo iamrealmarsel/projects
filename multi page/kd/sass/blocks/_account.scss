@@ -1,0 +1,974 @@
+.m-accountHead {
+  display: none;
+}
+
+.account {
+  position: relative;
+}
+
+.account__amount {
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.account__head {
+  @include panelSmall(none);
+  padding: 3px 10px;
+  margin-bottom: 20px;
+}
+
+.account__head > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 45px;
+}
+
+.account__head a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: underline;
+  &.active {
+    color: $blue-ico;
+    text-decoration: none;
+    & + .account__amount {
+      color: $blue-ico;
+    }
+  }
+}
+
+.account .account__logout {
+  float: right;
+  margin-right: 0;
+}
+
+.account__logoutLink {
+  &::before {
+    @include fa-icon($fa-var-times, 16px, $pink-ico);
+    padding-right: 10px;
+  }
+}
+
+// --===-- профиль --===--
+
+.accountProfile {
+  margin-bottom: 35px;
+}
+
+.accountProfileForm label {
+  font-size: 14px;
+}
+
+.accountProfileForm__wrapper {
+  @include clearfix;
+  margin-bottom: 20px;
+}
+
+.accountProfileForm__title1,
+.accountProfileForm__title2,
+.accountProfileForm__title3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.accountProfileForm__title1 {
+  margin-bottom: 10px;
+}
+
+.accountProfileForm__title2 {
+  margin-bottom: 20px;
+}
+
+.accountProfileForm__title3 {
+  margin-bottom: 20px;
+}
+
+.accountProfileForm__user {
+  float: left;
+  width: 370px;
+  margin-right: 20px;
+
+  // outline: solid 1px;
+}
+
+.accountProfileForm__user:nth-child(2) {
+  margin-right: 25px;
+}
+
+.accountProfileForm__subs {
+  float: left;
+  width: 310px;
+
+  // outline: solid 1px;
+}
+
+.accountProfileForm__fileUploadWrap {
+  margin-bottom: 20px;
+}
+
+.accountProfileForm__ava {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  &::before {
+    @include fa-icon($fa-var-user, 55px, $gray-blue-light);
+    vertical-align: middle;
+  }
+}
+
+.accountProfileForm__fileUpload {
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  // outline: solid 1px green;
+  .accountProfileForm__upload {
+    display: none;
+    font-size: 16px;
+  }
+}
+
+.accountProfileForm__fileAva {
+  display: inline-block;
+  vertical-align: middle;
+  // overflow: hidden;
+  // outline: solid 1px;
+  .accountProfileForm__choose {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+  }
+  input[type='file'] {
+    // opacity: 0;
+    display: none;
+    // outline: solid 1px;
+  }
+}
+
+.accountProfileForm__fileName {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accountProfileForm .inputBg {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.accountProfileForm__floatWrap,
+.accountProfileForm__countryWrap {
+  @include clearfix;
+}
+
+.accountProfileForm__countryWrap {
+  margin-bottom: 20px;
+}
+
+.accountProfileForm__floatWrap label:first-child,
+.accountProfileForm__country {
+  float: left;
+  width: 180px;
+}
+
+.accountProfileForm__floatWrap label:last-child,
+.accountProfileForm__region {
+  float: right;
+  width: 180px;
+}
+
+.accountProfileForm__country,
+.accountProfileForm__region {
+  .ui-selectmenu-button {
+    padding: 10px 5px 10px 10px;
+  }
+}
+
+.accountProfileForm__subs p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.accountProfileForm__subs label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.accountProfileForm .checkbox {
+  margin-right: 10px;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.accountProfileForm input[type='checkbox']:checked ~ .checkbox::before {
+  display: block;
+}
+
+.accountProfileForm__subs span {
+  display: inline-block;
+  vertical-align: top;
+  width: 270px;
+  line-height: 18px;
+}
+
+.accountProfileForm__details {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding-right: 360px;
+  font-size: 14px;
+  line-height: 20px;
+  // outline: solid;
+  .btn {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .btn[type='reset'] {
+    right: 170px;
+    box-shadow: 0 0 0 1px $blue-ico;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: disc inside;
+    margin-top: 20px;
+  }
+}
+
+// --===-- заказы --===--
+
+.accountOrders {
+  margin-bottom: 35px;
+}
+
+.accountOrdersForm {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 2px $blue-ico;
+  border-radius: 5px;
+  font-size: 14px;
+  .btn {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .btn[type='reset'] {
+    right: 115px;
+    box-shadow: 0 0 0 1px $blue-ico;
+  }
+}
+
+.accountOrdersForm__top {
+  @include justify;
+  font-size: 0;
+  text-align: justify;
+  .inputBg {
+    height: 30px;
+    font-weight: 500;
+  }
+}
+
+
+.accountOrdersForm {
+  .inputBg {
+    width: 130px;
+    padding: 0 20px;
+    background-color: #fff;
+  }
+}
+
+.accountOrdersForm__period {
+  display: inline-block;
+  vertical-align: middle;
+  width: 120px;
+}
+
+.accountOrdersForm__date {
+  display: inline-block;
+  vertical-align: middle;
+  width: 140px;
+}
+
+.accountOrdersForm__checkboxWrap {
+  // margin-top: 5px;
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .checkbox {
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: #fff;
+  }
+  span {
+    vertical-align: middle;
+    // display: inline-block;
+    line-height: 16px;
+    // max-width: 130px;
+  }
+  input[type='checkbox']:checked ~ .checkbox::before {
+    display: block;
+  }
+}
+.accountOrdersForm__checkboxWrap1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 175px;
+}
+.accountOrdersForm__checkboxWrap2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 130px;
+}
+.accountOrdersForm__checkboxWrap3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+}
+.accountOrdersForm__checkboxWrap4 {
+  display: inline-block;
+  vertical-align: top;
+  width: 235px;
+}
+.accountOrdersForm__checkboxWrap5 {
+  display: inline-block;
+  vertical-align: top;
+  width: 145px;
+}
+
+
+.accountOrder__head,
+.accountOrder__item {
+  @include panelSmall(none);
+  padding: 3px 10px;
+  margin-bottom: 20px;
+  font-size: 0;
+  div {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+}
+
+.accountOrder__item {
+  @include panelSmall;
+  height: 40px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  .accountOrder__status {
+    color: $blue-ico;
+  }
+  .accountOrder__total {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.accountOrder__ID {
+  width: 190px;
+}
+.accountOrder__status {
+  width: 260px;
+}
+.accountOrder__buyer {
+  width: 280px;
+}
+.accountOrder__data {
+  width: 190px;
+}
+
+// ---== отложенные товары ==---
+
+.accountLiked__list {
+  margin-bottom: 35px;
+  .productItem {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
+// --===-- сравнение --===--
+
+.accountCompare {
+  margin-bottom: 35px;
+  .productItem:hover {
+    transform: scale(1);
+    box-shadow: 0 7px 7px rgba(0,0,0,0.15);
+  }
+  table {
+    // outline: green 1px solid;
+  }
+
+  col:first-child {
+    width: 370px;
+  }
+
+  td {
+    text-align: center;
+    // outline: red 1px solid;
+  }
+
+  thead tr:nth-child(1) td {
+    padding: 0 10px 15px;
+  }
+
+  thead tr:nth-child(2) td {
+    padding-bottom: 25px;
+  }
+
+  thead tr:nth-child(2) .btn {
+    font-weight: bold;
+    box-shadow: $blueLine;
+  }
+
+  thead tr:nth-child(1) td:first-child {
+    padding-right: 35px;
+    text-align: right;
+    vertical-align: middle;
+  } 
+
+  thead td:first-child .btn {
+    font-size: 16px;
+  }
+
+  tbody td {
+    vertical-align: middle;
+    height: 30px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;  
+  }
+
+  tbody tr:nth-child(2n-1) {
+    background-color: $tr-color;
+  }
+
+  tbody td:first-child {
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;;
+  }
+
+  tbody td:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+
+
+
+// ---== мобильная версия ==---
+
+@media ($mobile) {
+
+.m-accountHead {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: $blue-ico;
+  background-color: #fff;
+  cursor: pointer;
+  &::after {
+    @include fa-icon($fa-var-angle-down, 14px, #000);
+    margin-left: auto;
+  }
+}
+
+.account__head {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  width: 300px;
+  padding: 10px 15px 0;
+  margin-bottom: 0;
+}
+
+.account__amount {
+  // padding-left: 5px;
+}
+
+.account .account__profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account__profile::after {
+  @include fa-icon($fa-var-angle-down, 14px, #000);
+}
+
+.account__profile a {
+  line-height: 14px;
+}
+
+.account__head > div {
+  display: block;
+//   vertical-align: middle;
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+// .account__head a {
+//   font-size: 14px;
+//   color: #000;
+//   text-decoration: underline;
+//   &.active {
+//     color: $blue-ico;
+//     text-decoration: none;
+//   }
+// }
+
+.account .account__logout {
+  float: none;
+//   margin-right: 0;
+  margin-bottom: 10px;
+}
+
+// .account__logoutLink {
+//   &::before {
+//     @include fa-icon($fa-var-times, 16px, $pink-ico);
+//     padding-right: 10px;
+//   }
+// }
+
+// ---== профиль ==---
+
+.accountProfile {
+  margin-bottom: 5px;
+}
+
+.accountProfileForm label {
+  // font-size: 14px;
+}
+
+.accountProfileForm__wrapper {
+  // @include clearfix;
+  margin-bottom: 10px;
+}
+
+.accountProfileForm__title1,
+.accountProfileForm__title2,
+.accountProfileForm__title3 {
+  // font-size: 14px;
+  // font-weight: bold;
+  line-height: 18px;
+}
+
+.accountProfileForm__title1 {
+  // margin-bottom: 10px;
+}
+
+.accountProfileForm__title2 {
+  // margin-bottom: 10px;
+}
+
+.accountProfileForm__title3 {
+  margin-bottom: 10px;
+}
+
+.accountProfileForm__user {
+  float: none;
+  width: auto;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.accountProfileForm__subs {
+  float: none;
+  width: auto;
+}
+
+.accountProfileForm__ava {
+  // display: inline-block;
+  // width: 100px;
+  // height: 100px;
+  // border-radius: 50%;
+  // background-color: #fff;
+  // text-align: center;
+  // line-height: 100px;
+  // margin-bottom: 20px;
+  // &::before {
+  //   @include fa-icon($fa-var-user, 55px, $gray-blue-light);
+  //   vertical-align: middle;
+  // }
+}
+
+.accountProfileForm .inputBg {
+  // background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.accountProfileForm__floatWrap,
+.accountProfileForm__countryWrap {
+  // @include clearfix;
+}
+
+.accountProfileForm__countryWrap {
+  margin-bottom: 0;
+  width: 300px;
+  
+}
+
+.accountProfileForm__country,
+.accountProfileForm__region {
+  margin-bottom: 15px;
+}
+
+.accountProfileForm__floatWrap label:first-child,
+.accountProfileForm__country {
+  float: none;
+  width: auto;
+}
+
+.accountProfileForm__floatWrap label:last-child,
+.accountProfileForm__region {
+  float: none;
+  width: auto;
+}
+
+.accountProfileForm__country,
+.accountProfileForm__region {
+  // width: 300px;
+  font-size: 14px;
+  line-height: 1;
+  select[name='country'] {
+    // width: 300px;
+  }
+  .ui-selectmenu-button {
+    // padding: 10px 5px 10px 10px;
+    // outline: red 1px solid;
+  }
+}
+
+
+.accountProfileForm__subs p {
+  // font-size: 14px;
+  // font-weight: bold;
+  // margin-bottom: 10px;
+}
+
+.accountProfileForm__subs label {
+  // display: block;
+  // margin-bottom: 10px;
+}
+
+.accountProfileForm .checkbox {
+  // margin-right: 10px;
+  // vertical-align: top;
+  // background-color: #fff;
+}
+
+.accountProfileForm input[type='checkbox']:checked ~ .checkbox::before {
+  // display: block;
+}
+
+.accountProfileForm__subs span {
+  // display: inline-block;
+  // vertical-align: top;
+  width: 260px;
+  // line-height: 18px;
+}
+
+.accountProfileForm__details {
+  // box-sizing: border-box;
+  // position: relative;
+  // width: 100%;
+  padding-right: 0;
+  // font-size: 14px;
+  // line-height: 20px;
+  .btn {
+    position: static;
+    margin-bottom: 10px;
+    // bottom: 0;
+    // right: 30px;
+    // font-size: 16px;
+    // font-weight: bold;
+  }
+  .btn[type='reset'] {
+    // right: 170px;
+    // box-shadow: 0 0 0 1px $blue-ico;
+  }
+  h3 {
+    margin-bottom: 15px;
+  }
+  ul {
+    // list-style: disc inside;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.accountProfileForm__fileUploadWrap {
+  // margin-bottom: 20px;
+}
+
+// .accountProfileForm__ava {
+//   display: inline-block;
+//   vertical-align: middle;
+//   width: 100px;
+//   height: 100px;
+//   margin-right: 20px;
+//   border-radius: 50%;
+//   background-color: #fff;
+//   text-align: center;
+//   line-height: 100px;
+//   cursor: pointer;
+//   &::before {
+//     @include fa-icon($fa-var-user, 55px, $gray-blue-light);
+//     vertical-align: middle;
+//   }
+// }
+
+.accountProfileForm__fileUpload {
+  // display: inline-block;
+  // vertical-align: middle;
+  width: 170px;
+  .accountProfileForm__upload {
+    width: auto;
+    // display: none;
+    // font-size: 16px;
+  }
+}
+
+.accountProfileForm__fileAva {
+  // display: inline-block;
+  // vertical-align: middle;
+  // overflow: hidden;
+  // outline: solid 1px;
+  .accountProfileForm__choose {
+    // display: inline-block;
+    width: auto;
+    // font-size: 16px;
+    // line-height: 35px;
+    // font-weight: bold;
+    // text-align: center;
+  }
+  input[type='file'] {
+    // display: none;
+  }
+}
+
+// --===-- заказы --===--
+
+// .accountOrders {
+//   margin-bottom: 35px;
+// }
+
+.accountOrdersForm {
+//   position: relative;
+  padding: 5px;
+//   margin-bottom: 20px;
+//   border: solid 2px $blue-ico;
+//   border-radius: 5px;
+//   font-size: 14px;
+  .btn {
+  position: static;
+  margin-bottom: 10px;
+//     position: absolute;
+//     bottom: 15px;
+//     right: 10px;
+//     font-size: 16px;
+//     font-weight: bold;
+  }
+//   .btn[type='reset'] {
+//     right: 115px;
+//     box-shadow: 0 0 0 1px $blue-ico;
+//   }
+  .inputBg {
+    width: 100%;
+    margin-bottom: 10px;
+//     padding: 0 20px;
+//     background-color: #fff;
+  }
+  .sliderRange {
+    margin-bottom: 10px;
+  }
+}
+
+// .accountOrdersForm__top {
+//   @include justify;
+//   font-size: 0;
+//   text-align: justify;
+  // .inputBg {
+//     height: 30px;
+//     font-weight: 500;
+  // }
+// }
+
+
+.accountOrdersForm__period {
+//   display: inline-block;
+//   vertical-align: middle;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.accountOrdersForm__date {
+//   display: inline-block;
+//   vertical-align: middle;
+  width: 135px;
+}
+
+.accountOrdersForm__checkboxWrap {
+  font-size: 0;
+//   label {
+//     display: block;
+//     margin-bottom: 10px;
+//   }
+  .checkbox {
+    vertical-align: top;
+    margin-right: 5px;
+//     background-color: #fff;
+  }
+  span {
+    display: inline-block;
+    vertical-align: top;
+    width: 114px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+//   input[type='checkbox']:checked ~ .checkbox::before {
+//     display: block;
+//   }
+}
+
+.accountOrdersForm__checkboxWrap1 {
+  // display: inline-block;
+  // vertical-align: top;
+  width: 50%;
+}
+.accountOrdersForm__checkboxWrap2 {
+//   display: inline-block;
+//   vertical-align: top;
+  width: 50%;
+}
+.accountOrdersForm__checkboxWrap3 {
+//   display: inline-block;
+//   vertical-align: top;
+  width: 50%;
+}
+.accountOrdersForm__checkboxWrap4 {
+//   display: inline-block;
+//   vertical-align: top;
+  width: 50%;
+}
+.accountOrdersForm__checkboxWrap5 {
+//   display: inline-block;
+//   vertical-align: top;
+  width: 50%;
+}
+
+.accountOrder__head {
+  display: none;
+}
+
+.accountOrder__head,
+.accountOrder__item {
+//   @include panelSmall(none);
+//   padding: 3px 10px;
+//   margin-bottom: 20px;
+//   font-size: 0;
+  div {
+//     display: inline-block;
+//     vertical-align: middle;
+//     font-size: 14px;
+//     line-height: 1;
+//     font-weight: 500;
+    margin-right: 0;
+  }
+}
+
+.accountOrder__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  padding: 10px;
+//   @include panelSmall;
+//   margin-bottom: 10px;
+//   line-height: 40px;
+//   .accountOrder__status {
+//     color: $blue-ico;
+//   }
+//   .accountOrder__total {
+//     font-size: 16px;
+//     font-weight: bold;
+//   }
+  .accountOrder__ID {
+    width: auto;
+    margin-bottom: 5px;
+  }
+  .accountOrder__status {
+    order: 20;
+    width: 50%;
+    text-align: right;
+  }
+  .accountOrder__buyer {
+    width: auto;
+  }
+  .accountOrder__data {
+    order: 10;
+    width: 50%;
+  }
+  .accountOrder__total {
+  }
+}
+
+// ---== отложенные товары ==---
+
+.accountLiked__list {
+  margin-bottom: 20px;
+  text-align: center;
+  .productItem {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.accountCompare {
+  display: none;
+}
+
+
+
+}
+
+
+
+
+
+

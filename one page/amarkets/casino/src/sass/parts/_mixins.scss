@@ -1,0 +1,63 @@
+@mixin container {
+  position: relative;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@mixin col($width) {
+  max-width: $width;
+  width: 100%;
+  padding: 0 15px;
+}
+
+
+@mixin title {
+  font-family: $ffMinor;
+  font-size: 64px;
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin title_tb {
+  font-size: 48px;
+}
+
+@mixin title_mob {
+  font-size: 34px;
+}
+
+
+
+@mixin subtitle {
+  font-family: $ffMinor;
+  font-size: 48px;
+  line-height: 1.3;
+  font-weight: 300;
+  text-transform: none;
+}
+
+@mixin subtitle_tb {
+  font-size: 36px;
+}
+
+@mixin subtitle_mob {
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+

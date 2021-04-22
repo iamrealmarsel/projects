@@ -1,0 +1,25 @@
+{% macro main(data) %}
+
+<div class="block2">
+  <div class="container">
+    <h2 class="title"><span class="bold">Торговые условия</span> ведущих&nbsp;брокеров</h2>
+  
+  <div class="block2__state">
+
+    {% for item in data %}
+    <div class="block2__row">
+      <div class="block2__col">{{ item.val1 | safe }}</div>
+      <div class="block2__col">{{ item.val2 | safe }}</div>
+      <div class="block2__col">{{ item.val3 | safe }}</div>
+    </div>
+    {% endfor %}
+
+  </div>
+  
+    <div class="block2__btn">
+      <a href="#" class="btn">Перенести позиции к AMarkets</a>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

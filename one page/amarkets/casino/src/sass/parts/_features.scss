@@ -1,0 +1,64 @@
+.features {
+  padding-bottom: 50px;
+}
+
+.features__container {
+  @include container;
+}
+
+
+.features__title {
+  @include subtitle;
+  margin-bottom: 60px;
+}
+
+.features__list {
+  @include row;
+}
+
+.features__item {
+  @include col($col4);
+  margin-bottom: 40px;
+}
+
+.features__txt {
+  max-width: 210px;
+  margin: 0 auto;
+}
+
+.features__ico {
+  min-height: 130px;
+}
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+  .features__title {
+    @include subtitle_tb;
+  }
+  .features__item {
+    @include col($col6);
+  }
+
+}
+
+@media ($mobile) {
+  .features__title {
+    @include subtitle_mob;
+  }
+  .features__item {
+    @include col($col12);
+  }
+
+}
+
+@media ($mobileS) {
+
+}
+
+
+
