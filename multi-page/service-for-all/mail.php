@@ -1,6 +1,6 @@
 <?php
 
-$recepient = "ma.deal@yandex.ru, a2ice@yandex.ru";
+$recepient = "ma.deal@yandex.ru";
 $sitename = "AutoService";
 
 
@@ -14,8 +14,8 @@ $mail = trim($_POST["mail"]);
 
 $pagetitle = "Новая заявка с сайта \"$sitename\"";
 $messageres = "
-ФИО: $name\n 
-Телефон: $phone\n 
+ФИО: $name\n
+Телефон: $phone\n
 Почта: $mail\n
 Модель: $model\n
 Пробег: $mileage\n

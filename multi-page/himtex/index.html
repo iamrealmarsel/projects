@@ -406,7 +406,7 @@
 
 
     <!-- МОДАЛЬНЫЕ ОКНА -->
-<div class="overlay js-close">
+
     <!-- запрос цены -->
     <div class="modal" id="modalPrice">
         <form action="" class="modal__form js-submit">
@@ -442,10 +442,6 @@
                     </span>
                 </div>
             </div>
-            <div class="modal__msgWrap">
-                <label for="modal__msg">Ваш комментарий</label>
-                <textarea id="modal__msg" name="msg" class="inp" placeholder=""></textarea>
-            </div>
             <div class="modal__btnList">
                 <button class="btn" type="submit">Сделать запрос</button>
                 <i class="js-close modal__close fa-close"></i>
@@ -471,10 +467,6 @@
                 <div class="modal__phoneWrap">
                     <label for="modal__phone">Ваш номер телефона<span class="red">*</span></label>
                     <input id="modal__phone" class="phoneMask inp" type="text" required="true">
-                </div>
-                <div class="modal__msgWrap">
-                    <label for="modal__msg">Ваш комментарий</label>
-                    <textarea id="modal__msg" name="msg" class="inp" placeholder=""></textarea>
                 </div>
                 <div class="modal__btnList">
                     <button class="btn" type="submit">Сделать запрос</button>
@@ -553,8 +545,8 @@
             </p>
             </div>
         </div>
-        
-    </div>
+
+    <div class="overlay js-close"></div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

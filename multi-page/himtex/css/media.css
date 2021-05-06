@@ -155,6 +155,25 @@
 
 
 @media (max-width:767px) {
+
+    /* преимущества */
+
+    .productCard__row {
+        margin-bottom: 30px;
+    }
+
+    .productCard__col {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .productCard__img {
+        height: 80px;
+        margin-bottom: 15px;
+    }
+
+
+
     .modal__range {
         margin-bottom: 0;
     }
@@ -467,10 +486,6 @@
 
 
 @media (max-width:575px) {
-    .new {
-        padding: 30px 15px;
-
-    }
     .newsItem {
         align-items: center;
         text-align: center;

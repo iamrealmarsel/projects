@@ -1,344 +1,399 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1100" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=1100">
+    <title>Service For All</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="https://cdn.jsdelivr.net/jquery.formstyler/1.7.8/jquery.formstyler.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <title>Service For All</title>
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-      <link href="https://cdn.jsdelivr.net/jquery.formstyler/1.7.8/jquery.formstyler.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
     <script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.8/jquery.formstyler.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
-</head>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
 
-<body>
-  <header class="header"><div class="container">
-      <a href="index.html" class="header__logo">
-        <img src="img/logo.png" alt="логотип">
-      </a>
-      <div class="header__contacts">
-        <p class="header__text "><i class="fa fa-phone"></i>Ежедневно с 8:00 до 22:00</p>
-        <a href="tel:+79998887766" class="header__phone">+7 (999) 888-77-66</a>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.png" alt="логотип" />
+        </a>
+        <div class="header__contacts">
+          <p class="header__text"><i class="fa fa-phone"></i>Ежедневно с 8:00 до 22:00</p>
+          <a href="tel:+79998887766" class="header__phone">+7 (999) 888-77-66</a>
+        </div>
+        <ul class="header__menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="articles.html">Статьи</a></li>
+          <li>
+            <a href="services.html">Услуги</a>
+            <ul class="header__submenu">
+              <li>
+                <a href="#">Грузовые автомобили</a>
+                <ul class="header__submenu">
+                  <li><a href="services_item.html">Tехническое обслуживание</a></li>
+                  <li><a href="services_item.html">Слесарный ремонт</a></li>
+                  <li><a href="services_item.html">Кузовной ремонт</a></li>
+                  <li><a href="services_item.html">Покраска автомобиля</a></li>
+                  <li><a href="services_item.html">Компьютерная диагностика</a></li>
+                  <li><a href="services_item.html">Сход-развал</a></li>
+                  <li><a href="services_item.html">Шиномонтаж</a></li>
+                  <li><a href="services_item.html">Ремонт двигателя</a></li>
+                  <li><a href="services_item.html">Ремонт КПП</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Легковые автомобили</a>
+                <ul class="header__submenu">
+                  <li><a href="services_item.html">Tехническое обслуживание</a></li>
+                  <li><a href="services_item.html">Слесарный ремонт</a></li>
+                  <li><a href="services_item.html">Кузовной ремонт</a></li>
+                  <li><a href="services_item.html">Покраска автомобиля</a></li>
+                  <li><a href="services_item.html">Компьютерная диагностика</a></li>
+                  <li><a href="services_item.html">Сход-развал</a></li>
+                  <li><a href="services_item.html">Шиномонтаж</a></li>
+                  <li><a href="services_item.html">Ремонт двигателя</a></li>
+                  <li><a href="services_item.html">Ремонт КПП</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Renault Nissan</a>
+                <ul class="header__submenu">
+                  <li><a href="services_item.html">Tехническое обслуживание</a></li>
+                  <li><a href="services_item.html">Слесарный ремонт</a></li>
+                  <li><a href="services_item.html">Кузовной ремонт</a></li>
+                  <li><a href="services_item.html">Покраска автомобиля</a></li>
+                  <li><a href="services_item.html">Компьютерная диагностика</a></li>
+                  <li><a href="services_item.html">Сход-развал</a></li>
+                  <li><a href="services_item.html">Шиномонтаж</a></li>
+                  <li><a href="services_item.html">Ремонт двигателя</a></li>
+                  <li><a href="services_item.html">Ремонт КПП</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a class="header__entity" href="entity.html">Для юридических лиц</a></li>
+        </ul>
       </div>
-      <ul class="header__menu">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="articles.html">Статьи</a></li>
-        <li><a href="services.html">Услуги</a>
-          <ul class="header__submenu">
-            <li><a href="#">Грузовые автомобили</a>
-              <ul class="header__submenu">
-                <li><a href="services_item.html">Tехническое обслуживание</a></li>
-                <li><a href="services_item.html">Слесарный ремонт</a></li>
-                <li><a href="services_item.html">Кузовной ремонт</a></li>
-                <li><a href="services_item.html">Покраска автомобиля</a></li>
-                <li><a href="services_item.html">Компьютерная диагностика</a></li>
-                <li><a href="services_item.html">Сход-развал</a></li>
-                <li><a href="services_item.html">Шиномонтаж</a></li>
-                <li><a href="services_item.html">Ремонт двигателя</a></li>
-                <li><a href="services_item.html">Ремонт КПП</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Легковые автомобили</a>
-              <ul class="header__submenu">
-                <li><a href="services_item.html">Tехническое обслуживание</a></li>
-                <li><a href="services_item.html">Слесарный ремонт</a></li>
-                <li><a href="services_item.html">Кузовной ремонт</a></li>
-                <li><a href="services_item.html">Покраска автомобиля</a></li>
-                <li><a href="services_item.html">Компьютерная диагностика</a></li>
-                <li><a href="services_item.html">Сход-развал</a></li>
-                <li><a href="services_item.html">Шиномонтаж</a></li>
-                <li><a href="services_item.html">Ремонт двигателя</a></li>
-                <li><a href="services_item.html">Ремонт КПП</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Renault Nissan</a>
-              <ul class="header__submenu">
-                <li><a href="services_item.html">Tехническое обслуживание</a></li>
-                <li><a href="services_item.html">Слесарный ремонт</a></li>
-                <li><a href="services_item.html">Кузовной ремонт</a></li>
-                <li><a href="services_item.html">Покраска автомобиля</a></li>
-                <li><a href="services_item.html">Компьютерная диагностика</a></li>
-                <li><a href="services_item.html">Сход-развал</a></li>
-                <li><a href="services_item.html">Шиномонтаж</a></li>
-                <li><a href="services_item.html">Ремонт двигателя</a></li>
-                <li><a href="services_item.html">Ремонт КПП</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="reviews.html">Отзывы</a></li>
-        <li><a href="about.html">О нас</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <li><a class="header__entity" href="entity.html">Для юридических лиц</a></li>
-      </ul>
-    </div></header>
-  <section class="slider">
-    <div class="slider__init">
-      <div>
-        <div class="slider__item slider__item1">
-          <div class="slider__desc">
-            <p class="slider__title">Автосервисы честные <br> Цены низкие</p>
-            <p class="slider__text">У нас фиксированные цены.
-              <br> Никаких доплат и увеличения стоимости.</p>
+    </header>
+    <section class="slider">
+      <div class="slider__init">
+        <div>
+          <div class="slider__item slider__item1">
+            <div class="slider__desc">
+              <p class="slider__title">
+                Автосервисы честные <br />
+                Цены низкие
+              </p>
+              <p class="slider__text">
+                У нас фиксированные цены. <br />
+                Никаких доплат и увеличения стоимости.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="slider__item slider__item2">
+            <div class="slider__desc">
+              <h2 class="slider__title">
+                Автосервисы честные <br />
+                Цены низкие
+              </h2>
+              <p class="slider__text">
+                У нас фиксированные цены. <br />
+                Никаких доплат и увеличения стоимости.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="slider__item slider__item3">
+            <div class="slider__desc">
+              <h2 class="slider__title">
+                Автосервисы честные <br />
+                Цены низкие
+              </h2>
+              <p class="slider__text">
+                У нас фиксированные цены. <br />
+                Никаких доплат и увеличения стоимости.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <div class="slider__item slider__item2">
-          <div class="slider__desc">
-            <h2 class="slider__title">Автосервисы честные <br> Цены низкие</h2>
-            <p class="slider__text">У нас фиксированные цены.
-              <br> Никаких доплат и увеличения стоимости.</p>
+    </section>
+    <section class="benefits container">
+      <div class="benefits__list">
+        <div class="benefits__item fa fa-file-text-o">
+          <p class="benefits__title">Оформите заявку на сайте или по телефону</p>
+          <p class="benefits__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia ullamcorper elit id fermentum.
+            Suspendisse potenti.
+          </p>
+        </div>
+        <div class="benefits__item fa fa-handshake-o">
+          <p class="benefits__title">Получите выгодное предложение в течение 15 минут</p>
+          <p class="benefits__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia ullamcorper elit id fermentum.
+            Suspendisse potenti.
+          </p>
+        </div>
+        <div class="benefits__item fa fa-clock-o">
+          <p class="benefits__title">Отремонтируйте автомобиль точно в срок</p>
+          <p class="benefits__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia ullamcorper elit id fermentum.
+            Suspendisse potenti.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="services container">
+      <h2 class="services__title">Большой выбор услуг по ремонту и обслуживанию автомобилей</h2>
+      <div class="services__list">
+        <a href="services_item.html" class="services__item services__item1">
+          <h3 class="services__subtitle">Техническое обслуживание (ТО)</h3>
+          <p class="services__text">
+            Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно
+            через установленные периоды, включающие определённый комплекс работ
+          </p>
+        </a>
+        <a href="services_item.html" class="services__item services__item2">
+          <h3 class="services__subtitle">Слесарный ремонт</h3>
+          <p class="services__text">
+            Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно
+            через установленные периоды, включающие определённый комплекс работ
+          </p>
+        </a>
+        <a href="services_item.html" class="services__item services__item3">
+          <h3 class="services__subtitle">Кузовной ремонт</h3>
+          <p class="services__text">
+            Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно
+            через установленные периоды, включающие определённый комплекс работ
+          </p>
+        </a>
+        <a href="services_item.html" class="services__item services__item4">
+          <h3 class="services__subtitle">Покраска автомобиля</h3>
+          <p class="services__text">
+            Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно
+            через установленные периоды, включающие определённый комплекс работ
+          </p>
+        </a>
+        <a href="services_item.html" class="services__item services__item5">
+          <h3 class="services__subtitle">Компьютерная диагностика</h3>
+          <p class="services__text">
+            Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно
+            через установленные периоды, включающие определённый комплекс работ
+          </p>
+        </a>
+        <a href="services_item.html" class="services__item services__item6">
+          <h3 class="services__subtitle">Сход-развал</h3>
+          <p class="services__text">
+            Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно
+            через установленные периоды, включающие определённый комплекс работ
+          </p>
+        </a>
+        <a href="services_item.html" class="services__item services__item7">
+          <h3 class="services__subtitle">Шиномонтаж</h3>
+          <p class="services__text">
+            Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно
+            через установленные периоды, включающие определённый комплекс работ
+          </p>
+        </a>
+        <a href="services_item.html" class="services__item services__item8">
+          <h3 class="services__subtitle">Ремонт двигателя</h3>
+          <p class="services__text">
+            Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно
+            через установленные периоды, включающие определённый комплекс работ
+          </p>
+        </a>
+        <a href="services_item.html" class="services__item services__item9">
+          <h3 class="services__subtitle">Ремонт КПП</h3>
+          <p class="services__text">
+            Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно
+            через установленные периоды, включающие определённый комплекс работ
+          </p>
+        </a>
+      </div>
+      <a href="services.html" class="btn">Все услуги</a>
+    </section>
+    <section class="coupon container">
+      <h2 class="coupon__title">Наши акции и специальные предложения</h2>
+      <p class="coupon__desc">Успейте воспользоваться выгодными предложениями</p>
+      <div class="coupon__list">
+        <a href="coupon.html" class="coupon__item">
+          <img src="img/coupon2.png" alt="купон" />
+          <p class="coupon__more">Узнать подробности</p>
+        </a>
+        <a href="coupon.html" class="coupon__item">
+          <img src="img/coupon1.png" alt="купон" />
+          <p class="coupon__more">Узнать подробности</p>
+        </a>
+      </div>
+    </section>
+    <section class="reviews container">
+      <h2 class="reviews__title">Счастливые клиенты об AutoService</h2>
+      <p class="reviews__desc">Отзывы говорят сами за себя</p>
+      <div class="reviews__list">
+        <div class="reviews__item">
+          <div class="reviews__header clearfix">
+            <h3 class="reviews__subtitle">Химчистка салона</h3>
+            <img src="img/ico-kia.png" alt="марка" />
+          </div>
+          <p class="reviews__text">
+            О компании узнал из интернета, в обслуживании всем доволен, сайт удобен в использовании, работа хорошо
+            налажена, все сработали оперативно и качественно
+          </p>
+          <div class="reviews__footer clearfix">
+            <span class="reviews__author">Евгений</span>
+            <span class="reviews__date">03.06.2017</span>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__header clearfix">
+            <h3 class="reviews__subtitle">Химчистка салона</h3>
+            <img src="img/ico-kia.png" alt="марка" />
+          </div>
+          <p class="reviews__text">
+            О компании узнал из интернета, в обслуживании всем доволен, сайт удобен в использовании, работа хорошо
+            налажена, все сработали оперативно и качественно
+          </p>
+          <div class="reviews__footer clearfix">
+            <span class="reviews__author">Евгений</span>
+            <span class="reviews__date">03.06.2017</span>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__header clearfix">
+            <h3 class="reviews__subtitle">Химчистка салона</h3>
+            <img src="img/ico-kia.png" alt="марка" />
+          </div>
+          <p class="reviews__text">
+            О компании узнал из интернета, в обслуживании всем доволен, сайт удобен в использовании, работа хорошо
+            налажена, все сработали оперативно и качественно
+          </p>
+          <div class="reviews__footer clearfix">
+            <span class="reviews__author">Евгений</span>
+            <span class="reviews__date">03.06.2017</span>
           </div>
         </div>
       </div>
-      <div>
-        <div class="slider__item slider__item3">
-          <div class="slider__desc">
-            <h2 class="slider__title">Автосервисы честные <br> Цены низкие</h2>
-            <p class="slider__text">У нас фиксированные цены.
-              <br> Никаких доплат и увеличения стоимости.</p>
+      <a href="reviews.html#reviewsPage__write" class="reviews__write">Оставьте отзыв и получите дисконтную карту</a>
+      <a href="reviews.html" class="btn">Все отзывы</a>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <p class="contacts__desc">Описание</p>
+      <div class="contacts__slider">
+        <div>
+          <div class="contacts__slide">
+            <img src="img/contacts1.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="contacts__slide">
+            <img src="img/contacts1.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="contacts__slide">
+            <img src="img/contacts1.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="contacts__slide">
+            <img src="img/contacts1.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="contacts__slide">
+            <img src="img/contacts1.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="contacts__slide">
+            <img src="img/contacts1.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="contacts__slide">
+            <img src="img/contacts1.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="contacts__slide">
+            <img src="img/contacts1.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="contacts__slide">
+            <img src="img/contacts1.jpg" alt="" />
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="benefits container">
-    <div class="benefits__list">
-      <div class="benefits__item fa fa-file-text-o">
-        <p class="benefits__title">Оформите заявку на сайте или по телефону</p>
-        <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia ullamcorper elit id fermentum. Suspendisse potenti.</p>
+      <div id="map"></div>
+    </section>
+    <section class="call container">
+      <h2 class="call__title">Все еще думаете? Звоните и мы Вам все расскажем!</h2>
+      <p class="contacts__desc">Наши технические специалисты доступны 7 дней в неделю, с 8:00 до 22:00</p>
+      <div class="call__contacts">
+        <a href="tel:+79998887766">+7 (999) 888-77-66</a>
+        <a href="mailto:info@autoservice.ru">info@autoservice.ru</a>
       </div>
-      <div class="benefits__item fa fa-handshake-o">
-        <p class="benefits__title">Получите выгодное предложение в течение 15 минут</p>
-        <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia ullamcorper elit id fermentum. Suspendisse potenti.</p>
-      </div>
-      <div class="benefits__item fa fa-clock-o">
-        <p class="benefits__title">Отремонтируйте автомобиль точно в срок</p>
-        <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia ullamcorper elit id fermentum. Suspendisse potenti.</p>
-      </div>
-    </div>
-  </section>
-  <section class="services container">
-    <h2 class="services__title">Большой выбор услуг по ремонту и обслуживанию автомобилей</h2>
-    <div class="services__list">
-      <a href="services_item.html" class="services__item services__item1">
-        <h3 class="services__subtitle">Техническое обслуживание (ТО)</h3>
-        <p class="services__text">Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно через установленные периоды, включающие определённый комплекс работ
-        </p>
-      </a>
-      <a href="services_item.html" class="services__item services__item2">
-        <h3 class="services__subtitle">Слесарный ремонт</h3>
-        <p class="services__text">Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно через установленные периоды, включающие определённый комплекс работ
-        </p>
-      </a>
-      <a href="services_item.html" class="services__item services__item3">
-        <h3 class="services__subtitle">Кузовной ремонт</h3>
-        <p class="services__text">Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно через установленные периоды, включающие определённый комплекс работ
-        </p>
-      </a>
-      <a href="services_item.html" class="services__item services__item4">
-        <h3 class="services__subtitle">Покраска автомобиля</h3>
-        <p class="services__text">Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно через установленные периоды, включающие определённый комплекс работ
-        </p>
-      </a>
-      <a href="services_item.html" class="services__item services__item5">
-        <h3 class="services__subtitle">Компьютерная диагностика</h3>
-        <p class="services__text">Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно через установленные периоды, включающие определённый комплекс работ
-        </p>
-      </a>
-      <a href="services_item.html" class="services__item services__item6">
-        <h3 class="services__subtitle">Сход-развал</h3>
-        <p class="services__text">Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно через установленные периоды, включающие определённый комплекс работ
-        </p>
-      </a>
-      <a href="services_item.html" class="services__item services__item7">
-        <h3 class="services__subtitle">Шиномонтаж</h3>
-        <p class="services__text">Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно через установленные периоды, включающие определённый комплекс работ
-        </p>
-      </a>
-      <a href="services_item.html" class="services__item services__item8">
-        <h3 class="services__subtitle">Ремонт двигателя</h3>
-        <p class="services__text">Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно через установленные периоды, включающие определённый комплекс работ
-        </p>
-      </a>
-      <a href="services_item.html" class="services__item services__item9">
-        <h3 class="services__subtitle">Ремонт КПП</h3>
-        <p class="services__text">Техническое обслуживание — мероприятия профилактического характера, проводимые систематически, принудительно через установленные периоды, включающие определённый комплекс работ
-        </p>
-      </a>
-    </div>
-    <a href="services.html" class="btn">Все услуги</a>
-  </section>
-  <section class="coupon container">
-    <h2 class="coupon__title">Наши акции и специальные предложения</h2>
-    <p class="coupon__desc">Успейте воспользоваться выгодными предложениями</p>
-    <div class="coupon__list">
-      <a href="coupon.html" class="coupon__item">
-        <img src="img/coupon2.png" alt="купон">
-        <p class="coupon__more">Узнать подробности</p>
-      </a>
-      <a href="coupon.html" class="coupon__item">
-        <img src="img/coupon1.png" alt="купон">
-        <p class="coupon__more">Узнать подробности</p>
-      </a>
-    </div>
-  </section>
-  <section class="reviews container">
-    <h2 class="reviews__title">Счастливые клиенты об AutoService</h2>
-    <p class="reviews__desc">Отзывы говорят сами за себя</p>
-    <div class="reviews__list">
-      <div class="reviews__item">
-        <div class="reviews__header clearfix">
-          <h3 class="reviews__subtitle">Химчистка салона</h3>
-          <img src="img/ico-kia.png" alt="марка">
+      <h2 class="call__title2">Или оставьте свои данные и мы с Вами свяжемся</h2>
+      <form class="form call__form">
+        <div class="form__justify">
+          <input class="inp" name="name" type="text" placeholder="Ваше имя" required />
+          <input class="inp" name="model" type="text" placeholder="Модель автомобиля" required />
+          <input class="inp" name="mileage" type="text" placeholder="Пробег" />
         </div>
-        <p class="reviews__text">О компании узнал из интернета, в обслуживании всем доволен, сайт удобен в использовании, работа хорошо налажена, все сработали оперативно и качественно</p>
-        <div class="reviews__footer clearfix">
-          <span class="reviews__author">Евгений</span>
-          <span class="reviews__date">03.06.2017</span>
+        <textarea class="textarea" name="message" cols="30" rows="10" placeholder="Сообщение" required></textarea>
+        <div class="form__justify">
+          <input class="inp phoneMask" name="phone" type="tel" placeholder="Ваш телефон" required />
+          <input class="inp" name="mail" type="email" placeholder="Ваша почта" />
+          <button class="btn2" type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="container clearfix">
+        <div class="footer__left">
+          <p class="footer__text">
+            <b>AutoService</b> — lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia ullamcorper elit
+            id fermentum. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia
+            ullamcorper elit id fermentum. Suspendisse potenti.
+          </p>
+          <p class="footer__copyright">© 2017 AutoService. Все права защищены.</p>
+        </div>
+        <ul class="footer__menu">
+          <!-- <li><a href="reviews.html">Отзывы</a></li> -->
+          <li><a href="articles.html">Статьи</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li class="footer__entity"><a href="entity.html">Для юридических лиц</a></li>
+        </ul>
+        <div class="socials">
+          <p class="socials__text">Мы в социальных сетях</p>
+          <div class="socials__list">
+            <a href="#" class="socials__vk fa fa-vk"></a>
+            <a href="#" class="socials__fb fa fa-facebook"></a>
+            <a href="#" class="socials__insta fa fa-instagram"></a>
+          </div>
         </div>
       </div>
-      <div class="reviews__item">
-        <div class="reviews__header clearfix">
-          <h3 class="reviews__subtitle">Химчистка салона</h3>
-          <img src="img/ico-kia.png" alt="марка">
-        </div>
-        <p class="reviews__text">О компании узнал из интернета, в обслуживании всем доволен, сайт удобен в использовании, работа хорошо налажена, все сработали оперативно и качественно</p>
-        <div class="reviews__footer clearfix">
-          <span class="reviews__author">Евгений</span>
-          <span class="reviews__date">03.06.2017</span>
-        </div>
-      </div>
-      <div class="reviews__item">
-        <div class="reviews__header clearfix">
-          <h3 class="reviews__subtitle">Химчистка салона</h3>
-          <img src="img/ico-kia.png" alt="марка">
-        </div>
-        <p class="reviews__text">О компании узнал из интернета, в обслуживании всем доволен, сайт удобен в использовании, работа хорошо налажена, все сработали оперативно и качественно</p>
-        <div class="reviews__footer clearfix">
-          <span class="reviews__author">Евгений</span>
-          <span class="reviews__date">03.06.2017</span>
-        </div>
-      </div>
-    </div>
-    <a href="reviews.html#reviewsPage__write" class="reviews__write">Оставьте отзыв и получите дисконтную карту</a>
-    <a href="reviews.html" class="btn">Все отзывы</a>
-  </section>
-  <section class="contacts">
-    <h2 class="contacts__title">Контакты</h2>
-    <p class="contacts__desc">Описание</p>
-    <div class="contacts__slider">
-      <div>
-        <div class="contacts__slide">
-          <img src="img/contacts1.jpg" alt="">
-        </div>
-      </div>
-      <div>
-        <div class="contacts__slide">
-          <img src="img/contacts1.jpg" alt="">
-        </div>
-      </div>
-      <div>
-        <div class="contacts__slide">
-          <img src="img/contacts1.jpg" alt="">
-        </div>
-      </div>
-      <div>
-        <div class="contacts__slide">
-          <img src="img/contacts1.jpg" alt="">
-        </div>
-      </div>
-      <div>
-        <div class="contacts__slide">
-          <img src="img/contacts1.jpg" alt="">
-        </div>
-      </div>
-            <div>
-        <div class="contacts__slide">
-          <img src="img/contacts1.jpg" alt="">
-        </div>
-      </div>
-            <div>
-        <div class="contacts__slide">
-          <img src="img/contacts1.jpg" alt="">
-        </div>
-      </div>
-            <div>
-        <div class="contacts__slide">
-          <img src="img/contacts1.jpg" alt="">
-        </div>
-      </div>
-            <div>
-        <div class="contacts__slide">
-          <img src="img/contacts1.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div id="map">
-    </div>
-  </section>
-  <section class="call container">
-    <h2 class="call__title">Все еще думаете? Звоните и мы Вам все расскажем!</h2>
-    <p class="contacts__desc">Наши технические специалисты доступны 7 дней в неделю, с 8:00 до 22:00
-    </p>
-    <div class="call__contacts">
-      <a href="tel:+79998887766">+7 (999) 888-77-66</a>
-      <a href="mailto:info@autoservice.ru">info@autoservice.ru</a>
-    </div>
-    <h2 class="call__title2">Или оставьте свои данные и мы с Вами свяжемся</h2>
-    <form class="form call__form">
-  <div class="form__justify">
-        <input class="inp" name="name" type="text" placeholder="Ваше имя" required>
-    <input class="inp" name="model" type="text" placeholder="Модель автомобиля" required>
-    <input class="inp" name="mileage" type="text" placeholder="Пробег">
-  </div>
-      <textarea class="textarea" name="message" cols="30" rows="10" placeholder="Сообщение" required></textarea>
-<div class="form__justify">
-  <input class="inp phoneMask" name="phone" type="tel" placeholder="Ваш телефон" required>
-  <input class="inp" name="mail" type="email" placeholder="Ваша почта">
-  <button class="btn2" type="submit">Отправить</button>
-</div>
-    </form>
-  </section>
-  <footer class="footer">
-  <div class="container clearfix">
-      <div class="footer__left">
-        <p class="footer__text"><b>AutoService</b> — lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia ullamcorper elit id fermentum. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia ullamcorper elit id fermentum. Suspendisse potenti.
-        </p>
-        <p class="footer__copyright">© 2017 AutoService. Все права защищены.</p>
-      </div>
-      <ul class="footer__menu">
-        <!-- <li><a href="reviews.html">Отзывы</a></li> -->
-        <li><a href="article.html">Статьи</a></li>
-        <li><a href="services.html">Услуги</a></li>
-        <li><a href="reviews.html">Отзывы</a></li>
-        <li><a href="about.html">О нас</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <li class="footer__entity"><a href="entity.html">Для юридических лиц</a></li>
-      </ul>
-      <div class="socials">
-        <p class="socials__text">Мы в социальных сетях</p>
-        <div class="socials__list">
-          <a href="#" class="socials__vk fa fa-vk"></a>
-          <a href="#" class="socials__fb fa fa-facebook"></a>
-          <a href="#" class="socials__insta fa fa-instagram"></a>
-        </div>
-      </div>
-    </div>
     </footer>
-</body>
-
+  </body>
 </html>
