@@ -1,0 +1,30 @@
+.content {
+  padding: 40px;
+}
+
+.contentSearch {
+  border: 1px solid #f3f3f3;
+  display: flex;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+
+.contentSearchInput {
+  border: 0;
+  padding: 13px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.contentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+.contentCards {
+  display: flex;
+  flex-wrap: wrap;
+}

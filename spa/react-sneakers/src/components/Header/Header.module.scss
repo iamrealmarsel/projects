@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eaeaea;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 15px;
+  }
+}
+
+.headerInfoTitle {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.headerInfoDesc {
+  margin: 0;
+  opacity: 0.5;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerRightCart {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+
+  img {
+    margin-right: 15px;
+  }
+}
+
+.headerRightProfile {
+  cursor: pointer;
+}
+
+.headerRightFavorites {
+  margin-right: 30px;
+}
