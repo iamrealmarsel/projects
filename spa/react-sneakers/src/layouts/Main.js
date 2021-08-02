@@ -1,4 +1,4 @@
-import cn from "./Main.module.scss";
+import cn from './Main.module.scss';
 
 function Main(props) {
   const { children, onSearchChange, searchValue, title } = props;
@@ -6,17 +6,15 @@ function Main(props) {
   return (
     <div className={cn.content}>
       <div className={cn.contentHeader}>
-        <h1 className={cn.contentTitle}>
-          {searchValue ? `Поиск по запросу: ${searchValue}` : title}
-        </h1>
+        <h1 className={cn.contentTitle}>{searchValue ? `Поиск по запросу: ${searchValue}` : title}</h1>
         <div className={cn.contentSearch}>
-          <img src="/img/search.svg" alt="search" />
+          <img src='img/search.svg' alt='search' />
           <input
             onChange={onSearchChange}
             value={searchValue}
             className={cn.contentSearchInput}
-            type="text"
-            placeholder="Поиск..."
+            type='text'
+            placeholder='Поиск...'
           />
         </div>
       </div>

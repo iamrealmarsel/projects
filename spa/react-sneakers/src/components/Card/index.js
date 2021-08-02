@@ -29,11 +29,11 @@ function Card(props) {
   if (onFavoriteClick) {
     favoriteElement = favorited ? (
       <div className={cn.cardFavorite} onClick={handleFavoriteClick}>
-        <img src='/img/heart-liked.svg' alt='liked' />
+        <img src='img/heart-liked.svg' alt='liked' />
       </div>
     ) : (
       <div className={cn.cardFavorite} onClick={handleFavoriteClick}>
-        <img src={isFavorite(id) ? '/img/heart-liked.svg' : '/img/heart-unliked.svg'} alt='liked' />
+        <img src={isFavorite(id) ? 'img/heart-liked.svg' : 'img/heart-unliked.svg'} alt='liked' />
       </div>
     );
   }
@@ -68,7 +68,7 @@ function Card(props) {
             {onPlusClick && (
               <img
                 className={cn.cardPlus}
-                src={isAdded(id) ? '/img/button-checked.svg' : '/img/button-plus.svg'}
+                src={isAdded(id) ? 'img/button-checked.svg' : 'img/button-plus.svg'}
                 alt='plus'
                 onClick={handlePlusClick}
               />

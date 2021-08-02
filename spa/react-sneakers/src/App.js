@@ -152,12 +152,25 @@ function App() {
           opened={cartOpened}
         />
         <Header onCartClick={handleCartClick} />
-        <Route path='/' exact>
-          <Home searchValue={searchValue} onSearchChange={handleSearchChange} isLoading={isLoading} />
-        </Route>
-        <Route path='/favorites' exact>
-          <Favorites searchValue={searchValue} onSearchChange={handleSearchChange} isLoading={isLoading} />
-        </Route>
+        <Route
+          path='/'
+          exact
+          render={(cool) => (
+            <Home searchValue={searchValue} onSearchChange={handleSearchChange} isLoading={isLoading} cool={cool} />
+          )}
+        ></Route>
+        <Route
+          path='/favorites'
+          exact
+          render={(cool) => (
+            <Favorites
+              searchValue={searchValue}
+              onSearchChange={handleSearchChange}
+              isLoading={isLoading}
+              cool={cool}
+            />
+          )}
+        ></Route>
         <Route path='/orders' exact>
           <Orders searchValue={searchValue} onSearchChange={handleSearchChange} isLoading={isLoading} />
         </Route>

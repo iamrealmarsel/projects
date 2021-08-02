@@ -10,13 +10,13 @@ function Slider() {
   return (
     <Swiper id='main' spaceBetween={0} slidesPerView={1} navigation>
       <SwiperSlide>
-        <img src='/img/slider-1.png' alt='sneackers' />
+        <img src='img/slider-1.png' alt='sneackers' />
       </SwiperSlide>
       <SwiperSlide>
-        <img src='/img/slider-2.png' alt='sneackers' />
+        <img src='img/slider-2.png' alt='sneackers' />
       </SwiperSlide>
       <SwiperSlide>
-        <img src='/img/slider-3.png' alt='sneackers' />
+        <img src='img/slider-3.png' alt='sneackers' />
       </SwiperSlide>
     </Swiper>
   );

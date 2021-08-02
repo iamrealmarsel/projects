@@ -44,7 +44,7 @@ function Drawer(props) {
       <div className={cn.drawer}>
         <h2>
           Корзина
-          <img className={cn.cartItemRemove} src='/img/button-remove.svg' alt='remove' onClick={onCloseClick} />
+          <img className={cn.cartItemRemove} src='img/button-remove.svg' alt='remove' onClick={onCloseClick} />
         </h2>
 
         {cartItems.length > 0 ? (
@@ -63,7 +63,7 @@ function Drawer(props) {
                 ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке`
                 : 'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.'
             }
-            image={isOrderCompleted ? '/img/order.png' : '/img/cart.png'}
+            image={isOrderCompleted ? 'img/order.png' : 'img/cart.png'}
           />
         )}
       </div>
